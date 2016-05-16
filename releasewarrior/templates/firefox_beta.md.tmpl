@@ -1,0 +1,19 @@
+# Firefox {{ version }}
+
+### Started {{ date }}
+
+## Build 1
+
+![task graph](https://tools.taskcluster.net/task-group-inspector/#{{ graphid }})
+[task graph]
+
+- [{% if submitted_shipit %}x{% endif %}] [submit to Ship It](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [{% if emailed_cdntest %}x{% endif %}] [post release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+- [{% if publish_balrog %}x{% endif %}] [Publish in Balrog ](how-tos/relpro.md)
+- [{% if post_released %}x{% endif %}] [Post-release tasks](how-tos/relpro.md
+
+### Issues
+
+{% for issue in issues %}
+- {{ issue }}
+{% endfor %}
