@@ -9,7 +9,10 @@ setup(
             'release = releasewarrior.__main__:main'
         ]
     },
-    classifiers = [
+    install_requires=[
+        'gitpython',
+    ],
+    classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
     ],

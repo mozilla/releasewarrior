@@ -1,13 +1,32 @@
 import abc
+import os
 import sys
-import argparse
+import logging
+from git import Repo
 
+from releasewarrior.config import REPO_PATH, RELEASES_PATH, TEMPLATES_PATH, ARCHIVED_RELEASES_PATH
+
+logger = logging.getLogger('releasewarrior')
 
 class Command(metaclass=abc.ABCMeta):
-    parser = None
+
+    def __init__(self):
+        self.repo = Repo(REPO_PATH)
 
     def pre_run_check(self):
         """ensures repo is clean and nothing is incoming"""
+        logger.info("ensuring releasewarrior repo is clean")
+        if self.repo.is_dirty():
+            logger.error("releasewarrior repo is dirty. aborting run to be safe.")
+            sys.exit(1)
+
+        origin = self.repo.remotes.origin
+        origin.fetch()
+        if self.repo.head.commit.diff(origin):
+            logger.error("diff found against origin. ensure `git diff origin/master` yields nothing")
+
+        logger.info("made it here")
+
 
     @abc.abstractmethod
     def generate_data(self, data, data_path):
@@ -34,7 +53,8 @@ class CreateRelease(Command):
         pass
 
     def run(self, args):
-        print('\o/')
+        logger.debug('create run call')
+        self.pre_run_check()
 
 
 class UpdateRelease(Command):

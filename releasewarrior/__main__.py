@@ -1,9 +1,28 @@
 import sys
+import os
 import argparse
 import datetime
+import logging
 
 from releasewarrior.commands import CreateRelease, UpdateRelease, Postmortem, Outstanding
 from releasewarrior.commands import BumpBuildnum, SyncRelease
+from releasewarrior.config import LOG_PATH
+
+
+def setup_logging():
+    logging.basicConfig(level=logging.DEBUG,
+                        format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+                        datefmt='%m-%d %H:%M',
+                        filename=os.path.join(LOG_PATH, 'releasewarrior.log'),
+                        filemode='a')
+    console = logging.StreamHandler()
+    # flip this to INFO once done testing
+    console.setLevel(logging.DEBUG)
+    console.setFormatter(logging.Formatter('%(name)-12s: %(levelname)-8s %(message)s'))
+
+    # add console logging to root logger
+    logging.getLogger('').addHandler(console)
+    return logging.getLogger('releasewarrior')
 
 
 def parse_args():
@@ -82,7 +101,11 @@ def main():
         print("y u no py 3 yo?")
         sys.exit()
 
+    logger = setup_logging()
+
     args = parse_args()
+    logger.debug("RUNNING with args: %s", ' '.join(sys.argv[1:]))
+
     args.command.run(args)  # <3 argparse for this
 
 
