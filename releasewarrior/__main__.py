@@ -86,7 +86,7 @@ def parse_args():
                                help='update release that we have ran post release task')
     parser_update.add_argument('--issue', action='append', dest='issues',
                                help='issue to add to release in question')
-    parser_update.add_argument('--aborted', action='store_true', dest='aborted',
+    parser_update.add_argument('--buildnum-aborted', action='store_true', dest='aborted',
                                help='current buildnum is aborted. new buildnum will be added '
                                     'after this update call.')
 

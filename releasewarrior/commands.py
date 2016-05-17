@@ -122,7 +122,7 @@ class Command(metaclass=abc.ABCMeta):
     def generate_wiki(self, data, wiki_template):
         """generates wiki file based on data file and wiki template"""
         env = Environment(loader=FileSystemLoader(TEMPLATES_PATH),
-                          undefined=StrictUndefined)
+                          undefined=StrictUndefined, trim_blocks=True)
         template = env.get_template(wiki_template)
         return template.render(**data)
 
@@ -204,8 +204,8 @@ class UpdateRelease(Command):
         self.data_file = "{}-{}-{}.json".format(self.product, self.branch, self.version)
         self.wiki_file = "{}-{}-{}.md".format(self.product, self.branch, self.version)
         self.changes = get_update_data(args)
-        self.commit_msg = "updating {} {} release. updated {} wiki and data file".format(
-            self.product, self.version, self.wiki_file
+        self.commit_msg = "updating {} {} release. updated {} wiki with changes: {}".format(
+            self.product, self.version, self.wiki_file, self.changes
         )
 
         self.pre_run_check()
