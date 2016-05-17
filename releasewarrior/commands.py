@@ -6,6 +6,7 @@ import re
 import logging
 import json
 import datetime
+from copy import deepcopy
 
 from git import Repo
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
@@ -32,15 +33,36 @@ def ensure_branch_and_version_are_valid(branch, version):
         sys.exit(1)
 
 
-def get_changes(args):
-    return  {
-        "graphid": args.graphid,
-        "submitted_shipit": args.submitted_shipit,
-        "emailed_cdntest": args.emailed_cdntest,
-        "published_balrog": args.published_balrog,
-        "post_released": args.post_released,
-        "aborted": args.aborted,
-    }
+def get_update_data(args):
+    update_args = [
+        ("graphid", args.graphid),
+        ("submitted_shipit", args.submitted_shipit),
+        ("emailed_cdntest", args.emailed_cdntest),
+        ("published_balrog", args.published_balrog),
+        ("post_released", args.post_released),
+        ("aborted", args.aborted),
+        ("issues", args.issues),
+    ]
+    update_data = {}
+    for key, value in update_args:
+        if value:
+            update_data[key] = value
+    return update_data
+
+
+def data_unchanged(new_data, current_data):
+    # TODO - make this more generic and elegant
+    for index in range(0, len(new_data['builds'])):
+        for new_data_key, new_data_value in new_data["builds"][index].items():
+            current_data_value = current_data["builds"][index][new_data_key]
+            # look for unique issue lists
+            if new_data_key == "issues":
+                if list(set(new_data_value) - set(current_data_value)):
+                    return False
+            # look for unique data strings
+            elif new_data_value != current_data_value:
+                return False
+    return True
 
 
 def release_exists(data_file, wiki_file, both_must_exist=False, ignore_archive=False):
@@ -122,14 +144,7 @@ class Command(metaclass=abc.ABCMeta):
         with open(abs_wiki_file, 'w') as wp:
             wp.write(wiki)
 
-    def add_and_commit(self, files, msg, check_for_diff=True):
-        if check_for_diff:
-            logger.info("checking for changes")
-            if not self.repo.head.commit.diff():
-                logger.warning("no changes found after regenerating data and wiki")
-                logger.warning("nothing to commit.")
-                sys.exit(1)
-
+    def add_and_commit(self, files, msg):
         self.repo.index.add(files)
         logger.info("committing changes with message: %s", msg)
         commit = self.repo.index.commit(msg)
@@ -167,7 +182,7 @@ class CreateRelease(Command):
         super().run()
         abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
         abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
-        self.add_and_commit([abs_data_file, abs_wiki_file], self.commit_msg, check_for_diff=False)
+        self.add_and_commit([abs_data_file, abs_wiki_file], self.commit_msg)
 
     def pre_run_check(self):
         super().pre_run_check()
@@ -188,8 +203,7 @@ class UpdateRelease(Command):
         self.version = args.version
         self.data_file = "{}-{}-{}.json".format(self.product, self.branch, self.version)
         self.wiki_file = "{}-{}-{}.md".format(self.product, self.branch, self.version)
-        self.changes = get_changes(args)
-        self.issues = args.issues
+        self.changes = get_update_data(args)
         self.commit_msg = "updating {} {} release. updated {} wiki and data file".format(
             self.product, self.version, self.wiki_file
         )
@@ -197,25 +211,35 @@ class UpdateRelease(Command):
         self.pre_run_check()
 
     def generate_data(self):
-        data = {}
+        new_data = {}
+        current_data = {}
 
         logger.info("grabbing current data about release")
-        with open(os.path.join(RELEASES_PATH, self.data_file)) as data_template:
-            data.update(json.load(data_template))
+        with open(os.path.join(RELEASES_PATH, self.data_file)) as current_data_f:
+            current_data = json.load(current_data_f)
+            new_data.update(deepcopy(current_data))
 
         logger.info("updating with custom update data")
-        data['builds'][-1].update(self.changes)
-        data['builds'][-1]["issues"].extend(self.issues)
+        for key_change, key_value in self.changes.items():
+            if key_change == "issues":
+                new_data['builds'][-1]["issues"].extend(key_value)
+            else:
+                new_data['builds'][-1][key_change] = key_value
 
-        if data["builds"][-1]["aborted"]:
+        if new_data["builds"][-1]["aborted"]:
             logger.info("most recent buildnum has been aborted, starting a new buildnum")
-            initial_buildnum_data = {}
+            template_buildnum_data = {}
             with open(DATA_TEMPLATES[self.product][self.branch]) as data_template:
-                initial_buildnum_data.update(json.load(data_template)["builds"][0])
-                data["builds"].append(initial_buildnum_data)
-                data["builds"][-1]["buildnum"] = len(data["builds"])
+                template_buildnum_data.update(json.load(data_template)["builds"][0])
+            new_data["builds"].append(template_buildnum_data)
+            new_data["builds"][-1]["buildnum"] = len(new_data["builds"])
 
-        return data
+        if data_unchanged(new_data, current_data):
+            logger.warning("no changes found in update call after regenerating data file.")
+            logger.warning("nothing to commit. aborting.")
+            sys.exit(1)
+
+        return new_data
 
     def pre_run_check(self):
         super().pre_run_check()
