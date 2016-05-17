@@ -86,6 +86,14 @@ class Command(metaclass=abc.ABCMeta):
     def get_release_info(self, version, product):
         pass
 
+    def add_and_commit(self, files, msg):
+        logger.info("staging files for commit: %s", files)
+        self.repo.index.add(files)
+        logger.info("committing changes with message: %s", msg)
+        commit = self.repo.index.commit(msg)
+        for patch in self.repo.commit("HEAD~1").diff(commit, create_patch=True):
+            logger.info(patch)
+
 
 class CreateRelease(Command):
 
@@ -96,6 +104,9 @@ class CreateRelease(Command):
         self.version = args.version
         self.data_file = "{}-{}-{}.json".format(self.product, self.branch, self.version)
         self.wiki_file = "{}-{}-{}.md".format(self.product, self.branch, self.version)
+        self.commit_msg = "started tracking {} {} release. created {} wiki and data file".format(
+            self.product, self.version, self.wiki_file
+        )
         self.pre_run_check()
 
     def generate_data(self):
@@ -130,9 +141,9 @@ class CreateRelease(Command):
         with open(abs_wiki_file, 'w') as wp:
             wp.write(wiki)
 
+        self.add_and_commit([abs_data_file, abs_wiki_file], self.commit_msg)
 
-        # self.repo.index.add(abs_data_file)
-        # self.repo.index.add(abs_wiki_file)
+
 
     def pre_run_check(self):
         super().pre_run_check()
