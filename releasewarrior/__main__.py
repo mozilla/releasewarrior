@@ -72,16 +72,23 @@ def parse_args():
     # update options
     parser_update.add_argument('--graphid', '--taskcluster_graphid', dest='graphid',
                                help='taskcluster graphid used for release in question')
-    parser_update.add_argument('--shipit', '--submitted-shipit', action='store_true',
+    parser_update.add_argument('--shipit', '--submitted-shipit',
+                               action='store_true', dest='submitted_shipit',
                                help='update release that we submitted to ship it (started release)')
-    parser_update.add_argument('--cdntest', '--emailed-cdntest', action='store_true',
+    parser_update.add_argument('--cdntest', '--emailed-cdntest',
+                               action='store_true', dest='emailed_cdntest',
                                help='update release that we emailed drivers that release is on cdntest')
-    parser_update.add_argument('--balrog', '--submitted-balrog', action='store_true',
+    parser_update.add_argument('--balrog', '--submitted-balrog',
+                               action='store_true', dest='published_balrog',
                                help='update release that we have submitted to balrog')
-    parser_update.add_argument('--post', '--post-released', action='store_true',
+    parser_update.add_argument('--post', '--post-released',
+                               action='store_true', dest='post_released',
                                help='update release that we have ran post release task')
-    parser_update.add_argument('--issue', '--issue', action='append', dest='issues',
+    parser_update.add_argument('--issue', action='append', dest='issues',
                                help='issue to add to release in question')
+    parser_update.add_argument('--aborted', action='store_true', dest='aborted',
+                               help='current buildnum is aborted. new buildnum will be added '
+                                    'after this update call.')
 
     # postmortem options
     parser_postmortem.add_argument('date', type=lambda x: datetime.datetime.strptime(x, "%Y-%m-%d"),
