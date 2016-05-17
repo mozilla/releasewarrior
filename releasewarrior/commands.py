@@ -130,7 +130,6 @@ class Command(metaclass=abc.ABCMeta):
                 logger.warning("nothing to commit.")
                 sys.exit(1)
 
-        logger.info("staging files for commit: %s", files)
         self.repo.index.add(files)
         logger.info("committing changes with message: %s", msg)
         commit = self.repo.index.commit(msg)
