@@ -15,15 +15,18 @@ from releasewarrior.config import DATA_TEMPLATES, WIKI_TEMPLATES, POSTMORTEMS_PA
 
 logger = logging.getLogger('releasewarrior')
 
+
 def get_complete_releases():
     completed_releases = {}
     for root, dirs, files in os.walk(RELEASES_PATH):
         for f in [data_file for data_file in files if data_file.endswith(".json")]:
-            with open(f) as data_f:
-                data = json.load(data_f)
-            if all(data["builds"][-1]["completed_tasks"].values()):
-                # this release is complete!
-               completed_releases[f] = data
+            abs_f = os.path.join(RELEASES_PATH, f)
+            if os.path.exists(abs_f):
+                with open(abs_f) as data_f:
+                    data = json.load(data_f)
+                if all(data["builds"][-1]["human_tasks"].values()):
+                    # this release is complete!
+                   completed_releases[abs_f] = data
     return completed_releases
 
 
@@ -106,8 +109,9 @@ class Command(metaclass=abc.ABCMeta):
     product = None
     branch = None
     version = None
-    data_file = None
-    wiki_file = None
+    abs_data_file = None
+    abs_wiki_file = None
+    wiki_template_file = None
     commit_msg = None
     save_data_file = True  # sync doesn't touch data file
 
@@ -147,23 +151,21 @@ class Command(metaclass=abc.ABCMeta):
     def run(self):
         """run sub command"""
         data = self.generate_data()
-        wiki = self.generate_wiki(data, os.path.basename(WIKI_TEMPLATES[self.product][self.branch]))
-        abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
-        abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
+        wiki = self.generate_wiki(data, os.path.basename(self.wiki_template_file))
 
         if self.save_data_file:
             # save data to actual data_path
-            logger.info("writing to data file: %s", abs_data_file)
-            with open(abs_data_file, 'w') as data_file:
+            logger.info("writing to data file: %s", self.abs_data_file)
+            with open(self.abs_data_file, 'w') as data_file:
                 json.dump(data, data_file)
 
         # save wiki to actual wiki_path
-        logger.info("writing to wiki file: %s", abs_wiki_file)
-        with open(abs_wiki_file, 'w') as wp:
+        logger.info("writing to wiki file: %s", self.abs_wiki_file)
+        with open(self.abs_wiki_file, 'w') as wp:
             wp.write(wiki)
 
-    def add_and_commit(self, data_file, wiki_file, msg):
-        self.repo.index.add([data_file, wiki_file])
+    def add_and_commit(self, files, msg):
+        self.repo.index.add(files)
 
         if not self.repo.index.diff("HEAD"):
             logger.warning("nothing staged for commit. has the data or wiki file changed?")
@@ -181,10 +183,15 @@ class CreateRelease(Command):
         self.product = args.product
         self.branch = args.branch
         self.version = args.version
-        self.data_file = "{}-{}-{}.json".format(self.product, self.branch, self.version)
-        self.wiki_file = "{}-{}-{}.md".format(self.product, self.branch, self.version)
+        self.abs_data_file = os.path.join(
+            RELEASES_PATH, "{}-{}-{}.json".format(self.product, self.branch, self.version)
+        )
+        self.abs_wiki_file = os.path.join(
+            RELEASES_PATH, "{}-{}-{}.md".format(self.product, self.branch, self.version)
+        )
+        self.wiki_template_file = WIKI_TEMPLATES[self.product][self.branch]
         self.commit_msg = "started tracking {} {} release. created {} wiki and data file".format(
-            self.product, self.version, self.wiki_file
+            self.product, self.version, os.path.basename(self.abs_wiki_file)
         )
         self.pre_run_check()
 
@@ -206,17 +213,15 @@ class CreateRelease(Command):
 
         ensure_branch_and_version_are_valid(self.branch, self.version)
 
-        if release_exists(self.data_file):
+        if release_exists(os.path.basename(self.abs_data_file)):
             logger.error("release already exists! Ensure %s doesn't exist in %s or %s dirs",
-                         self.data_file, RELEASES_PATH, ARCHIVED_RELEASES_PATH)
+                         os.path.basename(self.abs_data_file), RELEASES_PATH, ARCHIVED_RELEASES_PATH)
             sys.exit(1)
 
     def run(self):
         super().run()
 
-        abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
-        abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
-        self.add_and_commit(abs_data_file, abs_wiki_file, self.commit_msg)
+        self.add_and_commit([self.abs_data_file, self.abs_wiki_file], self.commit_msg)
 
 
 class UpdateRelease(Command):
@@ -225,11 +230,16 @@ class UpdateRelease(Command):
         self.product = args.product
         self.branch = args.branch
         self.version = args.version
-        self.data_file = "{}-{}-{}.json".format(self.product, self.branch, self.version)
-        self.wiki_file = "{}-{}-{}.md".format(self.product, self.branch, self.version)
+        self.abs_data_file = os.path.join(
+            RELEASES_PATH, "{}-{}-{}.json".format(self.product, self.branch, self.version)
+        )
+        self.abs_wiki_file = os.path.join(
+            RELEASES_PATH, "{}-{}-{}.md".format(self.product, self.branch, self.version)
+        )
+        self.wiki_template_file = WIKI_TEMPLATES[self.product][self.branch]
         self.changes = get_update_data(args)
-        self.commit_msg = "updating {} {} release. updated {} wiki with changes: {}".format(
-            self.product, self.version, self.wiki_file, self.changes
+        self.commit_msg = "updating {} {} release. updated {} wiki".format(
+            self.product, self.version, os.path.basename(self.abs_wiki_file)
         )
 
         self.pre_run_check()
@@ -239,7 +249,7 @@ class UpdateRelease(Command):
         current_data = {}
 
         logger.info("grabbing current data about release")
-        with open(os.path.join(RELEASES_PATH, self.data_file)) as current_data_f:
+        with open(self.abs_data_file) as current_data_f:
             current_data.update(json.load(current_data_f))
             new_data.update(deepcopy(current_data))
 
@@ -272,18 +282,15 @@ class UpdateRelease(Command):
 
         ensure_branch_and_version_are_valid(self.branch, self.version)
 
-        if not release_exists(self.data_file, ignore_archive=True):
-            logger.error("release doesn't exist! Ensure %s exists in %s or dir. "
+        if not release_exists(os.path.basename(self.abs_data_file), ignore_archive=True):
+            logger.error("release doesn't exist! Ensure %s exists."
                          "Use the `create` command to create initial data and wiki.",
-                         self.data_file, self.wiki_file, RELEASES_PATH)
+                         self.abs_data_file)
             sys.exit(1)
 
     def run(self):
         super().run()
-
-        abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
-        abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
-        self.add_and_commit(abs_data_file, abs_wiki_file, self.commit_msg)
+        self.add_and_commit([self.abs_data_file, self.abs_wiki_file], self.commit_msg)
 
 
 class SyncRelease(Command):
@@ -292,8 +299,13 @@ class SyncRelease(Command):
         self.product = args.product
         self.branch = args.branch
         self.version = args.version
-        self.data_file = "{}-{}-{}.json".format(self.product, self.branch, self.version)
-        self.wiki_file = "{}-{}-{}.md".format(self.product, self.branch, self.version)
+        self.abs_data_file = os.path.join(
+            RELEASES_PATH, "{}-{}-{}.json".format(self.product, self.branch, self.version)
+        )
+        self.abs_wiki_file = os.path.join(
+            RELEASES_PATH, "{}-{}-{}.md".format(self.product, self.branch, self.version)
+        )
+        self.wiki_template_file = WIKI_TEMPLATES[self.product][self.branch]
         self.commit_msg = "generating wiki for {} {} release with changes in current data file".format(
             self.product, self.version,
         )
@@ -305,7 +317,7 @@ class SyncRelease(Command):
         current_data = {}
 
         logger.info("grabbing data for release from current data file")
-        with open(os.path.join(RELEASES_PATH, self.data_file)) as current_data_f:
+        with open(self.abs_data_file) as current_data_f:
             current_data.update(json.load(current_data_f))
 
         return current_data
@@ -315,51 +327,56 @@ class SyncRelease(Command):
 
         ensure_branch_and_version_are_valid(self.branch, self.version)
 
-        if not release_exists(self.data_file, ignore_archive=True):
-            logger.error("release doesn't exist! Ensure %s exists in %s or dir. "
+        if not release_exists(os.path.basename(self.abs_data_file), ignore_archive=True):
+            logger.error("release doesn't exist! Ensure %s exists."
                          "Use the `create` command to create initial data and wiki.",
-                         self.data_file, RELEASES_PATH)
+                         self.abs_data_file)
             sys.exit(1)
 
     def run(self):
         super().run()
-
-        abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
-        abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
-        self.add_and_commit(abs_data_file, abs_wiki_file, self.commit_msg)
+        self.add_and_commit([self.abs_data_file, self.abs_wiki_file], self.commit_msg)
 
 
 class Postmortem(Command):
 
     def __init__(self, args):
-        self.date = args.date
-        self.data_file = "{}.json".format(self.date)
-        self.wiki_file = "{}.md".format(self.date)
+        self.date = "{}-{}-{}".format(args.date.year, args.date.month, args.date.day)
+        self.abs_data_file = os.path.join(POSTMORTEMS_PATH, "{}.json".format(self.date))
+        self.abs_wiki_file = os.path.join(POSTMORTEMS_PATH, "{}.md".format(self.date))
+        self.wiki_template_file = WIKI_TEMPLATES["postmortem"]
         self.completed_releases = get_complete_releases()
-        self.commit_msg = "updating {} postmortem. updated {} wiki with {} releases".format(
-            self.date, self.wiki_file, self.completed_releases.keys()
+        self.commit_msg = "updating postmortem. updated {} wiki".format(
+            os.path.basename(self.abs_wiki_file)
         )
-
-        logger.debug(self.completed_releases)
 
         self.pre_run_check()
 
     def generate_data(self):
-        new_data = {}
+        new_data = {
+            "releases": [],
+            "date": self.date,
+        }
 
         logger.info("grabbing current data about postmortem")
-        if os.path.exists(os.path.join(POSTMORTEMS_PATH, self.data_file)):
-            with open(os.path.join(POSTMORTEMS_PATH, self.data_file)) as current_data_f:
+        if os.path.exists(self.abs_data_file):
+            with open(self.abs_data_file) as current_data_f:
                 new_data.update(deepcopy(json.load(current_data_f)))
 
         logger.info("updating postmortem with recently completed releases.")
         for release in self.completed_releases.values():
-            new_data["releases"].append({
-                "version": release['release'],
+            postmortem_release = {
+                "version": release['version'],
                 "product": release['product'],
                 "date": release['date'],
-                "issues": release['builds'][-1]['issues']
-            })
+            }
+            postmortem_release["builds"] = []
+            for build in release["builds"]:
+                postmortem_release["builds"].append({
+                    "buildnum": build["buildnum"],
+                    "issues": build["issues"],
+                })
+            new_data["releases"].append(postmortem_release)
 
         return new_data
 
@@ -367,23 +384,26 @@ class Postmortem(Command):
         super().pre_run_check()
 
         if not self.completed_releases:
-            logger.error("no current releases found in {} that have all human tasks completed."
+            logger.error("no current releases found in %s that have all human tasks completed. "
                          "Use the `update` command to complete current release's human_tasks.",
                          RELEASES_PATH)
             sys.exit(1)
 
     def run(self):
-        # super().run()
-        #
-        # abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
-        # abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
-        # self.archive_completed()
-        # self.add_and_commit(abs_data_file, abs_wiki_file, self.commit_msg)
+        super().run()
+
+        self.archive_completed()
+        self.add_and_commit([self.abs_data_file, self.abs_wiki_file], self.commit_msg)
 
     def archive_completed(self):
-        for f in self.completed_releases.keys():
-            logger.info(f)
-        
+        """moves completed releases to archive directory"""
+        for abs_data_file in self.completed_releases.keys():
+            archive_data_dest = os.path.join(ARCHIVED_RELEASES_PATH, os.path.basename(abs_data_file))
+            self.repo.index.move([abs_data_file, archive_data_dest])
+
+            abs_wiki_file = abs_data_file.replace(".json", ".md")
+            archive_wiki_dest = os.path.join(ARCHIVED_RELEASES_PATH, os.path.basename(abs_wiki_file))
+            self.repo.index.move([abs_wiki_file, archive_wiki_dest])
 
 
 class Outstanding(Command):

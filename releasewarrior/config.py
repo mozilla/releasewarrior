@@ -23,7 +23,8 @@ WIKI_TEMPLATES = {
         'beta': os.path.join(TEMPLATES_PATH, 'thunderbird_beta.md.tmpl'),
         'release': os.path.join(TEMPLATES_PATH, 'thunderbird_release.md.tmpl'),
         'esr': os.path.join(TEMPLATES_PATH, 'thunderbird_esr.md.tmpl'),
-    }
+    },
+    "postmortem": os.path.join(TEMPLATES_PATH, 'postmortem.md.tmpl')
 }
 
 DATA_TEMPLATES = {

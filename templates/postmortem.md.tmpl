@@ -1,0 +1,17 @@
+# Postmortem {{ date }}
+
+{% for release in releases %}
+## Release: {{ release["product"].capitalize() }} {{ release["version"] }} {{ release["date"] }}
+
+{% for build in release['builds'] %}
+## Buildnum {{ build["buildnum"] }}
+### Issues
+{% for issue in build["issues"] %}
+- {{ issue }}
+{% endfor %}
+{% if not build["issues"] %}
+- flawless victory
+{% endif %}
+{% endfor %}
+
+{% endfor %}
