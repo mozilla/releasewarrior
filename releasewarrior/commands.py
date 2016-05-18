@@ -74,9 +74,8 @@ def data_unchanged(new_data, current_data):
     return True
 
 
-def release_exists(data_file, wiki_file, both_must_exist=False, ignore_archive=False):
+def release_exists(data_file, ignore_archive=False):
     searchpaths = [RELEASES_PATH] if ignore_archive else [RELEASES_PATH, ARCHIVED_RELEASES_PATH]
-    wiki_exists = False
     data_exists = False
 
     def exists_in_searchpaths(target):
@@ -87,10 +86,8 @@ def release_exists(data_file, wiki_file, both_must_exist=False, ignore_archive=F
 
     if exists_in_searchpaths(data_file):
         data_exists = True
-    if exists_in_searchpaths(wiki_file):
-        wiki_exists = True
 
-    return data_exists and wiki_exists if both_must_exist else data_exists or wiki_exists
+    return data_exists
 
 
 class Command(metaclass=abc.ABCMeta):
@@ -201,9 +198,9 @@ class CreateRelease(Command):
 
         ensure_branch_and_version_are_valid(self.branch, self.version)
 
-        if release_exists(self.data_file, self.wiki_file):
-            logger.error("release already exists! Ensure %s and %s don't exist in %s or %s dirs",
-                         self.data_file, self.wiki_file, RELEASES_PATH, ARCHIVED_RELEASES_PATH)
+        if release_exists(self.data_file):
+            logger.error("release already exists! Ensure %s doesn't exist in %s or %s dirs",
+                         self.data_file, RELEASES_PATH, ARCHIVED_RELEASES_PATH)
             sys.exit(1)
 
 
@@ -260,11 +257,10 @@ class UpdateRelease(Command):
 
         ensure_branch_and_version_are_valid(self.branch, self.version)
 
-        if not release_exists(self.data_file, self.wiki_file, both_must_exist=True,
-                                   ignore_archive=True):
-            logger.error("release doesn't exist! Ensure %s and %s exist in %s or %s dirs. "
+        if not release_exists(self.data_file, ignore_archive=True):
+            logger.error("release doesn't exist! Ensure %s exists in %s or dir. "
                          "Use the `create` command to create initial data and wiki.",
-                         self.data_file, self.wiki_file, RELEASES_PATH, ARCHIVED_RELEASES_PATH)
+                         self.data_file, self.wiki_file, RELEASES_PATH)
             sys.exit(1)
 
 
@@ -291,6 +287,17 @@ class SyncRelease(Command):
             current_data.update(json.load(current_data_f))
 
         return current_data
+
+    def pre_run_check(self):
+        super().pre_run_check()
+
+        ensure_branch_and_version_are_valid(self.branch, self.version)
+
+        if not release_exists(self.data_file, ignore_archive=True):
+            logger.error("release doesn't exist! Ensure %s exists in %s or dir. "
+                         "Use the `create` command to create initial data and wiki.",
+                         self.data_file, RELEASES_PATH)
+            sys.exit(1)
 
 class Postmortem(Command):
 
