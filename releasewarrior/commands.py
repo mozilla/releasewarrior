@@ -44,7 +44,7 @@ def get_update_data(args):
         ("published_balrog", args.published_balrog),
         ("post_released", args.post_released),
     ]
-    update_data = {}
+    update_data = {"human_tasks": {}}
     for key, value in build_data:
         if value:
             update_data[key] = value
