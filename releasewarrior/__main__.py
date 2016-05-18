@@ -63,24 +63,33 @@ def parse_args():
         # each of these sub-commands take the following 2 positional args first
         subcommand.add_argument('product', choices=['firefox', 'fennec', 'thunderbird'],
                                 help='product of release in question')
-        subcommand.add_argument('branch', choices=['release', 'beta', 'esr'],
+        subcommand.add_argument('branch', choices=['release', 'release-rc', 'beta', 'esr'],
                                 help='release branch of release in question')
         subcommand.add_argument('version', help='version of release in question. examples: '
                                                 '47.0b1, 46.0, 46.0.1, 45.0esr, or 45.0.1esr')
 
 
     # update options
-    parser_update.add_argument('--graphid', '--taskcluster_graphid', dest='graphid',
+    parser_update.add_argument('--graphid', '--taskcluster-graphid', dest='graphid',
                                help='taskcluster graphid used for release in question')
+    parser_update.add_argument('--graphid-2', '--taskcluster-graphid-2', dest='graphid_2',
+                               help='taskcluster graphid used for graph 2 of rc release in question')
     parser_update.add_argument('--shipit', '--submitted-shipit',
                                action='store_true', dest='submitted_shipit',
                                help='update release that we submitted to ship it (started release)')
     parser_update.add_argument('--cdntest', '--emailed-cdntest',
                                action='store_true', dest='emailed_cdntest',
                                help='update release that we emailed drivers that release is on cdntest')
-    parser_update.add_argument('--balrog', '--submitted-balrog',
+    parser_update.add_argument('--mirrors', '--pushed-mirrors',
+                               action='store_true', dest='pushed_mirrors',
+                               help='update release that we have pushed to mirrors (releases dir)')
+    parser_update.add_argument('--balrog', '--published-balrog',
                                action='store_true', dest='published_balrog',
                                help='update release that we have submitted to balrog')
+    parser_update.add_argument('--beta-balrog', '--published-beta-balrog',
+                               action='store_true', dest='published_beta_balrog',
+                               help='update release that we have submitted release build to beta '
+                                    'channel on balrog. This is used for RC release builds.')
     parser_update.add_argument('--post', '--post-released',
                                action='store_true', dest='post_released',
                                help='update release that we have ran post release task')

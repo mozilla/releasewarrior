@@ -1,0 +1,31 @@
+# Release: Firefox {{ version }}
+
+### Started: {{ date }}
+
+{% for build in builds %}
+## Build {{ build['buildnum'] }}
+
+### Status
+{% if build['graphid'] %}
+![task graph](https://tools.taskcluster.net/task-group-inspector/#{{ build['graphid'] }})
+{% else %}
+task graph url: unknown
+{% endif %}
+
+- [{% if build["human_tasks"]['submitted_shipit'] %}x{% endif %}] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [{% if build["human_tasks"]['emailed_cdntest'] %}x{% endif %}] [emailed cdntest](how-tos/relpro.md)
+- [{% if build["human_tasks"]['pushed_mirrors'] %}x{% endif %}] [pushed to mirrors/releases](how-tos/relpro.md)
+- [{% if build["human_tasks"]['published_balrog'] %}x{% endif %}] [publish in Balrog](how-tos/relpro.md)
+- [{% if build["human_tasks"]['post_released'] %}x{% endif %}] [post-release tasks](how-tos/relpro.md
+
+### Issues
+
+{% for issue in build['issues'] %}
+- {{ issue }}
+{% endfor %}
+
+{% if build['aborted'] %}
+**aborted release. starting new build num**
+{% endif %}
+
+{% endfor %}
