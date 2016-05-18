@@ -10,10 +10,10 @@ task graph url: unknown
 {% endif %}
 
 ### Status
-- [{% if build['submitted_shipit'] %}x{% endif %}] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [{% if build['emailed_cdntest'] %}x{% endif %}] [emailed cdntest](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
-- [{% if build['published_balrog'] %}x{% endif %}] [publish in Balrog](how-tos/relpro.md)
-- [{% if build['post_released'] %}x{% endif %}] [post-release tasks](how-tos/relpro.md
+- [{% if build["human_tasks"]['submitted_shipit'] %}x{% endif %}] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [{% if build["human_tasks"]['emailed_cdntest'] %}x{% endif %}] [emailed cdntest](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+- [{% if build["human_tasks"]['published_balrog'] %}x{% endif %}] [publish in Balrog](how-tos/relpro.md)
+- [{% if build["human_tasks"]['post_released'] %}x{% endif %}] [post-release tasks](how-tos/relpro.md
 
 ### Issues
 {% for issue in build['issues'] %}

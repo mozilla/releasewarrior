@@ -1,6 +1,5 @@
 import abc
 import os
-import pprint
 import sys
 import re
 import logging
@@ -34,19 +33,24 @@ def ensure_branch_and_version_are_valid(branch, version):
 
 
 def get_update_data(args):
-    update_args = [
+    build_data = [
         ("graphid", args.graphid),
+        ("aborted", args.aborted),
+        ("issues", args.issues),
+    ]
+    human_tasks_data = [
         ("submitted_shipit", args.submitted_shipit),
         ("emailed_cdntest", args.emailed_cdntest),
         ("published_balrog", args.published_balrog),
         ("post_released", args.post_released),
-        ("aborted", args.aborted),
-        ("issues", args.issues),
     ]
     update_data = {}
-    for key, value in update_args:
+    for key, value in build_data:
         if value:
             update_data[key] = value
+    for key, value in human_tasks_data:
+        if value:
+            update_data["human_tasks"][key] = value
     return update_data
 
 
@@ -59,6 +63,11 @@ def data_unchanged(new_data, current_data):
             if new_data_key == "issues":
                 if list(set(new_data_value) - set(current_data_value)):
                     return False
+            elif new_data_key == "human_tasks":
+                for task_key, task_value in new_data["builds"][index]["human_tasks"].items():
+                    current_task_value = current_data["builds"][index]["human_tasks"][task_key]
+                    if task_value != current_task_value:
+                        return False
             # look for unique data strings
             elif new_data_value != current_data_value:
                 return False
@@ -219,13 +228,15 @@ class UpdateRelease(Command):
 
         logger.info("grabbing current data about release")
         with open(os.path.join(RELEASES_PATH, self.data_file)) as current_data_f:
-            current_data = json.load(current_data_f)
+            current_data.update(json.load(current_data_f))
             new_data.update(deepcopy(current_data))
 
         logger.info("updating with custom update data")
         for key_change, key_value in self.changes.items():
             if key_change == "issues":
                 new_data['builds'][-1]["issues"].extend(key_value)
+            elif key_change == "human_tasks":
+                new_data['builds'][-1]["human_tasks"].update(key_value)
             else:
                 new_data['builds'][-1][key_change] = key_value
 
