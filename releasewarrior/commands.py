@@ -92,6 +92,7 @@ class Command(metaclass=abc.ABCMeta):
     data_file = None
     wiki_file = None
     commit_msg = None
+    save_data_file = True  # sync doesn't touch data file
 
     def pre_run_check(self):
         """ensures repo is clean and local repo is in sync with remote origin"""
@@ -134,18 +135,26 @@ class Command(metaclass=abc.ABCMeta):
         abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
         abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
 
-        # save data to actual data_path
-        logger.info("writing to data file: %s", abs_data_file)
-        with open(abs_data_file, 'w') as data_file:
-            json.dump(data, data_file)
+        if self.save_data_file:
+            # save data to actual data_path
+            logger.info("writing to data file: %s", abs_data_file)
+            with open(abs_data_file, 'w') as data_file:
+                json.dump(data, data_file)
 
         # save wiki to actual wiki_path
         logger.info("writing to wiki file: %s", abs_wiki_file)
         with open(abs_wiki_file, 'w') as wp:
             wp.write(wiki)
 
-    def add_and_commit(self, files, msg):
-        self.repo.index.add(files)
+        self.add_and_commit(abs_data_file, abs_wiki_file, self.commit_msg)
+
+    def add_and_commit(self, data_file, wiki_file, msg):
+        self.repo.index.add([data_file, wiki_file])
+
+        if not self.repo.index.diff("HEAD"):
+            logger.warning("nothing staged for commit. has the data or wiki file changed?")
+            sys.exit(1)
+
         logger.info("committing changes with message: %s", msg)
         commit = self.repo.index.commit(msg)
         for patch in self.repo.commit("HEAD~1").diff(commit, create_patch=True):
@@ -177,12 +186,6 @@ class CreateRelease(Command):
         data["date"] = datetime.date.today().strftime("%y-%m-%d")
 
         return data
-
-    def run(self):
-        super().run()
-        abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
-        abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
-        self.add_and_commit([abs_data_file, abs_wiki_file], self.commit_msg)
 
     def pre_run_check(self):
         super().pre_run_check()
@@ -253,17 +256,30 @@ class UpdateRelease(Command):
                          self.data_file, self.wiki_file, RELEASES_PATH, ARCHIVED_RELEASES_PATH)
             sys.exit(1)
 
-    def run(self):
-        super().run()
-        abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
-        abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
-        self.add_and_commit([abs_data_file, abs_wiki_file], self.commit_msg)
-
 
 class SyncRelease(Command):
 
+    def __init__(self, args):
+        self.product = args.product
+        self.branch = args.branch
+        self.version = args.version
+        self.data_file = "{}-{}-{}.json".format(self.product, self.branch, self.version)
+        self.wiki_file = "{}-{}-{}.md".format(self.product, self.branch, self.version)
+        self.commit_msg = "generating wiki for {} {} release with changes in current data file".format(
+            self.product, self.version,
+        )
+        self.save_data_file = False
+
+        self.pre_run_check()
+
     def generate_data(self):
-        pass
+        current_data = {}
+
+        logger.info("grabbing data for release from current data file")
+        with open(os.path.join(RELEASES_PATH, self.data_file)) as current_data_f:
+            current_data.update(json.load(current_data_f))
+
+        return current_data
 
 class Postmortem(Command):
 
