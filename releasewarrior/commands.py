@@ -1,7 +1,6 @@
 import abc
 import os
 import sys
-import re
 import logging
 import json
 import datetime
@@ -10,98 +9,12 @@ from copy import deepcopy
 from git import Repo
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
+from build.lib.releasewarrior.helpers import ensure_branch_and_version_are_valid, release_exists, \
+    get_update_data, data_unchanged, get_complete_releases
 from releasewarrior.config import REPO_PATH, RELEASES_PATH, TEMPLATES_PATH, ARCHIVED_RELEASES_PATH
 from releasewarrior.config import DATA_TEMPLATES, WIKI_TEMPLATES, POSTMORTEMS_PATH
 
 logger = logging.getLogger('releasewarrior')
-
-
-def get_complete_releases():
-    completed_releases = {}
-    for root, dirs, files in os.walk(RELEASES_PATH):
-        for f in [data_file for data_file in files if data_file.endswith(".json")]:
-            abs_f = os.path.join(RELEASES_PATH, f)
-            if os.path.exists(abs_f):
-                with open(abs_f) as data_f:
-                    data = json.load(data_f)
-                if all(data["builds"][-1]["human_tasks"].values()):
-                    # this release is complete!
-                   completed_releases[abs_f] = data
-    return completed_releases
-
-
-def ensure_branch_and_version_are_valid(branch, version):
-    mismatch = False
-    if branch == 'beta' and 'b' not in version:
-        logger.error("beta specified but 'b' not found in version.")
-        mismatch = True
-    elif branch == 'release' and re.search('[a-zA-Z]', version):
-        logger.error("release specified but an alpha char was found in version.")
-        mismatch = True
-    elif branch == 'esr' and 'esr' not in version:
-        logger.error("esr specified but 'esr' not found in version.")
-        mismatch = True
-    if mismatch:
-        logger.error("Was there a mistake?")
-        sys.exit(1)
-
-
-def get_update_data(args):
-    build_data = [
-        ("graphid", args.graphid),
-        ("aborted", args.aborted),
-        ("issues", args.issues),
-    ]
-    human_tasks_data = [
-        ("submitted_shipit", args.submitted_shipit),
-        ("emailed_cdntest", args.emailed_cdntest),
-        ("published_balrog", args.published_balrog),
-        ("post_released", args.post_released),
-    ]
-    update_data = {"human_tasks": {}}
-    for key, value in build_data:
-        if value:
-            update_data[key] = value
-    for key, value in human_tasks_data:
-        if value:
-            update_data["human_tasks"][key] = value
-    return update_data
-
-
-def data_unchanged(new_data, current_data):
-    # TODO - make this more generic and elegant
-    for index in range(0, len(new_data['builds'])):
-        for new_data_key, new_data_value in new_data["builds"][index].items():
-            current_data_value = current_data["builds"][index][new_data_key]
-            # look for unique issue lists
-            if new_data_key == "issues":
-                if list(set(new_data_value) - set(current_data_value)):
-                    return False
-            elif new_data_key == "human_tasks":
-                for task_key, task_value in new_data["builds"][index]["human_tasks"].items():
-                    current_task_value = current_data["builds"][index]["human_tasks"][task_key]
-                    if task_value != current_task_value:
-                        return False
-            # look for unique data strings
-            elif new_data_value != current_data_value:
-                return False
-    return True
-
-
-def release_exists(data_file, ignore_archive=False):
-    searchpaths = [RELEASES_PATH] if ignore_archive else [RELEASES_PATH, ARCHIVED_RELEASES_PATH]
-    data_exists = False
-
-    def exists_in_searchpaths(target):
-        for searchpath in searchpaths:
-            if os.path.exists(os.path.join(searchpath, target)):
-                return True
-        return False
-
-    if exists_in_searchpaths(data_file):
-        data_exists = True
-
-    return data_exists
 
 
 class Command(metaclass=abc.ABCMeta):
