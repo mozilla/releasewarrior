@@ -10,10 +10,21 @@ from copy import deepcopy
 from git import Repo
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
-from releasewarrior.config import REPO_PATH, RELEASES_PATH, TEMPLATES_PATH, ARCHIVED_RELEASES_PATH, \
-    DATA_TEMPLATES, WIKI_TEMPLATES
+from releasewarrior.config import REPO_PATH, RELEASES_PATH, TEMPLATES_PATH, ARCHIVED_RELEASES_PATH
+from releasewarrior.config import DATA_TEMPLATES, WIKI_TEMPLATES, POSTMORTEMS_PATH
 
 logger = logging.getLogger('releasewarrior')
+
+def get_complete_releases():
+    completed_releases = {}
+    for root, dirs, files in os.walk(RELEASES_PATH):
+        for f in [data_file for data_file in files if data_file.endswith(".json")]:
+            with open(f) as data_f:
+                data = json.load(data_f)
+            if all(data["builds"][-1]["completed_tasks"].values()):
+                # this release is complete!
+               completed_releases[f] = data
+    return completed_releases
 
 
 def ensure_branch_and_version_are_valid(branch, version):
@@ -137,7 +148,6 @@ class Command(metaclass=abc.ABCMeta):
         """run sub command"""
         data = self.generate_data()
         wiki = self.generate_wiki(data, os.path.basename(WIKI_TEMPLATES[self.product][self.branch]))
-
         abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
         abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
 
@@ -151,8 +161,6 @@ class Command(metaclass=abc.ABCMeta):
         logger.info("writing to wiki file: %s", abs_wiki_file)
         with open(abs_wiki_file, 'w') as wp:
             wp.write(wiki)
-
-        self.add_and_commit(abs_data_file, abs_wiki_file, self.commit_msg)
 
     def add_and_commit(self, data_file, wiki_file, msg):
         self.repo.index.add([data_file, wiki_file])
@@ -202,6 +210,13 @@ class CreateRelease(Command):
             logger.error("release already exists! Ensure %s doesn't exist in %s or %s dirs",
                          self.data_file, RELEASES_PATH, ARCHIVED_RELEASES_PATH)
             sys.exit(1)
+
+    def run(self):
+        super().run()
+
+        abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
+        abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
+        self.add_and_commit(abs_data_file, abs_wiki_file, self.commit_msg)
 
 
 class UpdateRelease(Command):
@@ -263,6 +278,13 @@ class UpdateRelease(Command):
                          self.data_file, self.wiki_file, RELEASES_PATH)
             sys.exit(1)
 
+    def run(self):
+        super().run()
+
+        abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
+        abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
+        self.add_and_commit(abs_data_file, abs_wiki_file, self.commit_msg)
+
 
 class SyncRelease(Command):
 
@@ -299,22 +321,69 @@ class SyncRelease(Command):
                          self.data_file, RELEASES_PATH)
             sys.exit(1)
 
+    def run(self):
+        super().run()
+
+        abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
+        abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
+        self.add_and_commit(abs_data_file, abs_wiki_file, self.commit_msg)
+
+
 class Postmortem(Command):
 
-    def generate_data(self):
-        pass
+    def __init__(self, args):
+        self.date = args.date
+        self.data_file = "{}.json".format(self.date)
+        self.wiki_file = "{}.md".format(self.date)
+        self.completed_releases = get_complete_releases()
+        self.commit_msg = "updating {} postmortem. updated {} wiki with {} releases".format(
+            self.date, self.wiki_file, self.completed_releases.keys()
+        )
 
-    def generate_wiki(self, data_path, wiki_template):
-        pass
+        logger.debug(self.completed_releases)
+
+        self.pre_run_check()
+
+    def generate_data(self):
+        new_data = {}
+
+        logger.info("grabbing current data about postmortem")
+        if os.path.exists(os.path.join(POSTMORTEMS_PATH, self.data_file)):
+            with open(os.path.join(POSTMORTEMS_PATH, self.data_file)) as current_data_f:
+                new_data.update(deepcopy(json.load(current_data_f)))
+
+        logger.info("updating postmortem with recently completed releases.")
+        for release in self.completed_releases.values():
+            new_data["releases"].append({
+                "version": release['release'],
+                "product": release['product'],
+                "date": release['date'],
+                "issues": release['builds'][-1]['issues']
+            })
+
+        return new_data
+
+    def pre_run_check(self):
+        super().pre_run_check()
+
+        if not self.completed_releases:
+            logger.error("no current releases found in {} that have all human tasks completed."
+                         "Use the `update` command to complete current release's human_tasks.",
+                         RELEASES_PATH)
+            sys.exit(1)
 
     def run(self):
-        pass
-
-    def get_complete_releases(self):
-        pass
+        # super().run()
+        #
+        # abs_data_file = os.path.join(RELEASES_PATH, self.data_file)
+        # abs_wiki_file = os.path.join(RELEASES_PATH, self.wiki_file)
+        # self.archive_completed()
+        # self.add_and_commit(abs_data_file, abs_wiki_file, self.commit_msg)
 
     def archive_completed(self):
-        pass
+        for f in self.completed_releases.keys():
+            logger.info(f)
+        
 
 
 class Outstanding(Command):

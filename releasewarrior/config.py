@@ -4,6 +4,7 @@ REPO_PATH = os.path.abspath(os.path.join(os.path.realpath(__file__), '..', '..')
 TEMPLATES_PATH = os.path.join(REPO_PATH, 'templates')
 RELEASES_PATH = os.path.join(REPO_PATH, 'releases')
 ARCHIVED_RELEASES_PATH = os.path.join(REPO_PATH, 'releases', 'ARCHIVE')
+POSTMORTEMS_PATH = os.path.join(REPO_PATH, 'releases', 'POSTMORTEMS')
 LOG_PATH = os.path.join(REPO_PATH, 'logs')
 
 
