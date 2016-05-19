@@ -1,5 +1,7 @@
 # releasewarrior
 
+your assistant while on releaseduty
+
 ![squirrel spartan](https://pbs.twimg.com/profile_images/571907614906310658/HDB_I-Nr.jpeg)
 
 
