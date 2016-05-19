@@ -9,10 +9,10 @@ from copy import deepcopy
 from git import Repo
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
-from build.lib.releasewarrior.helpers import ensure_branch_and_version_are_valid, release_exists, \
-    get_all_valid_human_tasks
-from build.lib.releasewarrior.helpers import get_update_data, data_unchanged, get_complete_releases
-from build.lib.releasewarrior.helpers import get_incomplete_releases
+from releasewarrior.helpers import ensure_branch_and_version_are_valid, release_exists
+from releasewarrior.helpers import get_remaining_tasks_ordered
+from releasewarrior.helpers import get_update_data, data_unchanged, get_complete_releases
+from releasewarrior.helpers import get_incomplete_releases
 from releasewarrior.config import REPO_PATH, RELEASES_PATH, TEMPLATES_PATH, ARCHIVED_RELEASES_PATH
 from releasewarrior.config import DATA_TEMPLATES, WIKI_TEMPLATES, POSTMORTEMS_PATH
 
@@ -46,7 +46,11 @@ class Command(metaclass=abc.ABCMeta):
         if commits_behind:
             logger.error("local master is behind origin/master. aborting run to be safe.")
             sys.exit(1)
-        logger.info("repo is up to date and not behind")
+
+        # making sure release directories exist
+        for directory in [RELEASES_PATH, ARCHIVED_RELEASES_PATH, POSTMORTEMS_PATH]:
+            if not os.path.exists(directory):
+                os.makedirs(directory)
 
     @abc.abstractmethod
     def generate_data(self):
@@ -317,11 +321,11 @@ class Postmortem(Command):
             self.repo.index.move([abs_wiki_file, archive_wiki_dest])
 
 
+
 class Status(Command):
 
     def __init__(self, args):
         self.incomplete_releases = get_incomplete_releases()
-        self.ordered_valid_tasks = [task[0] for task in get_all_valid_human_tasks(args)]
         self.pre_run_check()
 
     def pre_run_check(self):
@@ -334,19 +338,14 @@ class Status(Command):
         pass
 
     def run(self):
+
         for release in self.incomplete_releases.values():
-            tasks = [task for task, done in release["builds"][-1]["human_tasks"].items() if not done]
-            # TODO - human_tasks is a dict so we lose order. find a better way to put back in order
-            ordered_tasks = [ordered_task for ordered_task in self.ordered_valid_tasks if ordered_task in tasks]
+            remaining_tasks_ordered = get_remaining_tasks_ordered(release["builds"][-1]["human_tasks"])
             issues = [issue for issue in release["builds"][-1]["issues"]]
-            most_recent_buildnum_aborted = release["builds"][-1]["aborted"]
 
             logger.info("RELEASE IN FLIGHT: %s %s %s", release["product"], release["version"], release["date"])
-            if most_recent_buildnum_aborted:
-                logger.info("most recent buildnum has been aborted. waiting on new buildnum")
-                continue
             logger.info("\tincomplete human tasks:")
-            for task in tasks:
+            for task in remaining_tasks_ordered:
                 logger.info("\t\t* %s", task)
             logger.info("\tlatest issues:")
             for issue in issues:
