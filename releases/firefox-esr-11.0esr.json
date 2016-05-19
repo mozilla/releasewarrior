@@ -1,1 +1,1 @@
-{"version": "11.0esr", "product": "firefox", "builds": [{"human_tasks": {"emailed_cdntest": false, "pushed_mirrors": false, "post_released": false, "published_balrog": false, "submitted_shipit": false}, "graphid": "", "issues": [], "buildnum": 1, "aborted": false}], "date": "16-05-19"}
+{"product": "firefox", "builds": [{"graphid": "", "issues": [], "aborted": false, "buildnum": 1, "human_tasks": {"published_balrog": true, "pushed_mirrors": true, "emailed_cdntest": true, "post_released": true, "submitted_shipit": true}}], "version": "11.0esr", "date": "16-05-19"}
