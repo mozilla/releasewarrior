@@ -1,1 +1,1 @@
-{"version": "18.0b3", "builds": [{"graphid": "", "issues": [], "human_tasks": {"submitted_shipit": false, "post_released": false, "published_balrog": false, "emailed_cdntest": false}, "aborted": false, "buildnum": 1}], "date": "16-05-19", "product": "firefox"}
+{"version": "18.0b3", "builds": [{"buildnum": 1, "graphid": "1234567", "aborted": false, "issues": ["win64 l10n hg timeout, retriggered"], "human_tasks": {"post_released": false, "emailed_cdntest": false, "submitted_shipit": true, "published_balrog": false}}], "product": "firefox", "date": "16-05-19"}
