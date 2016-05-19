@@ -24,12 +24,7 @@ python setup.py install
 
 **pro tip**: use `release --help` and `release <subcommand> --help` lots
 
-prior to each command:
-
-1. you must have a clean working directory
-2. your local master can not be behind origin/master
-
-this is enforced and by design so that other releaseduty people don't duplicate work so you always have up to date info.
+prior to each command your local master can not be behind origin/master. this is enforced and by design so that you always have the must up to date state
 
 #### create new release checklist
 
