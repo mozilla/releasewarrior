@@ -4,7 +4,7 @@ import argparse
 import datetime
 import logging
 
-from releasewarrior.commands import CreateRelease, UpdateRelease, Postmortem, Outstanding
+from releasewarrior.commands import CreateRelease, UpdateRelease, Postmortem, Status
 from releasewarrior.commands import SyncRelease
 from releasewarrior.config import LOG_PATH
 
@@ -48,10 +48,10 @@ def parse_args():
     )
     parser_postmortem.set_defaults(command=Postmortem)
 
-    parser_outstanding = subparser.add_parser(
-        'outstanding', help="output current, incomplete tasks from all open releases"
+    parser_status = subparser.add_parser(
+        'status', help="output current, incomplete tasks from all open releases"
     )
-    parser_outstanding.set_defaults(command=Outstanding)
+    parser_status.set_defaults(command=Status)
 
     parser_sync = subparser.add_parser(
         'sync', help="re-generates wiki of a given release based on current data file"
@@ -105,8 +105,8 @@ def parse_args():
 
     return parser.parse_args()
 
-def main():
 
+def main():
     if sys.version_info.major != 3:
         print("y u no py 3 yo?")
         sys.exit()

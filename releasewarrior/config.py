@@ -44,3 +44,4 @@ DATA_TEMPLATES = {
         'esr': os.path.join(TEMPLATES_PATH, 'thunderbird_esr.json.tmpl'),
     }
 }
+

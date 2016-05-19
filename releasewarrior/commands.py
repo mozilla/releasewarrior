@@ -10,7 +10,9 @@ from git import Repo
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 from build.lib.releasewarrior.helpers import ensure_branch_and_version_are_valid, release_exists, \
-    get_update_data, data_unchanged, get_complete_releases
+    get_all_valid_human_tasks
+from build.lib.releasewarrior.helpers import get_update_data, data_unchanged, get_complete_releases
+from build.lib.releasewarrior.helpers import get_incomplete_releases
 from releasewarrior.config import REPO_PATH, RELEASES_PATH, TEMPLATES_PATH, ARCHIVED_RELEASES_PATH
 from releasewarrior.config import DATA_TEMPLATES, WIKI_TEMPLATES, POSTMORTEMS_PATH
 
@@ -27,28 +29,24 @@ class Command(metaclass=abc.ABCMeta):
     wiki_template_file = None
     commit_msg = None
     save_data_file = True  # sync doesn't touch data file
+    summary = []
 
     def pre_run_check(self):
         """ensures repo is clean and local repo is in sync with remote origin"""
 
-        # TODO - uncomment
-        # logger.info("ensuring releasewarrior repo is clean")
-        # if self.repo.is_dirty():
-        #     logger.error("releasewarrior repo is dirty. aborting run to be safe.")
-        #     sys.exit(1)
-        # logger.info("repo is clean!")
-        #
-        # # TODO - we should allow csets to exist locally that are not on remote.
-        # logger.info("ensuring releasewarrior repo is up to date and in sync with origin")
-        # origin = self.repo.remotes.origin
-        # logger.info("fetching csets from origin")
-        # origin.fetch()
-        # if self.repo.head.commit.diff(origin):
-        #     logger.error("diff found against origin. ensure `git diff origin/master` yields "
-        #                  "nothing. if commits exist locally but are unknown to origin, "
-        #                  "please push them before trying again. aborting run to be safe.")
-        #     sys.exit(1)
-        # logger.info("repo is up to date and in sync")
+        if self.repo.is_dirty():
+            logger.warning("releasewarrior repo dirty")
+
+        # TODO - we should allow csets to exist locally that are not on remote.
+        logger.info("ensuring releasewarrior repo is up to date and in sync with origin")
+        origin = self.repo.remotes.origin
+        logger.info("fetching new csets from origin to origin/master")
+        origin.fetch()
+        commits_behind = self.repo.iter_commits('master..origin/master')
+        if commits_behind:
+            logger.error("local master is behind origin/master. aborting run to be safe.")
+            sys.exit(1)
+        logger.info("repo is up to date and not behind")
 
     @abc.abstractmethod
     def generate_data(self):
@@ -319,16 +317,37 @@ class Postmortem(Command):
             self.repo.index.move([abs_wiki_file, archive_wiki_dest])
 
 
-class Outstanding(Command):
+class Status(Command):
+
+    def __init__(self, args):
+        self.incomplete_releases = get_incomplete_releases()
+        self.ordered_valid_tasks = [task[0] for task in get_all_valid_human_tasks(args)]
+        self.pre_run_check()
+
+    def pre_run_check(self):
+        super().pre_run_check()
+        if not self.incomplete_releases:
+            logger.info("no current releases in flight")
+            sys.exit(1)
 
     def generate_data(self):
         pass
 
-    def generate_wiki(self, data_path, wiki_template):
-        pass
-
     def run(self):
-        pass
+        for release in self.incomplete_releases.values():
+            tasks = [task for task, done in release["builds"][-1]["human_tasks"].items() if not done]
+            # TODO - human_tasks is a dict so we lose order. find a better way to put back in order
+            ordered_tasks = [ordered_task for ordered_task in self.ordered_valid_tasks if ordered_task in tasks]
+            issues = [issue for issue in release["builds"][-1]["issues"]]
+            most_recent_buildnum_aborted = release["builds"][-1]["aborted"]
 
-    def get_incomplete_releases(self):
-        pass
+            logger.info("RELEASE IN FLIGHT: %s %s %s", release["product"], release["version"], release["date"])
+            if most_recent_buildnum_aborted:
+                logger.info("most recent buildnum has been aborted. waiting on new buildnum")
+                continue
+            logger.info("\tincomplete human tasks:")
+            for task in tasks:
+                logger.info("\t\t* %s", task)
+            logger.info("\tlatest issues:")
+            for issue in issues:
+                logger.info("\t\t* %s", issue)
