@@ -42,7 +42,7 @@ class Command(metaclass=abc.ABCMeta):
         origin = self.repo.remotes.origin
         logger.info("fetching new csets from origin to origin/master")
         origin.fetch()
-        commits_behind = self.repo.iter_commits('master..origin/master')
+        commits_behind = list(self.repo.iter_commits('master..origin/master'))
         if commits_behind:
             logger.error("local master is behind origin/master. aborting run to be safe.")
             sys.exit(1)
