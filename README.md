@@ -99,15 +99,15 @@ and my favorite command..
 
 usage: `release postmortem $DATE_OF_POSTMORTEM`
 
-example: `release postmortem 2014-06-20`
+example: `release postmortem 2012-01-01`
 
 what happens:
 
-1. create a postmortem data file: e.g. [data file](releases/POSTMORTEMS/2012-1-1.json)
+1. create a postmortem data file: [releases/POSTMORTEMS/2012-1-1.json](releases/POSTMORTEMS/2012-1-1.json)
 2. for all releases that have all human tasks completed
   a. add their issues to the postmortem data file
-  b. move the original release tracking data/wiki files into [archives dir](releases/ARCHIVES)
-3. generate postmortem wiki file based on equivalent data file: e.g. [wiki file](releases/POSTMORTEMS/2012-1-1.md)
+  b. move the original release tracking data/wiki files into [releases/ARCHIVES](releases/ARCHIVES)
+3. generate postmortem wiki file based on equivalent data file: [releases/POSTMORTEMS/2012-1-1.md](releases/POSTMORTEMS/2012-1-1.md)
 
 bonus: one nice thing about this is the command is idopodent. in other words, you can call this as many times as you and it will only append to the given $date postmortem file as it finds completed releases!
 
