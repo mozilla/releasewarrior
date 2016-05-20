@@ -35,7 +35,7 @@ task graph url: unknown
 {% endfor %}
 {% if not build["issues"] %}
 - none. flawless victory
-{% else %}
+{% endif %}
 
 {% if build['aborted'] %}
 :bomb: _**aborted release. starting new build num**_ :bomb:
