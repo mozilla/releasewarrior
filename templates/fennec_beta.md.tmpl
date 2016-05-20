@@ -6,18 +6,19 @@
 ## Build {{ build['buildnum'] }}
 
 ### Status
-
-- [{% if build["human_tasks"]['submitted_shipit'] %}x{% endif %}] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [{% if build["human_tasks"]['post_released'] %}x{% endif %}] [post-release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+- [{% if build["human_tasks"]['submitted_shipit'] %}x{% else %} {% endif %}] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [{% if build["human_tasks"]['post_released'] %}x{% else %} {% endif %}] [post-release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-
 {% for issue in build["issues"] %}
 - {{ issue }}
 {% endfor %}
+{% if not build["issues"] %}
+- none. flawless victory
+{% else %}
 
 {% if build['aborted'] %}
-**aborted release. starting new build num**
+:bomb: _**aborted release. starting new build num**_ :bomb:
 {% endif %}
 
 {% endfor %}
