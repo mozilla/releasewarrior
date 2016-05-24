@@ -72,7 +72,7 @@ class Command(metaclass=abc.ABCMeta):
             # save data to actual data_path
             logger.info("writing to data file: %s", self.abs_data_file)
             with open(self.abs_data_file, 'w') as data_file:
-                json.dump(data, data_file)
+                json.dump(data, data_file, indent=4, sort_keys=True)
 
         # save wiki to actual wiki_path
         logger.info("writing to wiki file: %s", self.abs_wiki_file)
