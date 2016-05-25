@@ -46,9 +46,9 @@ example: `release create fennec release 17.0`
 
 what happens:
 
- 1. date file created:  [releasewarrior/releases/fennec-release-17.0.json](releasewarrior/releases/fennec-release-17.0.json)
-2. wiki file rendedered from data:  [releasewarrior/releases/fennec-release-17.0.md](releasewarrior/releases/fennec-release-17.0.md)
-3. change is commited: [commit](https://github.com/lundjordan/releasewarrior/commit/2b4d6b4c9631fbaf63da9afe939c54214aa1d603)
+ 1. date file created:  [releasewarrior/releases/fennec-release-17.0.json](https://github.com/mozilla/releasewarrior/blob/efdbd1a1a3845028a059de49e0a4fe2511aadaad/releases/fennec-release-17.0.json)
+2. wiki file rendedered from data:  [releasewarrior/releases/fennec-release-17.0.md](https://github.com/mozilla/releasewarrior/blob/efdbd1a1a3845028a059de49e0a4fe2511aadaad/releases/fennec-release-17.0.md)
+3. change is commited: [commit](https://github.com/mozilla/releasewarrior/commit/efdbd1a1a3845028a059de49e0a4fe2511aadaad)
 
 #### update existing release checklist
 
@@ -58,9 +58,9 @@ example: `elease update firefox beta 18.0b3 --graphid 1234567 --shipit --issue "
 
 what happens:
 
-1. data file updated:  [releasewarrior/releases/firefox-beta-18.0b3.json](releasewarrior/releases/firefox-beta-18.0b3.json)
-2. wiki file rendered:  [releasewarrior/releases/firefox-beta-18.0b3.md](releasewarrior/releases/firefox-beta-18.0b3.md)
-3. change is commited: [commit](https://github.com/lundjordan/releasewarrior/commit/64b53f215607a3f0ecb75394737acac9bce44c64)
+1. data file updated:  [releasewarrior/releases/firefox-beta-18.0b3.json](https://github.com/mozilla/releasewarrior/blob/a40ef3bacbd3c9e5d1836ae42daa1fd92ef0eeba/releases/firefox-beta-18.0b3.json)
+2. wiki file rendered:  [releasewarrior/releases/firefox-beta-18.0b3.md](https://github.com/mozilla/releasewarrior/blob/examples/releases/fennec-release-17.0.md)
+3. change is commited: [commit](https://github.com/mozilla/releasewarrior/commit/a40ef3bacbd3c9e5d1836ae42daa1fd92ef0eeba)
 
 #### checking current state of releases
 
@@ -103,11 +103,11 @@ example: `release postmortem 2012-01-01`
 
 what happens:
 
-1. create a postmortem data file: [releases/POSTMORTEMS/2012-1-1.json](releases/POSTMORTEMS/2012-1-1.json)
+1. create a postmortem data file: [releases/POSTMORTEMS/2012-1-1.json](https://github.com/mozilla/releasewarrior/blob/7dc9ea34be7a2a42393cda540782d59d949a281b/releases/POSTMORTEMS/2012-1-1.json)
 2. for all releases that have all human tasks completed
   a. add their issues to the postmortem data file
-  b. move the original release tracking data/wiki files into [releases/ARCHIVES](releases/ARCHIVES)
-3. generate postmortem wiki file based on equivalent data file: [releases/POSTMORTEMS/2012-1-1.md](releases/POSTMORTEMS/2012-1-1.md)
+  b. move the original release tracking data/wiki files into [releases/ARCHIVES](https://github.com/mozilla/releasewarrior/blob/7dc9ea34be7a2a42393cda540782d59d949a281b/releases/ARCHIVES)
+3. generate postmortem wiki file based on equivalent data file: [releases/POSTMORTEMS/2012-1-1.md](https://github.com/mozilla/releasewarrior/blob/7dc9ea34be7a2a42393cda540782d59d949a281b/releases/POSTMORTEMS/2012-1-1.md)
 
 bonus: one nice thing about this is the command is idopodent. in other words, you can call this as many times as you and it will only append to the given $date postmortem file as it finds completed releases!
 
