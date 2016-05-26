@@ -12,7 +12,7 @@ Rather than manually managing a wiki of releases, releasewarrior provides a set 
 
 get copy of releasewarrior
 ```
-git clone https://github.com/lundjordan/releasewarrior
+git clone https://github.com/mozilla/releasewarrior
 cd releasewarrior
 ```
 install it in your virtual python environment
