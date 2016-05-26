@@ -47,6 +47,7 @@ example:
 `$ release create fennec release 17.0`
 
 what happens:
+
 1. date file created:  [releasewarrior/releases/fennec-release-17.0.json](https://github.com/mozilla/releasewarrior/blob/c640cef85bfc7e81d8b1c03ac0a7e0e2d39b81d1/releases/fennec-release-17.0.json)
 2. wiki file rendered from data:  [releasewarrior/releases/fennec-release-17.0.md](https://github.com/mozilla/releasewarrior/blob/c640cef85bfc7e81d8b1c03ac0a7e0e2d39b81d1/releases/fennec-release-17.0.md)
 3. change is committed: [commit](https://github.com/mozilla/releasewarrior/commit/c640cef85bfc7e81d8b1c03ac0a7e0e2d39b81d1)
@@ -62,6 +63,7 @@ say you want to update ff 18.0b3 by checking off submitted to shipit, adding a l
 notice: you can update a release with many things at once. use `release update --help` to see all the update options
 
 what happens:
+
 1. data file updated:  [releasewarrior/releases/firefox-beta-18.0b3.json](https://github.com/mozilla/releasewarrior/blob/2c8f52f780349c5c2993533dcc6eac3cef7176e8/releases/firefox-beta-18.0b3.json)
 2. wiki file rendered:  [releasewarrior/releases/firefox-beta-18.0b3.md](https://github.com/mozilla/releasewarrior/blob/2c8f52f780349c5c2993533dcc6eac3cef7176e8/releases/firefox-beta-18.0b3.md)
 3. change is committed: [commit](https://github.com/mozilla/releasewarrior/commit/2c8f52f780349c5c2993533dcc6eac3cef7176e8)
@@ -73,6 +75,7 @@ this time RC 15.0 current buildnum has been abandoned. you can simply pass --bui
 `$ release update firefox release-rc 15.0 --buildnum-aborted`
 
 what happens:
+
 1. data file updated:  [releasewarrior/releases/firefox-beta-18.0b3.json](https://github.com/mozilla/releasewarrior/blob/2c8f52f780349c5c2993533dcc6eac3cef7176e8/releases/firefox-beta-18.0b3.json)
 2. wiki file rendered:  [releasewarrior/releases/firefox-beta-18.0b3.md](https://github.com/mozilla/releasewarrior/blob/2c8f52f780349c5c2993533dcc6eac3cef7176e8/releases/firefox-beta-18.0b3.md)
 3. change is committed: [commit](https://github.com/mozilla/releasewarrior/commit/2c8f52f780349c5c2993533dcc6eac3cef7176e8)
@@ -119,6 +122,7 @@ example:
 `$ release postmortem 2012-01-01`
 
 what happens:
+
 1. create a postmortem data file: [releases/POSTMORTEMS/2012-1-1.json](https://github.com/mozilla/releasewarrior/blob/d9517ce494cae610d17dc08c2d213eb12e088cb4/releases/POSTMORTEMS/2012-1-1.json)
 2. for all releases that have all human tasks completed
   a. add their issues to the postmortem data file
@@ -137,6 +141,7 @@ usage:
 `$ release sync firefox esr 27.0esr`
 
 what happens:
+
 1. data file is re-read but not updated
 2. wiki file is re-rendered with the data is just got from current file
 3. change is committed (if there was any change)
