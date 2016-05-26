@@ -84,9 +84,9 @@ this time RC 15.0 current buildnum has been abandoned. you can simply pass --bui
 
 what happens:
 
-1. data file updated:  [releasewarrior/releases/firefox-beta-18.0b3.json](https://github.com/mozilla/releasewarrior/blob/2c8f52f780349c5c2993533dcc6eac3cef7176e8/releases/firefox-beta-18.0b3.json)
-2. wiki file rendered:  [releasewarrior/releases/firefox-beta-18.0b3.md](https://github.com/mozilla/releasewarrior/blob/2c8f52f780349c5c2993533dcc6eac3cef7176e8/releases/firefox-beta-18.0b3.md)
-3. change is committed: [commit](https://github.com/mozilla/releasewarrior/commit/2c8f52f780349c5c2993533dcc6eac3cef7176e8)
+1. data file updated:  [releasewarrior/releases/firefox-release-rc-15.0.json](https://github.com/mozilla/releasewarrior/blob/b40f423a5cebe72d46aeb25d8c7f0c2a8625e5b7/releases/firefox-release-rc-15.0.json)
+2. wiki file rendered:  [releasewarrior/releases/firefox-release-rc-15.0.md](https://github.com/mozilla/releasewarrior/blob/b40f423a5cebe72d46aeb25d8c7f0c2a8625e5b7/releases/firefox-release-rc-15.0.md)
+3. change is committed: [commit](https://github.com/mozilla/releasewarrior/commit/b40f423a5cebe72d46aeb25d8c7f0c2a8625e5b7)
 
 
 #### checking current state of releases
