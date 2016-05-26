@@ -41,9 +41,11 @@ prior to each command your local master can not be behind origin/master. this is
 #### create new release checklist
 
 usage:
+
 `$ release create $PRODUCT $BRANCH $VERSION`
 
 example:
+
 `$ release create fennec release 17.0`
 
 what happens:
@@ -55,11 +57,15 @@ what happens:
 #### update existing release checklist
 
 usage:
+
 `$ release update $PRODUCT $BRANCH $VERSION --$UPD`
 
 example: 
+
 say you want to update ff 18.0b3 by checking off submitted to shipit, adding a link to taskcluster graphid, and add an issue that came up with timing out.
+
 `$ release update firefox beta 18.0b3 --shipit --graphid 1234567 --issue "win64 l10n hg timeout, retriggered"`
+
 notice: you can update a release with many things at once. use `release update --help` to see all the update options
 
 what happens:
@@ -70,8 +76,10 @@ what happens:
 
 #### more update examples: aborting current buildnum
 
-example: 
+example:
+
 this time RC 15.0 current buildnum has been abandoned. you can simply pass --buildnum-aborted and a new buildnum will start being tracked
+
 `$ release update firefox release-rc 15.0 --buildnum-aborted`
 
 what happens:
@@ -86,10 +94,13 @@ what happens:
 now let's do some more interesting things
 
 usage:
+
 `$ release status`
 
 what happens:
+
 `status` will tell you all of the current releases in flight. It does this by telling you which tasks remain and what the current issues are:
+
 ```
 releasewarrior: DEBUG    RUNNING with args: status
 releasewarrior: INFO     getting incomplete releases
@@ -116,9 +127,11 @@ releasewarrior: INFO                    * none
 and my favorite command..
 
 usage:
+
 `$ release postmortem $DATE_OF_POSTMORTEM`
 
 example:
+
 `$ release postmortem 2012-01-01`
 
 what happens:
@@ -137,6 +150,7 @@ what happens:
 of course, given that the data is just a json file and changes are tracked by this repo's revision history, you can always manually update the data and have the tool re-create the wiki presentation against your data changes
 
 usage:
+
 `$ vim releases/firefox-esr-27.0esr.json  # change some value from false to true`
 `$ release sync firefox esr 27.0esr`
 
