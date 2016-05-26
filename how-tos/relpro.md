@@ -174,20 +174,25 @@ $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.
 
 ### how
 * Desktop Firefox Betas
+    * Releases need to be marked as shipped on Ship It. To do so, visit https://ship-it.mozilla.org/releases.html, find the release in question, and click the "Shipped!" button. 
     * go to the task graph (there is only one) and find taskId of `firefox mozilla-beta post release human decision task`
     * This task is blocking `firefox mozilla-beta version bump` and `firefox mozilla-beta bouncer aliases` from execution
     * To resolve the human decision task run the following:
 ```bash
  tctalker --conf ~/.taskcluster/relpro.json report_completed $TASK_ID
 ```
+
 * Desktop Firefox Release-Candidate Releases
+    * Releases need to be marked as shipped on Ship It. To do so, visit https://ship-it.mozilla.org/releases.html, find the release in question, and click the "Shipped!" button. 
     * go to task **graph 2** and find taskId of `firefox mozilla-release post release human decision task`
     * This task is blocking `firefox mozilla-release version bump` and `firefox mozilla-release bouncer aliases` from executing
     * To resolve the human decision task run the following:
 ```bash
  tctalker --conf ~/.taskcluster/relpro.json report_completed $TASK_ID
 ```
+
 * Desktop Firefox Release Releases
+    * Releases need to be marked as shipped on Ship It. To do so, visit https://ship-it.mozilla.org/releases.html, find the release in question, and click the "Shipped!" button. 
     * go to the task graph (there is only one) and find taskId of `firefox mozilla-release post release human decision task`
     * This task is blocking `firefox mozilla-release version bump` and `firefox mozilla-release bouncer aliases` from execution
     * To resolve the human decision task run the following:
