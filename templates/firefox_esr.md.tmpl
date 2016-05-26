@@ -23,9 +23,9 @@ task graph url: unknown
 {% endif %}
 
 #### Status
-- [{% if build["human_tasks"]['pushed_mirrors'] %}x{% else %} {% endif %}] [pushed to mirrors/releases](how-tos/relpro.md#2-push-to-releases-dir-mirrors)
-- [{% if build["human_tasks"]['published_balrog'] %}x{% else %} {% endif %}] [publish in Balrog](how-tos/relpro.md#3-publish-in-balrog)
-- [{% if build["human_tasks"]['post_released'] %}x{% else %} {% endif %}] [post-release tasks](how-tos/relpro.md#4-post-release-step)
+- [{% if build["human_tasks"]['pushed_mirrors'] %}x{% else %} {% endif %}] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [{% if build["human_tasks"]['published_balrog'] %}x{% else %} {% endif %}] [publish in Balrog](../how-tos/relpro.md#3-publish-in-balrog)
+- [{% if build["human_tasks"]['post_released'] %}x{% else %} {% endif %}] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
 {% for issue in build['issues'] %}

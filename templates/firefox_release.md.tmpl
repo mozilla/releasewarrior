@@ -14,9 +14,9 @@ task graph url: unknown
 
 #### Status
 - [{% if build["human_tasks"]['submitted_shipit'] %}x{% else %} {% endif %}] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [{% if build["human_tasks"]['pushed_mirrors'] %}x{% else %} {% endif %}] [pushed to mirrors/releases](how-tos/relpro.md#2-push-to-releases-dir-mirrors)
-- [{% if build["human_tasks"]['published_balrog'] %}x{% else %} {% endif %}] [publish in Balrog](how-tos/relpro.md#3-publish-in-balrog)
-- [{% if build["human_tasks"]['post_released'] %}x{% else %} {% endif %}] [post-release tasks](how-tos/relpro.md#4-post-release-step)
+- [{% if build["human_tasks"]['pushed_mirrors'] %}x{% else %} {% endif %}] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [{% if build["human_tasks"]['published_balrog'] %}x{% else %} {% endif %}] [publish in Balrog](../how-tos/relpro.md#3-publish-in-balrog)
+- [{% if build["human_tasks"]['post_released'] %}x{% else %} {% endif %}] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
 {% for issue in build['issues'] %}
