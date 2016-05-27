@@ -15,8 +15,8 @@
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- lTlm1CIhSlSA5rGaTHofWQ firefox mozilla-beta win32 l10n repack 6/10: intermittent download failure from cloud-mirror.taskcluster.net, see http://archive.mozilla.org/pub/firefox/tinderbox-builds/mozilla-beta-l10n/release-mozilla-beta_firefox_win32_l10n_repack-bm77-build1-build7.txt.gz for the details. Automatically retriggerred.
-- b6mYCZN8QQ22OIJu68j5_Q firefox mozilla-beta win64 l10n repack 5/10: intermittent download failure from cloud-mirror.taskcluster.net, see http://archive.mozilla.org/pub/firefox/tinderbox-builds/mozilla-beta-l10n/release-mozilla-beta_firefox_win64_l10n_repack-bm77-build1-build7.txt.gz for the details. Automatically retriggerred.
-- -_Jd-H_-Qf29uvUOgYH5XQ firefox mozilla-beta win64 l10n repack 10/10: lost slave, automatically reran
+- lTlm1CIhSlSA5rGaTHofWQ firefox mozilla-beta win32 l10n repack 6/10: intermittent download failure from cloud-mirror.taskcluster.net, see http://archive.mozilla.org/pub/firefox/tinderbox-builds/mozilla-beta-l10n/release-mozilla-beta_firefox_win32_l10n_repack-bm77-build1-build7.txt.gz for the details. Automatically retriggerred. Filed bug 1276110
+- b6mYCZN8QQ22OIJu68j5_Q firefox mozilla-beta win64 l10n repack 5/10: intermittent download failure from cloud-mirror.taskcluster.net, see http://archive.mozilla.org/pub/firefox/tinderbox-builds/mozilla-beta-l10n/release-mozilla-beta_firefox_win64_l10n_repack-bm77-build1-build7.txt.gz for the details. Automatically retriggerred. Filed bug 1276110
+- -_Jd-H_-Qf29uvUOgYH5XQ firefox mozilla-beta win64 l10n repack 10/10: lost slave, automatically reran, see http://archive.mozilla.org/pub/firefox/tinderbox-builds/mozilla-beta-l10n/release-mozilla-beta_firefox_win64_l10n_repack-bm74-build1-build59.txt.gz for the details
 
 
