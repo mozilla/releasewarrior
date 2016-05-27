@@ -15,6 +15,6 @@
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- lTlm1CIhSlSA5rGaTHofWQ firefox mozilla-beta win32 l10n repack 6/10: intermittent download failure from cloud-mirror.taskcluster.net, see http://archive.mozilla.org/pub/firefox/tinderbox-builds/mozilla-beta-l10n/release-mozilla-beta_firefox_win32_l10n_repack-bm77-build1-build7.txt.gz for the details. Automatically retriggerred.
 
 
