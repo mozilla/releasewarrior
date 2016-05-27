@@ -6,7 +6,7 @@
             "graphid": "FISk6eekTs62ivvHJIOB4A",
             "human_tasks": {
                 "emailed_cdntest": true,
-                "post_released": false,
+                "post_released": true,
                 "published_balrog": true,
                 "submitted_shipit": true
             },
