@@ -1,6 +1,7 @@
 import os
 
-REPO_PATH = os.path.abspath(os.path.join(os.path.realpath(__file__), '..', '..'))
+# REPO_PATH == abs path to dir that contains .git
+REPO_PATH = os.getcwd()  # overwrite this to use `releaese` commands outside of base repo dir
 TEMPLATES_PATH = os.path.join(REPO_PATH, 'templates')
 RELEASES_PATH = os.path.join(REPO_PATH, 'releases')
 ARCHIVED_RELEASES_PATH = os.path.join(REPO_PATH, 'releases', 'ARCHIVE')
