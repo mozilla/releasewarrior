@@ -9,7 +9,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "xpcshellcommandline bustage for linux, linux64 and macosx en-US builds, related to bug 1262760 - backed out buildbotcustomchange http://hg.mozilla.org/build/buildbotcustom/rev/c543cd26f4ad"
+            ]
         }
     ],
     "date": "16-05-26",
