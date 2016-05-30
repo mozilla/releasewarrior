@@ -4,9 +4,9 @@
             "aborted": false,
             "buildnum": 1,
             "human_tasks": {
-                "post_released": false,
-                "published_balrog": false,
-                "pushed_mirrors": false,
+                "post_released": true,
+                "published_balrog": true,
+                "pushed_mirrors": true,
                 "submitted_shipit": true
             },
             "issues": [
