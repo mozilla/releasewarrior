@@ -1,0 +1,34 @@
+# Beta: Firefox {{ version }}
+
+### Started: {{ date }}
+
+{% for build in builds %}
+## Build {{ build['buildnum'] }}
+
+### Beta Graph
+{% if build['graphid'] %}
+[task graph](https://tools.taskcluster.net/task-group-inspector/#{{ build['graphid'] }})
+{% else %}
+task graph url: unknown
+{% endif %}
+
+
+#### Status
+- [{% if build["human_tasks"]['submitted_shipit'] %}x{% else %} {% endif %}] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [{% if build["human_tasks"]['emailed_cdntest'] %}x{% else %} {% endif %}] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-cdntest-channel)
+- [{% if build["human_tasks"]['published_balrog'] %}x{% else %} {% endif %}] [publish in Balrog](../how-tos/relpro.md#3-publish-in-balrog)
+- [{% if build["human_tasks"]['post_released'] %}x{% else %} {% endif %}] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
+
+### Issues
+{% for issue in build['issues'] %}
+- {{ issue }}
+{% endfor %}
+{% if not build["issues"] %}
+- none
+{% endif %}
+
+{% if build['aborted'] %}
+:bomb: _aborted release. starting new build num_ :bomb:
+{% endif %}
+
+{% endfor %}
