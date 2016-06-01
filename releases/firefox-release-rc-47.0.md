@@ -21,6 +21,6 @@ task graph url: unknown
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- yAN46JZnTJeeq7NEvOBVXg firefox mozilla-release updates run 0 failed, because the push to hg.m.o raced with http://hg.mozilla.org/build/tools/rev/154c6052d713. See http://archive.mozilla.org/pub/firefox/tinderbox-builds/mozilla-release-noarch/release-mozilla-release-firefox_updates-bm74-build1-build1.txt.gz for the details
+- yAN46JZnTJeeq7NEvOBVXg firefox mozilla-release updates run 0 failed, because the push to hg.m.o raced with http://hg.mozilla.org/build/tools/rev/154c6052d713. See http://archive.mozilla.org/pub/firefox/tinderbox-builds/mozilla-release-noarch/release-mozilla-release-firefox_updates-bm74-build1-build1.txt.gz for the details. Automatic rerun fixed the issue.
 
 
