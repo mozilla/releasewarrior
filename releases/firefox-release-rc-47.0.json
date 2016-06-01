@@ -3,7 +3,7 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "4K6uhGF4QO6t44fnhQ8DtA",
             "graphid_2": "",
             "human_tasks": {
                 "emailed_cdntest": false,
@@ -11,7 +11,7 @@
                 "published_balrog": false,
                 "published_beta_balrog": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": []
         }
