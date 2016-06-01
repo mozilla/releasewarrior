@@ -6,7 +6,7 @@
             "graphid": "4K6uhGF4QO6t44fnhQ8DtA",
             "graphid_2": "",
             "human_tasks": {
-                "emailed_cdntest": false,
+                "emailed_cdntest": true,
                 "post_released": false,
                 "published_balrog": false,
                 "published_beta_balrog": false,
