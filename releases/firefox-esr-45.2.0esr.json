@@ -14,7 +14,8 @@
             "issues": [
                 "Old release process started in parallel with release promotion, because bm81's release-runner was out of date and grabbed the release at the same time with relpro. Updated the checkout, restarted release-runner. Stopped running builds",
                 "The old process bumped the version on default, what caused some l10n repacks to rerun. Filed bug 1277443 to address the issue.",
-                "aW9wfgRNRXSDOxvko0x6aQ firefox mozilla-esr45 win32 l10n repack 6/10 timed out. Manually reran using tctalker"
+                "aW9wfgRNRXSDOxvko0x6aQ firefox mozilla-esr45 win32 l10n repack 6/10 timed out. Manually reran using tctalker",
+                "all win32 l10n beetmover tasks failed because we don't generate stub installer, see bug 1276451. Requires build 2 :("
             ]
         }
     ],
