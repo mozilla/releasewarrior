@@ -20,5 +20,6 @@ task graph url: unknown
 
 ### Issues
 - Old release process started in parallel with release promotion, because bm81's release-runner was out of date and grabbed the release at the same time with relpro. Updated the checkout, restarted release-runner. Stopped running builds
+- The old process bumped the version on default, what caused some l10n repacks to rerun. Filed bug 1277443 to address the issue.
 
 
