@@ -43,6 +43,6 @@ task graph url: unknown
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- 3LHOyWUUSwqYUkSmzqQkxg firefox mozilla-esr45 win32 l10n repack 1/10 timed out. Manually reran using tctalker
 
 
