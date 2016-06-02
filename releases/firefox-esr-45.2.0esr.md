@@ -19,6 +19,6 @@ task graph url: unknown
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- Old release process started in parallel with release promotion, because bm81's release-runner was out of date and grabbed the release at the same time with relpro. Updated the checkout, restarted release-runner. Stopped running builds
 
 
