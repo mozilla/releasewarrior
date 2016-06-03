@@ -29,11 +29,11 @@ task graph url: unknown
 ## Build 2
 
 ### RC graph 1
-task graph url: unknown
+[task graph](https://tools.taskcluster.net/task-group-inspector/#TimQHjxjRIGOsEzo0RLTug)
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-cdntest-channel)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-cdntest-channel)
 - [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-in-balrog)
 
 ### RC graph 2
