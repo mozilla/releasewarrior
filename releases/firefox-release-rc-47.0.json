@@ -39,7 +39,7 @@
             "graphid": "X41RVzRpQtmnfyUL7qO6mA",
             "graphid_2": "",
             "human_tasks": {
-                "emailed_cdntest": false,
+                "emailed_cdntest": true,
                 "post_released": false,
                 "published_balrog": false,
                 "published_beta_balrog": false,
