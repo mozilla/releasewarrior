@@ -19,7 +19,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "TimQHjxjRIGOsEzo0RLTug",
             "graphid_2": "",
@@ -30,6 +30,21 @@
                 "published_beta_balrog": true,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
+            },
+            "issues": []
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "emailed_cdntest": false,
+                "post_released": false,
+                "published_balrog": false,
+                "published_beta_balrog": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
             },
             "issues": []
         }
