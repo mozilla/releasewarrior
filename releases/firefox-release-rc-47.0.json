@@ -36,7 +36,7 @@
         {
             "aborted": false,
             "buildnum": 3,
-            "graphid": "",
+            "graphid": "X41RVzRpQtmnfyUL7qO6mA",
             "graphid_2": "",
             "human_tasks": {
                 "emailed_cdntest": false,
@@ -44,9 +44,11 @@
                 "published_balrog": false,
                 "published_beta_balrog": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "win32 l10n upload timeout (1v0BGWkQTVW9Z1ZJijsiew, Luklgy64RUKLYhDhztJalg); rerun"
+            ]
         }
     ],
     "date": "16-06-01",
