@@ -6,7 +6,7 @@
             "human_tasks": {
                 "post_released": false,
                 "published_balrog": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": []
         }
