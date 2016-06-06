@@ -69,5 +69,6 @@ task graph url: unknown
 
 ### Issues
 - win32 l10n upload timeout (1v0BGWkQTVW9Z1ZJijsiew, Luklgy64RUKLYhDhztJalg); rerun
+- Bug 1278312 - uptake monitoring failed. Reran and quiclky resolved using tctalker
 
 
