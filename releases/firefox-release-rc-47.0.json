@@ -42,7 +42,7 @@
                 "emailed_cdntest": true,
                 "post_released": false,
                 "published_balrog": false,
-                "published_beta_balrog": false,
+                "published_beta_balrog": true,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
