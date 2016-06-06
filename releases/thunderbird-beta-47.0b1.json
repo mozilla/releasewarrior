@@ -8,7 +8,9 @@
                 "published_balrog": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "many repacks failed, retriggered"
+            ]
         }
     ],
     "date": "16-06-05",
