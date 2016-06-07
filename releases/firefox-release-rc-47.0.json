@@ -41,7 +41,7 @@
             "human_tasks": {
                 "emailed_cdntest": true,
                 "post_released": false,
-                "published_balrog": false,
+                "published_balrog": true,
                 "published_beta_balrog": true,
                 "pushed_mirrors": true,
                 "submitted_shipit": true
