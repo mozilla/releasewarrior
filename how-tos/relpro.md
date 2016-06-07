@@ -114,7 +114,25 @@ $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.
 * Desktop Firefox ESRs
     * wait for sign off from release-drivers with email like: `[desktop] Please push ${version} to {cdntest,releases,mirrors}` where version is like: `38.0esr` or `38.2.0esr`, and channel is like: `esr-cdntest` or `cdntest` or `mirrors` or `releases`
         * note: if they do not explicitly ask for `esr-cdntest` it is okay to assume if you are confident but please reply with something like `pushed and please use explicit name when requesting next time: esr-cdntest channel :)`
-    * TODO - fill out docs here once we switch esr to release promotion
+* ESR releases depend on two taskcluster graphs. pushing to releases happens in graph 2 and will start once graph 2 is submitted.
+    * to generate and submit graph 2 of the release:
+        * step 1) get a taskid from a any task in graph 1. this is used by graph 2 for obtaining release version, branch, etc.
+        * step 2) call releasetasks_graph_gen.py and pass, among other things, the taskid obtained in step 1:
+```bash
+$ ssh `whoami`@buildbot-master85.bb.releng.scl3.mozilla.com  # host we release-runner and you generate/submit new release promotion graphs
+$ sudo su - cltbld
+$ TASK_TASKID_FROM_GRAPH1={insert a taskid from any task in graph 1}
+$ cd /home/cltbld/releasetasks/
+$ git pull origin master  # make sure we are up to date. note: make sure this is on master and clean first
+$ cd /builds/releaserunner/tools/buildfarm/release/
+$ hg pull -u # make sure we are up to date. note: make sure this is on default and clean first
+$ source /builds/releaserunner/bin/activate
+# call releasetasks_graph_gen.py with --dry-run and sanity check the graph output that would be submitted
+$ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-release_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1 --dry-run
+# call releasetasks_graph_gen.py for reals which will submit the graph to Taskcluster
+$ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-esr45_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1
+```
+
 
 ## 3. publish in Balrog
 
