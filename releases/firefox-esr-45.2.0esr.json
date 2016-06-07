@@ -24,7 +24,7 @@
             "graphid": "WBLpNQYvRiOM61Ko4IAsGA",
             "graphid_2": "12SUZEsnSi-BvbIpPpFQDg",
             "human_tasks": {
-                "post_released": false,
+                "post_released": true,
                 "published_balrog": true,
                 "pushed_mirrors": true,
                 "submitted_shipit": true
