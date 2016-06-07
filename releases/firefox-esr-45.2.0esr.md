@@ -39,7 +39,7 @@ task graph url: unknown
 
 #### Status
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
-- [ ] [publish in Balrog](../how-tos/relpro.md#3-publish-in-balrog)
+- [x] [publish in Balrog](../how-tos/relpro.md#3-publish-in-balrog)
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
