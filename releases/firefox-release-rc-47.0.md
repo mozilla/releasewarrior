@@ -65,7 +65,7 @@ task graph url: unknown
 #### Status
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [x] [publish in Balrog](../how-tos/relpro.md#3-publish-in-balrog)
-- [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
+- [x] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
 - win32 l10n upload timeout (1v0BGWkQTVW9Z1ZJijsiew, Luklgy64RUKLYhDhztJalg); rerun
