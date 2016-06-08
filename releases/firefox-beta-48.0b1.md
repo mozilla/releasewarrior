@@ -16,5 +16,6 @@
 
 ### Issues
 - Bug 1278721 - source builder is broken since 48.0b1. May require build2
+- many cases of Bug 1276110 - intermittent download failures from cloud-mirror.taskcluster.net
 
 
