@@ -23,7 +23,7 @@
             "human_tasks": {
                 "emailed_cdntest": true,
                 "post_released": false,
-                "published_balrog": false,
+                "published_balrog": true,
                 "submitted_shipit": true
             },
             "issues": [
