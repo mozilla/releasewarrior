@@ -21,7 +21,7 @@
             "buildnum": 2,
             "graphid": "-mrfxV7bSZCR8SxGiwLlDQ",
             "human_tasks": {
-                "emailed_cdntest": false,
+                "emailed_cdntest": true,
                 "post_released": false,
                 "published_balrog": false,
                 "submitted_shipit": true
