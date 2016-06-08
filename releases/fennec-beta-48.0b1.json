@@ -7,7 +7,9 @@
                 "post_released": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "release sanity was complaining about missing api-9 key. Bug 1278256 - drop api-9 beta release support. Patch landed. Masters reconfigured."
+            ]
         }
     ],
     "date": "16-06-07",

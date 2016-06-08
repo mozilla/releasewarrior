@@ -9,6 +9,6 @@
 - [ ] [post-release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- release sanity was complaining about missing api-9 key. Bug 1278256 - drop api-9 beta release support. Patch landed. Masters reconfigured.
 
 
