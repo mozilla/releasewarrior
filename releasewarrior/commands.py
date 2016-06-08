@@ -121,7 +121,7 @@ class CreateRelease(Command):
 
         logger.info("adding custom initial data: version and date")
         data["version"] = self.version
-        data["date"] = datetime.date.today().strftime("%y-%m-%d")
+        data["date"] = datetime.date.today().strftime("%Y-%m-%d")
 
         return data
 
@@ -258,7 +258,7 @@ class SyncRelease(Command):
 class Postmortem(Command):
 
     def __init__(self, args):
-        self.date = "{}-{}-{}".format(args.date.year, args.date.month, args.date.day)
+        self.date = "{:%Y-%m-%d}".format(args.date)
         self.abs_data_file = os.path.join(POSTMORTEMS_PATH, "{}.json".format(self.date))
         self.abs_wiki_file = os.path.join(POSTMORTEMS_PATH, "{}.md".format(self.date))
         self.wiki_template_file = WIKI_TEMPLATES["postmortem"]
