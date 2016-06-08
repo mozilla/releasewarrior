@@ -15,6 +15,6 @@
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- Bug 1278721 - source builder is broken since 48.0b1. May require build2
 
 

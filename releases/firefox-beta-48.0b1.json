@@ -10,7 +10,9 @@
                 "published_balrog": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Bug 1278721 - source builder is broken since 48.0b1. May require build2"
+            ]
         }
     ],
     "date": "16-06-07",
