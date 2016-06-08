@@ -34,6 +34,6 @@
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- many cases of Bug 1276110 - intermittent download failures from cloud-mirror.taskcluster.net
 
 
