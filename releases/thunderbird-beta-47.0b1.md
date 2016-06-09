@@ -11,5 +11,6 @@
 
 ### Issues
 - many repacks failed, retriggered
+- [Bug 1279339] Thunderbird 47.0b1 build1: failed at thunderbird_beta_updates
 
 
