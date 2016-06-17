@@ -11,5 +11,6 @@
 
 ### Issues
 - Run standalone repack builder for 3 failures to submit linux32 repacks into Balrog; forced repack_complete builder after that succeeded.
+- Rerun win32 repacks 5 & 6 for bash crashing in update generation
 
 
