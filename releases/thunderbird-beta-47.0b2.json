@@ -8,7 +8,9 @@
                 "published_balrog": false,
                 "submitted_shipit": false
             },
-            "issues": []
+            "issues": [
+                "Run standalone repack builder for 3 failures to submit linux32 repacks into Balrog"
+            ]
         }
     ],
     "date": "16-06-17",

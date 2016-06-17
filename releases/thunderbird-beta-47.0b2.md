@@ -10,6 +10,6 @@
 - [ ] [post-release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- Run standalone repack builder for 3 failures to submit linux32 repacks into Balrog
 
 
