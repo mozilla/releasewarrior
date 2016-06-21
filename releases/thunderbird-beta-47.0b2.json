@@ -5,7 +5,7 @@
             "buildnum": 1,
             "human_tasks": {
                 "post_released": false,
-                "published_balrog": false,
+                "published_balrog": true,
                 "submitted_shipit": true
             },
             "issues": [
