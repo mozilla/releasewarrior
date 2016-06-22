@@ -17,5 +17,6 @@
 ### Issues
 - Trees closed due to windows disconnects excerbated diagnosis/resolution of following issues (Bug 1281199)
 - Many failures of Bug 1276110 (issue with wget relating to cloud-mirror. One repack task failed >12 times...
+- Buildbot bridge failing to properly update status on some reruns, traceback indicating scope issue, #taskcluster talk exposed that we never claimed the rerun before trying to reclaim it
 
 
