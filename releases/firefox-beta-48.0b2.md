@@ -30,14 +30,12 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-cdntest-channel)
+- [x] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-cdntest-channel)
 - [ ] [publish in Balrog](../how-tos/relpro.md#3-publish-in-balrog)
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
 - tc-vcs cache had failed for beta, causing the generate docker image jobs (x3) to fail, as well as the source builder to fail. Manually re-ran after #taskcluster cleared the issue to success.
 - 'firefox mozilla-beta win32 l10n repack 1/10' (taskid: iTnbATexRZuKEw-w1XjFSA) actually finished since artifact upload task was ready, marked as such using tctalker
- - Also for:
-    - 'firefox mozilla-beta win64 l10n repack 8/10' (taskid: SNGVbgRvTMe2iCgD3GcYAw)
-    - 'firefox mozilla-beta win32 l10n repack 9/10' (taskid: F3EZs9CaQx-NoYUoFhZ8aA)
+
 
