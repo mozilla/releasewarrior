@@ -16,6 +16,6 @@
 
 ### Issues
 - Trees closed due to windows disconnects excerbated diagnosis/resolution of following issues (Bug 1281199)
-- Kim Marked that beta-cdntest was ready and it wasn't (e-mail was sent).
+- Many failures of Bug 1276110 (issue with wget relating to cloud-mirror. One repack task failed >12 times...
 
 

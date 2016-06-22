@@ -11,7 +11,8 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "Trees closed due to windows disconnects excerbated diagnosis/resolution of following issues (Bug 1281199)"
+                "Trees closed due to windows disconnects excerbated diagnosis/resolution of following issues (Bug 1281199)",
+                "Many failures of Bug 1276110 (issue with wget relating to cloud-mirror. One repack task failed >12 times..."
             ]
         }
     ],
