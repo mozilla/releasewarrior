@@ -35,6 +35,6 @@
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- tc-vcs cache had failed for beta, causing the generate docker image jobs (x3) to fail, as well as the source builder to fail. Manually re-ran after #taskcluster cleared the issue to success.
 
 
