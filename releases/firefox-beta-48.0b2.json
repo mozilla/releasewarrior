@@ -20,12 +20,12 @@
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "8asrO0S6RNus6Dn8FFsc8A",
             "human_tasks": {
                 "emailed_cdntest": false,
                 "post_released": false,
                 "published_balrog": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": []
         }
