@@ -38,6 +38,6 @@
 - tc-vcs cache had failed for beta, causing the generate docker image jobs (x3) to fail, as well as the source builder to fail. Manually re-ran after #taskcluster cleared the issue to success.
 - 'firefox mozilla-beta win32 l10n repack 1/10' (taskid: iTnbATexRZuKEw-w1XjFSA) actually finished since artifact upload task was ready, marked as such using tctalker
  - Also for:
-   - 'firefox mozilla-beta win64 l10n repack 8/10' (taskid: SNGVbgRvTMe2iCgD3GcYAw)
-   - 'firefox mozilla-beta win32 l10n repack 9/10' (taskid: F3EZs9CaQx-NoYUoFhZ8aA)
+    - 'firefox mozilla-beta win64 l10n repack 8/10' (taskid: SNGVbgRvTMe2iCgD3GcYAw)
+    - 'firefox mozilla-beta win32 l10n repack 9/10' (taskid: F3EZs9CaQx-NoYUoFhZ8aA)
 
