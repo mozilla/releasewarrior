@@ -15,6 +15,6 @@
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- Trees closed due to windows disconnects excerbated diagnosis/resolution of following issues (Bug 1281199)
 
 

@@ -10,7 +10,9 @@
                 "published_balrog": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Trees closed due to windows disconnects excerbated diagnosis/resolution of following issues (Bug 1281199)"
+            ]
         }
     ],
     "date": "16-06-20",
