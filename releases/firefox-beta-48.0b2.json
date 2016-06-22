@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "mfMKKf2fReKZlh1TfFpgCA",
             "human_tasks": {
@@ -16,6 +16,18 @@
                 "Buildbot bridge failing to properly update status on some reruns, traceback indicating scope issue, #taskcluster talk exposed that we never claimed the rerun before trying to reclaim it",
                 "Encrypted environment vars used for beetmover expire after only 24 hours, while the task deadline is 4 days. TODO: File bug (and patch) to update the env expirey to match that of the task. Necessitates build2"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "emailed_cdntest": false,
+                "post_released": false,
+                "published_balrog": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "16-06-20",
