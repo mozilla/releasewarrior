@@ -16,7 +16,9 @@
 
 ### Issues
 - Trees closed due to windows disconnects excerbated diagnosis/resolution of following issues (Bug 1281199)
+- Kim Marked that beta-cdntest was ready and it wasn't (e-mail was sent).
 - Many failures of Bug 1276110 (issue with wget relating to cloud-mirror. One repack task failed >12 times...
+  - Once learning that it only failed in us-east and not us-west we also had the issue that there was no windows builders available in us-west due to the pricing algorithm.
 - Buildbot bridge failing to properly update status on some reruns, traceback indicating scope issue, #taskcluster talk exposed that we never claimed the rerun before trying to reclaim it
 - Encrypted environment vars used for beetmover expire after only 24 hours, while the task deadline is 4 days. TODO: File bug (and patch) to update the env expirey to match that of the task. Necessitates build2
 
@@ -37,6 +39,9 @@
 ### Issues
 - tc-vcs cache had failed for beta, causing the generate docker image jobs (x3) to fail, as well as the source builder to fail. Manually re-ran after #taskcluster cleared the issue to success.
 - 'firefox mozilla-beta win32 l10n repack 1/10' (taskid: iTnbATexRZuKEw-w1XjFSA) actually finished since artifact upload task was ready, marked as such using tctalker
+- Also for:
+    - 'firefox mozilla-beta win64 l10n repack 8/10' (taskid: SNGVbgRvTMe2iCgD3GcYAw)
+    - 'firefox mozilla-beta win32 l10n repack 9/10' (taskid: F3EZs9CaQx-NoYUoFhZ8aA)
 - 'win32 beta update verification 8/12' (taskid: stPXNzF9R_Su-ittXiNqrA) actually finished just bbb didn't report that correctly to tc, marked as such using tctalker
 
 
