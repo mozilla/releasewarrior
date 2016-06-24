@@ -3,14 +3,16 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "mFypBVVXSKKzq4HF8I9cZQ",
             "human_tasks": {
                 "emailed_cdntest": false,
                 "post_released": false,
                 "published_balrog": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "win32 repack crash in update generation, retriggered"
+            ]
         }
     ],
     "date": "16-06-24",
