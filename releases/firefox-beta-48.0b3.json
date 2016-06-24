@@ -5,9 +5,9 @@
             "buildnum": 1,
             "graphid": "mFypBVVXSKKzq4HF8I9cZQ",
             "human_tasks": {
-                "emailed_cdntest": false,
-                "post_released": false,
-                "published_balrog": false,
+                "emailed_cdntest": true,
+                "post_released": true,
+                "published_balrog": true,
                 "submitted_shipit": true
             },
             "issues": [
