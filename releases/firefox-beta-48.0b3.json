@@ -11,7 +11,8 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "win32 repack crash in update generation, retriggered"
+                "win32 repack crash in update generation, retriggered",
+                "final verification issue for win64 chunk 7 partials because of misspelled Ship it 48.0b2build1 partial instead of 48.0b2build1. Moved on as users under these conditions would be served complete mars instead of partial mars"
             ]
         }
     ],
