@@ -9,6 +9,6 @@
 - [x] [post-release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- Shipped on Friday, June 24. Postrelease only ran on June 27 ~11:30am PT. And marked as shipped on ship-it at same time.
 
 
