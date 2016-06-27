@@ -13,6 +13,7 @@ from releasewarrior.helpers import ensure_branch_and_version_are_valid, release_
 from releasewarrior.helpers import get_remaining_tasks_ordered
 from releasewarrior.helpers import get_update_data, data_unchanged, get_complete_releases
 from releasewarrior.helpers import get_incomplete_releases
+from releasewarrior.helpers import convert_bugs_to_links
 from releasewarrior.config import REPO_PATH, RELEASES_PATH, TEMPLATES_PATH, ARCHIVED_RELEASES_PATH
 from releasewarrior.config import DATA_TEMPLATES, WIKI_TEMPLATES, POSTMORTEMS_PATH
 
@@ -60,6 +61,7 @@ class Command(metaclass=abc.ABCMeta):
         """generates wiki file based on data file and wiki template"""
         env = Environment(loader=FileSystemLoader(TEMPLATES_PATH),
                           undefined=StrictUndefined, trim_blocks=True)
+        data['issues'] = convert_bugs_to_links(data['issues'])
         template = env.get_template(wiki_template)
         return template.render(**data)
 

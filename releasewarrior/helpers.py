@@ -8,6 +8,9 @@ from releasewarrior.config import RELEASES_PATH, ARCHIVED_RELEASES_PATH
 
 logger = logging.getLogger('releasewarrior')
 
+BUG_RE = r'(?<!\[)\b[bB][uU][gG]\s*(\d+)(?!\]\(http)\b'  # Don't match already linked bugs
+BUG_REPLACE = r'[Bug \1](https://bugzil.la/\1)'
+
 
 def get_current_releases():
     current_releases = {}
@@ -135,3 +138,13 @@ def get_remaining_tasks_ordered(release_human_tasks):
     # this is a hack because ORDERED_HUMAN_TASKS is hardcoded and may get out of date
     remaining_tasks = [task for task, done in release_human_tasks.items() if not done]
     return [ordered_task for ordered_task in ORDERED_HUMAN_TASKS if ordered_task in remaining_tasks]
+
+
+def convert_bugs_to_links(arr_of_strings):
+    """ This function linkifies Bug entries in issue lists for formatting into
+        markdown format.
+    """
+    new_data = []
+    for item in arr_of_strings:
+        new_data.append(re.sub(BUG_RE, BUG_REPLACE, item))
+    return new_data
