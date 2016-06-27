@@ -12,7 +12,7 @@ from releasewarrior.config import LOG_PATH
 def setup_logging():
     logging.basicConfig(level=logging.DEBUG,
                         format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
-                        datefmt='%m-%d %H:%M',
+                        datefmt='%Y-%m-%d %H:%M',
                         filename=os.path.join(LOG_PATH, 'releasewarrior.log'),
                         filemode='a')
     console = logging.StreamHandler()
