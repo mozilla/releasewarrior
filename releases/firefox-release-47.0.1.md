@@ -14,6 +14,6 @@
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- Releasetasks didn't tell me to e-mail when release-cdntest was ready, Relman was expecting that. Will update templates.
 
 

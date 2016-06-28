@@ -10,7 +10,9 @@
                 "pushed_mirrors": true,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Releasetasks didn't tell me to e-mail when release-cdntest was ready, Relman was expecting that. Will update templates."
+            ]
         }
     ],
     "date": "16-06-27",
