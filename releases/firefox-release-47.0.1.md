@@ -16,5 +16,6 @@
 ### Issues
 - Releasetasks didn't tell me to e-mail when release-cdntest was ready, Relman was expecting that. Will update templates.
 - Balrog [Bug 1282838](https://bugzil.la/1282838) caused throttling for 47.0 ==> 47.0.1 to be set incorrectly, intended to be 0% however with 0% set it resulted in 100% uptake. Set to 'No-Update' instead with relmans understanding
+- Balrog [Bug 1282838](https://bugzil.la/1282838) - ben found a workaround... with an extra rule. Callek doesn't understand it (Will discuss in mtg)
 
 
