@@ -73,6 +73,7 @@ def get_update_data(args):
     ]
     human_tasks_data = [
         ("submitted_shipit", args.submitted_shipit),
+        ("emailed_localtest", args.emailed_localtest),
         ("emailed_cdntest", args.emailed_cdntest),
         ("pushed_mirrors", args.pushed_mirrors),
         ("published_balrog", args.published_balrog),
@@ -128,6 +129,7 @@ def release_exists(data_file, ignore_archive=False):
 def get_remaining_tasks_ordered(release_human_tasks):
     ORDERED_HUMAN_TASKS = [
         'submitted_shipit',
+        'emailed_localtest',
         'emailed_cdntest',
         'pushed_mirrors',
         'published_balrog',

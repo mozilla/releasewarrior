@@ -80,6 +80,9 @@ def parse_args():
     parser_update.add_argument('--cdntest', '--emailed-cdntest',
                                action='store_true', dest='emailed_cdntest',
                                help='update release that we emailed drivers that release is on cdntest')
+    parser_update.add_argument('--localtest', '--emailed-localtest',
+                               action='store_true', dest='emailed_localtest',
+                               help='update release that we emailed drivers that release is on localtest')
     parser_update.add_argument('--mirrors', '--pushed-mirrors',
                                action='store_true', dest='pushed_mirrors',
                                help='update release that we have pushed to mirrors (releases dir)')
