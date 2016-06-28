@@ -15,5 +15,6 @@ task graph url: unknown
 
 ### Issues
 - SPECIAL REQUIREMENT: Do [Bug 1275607](https://bugzil.la/1275607) - add OS X 10.6-10.8 deprecation rule when 48.0 ships to release
+- SPECIAL REQUIREMENT: Delete RuleID 366 (firefox, release channel) to allow updates to 48.0 from 47.0 when ready to go live
 
 
