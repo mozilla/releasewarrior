@@ -5,7 +5,7 @@
             "buildnum": 1,
             "graphid": "m6uxLjkHSJyncHOE7qr3eg",
             "human_tasks": {
-                "post_released": false,
+                "post_released": true,
                 "published_balrog": true,
                 "pushed_mirrors": true,
                 "submitted_shipit": true
