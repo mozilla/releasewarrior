@@ -19,5 +19,6 @@
 - win64 repack upload failure, rerun
 - OSX EMEFree partner repack failed to report correctly, though it finished correctly -- marked task pYfHUD5JSH-ou_K-585gHw as completed
 - Should have e-mailed r-d about beta-cdntest being ready, didn't until now
+- Beta 4 has no partials from beta3 because beta3's status in shipit wasn't marked as SHIPPED until monday, meaning b3 wasn't offered as a partial suggestion.
 
 
