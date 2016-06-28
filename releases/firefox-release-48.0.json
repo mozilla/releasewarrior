@@ -10,7 +10,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": false
             },
-            "issues": []
+            "issues": [
+                "SPECIAL REQUIREMENT: Do [Bug 1275607](https://bugzil.la/1275607) - add OS X 10.6-10.8 deprecation rule when 48.0 ships to release"
+            ]
         }
     ],
     "date": "2016-06-28",

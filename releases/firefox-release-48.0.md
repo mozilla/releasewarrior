@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- SPECIAL REQUIREMENT: Do [Bug 1275607](https://bugzil.la/1275607) - add OS X 10.6-10.8 deprecation rule when 48.0 ships to release
 
 
