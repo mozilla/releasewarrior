@@ -7,7 +7,9 @@
                 "post_released": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Master restart script went off-the-rails and caused the old-style release reconfig to fail. Jlund and Nthomas helped kick the machines, and get the beta started. Coop will work on fixing the restart script"
+            ]
         }
     ],
     "date": "2016-06-27",

@@ -9,6 +9,6 @@
 - [ ] [post-release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- Master restart script went off-the-rails and caused the old-style release reconfig to fail. Jlund and Nthomas helped kick the machines, and get the beta started. Coop will work on fixing the restart script
 
 
