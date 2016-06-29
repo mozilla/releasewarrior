@@ -61,7 +61,7 @@ class Command(metaclass=abc.ABCMeta):
         """generates wiki file based on data file and wiki template"""
         env = Environment(loader=FileSystemLoader(TEMPLATES_PATH),
                           undefined=StrictUndefined, trim_blocks=True)
-        for b in data['builds']:
+        for b in data.get('builds', []):
             b['issues'] = convert_bugs_to_links(b['issues'])
         template = env.get_template(wiki_template)
         return template.render(**data)
