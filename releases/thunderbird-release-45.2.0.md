@@ -12,5 +12,6 @@
 
 ### Issues
 - linux_repack_10/10 failed when the connection to clobberer reset mid-transaction; rerun
+- win32_repack_1/10 and 3/10 hang in upload or update generation, rerun
 
 
