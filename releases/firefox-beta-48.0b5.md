@@ -20,5 +20,6 @@
 - _UU5dNjxTFeH8qpTmfJjtQ - win64 l10n repack 8/10 - looks done in buildbot (http://bit.ly/296Ha7O), marked complete with tctalker
 - [Bug 1283853](https://bugzil.la/1283853) - Update Monitoring failed, even a re-run just now. Though enough time has passed that I just marked it as complete
 - R4EizagoQsGROPpTD1nr-Q - actually "failed" in TC, but artifact task has the artifacts stored so all-is-well. Need to rerun and then report_completed so that things move on
+- More BBB fun - 7 out of 12 total mac repacks failed due to 'claim-expired' and caused a TC-based rerun that bbb ignored. Verified all successful in buildbot and marked as completed
 
 
