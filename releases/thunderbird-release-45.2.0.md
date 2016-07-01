@@ -1,6 +1,6 @@
 # Thunderbird 45.2.0
 
-### Started 16-06-29
+### Started 16-06-30
 
 ## Build 1
 
@@ -11,6 +11,6 @@
 - [ ] [post-release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- Repack failures - 1x linux mock init, 3x bash problems on win32, including a bad slave causing multiple failing retries
+- none
 
 
