@@ -12,7 +12,7 @@
             },
             "issues": [
                 "9BfL484uSuCjRGDsAhR2lw - win32 l10n repack 10/10 - need rerun after upload hang",
-                "R4EizagoQsGROPpTD1nr-Q - win32 l10n repack 8/10 - stray cancel of job via self-serve. rerun",
+                "R4EizagoQsGROPpTD1nr-Q - win32 l10n repack 8/10 - stray cancel of job via self-serve. rerun. This may have been incorrect, as Run 1 failed in tc-upload with 'TaskclusterRestFailure: Run 0 was already claimed by another worker.'. Lets see what Run 2 does ...",
                 "_UU5dNjxTFeH8qpTmfJjtQ - win64 l10n repack 8/10 - looks done in buildbot (http://bit.ly/296Ha7O), marked complete with tctalker"
             ]
         }
