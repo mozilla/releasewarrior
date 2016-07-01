@@ -6,7 +6,7 @@
             "human_tasks": {
                 "post_released": false,
                 "published_balrog": false,
-                "pushed_mirrors": false,
+                "pushed_mirrors": true,
                 "submitted_shipit": true
             },
             "issues": [
