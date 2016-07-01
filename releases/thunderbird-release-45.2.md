@@ -1,4 +1,4 @@
-# Thunderbird 45.2.0
+# Thunderbird 45.2
 
 ### Started 16-06-29
 
@@ -12,5 +12,7 @@
 
 ### Issues
 - Repack failures - 1x linux mock init, 3x bash problems on win32, including a bad slave causing multiple failing retries
+- Abandoned to rebuild same code as 45.2.0
 
+:bomb: _aborted release. starting new build num_ :bomb:
 
