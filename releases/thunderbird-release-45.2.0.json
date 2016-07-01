@@ -9,7 +9,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "linux_repack_10/10 failed when the connection to clobberer reset mid-transaction; rerun"
+            ]
         }
     ],
     "date": "16-06-30",
