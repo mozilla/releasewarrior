@@ -3,14 +3,18 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "YXKVDa6mQg-BRxl82Os7Hw",
             "human_tasks": {
                 "emailed_cdntest": false,
                 "post_released": false,
                 "published_balrog": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "9BfL484uSuCjRGDsAhR2lw - win32 l10n repack 10/10 - need rerun after upload hang",
+                "R4EizagoQsGROPpTD1nr-Q - win32 l10n repack 8/10 - stray cancel of job via self-serve. rerun",
+                "_UU5dNjxTFeH8qpTmfJjtQ - win64 l10n repack 8/10 - looks done in buildbot (http://bit.ly/296Ha7O), marked complete with tctalker"
+            ]
         }
     ],
     "date": "16-07-01",
