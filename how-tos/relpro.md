@@ -134,10 +134,13 @@ $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.
 ```
 
 
-## 3. publish in Balrog
+## 3. publish release
 
 ### why
-* the publish to Balrog task makes the release go _live_. it requires sign off from rel-man / QE.
+* the publish release human decision task makes the release go _live_. it
+  requires sign off from rel-man / QE. It triggers the publish to balrog task
+  for all graph types, plus the update bouncer aliases and bump version tasks
+  for betas and RC graph2 graphs.
 
 ### when
 * Desktop Firefox Betas
@@ -150,72 +153,38 @@ $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.
     * Wait for email from RelMan or QE with subject request like `please push Firefox 46.0 to the release channel`
     * sanity check all release update verify tasks from graph 1 and the release final verify task has completed successfully from graph 2
 * Desktop Firefox ESRs
-    * TODO - fill this out once esr uses relpro
+    * Wait for email from RelMan or QE with subject request like `please push Firefox 45.2.0esr to the esr channel`
+    * sanity check all release update verify tasks from graph 1 and the release final verify task has completed successfully from graph 2
 
 ### how
-* Desktop Firefox Betas
-    * this is done manually because we do not have a `publish to balrog` task in release promotion yet
-    * Go to [Balrog rules](https://aus4-admin.mozilla.org/rules) and find the rule with Alias: `firefox-beta`
-        * tip: filter product/channel to `Firefox,beta`
-        * rule id is 32 according to [the config](http://hg.mozilla.org/build/buildbot-configs/file/tip/mozilla/release-firefox-mozilla-beta.py.template#l124)
-    * edit the rule: click `Update` button
-    * Update Mapping field. e.g. if it pointed to `Firefox-46.0b4-build2`, bump it to `Firefox-46.0b5-build1` or whatever version/buildnum is the new beta
+* Desktop Firefox Betas, Desktop Firefox Release-Candidate (beta release prior to release release) and Desktop Firefox dot Releases
+    * go to the task graph (there is only one) and find taskId of `publish release human decision task`
+    * Resolve the "publish release human decision" task using the command below
     * reply to RelMan's email as soon as this step is completed
-* Desktop Firefox Release-Candidate (beta release prior to release release)
-    * this is done manually because we do not have a `publish to balrog` task in release promotion yet
-    * Go to [Balrog rules](https://aus4-admin.mozilla.org/rules) and find the rule with Alias: `firefox-beta`
-        * tip: filter product/channel to `Firefox,beta`
-        * rule id is 32 according to [the config](http://hg.mozilla.org/build/buildbot-configs/file/tip/mozilla/release-firefox-mozilla-beta.py.template#l124)
-    * edit the rule: click `Update` button
-    * Update Mapping field. e.g. if it pointed to `Firefox-46.0b11-build2`, bump it to `Firefox-46.0-build1` or whatever version/buildnum is the RC
-    * reply to RelMan's email as soon as this step is completed
-* Desktop Firefox Release and Release-Candidate (RC and dot releases both push to release channel)
-    * this is done manually because we do not have a `publish to balrog` task in release promotion yet
-    * Go to [Balrog rules](https://aus4-admin.mozilla.org/rules) and find the rule with Alias: `firefox-release`
-        * tip: filter product/channel to `Firefox,release`
-    * edit the rule: click `Update` button
-    * Update Mapping field:
-        * e.g. if this is a dot release and Mapping pointed to `Firefox-45.0-build2`, bump it to `Firefox-45.0.1-build1` or whatever version/buildnum is the new release
-        * e.g. if this is a RC release and Mapping pointed to `Firefox-45.0-build2`, bump it to `Firefox-46.0-build1` or whatever version/buildnum is the new RC release
+* Desktop Firefox Release and Release-Candidate (RC releases push to release channel)
+    * go to the task graph #2 and find taskId of `publish release human decision task`
+    * Resolve the "publish release human decision" task using the command below
     * reply to RelMan's email as soon as this step is completed
 * Desktop Firefox ESRs
-    * TODO - add docs when esr uses relpro
+    * depending on timing you may have 1 or 2 graphs. Go to the latest one and
+      find taskId of `publish release human decision task`
+    * Resolve the "publish release human decision" task using the command below
+    * reply to RelMan's email as soon as this step is completed
+```bash
+ tctalker --conf ~/.taskcluster/relpro.json report_completed $TASK_ID
+```
 
 ## 4. post release step
 
 ### why
-* there are some 'post release' tasks that are waiting on a 'human decision'
+* releases are needed to be marked as "shipped" in Ship-it to make the partial
+  guessing algorithm work and make sure the product-details site has correct information
+  about releases.
 
 ### when
 * immediately after running `publish in Balrog` human decision step
-    * note on RC releases: publishing an RC to beta in balrog doesn't count. post release tasks run only after publishing RC to release in balrog
 
 ### how
-* Desktop Firefox Betas
-    * Releases need to be marked as shipped on Ship It. To do so, visit https://ship-it.mozilla.org/releases.html, find the release in question, and click the "Shipped!" button. 
-    * go to the task graph (there is only one) and find taskId of `firefox mozilla-beta post release human decision task`
-    * This task is blocking `firefox mozilla-beta version bump` and `firefox mozilla-beta bouncer aliases` from execution
-    * To resolve the human decision task run the following:
-```bash
- tctalker --conf ~/.taskcluster/relpro.json report_completed $TASK_ID
-```
-
-* Desktop Firefox Release-Candidate Releases
-    * Releases need to be marked as shipped on Ship It. To do so, visit https://ship-it.mozilla.org/releases.html, find the release in question, and click the "Shipped!" button. 
-    * go to task **graph 2** and find taskId of `firefox mozilla-release post release human decision task`
-    * This task is blocking `firefox mozilla-release version bump` and `firefox mozilla-release bouncer aliases` from executing
-    * To resolve the human decision task run the following:
-```bash
- tctalker --conf ~/.taskcluster/relpro.json report_completed $TASK_ID
-```
-
-* Desktop Firefox Release Releases
-    * Releases need to be marked as shipped on Ship It. To do so, visit https://ship-it.mozilla.org/releases.html, find the release in question, and click the "Shipped!" button. 
-    * go to the task graph (there is only one) and find taskId of `firefox mozilla-release post release human decision task`
-    * This task is blocking `firefox mozilla-release version bump` and `firefox mozilla-release bouncer aliases` from execution
-    * To resolve the human decision task run the following:
-```bash
- tctalker --conf ~/.taskcluster/relpro.json report_completed $TASK_ID
-```
-* Desktop Firefox ESRs
-    * TODO - fill out this doc once esr uses relpro
+* Releases are needed to be marked as shipped on Ship It. To do so, visit
+  https://ship-it.mozilla.org/releases.html, find the release in question, and
+  click the "Shipped!" button.
