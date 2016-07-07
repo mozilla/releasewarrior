@@ -3,12 +3,12 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "Z2BNOjUqTC-P6du___P5oA",
             "human_tasks": {
                 "emailed_cdntest": false,
                 "post_released": false,
                 "published_balrog": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": []
         }
