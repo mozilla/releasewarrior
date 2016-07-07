@@ -15,6 +15,6 @@
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- BBB scheduled linux 64 l10n chunk 7 twice, what caused a race condition in the artifacts task, failing funsize and beetmover tasks. Reran the artifacts task to schedule it. Reran the corresponding l10n repack to reenerate artifacts again. Need to clean up some files under the releases directory to make beetmover work for the new generated binaries.
 
 
