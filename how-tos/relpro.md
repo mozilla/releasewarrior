@@ -182,7 +182,7 @@ $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.
   about releases.
 
 ### when
-* immediately after running `publish in Balrog` human decision step
+* immediately after running `publish release` human decision step
 
 ### how
 * Releases are needed to be marked as shipped on Ship It. To do so, visit
