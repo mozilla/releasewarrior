@@ -11,7 +11,8 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "BBB scheduled linux 64 l10n chunk 7 twice, what caused a race condition in the artifacts task, failing funsize and beetmover tasks. Reran the artifacts task to schedule it. Reran the corresponding l10n repack to reenerate artifacts again. Need to clean up some files under the releases directory (In [Bug 1285284](https://bugzil.la/1285284)) to make beetmover work for the new generated binaries."
+                "BBB scheduled linux 64 l10n chunk 7 twice, what caused a race condition in the artifacts task, failing funsize and beetmover tasks. Reran the artifacts task to schedule it. Reran the corresponding l10n repack to reenerate artifacts again. Need to clean up some files under the releases directory (In [Bug 1285284](https://bugzil.la/1285284)) to make beetmover work for the new generated binaries.",
+                "Builder issues with windows during update verify `rm: cannot lstat `scripts/scripts/release/updates/chunked-verify.sh\\': Permission denied` caused some UV jobs to rerun >40 times and many to fail outright"
             ]
         }
     ],
