@@ -18,5 +18,6 @@
 - BBB scheduled linux 64 l10n chunk 7 twice, what caused a race condition in the artifacts task, failing funsize and beetmover tasks. Reran the artifacts task to schedule it. Reran the corresponding l10n repack to reenerate artifacts again. Need to clean up some files under the releases directory (In [Bug 1285284](https://bugzil.la/1285284)) to make beetmover work for the new generated binaries.
 - Builder issues with windows during update verify `rm: cannot lstat `scripts/scripts/release/updates/chunked-verify.sh\': Permission denied` caused some UV jobs to rerun >40 times and many to fail outright
 - Windows update verify also failed to run on two machines after the reruns from previous issue due to timeouts during the purge of hg-shared repos (fx-team and m-c), reran.
+- BBB died ([Bug 1285410](https://bugzil.la/1285410)) due to some issue related to some of the windows update verifies (ran 50 total runs) BBB basically got confused because there was a rerun when it was trying to process an exception, so 'runs[-1]' didn't have a reasonResolved key... fixed by ignoring the key if missing.
 
 
