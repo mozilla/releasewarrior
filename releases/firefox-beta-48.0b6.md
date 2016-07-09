@@ -19,5 +19,6 @@
 - Builder issues with windows during update verify `rm: cannot lstat `scripts/scripts/release/updates/chunked-verify.sh\': Permission denied` caused some UV jobs to rerun >40 times and many to fail outright
 - Windows update verify also failed to run on two machines after the reruns from previous issue due to timeouts during the purge of hg-shared repos (fx-team and m-c), reran.
 - BBB died ([Bug 1285410](https://bugzil.la/1285410)) due to some issue related to some of the windows update verifies (ran 50 total runs) BBB basically got confused because there was a rerun when it was trying to process an exception, so 'runs[-1]' didn't have a reasonResolved key... fixed by ignoring the key if missing.
+- Around the time of doing the human decision task completion, we had infra issues with cloudops, had to have oremj restart the ffxbld upload server. The reason this matters for the release at that point was Buildbot wasn't doing log uploads, and thus BBB wasn't recognizing that the jobs were finishing and would have died. Rail marked those tasks as complete before the world blew up again (or things started to re-run even though it was successful). Buildbot log uploads were restored to service shortly after and no data was lost.
 
 
