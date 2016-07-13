@@ -47,6 +47,20 @@
                 {
                     "buildnum": 1,
                     "issues": [
+                        "Repack failures - 1x linux mock init, 3x bash problems on win32, including a bad slave causing multiple failing retries",
+                        "Abandoned to rebuild same code as 45.2.0"
+                    ]
+                }
+            ],
+            "date": "16-06-29",
+            "product": "thunderbird",
+            "version": "45.2"
+        },
+        {
+            "builds": [
+                {
+                    "buildnum": 1,
+                    "issues": [
                         "linux_repack_10/10 failed when the connection to clobberer reset mid-transaction; rerun",
                         "win32_repack_1/10 and 3/10 hang in upload or update generation, rerun",
                         "New [Bug 1283885](https://bugzil.la/1283885) - prevented using buildbot for balrog submission, done manually"
