@@ -1,0 +1,19 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "eJQi_uXERr-teiatqPiNJA",
+            "human_tasks": {
+                "emailed_cdntest": true,
+                "post_released": false,
+                "published_balrog": false,
+                "submitted_shipit": true
+            },
+            "issues": []
+        }
+    ],
+    "date": "2016-07-11",
+    "product": "firefox",
+    "version": "48.0b7"
+}
