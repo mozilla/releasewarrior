@@ -11,5 +11,6 @@
 
 ### Issues
 - Reran win32 build for timeout purging free space
+- Repacks failing, filed https://bugzilla.mozilla.org/show_bug.cgi?id=1286440
 
 
