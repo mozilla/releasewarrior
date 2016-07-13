@@ -1,0 +1,21 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "human_tasks": {
+                "post_released": false,
+                "published_balrog": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": [
+                "SPECIAL REQUIREMENT: [block non-SSE2 Windows updates](https://bugzilla.mozilla.org/show_bug.cgi?id=1284905)"
+            ]
+        }
+    ],
+    "date": "2016-07-08",
+    "product": "firefox",
+    "version": "49.0"
+}
