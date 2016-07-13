@@ -8,10 +8,13 @@
                 "published_balrog": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Reran win32 build for timeout purging free space",
+                "Repacks failing, filed https://bugzilla.mozilla.org/show_bug.cgi?id=1286440"
+            ]
         }
     ],
-    "date": "2016-07-12",
+    "date": "16-07-12",
     "product": "thunderbird",
     "version": "48.0b1"
 }
