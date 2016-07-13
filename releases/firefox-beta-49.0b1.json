@@ -10,7 +10,9 @@
                 "published_balrog": false,
                 "submitted_shipit": false
             },
-            "issues": []
+            "issues": [
+                "SPECIAL REQUIREMENT: [block non-SSE2 Windows updates](https://bugzilla.mozilla.org/show_bug.cgi?id=1284901)"
+            ]
         }
     ],
     "date": "2016-07-08",

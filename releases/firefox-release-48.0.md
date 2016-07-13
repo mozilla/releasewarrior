@@ -10,10 +10,10 @@ task graph url: unknown
 #### Status
 - [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
-- [_] [create OS X 10.6-10.8 deprecation rule](https://bugzil.la/1275607)
 - [ ] [publish in Balrog](../how-tos/relpro.md#3-publish-in-balrog)
-- [_] delete rule ids 366 and 367 in Balrog to allow 47.0 -> 48.0 updates
-- [_] [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284903)
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
+- [_] SPECIAL REQUIREMENT: Do [Bug 1275607](https://bugzil.la/1275607) - add OS X 10.6-10.8 deprecation rule when 48.0 ships to release
+- [_] SPECIAL REQUIREMENT: Delete RuleID 366 and 367 (firefox, release channel) to allow updates to 48.0 from 47.0 when ready to go live
+- [_] SPECIAL REQUIREMENT: [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284903) before shipping

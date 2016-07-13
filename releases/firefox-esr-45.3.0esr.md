@@ -16,10 +16,8 @@ task graph url: unknown
 #### Status
 - [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] [publish in Balrog](../how-tos/relpro.md#3-publish-in-balrog)
-- [_] [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284904)
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
-
+- [_] SPECIAL REQUIREMENT: [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284904)
 
