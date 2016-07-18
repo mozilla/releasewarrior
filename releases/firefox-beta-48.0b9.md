@@ -16,5 +16,6 @@ task graph url: unknown
 
 ### Issues
 - The initial requested revision was android-only, so we had no desktop builds. Set the previous revision in ship-it
+- Because b8 was skipped, the in-tree revision was not matching the revision in ship-it. Bumped the revision and pushed to beta.
 
 
