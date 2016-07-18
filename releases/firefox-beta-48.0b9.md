@@ -15,6 +15,6 @@ task graph url: unknown
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- The initial requested revision was android-only, so we had no desktop builds. Set the previous revision in ship-it
 
 

@@ -10,7 +10,9 @@
                 "published_balrog": false,
                 "submitted_shipit": false
             },
-            "issues": []
+            "issues": [
+                "The initial requested revision was android-only, so we had no desktop builds. Set the previous revision in ship-it"
+            ]
         }
     ],
     "date": "2016-07-18",
