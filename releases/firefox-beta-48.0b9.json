@@ -13,7 +13,8 @@
             "issues": [
                 "The initial requested revision was android-only, so we had no desktop builds. Set the previous revision in ship-it",
                 "Because b8 was skipped, the in-tree revision was not matching the revision in ship-it. Bumped the revision and pushed to beta.",
-                "[Bug 1287665](https://bugzil.la/1287665): add-on-devel windows builds overwrote the opt build TC indexes (missing config variables). jlund landed a patch to fix it."
+                "[Bug 1287665](https://bugzil.la/1287665): add-on-devel windows builds overwrote the opt build TC indexes (missing config variables). jlund landed a patch to fix it.",
+                "release-runner sanity caught '[Bug 1287665](https://bugzil.la/1287665)'. got lucky with fix as the 'real' opt build hadn't uploaded artifacts yet so we just had to wait till it overwrote the bad indexed add-on-devel equivalent"
             ]
         }
     ],
