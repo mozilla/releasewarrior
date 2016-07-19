@@ -20,5 +20,6 @@
 - [Bug 1287665](https://bugzil.la/1287665): add-on-devel windows builds overwrote the opt build TC indexes (missing config variables). jlund landed a patch to fix it.
 - release-runner sanity caught '[Bug 1287665](https://bugzil.la/1287665)'. got lucky with fix as the 'real' opt build hadn't uploaded artifacts yet so we just had to wait till it overwrote the bad indexed add-on-devel equivalent
 - Mac worker disconnected and buildbot automatically retried http://archive.mozilla.org/pub/firefox/tinderbox-builds/mozilla-beta-l10n/release-mozilla-beta_firefox_macosx64_l10n_repack-bm85-build1-build117.txt.gz
+- Reran a bunch of windows update verifies due to clobber timeouts.
 
 
