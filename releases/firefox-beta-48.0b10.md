@@ -17,6 +17,7 @@
 ### Issues
 - _grW4FvaRm-r-UADHEyz-g - win64 repack hit a hang in configure and ended up in exception state, reran after verifying buildbot did not retry
 - Lots of slow windows repacks hitting the 2 hour job limit, bumped to 3 hours in bug 1288679
-- Reran win64 repacks which hit timeout - taskIDs _grW4FvaRm-r-UADHEyz-g gu9KozVgRyOAVERypIGkhw 75iNvwS-Qtyq4gyk5__gjQ SbUETv3pRmuwT-OZkVReww
+- Reran win64 repacks which hit 2hr timeout - taskIDs _grW4FvaRm-r-UADHEyz-g gu9KozVgRyOAVERypIGkhw 75iNvwS-Qtyq4gyk5__gjQ SbUETv3pRmuwT-OZkVReww
+- Reran win32 repacks which hit 2hr timeout - taskIDs _ka6jvcOT1GJ-W161rqdOA h0bd6F5fS_KIiaxZ4ERbSg rn8yL1mxS7SvbZMH8kgWQg W2lh4EM8Tjyq0vvfQOSAmg vSV38iRqQCC8tTrViZAl4w 2bGH7AvcS3GS-SqKpijd9g
 
 
