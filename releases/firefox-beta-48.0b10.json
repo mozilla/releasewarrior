@@ -10,7 +10,9 @@
                 "published_balrog": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "_grW4FvaRm-r-UADHEyz-g - win64 repack hit a timeout in buildbot and ended up in Exception state, reran after verifying buildbot did not retry"
+            ]
         }
     ],
     "date": "16-07-22",
