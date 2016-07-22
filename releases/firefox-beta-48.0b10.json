@@ -11,7 +11,7 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "_grW4FvaRm-r-UADHEyz-g - win64 repack hit a timeout in buildbot and ended up in Exception state, reran after verifying buildbot did not retry"
+                "_grW4FvaRm-r-UADHEyz-g - win64 repack hit a hang in configure and ended up in exception state, reran after verifying buildbot did not retry"
             ]
         }
     ],
