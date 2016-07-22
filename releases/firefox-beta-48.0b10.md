@@ -16,5 +16,6 @@
 
 ### Issues
 - _grW4FvaRm-r-UADHEyz-g - win64 repack hit a hang in configure and ended up in exception state, reran after verifying buildbot did not retry
+- Lots of slow windows repacks hitting the 2 hour job limit, bumped to 3 hours in bug 1288679
 
 
