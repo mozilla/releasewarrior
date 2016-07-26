@@ -5,7 +5,7 @@
 ## Build 1
 
 ### ESR Graph 1
-task graph url: unknown
+[task graph](https://tools.taskcluster.net/task-group-inspector/#Ir4HsJdnSpS-FCPrudV4ww)
 
 #### Status
 - [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
@@ -19,5 +19,6 @@ task graph url: unknown
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- [_] SPECIAL REQUIREMENT: [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284904)
+- SPECIAL REQUIREMENT: [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284904)
+
 
