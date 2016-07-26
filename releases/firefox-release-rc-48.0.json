@@ -4,11 +4,14 @@
             "aborted": false,
             "buildnum": 1,
             "graphid": "i1W1g-DLRqCc01wVK8QBQA",
+            "graphid_2": "",
             "human_tasks": {
                 "post_released": false,
                 "published_balrog": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": true
+                "submitted_shipit": true,
+                "emailed_cdntest": false,
+                "published_beta_balrog": false
             },
             "issues": [
                 "SPECIAL REQUIREMENT: Do [Bug 1275607](https://bugzil.la/1275607) - add OS X 10.6-10.8 deprecation rule when 48.0 ships to release",
