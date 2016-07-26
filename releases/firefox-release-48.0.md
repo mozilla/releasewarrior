@@ -18,5 +18,6 @@
 - SPECIAL REQUIREMENT: Delete RuleID 366 and 367 (firefox, release channel) to allow updates to 48.0 from 47.0 when ready to go live
 - SPECIAL REQUIREMENT: [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284903) before shipping
 - Win64 repack OdTZr1_dTQ-JgxnVRg0a1A/1 - first run hit a bash crash & a slave disconnect, was auto retried. Second run was green in buildbot but then the bridge hit an error passing that back to TC, possibly a race condition. Rail filed bug 1289277 to reduce the # of hosts running the bridge; used tctalker to mark task done and make things look nice
+- Terminated b-2008-spot-005 for excessive retries on 'win32 release update verification 6/12'
 
 
