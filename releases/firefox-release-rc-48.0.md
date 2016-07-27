@@ -51,6 +51,9 @@ task graph url: unknown
 - [ ] [post-release tasks](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- SPECIAL REQUIREMENT: Do [Bug 1275607](https://bugzil.la/1275607) - add OS X 10.6-10.8 deprecation rule when 48.0 ships to release
+- SPECIAL REQUIREMENT: Delete RuleID 366 and 367 (firefox, release channel) to allow updates to 48.0 from 47.0 when ready to go live
+- SPECIAL REQUIREMENT: [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284903) before shipping
+- 2x linux repacks hit the race in the buildbot bridge, marked Snq0feKWS12n7ipeOwdBag & Tz4LEkT9QuurUsXjDfseOg completed after verifying green in buildbot.
 
 
