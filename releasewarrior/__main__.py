@@ -83,16 +83,14 @@ def parse_args():
     parser_update.add_argument('--mirrors', '--pushed-mirrors',
                                action='store_true', dest='pushed_mirrors',
                                help='update release that we have pushed to mirrors (releases dir)')
-    parser_update.add_argument('--balrog', '--published-balrog',
-                               action='store_true', dest='published_balrog',
-                               help='update release that we have submitted to balrog')
-    parser_update.add_argument('--beta-balrog', '--published-beta-balrog',
-                               action='store_true', dest='published_beta_balrog',
+    parser_update.add_argument('--published-rc-beta-release',
+                               action='store_true', dest='published_rc_beta_release',
                                help='update release that we have submitted release build to beta '
                                     'channel on balrog. This is used for RC release builds.')
-    parser_update.add_argument('--post', '--post-released',
-                               action='store_true', dest='post_released',
-                               help='update release that we have ran post release task')
+    parser_update.add_argument('--published-release',
+                               action='store_true', dest='published_release',
+                               help='update release that we have published release on the '
+                                    '$release channel and ran post release tasks')
     parser_update.add_argument('--issue', action='append', dest='issues',
                                help='issue to add to release in question')
     parser_update.add_argument('--buildnum-aborted', action='store_true', dest='aborted',

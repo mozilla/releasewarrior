@@ -6,12 +6,11 @@
             "graphid": "",
             "graphid_2": "",
             "human_tasks": {
-                "post_released": false,
-                "published_balrog": false,
+                "published_release": false,
                 "pushed_mirrors": false,
                 "submitted_shipit": false,
                 "emailed_cdntest": false,
-                "published_beta_balrog": false
+                "published_rc_beta_balrog": false
             },
             "issues": [
                 "SPECIAL REQUIREMENT: [block non-SSE2 Windows updates](https://bugzilla.mozilla.org/show_bug.cgi?id=1284905)"

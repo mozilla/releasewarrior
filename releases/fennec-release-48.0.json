@@ -4,7 +4,6 @@
             "aborted": false,
             "buildnum": 1,
             "human_tasks": {
-                "post_released": false,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },

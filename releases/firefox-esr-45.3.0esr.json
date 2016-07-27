@@ -6,8 +6,7 @@
             "graphid": "Ir4HsJdnSpS-FCPrudV4ww",
             "graphid_2": "",
             "human_tasks": {
-                "post_released": false,
-                "published_balrog": false,
+                "published_release": false,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
