@@ -8,7 +8,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "\"android-x86 build\" failed due to buildbot disconnects twice, automatic retries ended up succeeding"
+            ]
         }
     ],
     "date": "2016-07-27",
