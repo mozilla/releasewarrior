@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "i1W1g-DLRqCc01wVK8QBQA",
             "graphid_2": "",
@@ -23,6 +23,21 @@
                 "Rerun update verify EVZZwzEHSnmH2m8syV9KEA, IAP9GaA8Q8iUFleiQ44qbQ, pZf5hgalQTqOPRCXjT-P5Q, sFimyQalQYC68rqqQ-NIiA after failures",
                 "Failed update verify bG4ApN6HSdSDtW1nSLyFzQ has hit the 50 run limit, will need some graph surgery to rerun"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "emailed_cdntest": false,
+                "post_released": false,
+                "published_balrog": false,
+                "published_beta_balrog": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2016-06-28",
