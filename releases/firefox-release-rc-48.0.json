@@ -7,9 +7,8 @@
             "graphid_2": "",
             "human_tasks": {
                 "emailed_cdntest": true,
-                "post_released": false,
-                "published_balrog": false,
-                "published_beta_balrog": true,
+                "published_release": false,
+                "published_rc_to_beta": true,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
@@ -31,9 +30,8 @@
             "graphid_2": "",
             "human_tasks": {
                 "emailed_cdntest": true,
-                "post_released": false,
-                "published_balrog": false,
-                "published_beta_balrog": true,
+                "published_release": false,
+                "published_rc_to_beta": true,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },

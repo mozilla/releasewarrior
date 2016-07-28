@@ -6,8 +6,7 @@
             "graphid": "",
             "human_tasks": {
                 "emailed_cdntest": false,
-                "post_released": false,
-                "published_balrog": false,
+                "published_release": false,
                 "submitted_shipit": false
             },
             "issues": [
