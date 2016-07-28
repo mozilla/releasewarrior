@@ -8,7 +8,7 @@
             "human_tasks": {
                 "emailed_cdntest": true,
                 "published_release": false,
-                "published_rc_beta_release": true,
+                "published_rc_to_beta": true,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
@@ -31,7 +31,7 @@
             "human_tasks": {
                 "emailed_cdntest": true,
                 "published_release": false,
-                "published_rc_beta_release": true,
+                "published_rc_to_beta": true,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },

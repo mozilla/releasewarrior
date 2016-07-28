@@ -84,7 +84,7 @@ def parse_args():
                                action='store_true', dest='pushed_mirrors',
                                help='update release that we have pushed to mirrors (releases dir)')
     parser_update.add_argument('--published-rc-beta-release',
-                               action='store_true', dest='published_rc_beta_release',
+                               action='store_true', dest='published_rc_to_beta',
                                help='update release that we have submitted release build to beta '
                                     'channel on balrog. This is used for RC release builds.')
     parser_update.add_argument('--published-release',

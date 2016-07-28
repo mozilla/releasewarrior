@@ -76,7 +76,7 @@ def get_update_data(args):
         ("emailed_cdntest", args.emailed_cdntest),
         ("pushed_mirrors", args.pushed_mirrors),
         ("published_release", args.published_release),
-        ("published_rc_beta_release", args.published_rc_beta_release),
+        ("published_rc_to_beta", args.published_rc_to_beta),
     ]
     update_data = {"human_tasks": {}}
     for key, value in build_data:
@@ -130,7 +130,7 @@ def get_remaining_tasks_ordered(release_human_tasks):
         'emailed_cdntest',
         'pushed_mirrors',
         'published_release',
-        'published_rc_beta_release',
+        'published_rc_to_beta',
     ]
     # TODO - human_tasks is a dict so we lose order. find a better way to put back in order
     # this is a hack because ORDERED_HUMAN_TASKS is hardcoded and may get out of date
