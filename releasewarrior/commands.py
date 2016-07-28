@@ -296,6 +296,9 @@ class Postmortem(Command):
                 })
             new_data["releases"].append(postmortem_release)
 
+        # sort post mortem releases by date
+        new_data["releases"] = sorted(new_data["releases"], key=lambda r: r["date"])
+
         return new_data
 
     def pre_run_check(self):
