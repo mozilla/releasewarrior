@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "human_tasks": {
                 "published_release": false,
@@ -11,6 +11,15 @@
                 "Reran win32 build for timeout purging free space",
                 "Repacks failing, filed https://bugzilla.mozilla.org/show_bug.cgi?id=1286440"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "human_tasks": {
+                "published_release": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "16-07-12",
