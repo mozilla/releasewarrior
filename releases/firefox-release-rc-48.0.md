@@ -9,7 +9,7 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [x] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-cdntest-channel)
+- [x] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
 - [x] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
 
 ### RC graph 2
@@ -38,14 +38,14 @@ task graph url: unknown
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [x] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-cdntest-channel)
+- [x] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
 - [x] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
 
 ### RC graph 2
 task graph url: unknown
 
 #### Status
-- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
@@ -53,5 +53,6 @@ task graph url: unknown
 - SPECIAL REQUIREMENT: Delete RuleID 366 and 367 (firefox, release channel) to allow updates to 48.0 from 47.0 when ready to go live
 - SPECIAL REQUIREMENT: [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284903) before shipping
 - 2x linux repacks hit the race in the buildbot bridge, marked Snq0feKWS12n7ipeOwdBag & Tz4LEkT9QuurUsXjDfseOg completed after verifying green in buildbot.
+- [Bug 1290918](https://bugzil.la/1290918) - releasetasks_graph_gen.py get_partials is passed an unexpected string of partials
 
 
