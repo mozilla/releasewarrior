@@ -42,7 +42,7 @@ task graph url: unknown
 - [x] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
 
 ### RC graph 2
-task graph url: unknown
+[task graph](https://tools.taskcluster.net/task-group-inspector/#lHf6q5g1QJeEUwaK8OrCUQ)
 
 #### Status
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
