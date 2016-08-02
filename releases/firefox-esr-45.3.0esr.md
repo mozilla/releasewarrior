@@ -20,5 +20,6 @@
 
 ### Issues
 - SPECIAL REQUIREMENT: [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284904)
+- Hit [Bug 1291330](https://bugzil.la/1291330) during balrog submission, pointed the rule at 45.3 manually.
 
 
