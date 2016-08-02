@@ -54,5 +54,6 @@ task graph url: unknown
 - SPECIAL REQUIREMENT: [set-up Windows watershed update](https://bugzilla.mozilla.org/show_bug.cgi?id=1284903) before shipping
 - 2x linux repacks hit the race in the buildbot bridge, marked Snq0feKWS12n7ipeOwdBag & Tz4LEkT9QuurUsXjDfseOg completed after verifying green in buildbot.
 - [Bug 1290918](https://bugzil.la/1290918) - releasetasks_graph_gen.py get_partials is passed an unexpected string of partials
+- Hit non-blocking balrog [Bug 1291316](https://bugzil.la/1291316) while trying to create the OSX deprecation rule
 
 
