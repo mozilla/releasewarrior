@@ -56,5 +56,6 @@ task graph url: unknown
 - [Bug 1290918](https://bugzil.la/1290918) - releasetasks_graph_gen.py get_partials is passed an unexpected string of partials
 - Hit non-blocking balrog [Bug 1291316](https://bugzil.la/1291316) while trying to create the OSX deprecation rule
 - Hit blocking balrog [Bug 1291317](https://bugzil.la/1291317) while trying to create the second OSX deprecation rule
+- Setup windows watershed rule (and OSX desupport-to-48 rule) with update rate set according to the 'everyone' rate, so needs updating when rate changes throughout.
 
 
