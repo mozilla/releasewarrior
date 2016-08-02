@@ -1,0 +1,18 @@
+{
+    "date": "2016-08-03",
+    "releases": [
+        {
+            "builds": [
+                {
+                    "buildnum": 1,
+                    "issues": [
+                        "\"android-x86 build\" failed due to buildbot disconnects twice, automatic retries ended up succeeding"
+                    ]
+                }
+            ],
+            "date": "2016-07-27",
+            "product": "fennec",
+            "version": "48.0"
+        }
+    ]
+}
