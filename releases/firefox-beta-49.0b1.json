@@ -15,7 +15,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "AgNAIHRDRKGShWvAh2ym-A",
             "human_tasks": {
@@ -27,6 +27,17 @@
                 "[Bug 1291562](https://bugzil.la/1291562) - Updates builder failed in Firefox 49.0b1",
                 "[Bug 1291575](https://bugzil.la/1291575) - Specify vcs_share_base in version bump builder"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "human_tasks": {
+                "emailed_cdntest": false,
+                "published_release": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "16-08-03",
