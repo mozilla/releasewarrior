@@ -15,5 +15,6 @@
 
 ### Issues
 - release-runner failure submitting the task graph, but work started in TC. rail updated the ship-it DB as if it had succeeded
+- [Bug 1291523](https://bugzil.la/1291523) - Source tarball builder failed
 
 
