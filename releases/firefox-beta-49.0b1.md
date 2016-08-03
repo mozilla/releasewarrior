@@ -31,6 +31,6 @@
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- [Bug 1291562](https://bugzil.la/1291562) - Updates builder failed in Firefox 49.0b1
 
 

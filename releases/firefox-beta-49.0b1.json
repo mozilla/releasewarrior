@@ -23,7 +23,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1291562](https://bugzil.la/1291562) - Updates builder failed in Firefox 49.0b1"
+            ]
         }
     ],
     "date": "16-08-03",
