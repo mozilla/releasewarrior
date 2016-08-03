@@ -21,5 +21,6 @@
 
 ### Issues
 - Single locale repacks failed, [Bug 1291636](https://bugzil.la/1291636)
+- Relman Decided to ship without Single Locale for b1
 
 

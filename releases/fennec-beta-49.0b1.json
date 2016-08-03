@@ -19,7 +19,8 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "Single locale repacks failed, [Bug 1291636](https://bugzil.la/1291636)"
+                "Single locale repacks failed, [Bug 1291636](https://bugzil.la/1291636)",
+                "Relman Decided to ship without Single Locale for b1"
             ]
         }
     ],
