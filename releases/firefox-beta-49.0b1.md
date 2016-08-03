@@ -14,6 +14,7 @@
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
+- SPECIAL REQUIREMENT: [block non-SSE2 Windows updates](https://bugzilla.mozilla.org/show_bug.cgi?id=1284901)
 - release-runner failure submitting the task graph, but work started in TC. rail updated the ship-it DB as if it had succeeded
 - [Bug 1291523](https://bugzil.la/1291523) - Source tarball builder failed
 
@@ -31,6 +32,7 @@
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
+- SPECIAL REQUIREMENT: [block non-SSE2 Windows updates](https://bugzilla.mozilla.org/show_bug.cgi?id=1284901)
 - [Bug 1291562](https://bugzil.la/1291562) - Updates builder failed in Firefox 49.0b1
 - [Bug 1291575](https://bugzil.la/1291575) - Specify vcs_share_base in version bump builder
 
@@ -48,6 +50,6 @@
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- SPECIAL REQUIREMENT: [block non-SSE2 Windows updates](https://bugzilla.mozilla.org/show_bug.cgi?id=1284901)
 
 
