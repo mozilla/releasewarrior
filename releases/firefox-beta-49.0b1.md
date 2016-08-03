@@ -14,6 +14,6 @@
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- release-runner failure submitting the task graph, but work started in TC. rail updated the ship-it DB as if it had succeeded
 
 
