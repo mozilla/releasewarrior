@@ -18,7 +18,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Single locale repacks failed, bug 1291636"
+            ]
         }
     ],
     "date": "16-08-03",
