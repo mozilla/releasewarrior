@@ -32,5 +32,6 @@
 
 ### Issues
 - [Bug 1291562](https://bugzil.la/1291562) - Updates builder failed in Firefox 49.0b1
+- [Bug 1291575](https://bugzil.la/1291575) - Specify vcs_share_base in version bump builder
 
 
