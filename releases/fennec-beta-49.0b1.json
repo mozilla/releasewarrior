@@ -7,7 +7,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Multilocale build failing, bug 1291530"
+            ]
         }
     ],
     "date": "16-08-03",
