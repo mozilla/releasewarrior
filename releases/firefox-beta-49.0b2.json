@@ -3,11 +3,11 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "PAvWsUQhRRSpGm9CgLEXbA",
             "human_tasks": {
                 "emailed_cdntest": false,
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": [
                 "Taskgraph scheduling timed out and returned a 500 error to client. Remote ended up actually submitting all tasks. TODO: File bug for moar retry and delay"
