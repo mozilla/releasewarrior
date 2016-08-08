@@ -10,5 +10,7 @@
 
 ### Issues
 - Release Runner Sanity failures due to mozconfig differences, initially reran on theory of race condition with push/merge. Code backed out and new build 1 submitted
+- 1 linux64 repack failure due to usual mock install failure
+- win32 en-US failure in unified build. Got past that in a rebuild but timeout diffing xul.dll in partial generation.
 
 
