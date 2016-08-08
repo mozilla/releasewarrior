@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- Taskgraph scheduling timed out and returned a 500 error to client. Remote ended up actually submitting all tasks. TODO: File bug for moar retry and delay
 
 
