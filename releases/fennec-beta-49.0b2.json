@@ -5,9 +5,11 @@
             "buildnum": 1,
             "human_tasks": {
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "SETA Broke ([Bug 1293538](https://bugzil.la/1293538) and [Bug 1293544](https://bugzil.la/1293544)) -- I also didn't realize fennec b2 was submitted at all, so noticed the brokenness in the build not having started late at night. SETA finally fixed late-day on tuesday (Aug 9)."
+            ]
         }
     ],
     "date": "2016-08-08",
