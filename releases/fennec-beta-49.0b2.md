@@ -1,6 +1,6 @@
 # Beta: Fennec 49.0b2
 
-### Started 2016-08-09
+### Started 2016-08-08
 
 ## Build 1
 
