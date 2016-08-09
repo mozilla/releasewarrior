@@ -38,29 +38,41 @@ python src/tctalker/tctalker.py --conf config.json <action> <task-id>
 ```
 # Actions
 
-## 1. email drivers re: release live on cdntest channel
+## 1. email drivers re: release live on test channel
 
 ### why
-* cdntest channels serve releases from the releases dir (mirrors) or candidates dir depending on the release. They are testing channels that are a final step before we serve from the _real_ update channel
-* we should notify drivers once updates are available on the ${branch}-cdntest channel because we don't have taskcluster email notifications yet
+* cdntest and localtest channels serve releases from the releases dir (mirrors/cdn) or candidates dir depending on the release and channel. They are testing channels used before we serve from the _real_ update channel
+* we should notify drivers once updates are available on the ${branch}-{cdntest,localtest} channel because we don't have taskcluster email notifications yet
 
 ### when
-* there are currently two types of releases that automatically push to releases dir:
-
 * Desktop Firefox Betas
     * look in taskgraph for task with name `mozilla-beta beta final verification`
         * once this task has run successfully, that means we have 1) pushed to releases dir 2) and verified beta-cdntest is serving the release from there
-
-* Desktop Firefox Release-Candidates (RCs get served on beta and release channel)
-    * `beta-cdntest` serves updates from the candidates dir of RCs but `release-cdntest` is still human decision and so `release-cdntest` emails are not required
+* Desktop Firefox Release-Candidates
+    * context: RCs are m-r releases that are served to beta uses prior to release channel users. RCs use `beta-cdntest` and `release-cdntest` for QA.
+    * `beta-cdntest` serves updates from the candidates/ dir. We should notify drivers once all artifacts are available there. we don't worry about `release-cdntest` because that is not automatic in automation
         * look in taskgraph graph 1 for task with name `mozilla-beta beta final verification`
-        * once this task has run successfully, that means the release has finished uploading all artifacts to candidates dir 2) and verified beta-cdntest is serving the release from there
-    
+        * once this task has run successfully, that means 1) the release has finished uploading all artifacts to candidates dir 2) and verified beta-cdntest is serving the release from there
+* Desktop Firefox Releases (dot releases)
+    * `release-localtest` serves updates from the candidates/ dir. We should notify drivers once all artifacts are available there. Again, release-cdntest depends on a human decision (not automatic) in automation so no email required.
+        * look in taskgraph graph for task with name `firefox mozilla-release push to releases human decision task`.
+        * this task should be the only task left that is blocking the graph (aside from the post release human task)
+        * all other en-us, l10n, partial, and partner artifact generating tasks should be finished.
+* Desktop Firefox ESRs
+    * `esr-localtest` serves updates from the candidates/ dir. We should notify drivers once all artifacts are available there. Again, esr-cdntest depends on a human decision (not automatic) in automation so no email required.
+        * look in taskgraph graph for task with name `firefox mozilla-esr push to releases human decision task`.
+        * this task should be the only task left that is blocking the graph (aside from the post release human task)
+        * all other en-us, l10n, partial, and partner artifact generating tasks should be finished.
+
 ### how
 * Desktop Firefox Betas
     * email release-drivers@mozilla.com with subject only email `[desktop] Firefox Beta $version updates are available on the beta-cdntest channel now <EOM>`
-* Desktop Firefox Release-Candidates (RCs get served on beta and release channel)
+* Desktop Firefox Release-Candidates
     * email release-drivers@mozilla.com with subject only email `[desktop] Firefox RC Release $version updates are available on the beta-cdntest channel now <EOM>`
+* Desktop Firefox Releases (dot releases)
+    * email release-drivers@mozilla.com with subject only email `[desktop] Firefox Release $version updates are available on the release-localtest channel now <EOM>`
+* Desktop Firefox ESRs
+    * email release-drivers@mozilla.com with subject only email `[desktop] Firefox ESR $version updates are available on the esr-localtest channel now <EOM>`
 
 
 ## 2. push to releases dir (mirrors)
@@ -128,7 +140,7 @@ $ cd /builds/releaserunner/tools/buildfarm/release/
 $ hg pull -u # make sure we are up to date. note: make sure this is on default and clean first
 $ source /builds/releaserunner/bin/activate
 # call releasetasks_graph_gen.py with --dry-run and sanity check the graph output that would be submitted
-$ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-release_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1 --dry-run
+$ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-esr45_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1 --dry-run
 # call releasetasks_graph_gen.py for reals which will submit the graph to Taskcluster
 $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-esr45_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1
 ```

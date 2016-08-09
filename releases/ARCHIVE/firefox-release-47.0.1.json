@@ -8,6 +8,7 @@
                 "post_released": true,
                 "published_balrog": true,
                 "pushed_mirrors": true,
+                "emailed_localtest": true,
                 "submitted_shipit": true
             },
             "issues": [

@@ -73,11 +73,11 @@ def get_update_data(args):
     ]
     human_tasks_data = [
         ("submitted_shipit", args.submitted_shipit),
+        ("emailed_localtest", args.emailed_localtest),
         ("emailed_cdntest", args.emailed_cdntest),
         ("pushed_mirrors", args.pushed_mirrors),
-        ("published_balrog", args.published_balrog),
-        ("published_beta_balrog", args.published_beta_balrog),
-        ("post_released", args.post_released),
+        ("published_release", args.published_release),
+        ("published_rc_to_beta", args.published_rc_to_beta),
     ]
     update_data = {"human_tasks": {}}
     for key, value in build_data:
@@ -128,11 +128,11 @@ def release_exists(data_file, ignore_archive=False):
 def get_remaining_tasks_ordered(release_human_tasks):
     ORDERED_HUMAN_TASKS = [
         'submitted_shipit',
+        'emailed_localtest',
         'emailed_cdntest',
         'pushed_mirrors',
-        'published_balrog',
-        'published_beta_balrog',
-        'post_released',
+        'published_release',
+        'published_rc_to_beta',
     ]
     # TODO - human_tasks is a dict so we lose order. find a better way to put back in order
     # this is a hack because ORDERED_HUMAN_TASKS is hardcoded and may get out of date
