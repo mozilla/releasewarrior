@@ -15,5 +15,6 @@
 
 ### Issues
 - Taskgraph scheduling timed out and returned a 500 error to client. Remote ended up actually submitting all tasks. TODO: File bug for moar retry and delay
+- [Bug 1293650](https://bugzil.la/1293650) filed to investigate OSX update verification issues. Turns out it was a missed part of [Bug 1275632](https://bugzil.la/1275632), and this was the first train to need the latter change
 
 
