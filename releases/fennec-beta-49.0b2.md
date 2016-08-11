@@ -6,7 +6,7 @@
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+- [x] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
 - SETA Broke ([Bug 1293538](https://bugzil.la/1293538) and [Bug 1293544](https://bugzil.la/1293544)) -- I also didn't realize fennec b2 was submitted at all, so noticed the brokenness in the build not having started late at night. SETA finally fixed late-day on tuesday (Aug 9).
