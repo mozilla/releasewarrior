@@ -14,6 +14,6 @@
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- Hit an issue starting the release, due to a botched patch to add retries to the scheduler submission. Fixed alongside original patch in [Bug 1293744](https://bugzil.la/1293744)
 
 
