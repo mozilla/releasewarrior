@@ -15,5 +15,6 @@
 
 ### Issues
 - Lots of Balrog submission errors, https://bugzilla.mozilla.org/show_bug.cgi?id=1295450
+- The balrog failures had followon affect with Update Verify ([Bug 1276506](https://bugzil.la/1276506))
 
 
