@@ -14,6 +14,7 @@
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
+- SPECIAL REQUIREMENT: [Set up a TESTING version of Whats New Page for zh-TW](https://bugzilla.mozilla.org/show_bug.cgi?id=1292637)
 - Lots of Balrog submission errors, https://bugzilla.mozilla.org/show_bug.cgi?id=1295450
 - Update verify jobs failed due to dependancies not being set correctly ([Bug 1276506](https://bugzil.la/1276506)) when all the funsize stuff failed
 - Uptake Monitoring failed, filed [Bug 1295594](https://bugzil.la/1295594) for it
