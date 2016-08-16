@@ -15,7 +15,6 @@
 
 ### Issues
 - Lots of Balrog submission errors, https://bugzilla.mozilla.org/show_bug.cgi?id=1295450
-- The balrog failures had followon affect with Update Verify ([Bug 1276506](https://bugzil.la/1276506))
 - Update verify jobs failed due to dependancies not being set correctly ([Bug 1276506](https://bugzil.la/1276506)) when all the funsize stuff failed
 - Uptake Monitoring failed, filed [Bug 1295594](https://bugzil.la/1295594) for it
 
