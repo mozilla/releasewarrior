@@ -3,13 +3,15 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "ZWmMsRjtSPi2rbv95BbBVw",
             "human_tasks": {
                 "emailed_cdntest": false,
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Lots of Balrog submission errors, https://bugzilla.mozilla.org/show_bug.cgi?id=1295450"
+            ]
         }
     ],
     "date": "16-08-16",
