@@ -7,7 +7,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Releaserunner failed while checking for milestones for l10n (elmo) -- This was due to releaserunner using the 'default' tools branch for sanity. See https://bugzilla.mozilla.org/show_bug.cgi?id=1290477#c14"
+            ]
         }
     ],
     "date": "2016-08-16",
