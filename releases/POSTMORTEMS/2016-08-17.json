@@ -44,6 +44,19 @@
             "date": "2016-08-11",
             "product": "firefox",
             "version": "49.0b3"
+        },
+        {
+            "builds": [
+                {
+                    "buildnum": 1,
+                    "issues": [
+                        "Releaserunner failed while checking for milestones for l10n (elmo) -- This was due to releaserunner using the 'default' tools branch for sanity. See https://bugzilla.mozilla.org/show_bug.cgi?id=1290477#c14"
+                    ]
+                }
+            ],
+            "date": "2016-08-16",
+            "product": "fennec",
+            "version": "49.0b4"
         }
     ]
 }
