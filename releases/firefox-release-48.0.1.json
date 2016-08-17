@@ -3,12 +3,12 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "7ojqiqQaQ_2eSpyILLAojA",
             "human_tasks": {
                 "emailed_localtest": false,
                 "published_release": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": [
                 "SPECIAL REQUIREMENT: Update balrog rule ID 375 and rule ID 374 to update to latest for SSE and OSX-Deprecation releases"
