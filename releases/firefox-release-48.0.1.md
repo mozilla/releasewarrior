@@ -47,5 +47,6 @@
 
 ### Issues
 - SPECIAL REQUIREMENT: Update balrog rule ID 375 and rule ID 374 to update to latest for SSE and OSX-Deprecation releases
+- Task https://tools.taskcluster.net/task-inspector/#LOwmt_lOSSK8j2iJX1VPAA/ failed a few times with pushing partner repacks due to content mismatches. Sha1, Emefree, etc.
 
 
