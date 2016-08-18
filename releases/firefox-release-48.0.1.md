@@ -46,6 +46,6 @@
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- SPECIAL REQUIREMENT: Update balrog rule ID 375 and rule ID 374 to update to latest for SSE and OSX-Deprecation releases
 
 
