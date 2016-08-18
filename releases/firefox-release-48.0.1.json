@@ -33,9 +33,9 @@
             "buildnum": 3,
             "graphid": "nLz7ce1UR72-2TSLvOn1XQ",
             "human_tasks": {
-                "emailed_localtest": false,
-                "published_release": false,
-                "pushed_mirrors": false,
+                "emailed_localtest": true,
+                "published_release": true,
+                "pushed_mirrors": true,
                 "submitted_shipit": true
             },
             "issues": [
