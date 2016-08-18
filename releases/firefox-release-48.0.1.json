@@ -15,7 +15,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "0xJtsX1MTvmGr8VTi6ZvPg",
             "human_tasks": {
@@ -23,6 +23,20 @@
                 "published_release": false,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
+            },
+            "issues": [
+                "Scheduling problems, eg [task an7rmcZUSaSiwHmAxJcS6A](https://tools.taskcluster.net/task-inspector/#an7rmcZUSaSiwHmAxJcS6A/). Also exceptions on OxA9SOnRS8C3QidKsNo7ZQ and RezQdKkFQ-mAm2qeo5RocA"
+            ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "human_tasks": {
+                "emailed_localtest": false,
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
             },
             "issues": []
         }
