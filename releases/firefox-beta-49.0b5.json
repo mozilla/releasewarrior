@@ -1,0 +1,20 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "human_tasks": {
+                "emailed_cdntest": false,
+                "published_release": false,
+                "submitted_shipit": false
+            },
+            "issues": [
+                "SPECIAL REQUIREMENT: [Set up a Whats New Page for zh-TW](https://bugzilla.mozilla.org/show_bug.cgi?id=1292637)"
+            ]
+        }
+    ],
+    "date": "2016-08-19",
+    "product": "firefox",
+    "version": "49.0b5"
+}
