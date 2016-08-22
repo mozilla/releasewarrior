@@ -5,9 +5,9 @@
             "buildnum": 1,
             "graphid": "17Yj4-b7Sfu9vq8eBaa31A",
             "human_tasks": {
-                "emailed_cdntest": false,
-                "published_release": false,
-                "submitted_shipit": false
+                "emailed_cdntest": true,
+                "published_release": true,
+                "submitted_shipit": true
             },
             "issues": [
                 "SPECIAL REQUIREMENT: [Set up a Whats New Page for zh-TW](https://bugzilla.mozilla.org/show_bug.cgi?id=1292637)"
