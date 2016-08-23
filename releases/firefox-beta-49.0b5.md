@@ -15,5 +15,6 @@
 
 ### Issues
 - SPECIAL REQUIREMENT: [Set up a Whats New Page for zh-TW](https://bugzilla.mozilla.org/show_bug.cgi?id=1292637)
+- noticed that partner push to releases task failed: https://tools.taskcluster.net/task-inspector/#nU2RLgYmTECJ-eoA0IZ0vA/
 
 
