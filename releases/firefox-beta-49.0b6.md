@@ -15,5 +15,6 @@
 
 ### Issues
 - release-runner failed because checksums for b5 was run twice. the second time was after we pushed to releases (human error) and the first time was run before all partials were generated (automation dependancy error). the dep error is tracked here: [Bug 1297268](https://bugzil.la/1297268)
+- because of checksums issue from beta5, release-runner's sanity check kept failing. fix was to locally comment out that sanity check but ftr: we also updated the SHA512SUM file in the release dir with the correct latest candidates equiv. but couldn't use it because of cloudfront caching the old one
 
 
