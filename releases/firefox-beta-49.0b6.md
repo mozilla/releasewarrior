@@ -11,7 +11,7 @@
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [x] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
-- [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
+- [x] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
 - release-runner failed because checksums for b5 was run twice. the second time was after we pushed to releases (human error) and the first time was run before all partials were generated (automation dependancy error). the dep error is tracked here: [Bug 1297268](https://bugzil.la/1297268)
