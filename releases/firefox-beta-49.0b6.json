@@ -9,7 +9,9 @@
                 "published_release": false,
                 "submitted_shipit": false
             },
-            "issues": []
+            "issues": [
+                "release-runner failed because checksums for b5 was run twice. the second time was after we pushed to releases (human error) and the first time was run before all partials were generated (automation dependancy error). the dep error is tracked here: [Bug 1297268](https://bugzil.la/1297268)"
+            ]
         }
     ],
     "date": "2016-08-22",

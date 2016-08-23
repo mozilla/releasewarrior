@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- release-runner failed because checksums for b5 was run twice. the second time was after we pushed to releases (human error) and the first time was run before all partials were generated (automation dependancy error). the dep error is tracked here: [Bug 1297268](https://bugzil.la/1297268)
 
 
