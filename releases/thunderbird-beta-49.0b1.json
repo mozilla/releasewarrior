@@ -15,7 +15,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "human_tasks": {
                 "published_release": false,
@@ -25,6 +25,15 @@
                 "win32 en-US - timeout generating partial update again, [Bug 1296449](https://bugzilla.mozilla.org/show_bug.cgi?id=1296449)",
                 "mac repacks have a new bustage for l10n-base, patch up on [bug 1286440](https://bugzilla.mozilla.org/show_bug.cgi?id=1286440)"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "human_tasks": {
+                "published_release": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2016-08-05",
