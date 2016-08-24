@@ -15,5 +15,6 @@
 
 ### Issues
 - firefox mozilla-release macosx64 EME-free repacks failed because signing timed out
+- pulse died, bbb is unhappy, rail published release manually so that task can be cancelled but we need to make sure bouncer and version bump (post release tasks) run once tc is running again
 
 
