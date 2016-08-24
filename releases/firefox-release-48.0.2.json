@@ -10,7 +10,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "firefox mozilla-release macosx64 EME-free repacks failed because signing timed out"
+            ]
         }
     ],
     "date": "2016-08-24",

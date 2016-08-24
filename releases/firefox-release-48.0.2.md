@@ -14,6 +14,6 @@
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- firefox mozilla-release macosx64 EME-free repacks failed because signing timed out
 
 
