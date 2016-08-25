@@ -43,9 +43,12 @@
             "buildnum": 4,
             "human_tasks": {
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Mac repacks still busted with 'No such file or directory: 'comm-beta/obj-l10n/config'' in make export, handled in [Bug 1286640](https://bugzilla.mozilla.org/show_bug.cgi?id=1286440) again",
+                "Win32 repacks broken running tooltool [Bug 1297785](https://bugzilla.mozilla.org/show_bug.cgi?id=1297785)"
+            ]
         }
     ],
     "date": "2016-08-05",
