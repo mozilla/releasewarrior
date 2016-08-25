@@ -27,7 +27,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 3,
             "human_tasks": {
                 "published_release": false,
@@ -37,6 +37,15 @@
                 "Mac repacks busted with 'No such file or directory: 'comm-beta/obj-l10n/config'' in make export, handled in [Bug 1286640](https://bugzilla.mozilla.org/show_bug.cgi?id=1286440) again",
                 "Win32 en-US build still broken, the problem turns out to be that mbsdiff.exe can't find a MS runtime dll, make it a static binary in ([Bug 1296449](https://bugzil.la/1296449))[https://bugzilla.mozilla.org/show_bug.cgi?id=1296449]"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 4,
+            "human_tasks": {
+                "published_release": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2016-08-05",
