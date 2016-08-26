@@ -5,7 +5,7 @@
             "buildnum": 1,
             "graphid": "UPC39Lv8S2iAG401-MYv_A",
             "human_tasks": {
-                "emailed_cdntest": false,
+                "emailed_cdntest": true,
                 "published_release": false,
                 "submitted_shipit": true
             },
