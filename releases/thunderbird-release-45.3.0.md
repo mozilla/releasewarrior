@@ -10,6 +10,7 @@
 - [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- Antivirus job failed to d/l file (IncompleteRead), rerunning
+- update verify failures - win32 4/6 hit a 500 on a complete mar; linux64 2/6 mock-init failure; linux64 5/6 & linux 2/6 mock-install failures; linux64 2/6 slow download hit a timeout. Rerunng all.
 
 
