@@ -14,6 +14,6 @@
 - [x] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- mark release as shipped newly added script failed due to misspelled bb props in [Bug 1288434](https://bugzil.la/1288434); manually ran the step in Ship It
 
 
