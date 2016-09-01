@@ -55,7 +55,7 @@
             "buildnum": 5,
             "human_tasks": {
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": []
         }
