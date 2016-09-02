@@ -15,5 +15,6 @@
 
 ### Issues
 - Uptake monitoring timed out because of sha1 repacks, [Bug 1300060](https://bugzil.la/1300060), rerun
+- Mark as shipped builder failed again as slaves can't talk to ship-it [Bug 1288434](https://bugzil.la/1288434)
 
 
