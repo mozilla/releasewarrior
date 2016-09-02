@@ -10,7 +10,7 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "Uptake monitoring timed out because of sha1 repacks, [Bug 1300060](https://bugzil.la/1300060)"
+                "Uptake monitoring timed out because of sha1 repacks, [Bug 1300060](https://bugzil.la/1300060), rerun"
             ]
         }
     ],
