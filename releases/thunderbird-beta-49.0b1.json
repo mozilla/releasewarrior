@@ -54,7 +54,7 @@
             "aborted": false,
             "buildnum": 5,
             "human_tasks": {
-                "published_release": false,
+                "published_release": true,
                 "submitted_shipit": true
             },
             "issues": []
