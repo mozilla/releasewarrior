@@ -11,7 +11,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": false
             },
-            "issues": []
+            "issues": [
+                "Releaserunner failed, because revision did not pass release sanity (pointing to a revision before merge)"
+            ]
         }
     ],
     "date": "2016-09-05",

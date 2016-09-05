@@ -19,6 +19,6 @@ task graph url: unknown
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- Releaserunner failed, because revision did not pass release sanity (pointing to a revision before merge)
 
 
