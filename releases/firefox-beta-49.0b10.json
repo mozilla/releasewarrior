@@ -9,7 +9,9 @@
                 "published_release": true,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "known issue - mark as shipped builder failed again as slaves can't talk to ship-it - 1300127 tracks netops firewall alteration. triggered manually in Ship-it"
+            ]
         }
     ],
     "date": "2016-09-03",

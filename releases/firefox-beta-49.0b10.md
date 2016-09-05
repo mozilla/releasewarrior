@@ -14,6 +14,6 @@
 - [x] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- known issue - mark as shipped builder failed again as slaves can't talk to ship-it - 1300127 tracks netops firewall alteration. triggered manually in Ship-it
 
 
