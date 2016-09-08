@@ -45,6 +45,8 @@ task graph url: unknown
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
-- none
+- SPECIAL REQUIREMENT: [block non-SSE2 Windows updates](https://bugzilla.mozilla.org/show_bug.cgi?id=1284905)
+- SPECIAL REQUIREMENT: [add OS X 10.6-10.8 deprecation rule before 49.0 ships to release](https://bugzilla.mozilla.org/show_bug.cgi?id=1275607)
+- SPECIAL REQUIREMENT: [Set up a Whats New Page for zh-TW](https://bugzilla.mozilla.org/show_bug.cgi?id=1292637)
 
 
