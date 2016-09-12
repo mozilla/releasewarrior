@@ -20,7 +20,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "5tbXkRj7SWSbIzC34MDq2g",
             "graphid_2": "",
@@ -36,6 +36,20 @@
                 "SPECIAL REQUIREMENT: [add OS X 10.6-10.8 deprecation rule before 49.0 ships to release](https://bugzilla.mozilla.org/show_bug.cgi?id=1275607)",
                 "SPECIAL REQUIREMENT: [Set up a Whats New Page for zh-TW](https://bugzilla.mozilla.org/show_bug.cgi?id=1292637)"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "emailed_cdntest": false,
+                "published_rc_to_beta": false,
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2016-09-05",
