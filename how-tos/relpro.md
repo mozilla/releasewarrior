@@ -1,4 +1,11 @@
-# Pre-requirements 
+# Pre-requirements
+
+## understanding release promotion
+* this task is optional and refers to understanding how release promotion works
+* the original release workflow diagram before Buildbot -> Taskcluster migration, as to November 2015, can be found [here](https://www.lucidchart.com/documents/view/b733c8be-e607-445f-824a-f3353c287294)
+* the up-to-date version of it, as to September 2016, is itteratively divided in two. First graph depicts the logic pieces and all tasks in Taskcluster, but lacks the dependencies between the tasks within the graph, and can be found [here](https://www.lucidchart.com/documents/view/1b59f91d-1dfa-4d1e-8a50-d2d2759a3fff)
+* the follow-up version of it, with all the tasks and graph dependencies can be found [here](https://www.lucidchart.com/documents/view/29588c49-c18c-4800-be84-cca359d89ffc)
+
 ## taskcluster related
 * **You need 2 bookmarklets in your browser to enhance the work with taskcluster**
   * Create a new bookmark, name it `Stop`, add `javascript:stop();` to Location
@@ -16,7 +23,7 @@
 auth:create-client:mozilla-ldap/<ldap_username>/*
 auth:create-client:project/releng/*
 ```
-* navigate to [Taskcluster clients](https://tools.taskcluster.net/auth/clients/) and create a new clientId - dedicated for playing with tctalker. 
+* navigate to [Taskcluster clients](https://tools.taskcluster.net/auth/clients/) and create a new clientId - dedicated for playing with tctalker.
 * it should already be pre-formatted to `mozilla-ldap/<ldap_username>/` at which you can concatenate any string. You can simply add *tctalker*.
 * use *queue:** for **Client Scopes**
 * hit the **Create Client** button and make sure you save the *Access token* that is generated
@@ -34,7 +41,7 @@ auth:create-client:project/releng/*
 * clone yourself a copy of [tctalker](https://github.com/mozilla/tctalker) and change directory to the clone repo
 * run the following:
 ```
-python src/tctalker/tctalker.py --conf config.json <action> <task-id> 
+python src/tctalker/tctalker.py --conf config.json <action> <task-id>
 ```
 # Actions
 
@@ -98,7 +105,7 @@ python src/tctalker/tctalker.py --conf config.json <action> <task-id>
     * to generate and submit graph 2 of the release:
         * step 1) get a taskid from a any task in graph 1. this is used by graph 2 for obtaining release version, branch, etc.
         * step 2) call releasetasks_graph_gen.py and pass, among other things, the taskid obtained in step 1:
-```bash 
+```bash
 $ ssh `whoami`@buildbot-master85.bb.releng.scl3.mozilla.com  # host we release-runner and you generate/submit new release promotion graphs
 $ sudo su - cltbld
 $ TASK_TASKID_FROM_GRAPH1={insert a taskid from any task in graph 1}
@@ -106,7 +113,7 @@ $ cd /home/cltbld/releasetasks/
 $ git pull origin master  # make sure we are up to date. note: make sure this is on master and clean first
 $ cd /builds/releaserunner/tools/buildfarm/release/
 $ hg pull -u # make sure we are up to date. note: make sure this is on default and clean first
-$ source /builds/releaserunner/bin/activate 
+$ source /builds/releaserunner/bin/activate
 # call releasetasks_graph_gen.py with --dry-run and sanity check the graph output that would be submitted
 $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-release_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1 --dry-run
 # call releasetasks_graph_gen.py for reals which will submit the graph to Taskcluster
