@@ -40,14 +40,14 @@
         {
             "aborted": false,
             "buildnum": 3,
-            "graphid": "",
+            "graphid": "2iujXxRoSfm4pqL5KLcDiQ",
             "graphid_2": "",
             "human_tasks": {
                 "emailed_cdntest": false,
                 "published_rc_to_beta": false,
                 "published_release": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": [
                 "SPECIAL REQUIREMENT: [block non-SSE2 Windows updates](https://bugzilla.mozilla.org/show_bug.cgi?id=1284905)",
