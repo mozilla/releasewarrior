@@ -89,7 +89,7 @@ task graph url: unknown
 [task group](https://tools.taskcluster.net/push-inspector/#/P4-Eyi_zTO-0UyjXLFnbUg)
 
 #### Status
-- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
 
 ### Issues
