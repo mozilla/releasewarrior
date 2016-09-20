@@ -94,5 +94,6 @@ task graph url: unknown
 
 ### Issues
 - Isntead of pushing build4 we pushed build1 to the releases directory. Cancelled tasks in P4-Eyi_zTO-0UyjXLFnbUg
+- [Bug 1303909](https://bugzil.la/1303909) - Filed bug to delete files from the releases directory and purge the caches
 
 
