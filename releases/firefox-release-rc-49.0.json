@@ -67,7 +67,9 @@
                 "pushed_mirrors": true,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Isntead of pushing build4 we pushed build1 to the releases directory. Cancelled tasks in P4-Eyi_zTO-0UyjXLFnbUg"
+            ]
         }
     ],
     "date": "2016-09-05",
