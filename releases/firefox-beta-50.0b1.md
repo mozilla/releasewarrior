@@ -31,6 +31,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1304474](https://bugzil.la/1304474) - Patcher config failed to set pretty version properly in Firefox 50
 
 

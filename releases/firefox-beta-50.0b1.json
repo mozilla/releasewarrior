@@ -23,7 +23,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1304474](https://bugzil.la/1304474) - Patcher config failed to set pretty version properly in Firefox 50"
+            ]
         }
     ],
     "date": "2016-09-21",
