@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Release-runner error due to buildbot vs TC build on linux64 [bug 1304260](https://bugzilla.mozilla.org/show_bug.cgi?id=1304260). Rerunning linux64 on buildbot to update index
 
 
