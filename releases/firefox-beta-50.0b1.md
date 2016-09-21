@@ -15,4 +15,6 @@
 
 ### Issues
 - Release-runner error due to buildbot vs TC build on linux64 [bug 1304260](https://bugzilla.mozilla.org/show_bug.cgi?id=1304260). Reran linux64 on buildbot to update index, then started in ship-it
+- source generation task failed because it's using the old gecko hierarchy [bug 1304333](https://bugzilla.mozilla.org/show_bug.cgi?id=1304333).
+
 
