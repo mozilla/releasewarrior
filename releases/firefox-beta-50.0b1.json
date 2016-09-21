@@ -3,14 +3,14 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "WHMAKZHxTL-_jocq0fN92g",
             "human_tasks": {
                 "emailed_cdntest": false,
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": [
-                "Release-runner error due to buildbot vs TC build on linux64 [bug 1304260](https://bugzilla.mozilla.org/show_bug.cgi?id=1304260). Rerunning linux64 on buildbot to update index"
+                "Release-runner error due to buildbot vs TC build on linux64 [bug 1304260](https://bugzilla.mozilla.org/show_bug.cgi?id=1304260). Reran linux64 on buildbot to update index, then started in ship-it"
             ]
         }
     ],
