@@ -31,7 +31,7 @@
             "buildnum": 3,
             "graphid": "SM7E_JWpSEGVh-B6NCItpg",
             "human_tasks": {
-                "emailed_localtest": false,
+                "emailed_localtest": true,
                 "published_release": false,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
