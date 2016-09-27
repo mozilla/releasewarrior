@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- multilocale Firefox snaps builder fails in fetching ubuntu archives - [Bug 1305651](https://bugzil.la/1305651)
+- multilocale Firefox snaps builder fails in fetching ubuntu archives - [Bug 1305651](https://bugzil.la/1305651). Edit & recreated with <apt-get update> in TC resulted in a successful task https://tools.taskcluster.net/task-inspector/#EgGpUaBsT1ewIrItorLt5g/
 
 
