@@ -9,7 +9,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "multilocale Firefox snaps builder fails in fetching ubuntu archives - [Bug 1305651](https://bugzil.la/1305651)"
+            ]
         }
     ],
     "date": "2016-09-26",
