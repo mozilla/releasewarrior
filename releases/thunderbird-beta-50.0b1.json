@@ -7,7 +7,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Repacks all broken due in Lightning, filed [bug 1307273](https://bugzil.la/1307273)"
+            ]
         }
     ],
     "date": "2016-10-03",
