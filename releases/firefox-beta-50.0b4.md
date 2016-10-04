@@ -15,5 +15,6 @@
 
 ### Issues
 - Problem starting the release as only the TC build was done, and it confused release-runner. [Bug 1307326](https://bugzil.la/1307326). Worked around by waiting for buildbot and restarting in ship-it
+- uptake monitoring burns out before sha1 repacks are all done. Known [Bug 1300060](https://bugzil.la/1300060). Rerun successfully with tctalker.
 
 
