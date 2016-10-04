@@ -7,9 +7,11 @@
             "human_tasks": {
                 "emailed_cdntest": false,
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Problem starting the release as only the TC build was done, and it confused release-runner. [Bug 1307326](https://bugzil.la/1307326). Worked around by waiting for buildbot and restarting in ship-it"
+            ]
         }
     ],
     "date": "2016-10-04",
