@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Uptake monitoring failing. Known [Bug 1300060](https://bugzil.la/1300060). Rerunning with tctalker.
 
 

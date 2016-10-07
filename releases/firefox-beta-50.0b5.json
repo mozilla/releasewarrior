@@ -9,7 +9,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Uptake monitoring failing. Known [Bug 1300060](https://bugzil.la/1300060). Rerunning with tctalker."
+            ]
         }
     ],
     "date": "2016-10-07",
