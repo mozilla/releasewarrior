@@ -7,9 +7,11 @@
             "human_tasks": {
                 "emailed_cdntest": false,
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1307326](https://bugzil.la/1307326): linux-opt TC tier-2 task finished earlier that BB linux-opt"
+            ]
         }
     ],
     "date": "2016-10-10",
