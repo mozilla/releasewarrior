@@ -15,5 +15,6 @@
 
 ### Issues
 - [Bug 1307326](https://bugzil.la/1307326): linux-opt TC tier-2 task finished earlier that BB linux-opt
+- [Bug 1309252](https://bugzil.la/1309252): lij mac dmg was uploaded corrupted by beetmover. Need to rerun the corresponding beetmover task and regenerate the checksums after the purge
 
 
