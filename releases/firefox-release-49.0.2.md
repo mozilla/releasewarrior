@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1310690](https://bugzil.la/1310690) - missing files under candidates broke release sanity
 
 

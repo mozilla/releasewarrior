@@ -10,7 +10,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": false
             },
-            "issues": []
+            "issues": [
+                "[Bug 1310690](https://bugzil.la/1310690) - missing files under candidates broke release sanity"
+            ]
         }
     ],
     "date": "2016-10-18",
