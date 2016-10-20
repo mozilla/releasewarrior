@@ -30,6 +30,6 @@
 - [x] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1296632](https://bugzil.la/1296632): update bouncer aliases was green in BB but cancelled in TC
 
 

@@ -24,7 +24,9 @@
                 "pushed_mirrors": true,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1296632](https://bugzil.la/1296632): update bouncer aliases was green in BB but cancelled in TC"
+            ]
         }
     ],
     "date": "2016-10-18",
