@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- The (updates job)[https://tools.taskcluster.net/task-inspector/#EzV-GLbWR4CyBQHFRkbFPQ/] needed rerunning, after it was green in buildbot but showed as an exception in the task graph
 
 
