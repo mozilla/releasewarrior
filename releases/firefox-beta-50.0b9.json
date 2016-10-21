@@ -10,7 +10,7 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "The (updates job)[https://tools.taskcluster.net/task-inspector/#EzV-GLbWR4CyBQHFRkbFPQ/] needed rerunning, after it was green in buildbot but showed as an exception in the task graph"
+                "The [updates job](https://tools.taskcluster.net/task-inspector/#EzV-GLbWR4CyBQHFRkbFPQ/) needed rerunning, after it was green in buildbot but showed as an exception in the task graph"
             ]
         }
     ],
