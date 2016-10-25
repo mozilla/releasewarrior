@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Beetmover docker image generation failed 5 times because AV DB update timed out
 
 

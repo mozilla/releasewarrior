@@ -9,7 +9,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Beetmover docker image generation failed 5 times because AV DB update timed out"
+            ]
         }
     ],
     "date": "2016-10-25",
