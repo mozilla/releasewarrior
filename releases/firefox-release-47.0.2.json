@@ -10,7 +10,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": false
             },
-            "issues": []
+            "issues": [
+                "[Bug 1313434](https://bugzil.la/1313434): Tracking bug, describing extra setup for this release"
+            ]
         }
     ],
     "date": "2016-10-27",

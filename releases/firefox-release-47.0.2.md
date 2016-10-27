@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1313434](https://bugzil.la/1313434): Tracking bug, describing extra setup for this release
 
 
