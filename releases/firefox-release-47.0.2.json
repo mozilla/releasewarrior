@@ -3,12 +3,12 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "sPaYGIZzQx6QVO4bjvS2zg",
             "human_tasks": {
                 "emailed_localtest": false,
                 "published_release": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": [
                 "[Bug 1313434](https://bugzil.la/1313434): Tracking bug, describing extra setup for this release"
