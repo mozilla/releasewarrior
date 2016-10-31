@@ -8,7 +8,7 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "Timeout without output in antivirus job, [Bug 1313954](https://bugzil.la/1313954)"
+                "Timeout without output in antivirus job, [Bug 1313954](https://bugzil.la/1313954). Ran manually and no problems found"
             ]
         }
     ],
