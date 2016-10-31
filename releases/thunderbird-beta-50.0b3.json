@@ -7,7 +7,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Timeout without output in antivirus job, [Bug 1313954](https://bugzil.la/1313954)"
+            ]
         }
     ],
     "date": "2016-10-28",
