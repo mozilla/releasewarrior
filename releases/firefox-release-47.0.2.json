@@ -11,7 +11,8 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "[Bug 1313434](https://bugzil.la/1313434): Tracking bug, describing extra setup for this release"
+                "[Bug 1313434](https://bugzil.la/1313434): Tracking bug, describing extra setup for this release",
+                "rail cancelled publish release, final verify, publish release human task. publish release should be done manually. version bump and ship-it tasks can be triggered via tctalker directly in graph"
             ]
         }
     ],
