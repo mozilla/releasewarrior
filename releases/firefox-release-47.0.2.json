@@ -25,7 +25,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "One of the win l10n repacks timed out cloning, retried, succeeded, but the BB log parsing logic decided to set the result to failure. All following reruns failed posting the artifacts, because the artifacts task was resolved in run 0. Cancelled the running task, reran and immidiatelly resolved it."
+            ]
         }
     ],
     "date": "2016-10-27",
