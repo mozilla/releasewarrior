@@ -22,6 +22,20 @@ python setup.py develop
 ```
 Using the develop target ensures that you get code updates along with data when pulling in changes.
 
+### Using nix-shell
+If you are on NixOS or use the Nix package manager, you can simplify the steps
+above  by running `nix-shell requirements.nix` or `nix-shell requirements.nix
+--run zsh` to use your favourite shell.
+
+
+If you change `requirements.txt` or want to refresh the frozen versions used by
+`nix-shell`, run the following command, which requires
+[pypi2nix](https://github.com/garbas/pypi2nix)
+
+```
+pypi2nix -V "3.5" -r requirements.txt
+```
+
 ## Overview Flow
 
 releasewarrior is made up of a number of subcommands. `create`, `update`, and `postmortem` are the main ones.
