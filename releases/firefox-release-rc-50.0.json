@@ -1,0 +1,21 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "emailed_cdntest": false,
+                "published_rc_to_beta": false,
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": []
+        }
+    ],
+    "date": "2016-11-01",
+    "product": "firefox",
+    "version": "50.0"
+}
