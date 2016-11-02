@@ -20,6 +20,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1195365](https://bugzil.la/1195365): publish to balrog failed because of changes in balrogclient API. Enabled it manually
 
 
