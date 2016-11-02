@@ -28,7 +28,7 @@
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [x] [emailed release-localtest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
-- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - One of the win l10n repacks timed out cloning, retried, succeeded, but the BB log parsing logic decided to set the result to failure. All following reruns failed posting the artifacts, because the artifacts task was resolved in run 0. Cancelled the running task, reran and immidiatelly resolved it.
