@@ -26,7 +26,8 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "One of the win l10n repacks timed out cloning, retried, succeeded, but the BB log parsing logic decided to set the result to failure. All following reruns failed posting the artifacts, because the artifacts task was resolved in run 0. Cancelled the running task, reran and immidiatelly resolved it."
+                "One of the win l10n repacks timed out cloning, retried, succeeded, but the BB log parsing logic decided to set the result to failure. All following reruns failed posting the artifacts, because the artifacts task was resolved in run 0. Cancelled the running task, reran and immidiatelly resolved it.",
+                "Mark as published in ship-it failed, because it wasn't yet implementted in 47. If it worked, we should have unmarked it, otherwise 47.0.2 would be the last release on product-details.m.o"
             ]
         }
     ],
