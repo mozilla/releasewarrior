@@ -6,9 +6,11 @@
             "human_tasks": {
                 "published_release": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "A new mobile-only (?) locale introduced in 50. https://hg.mozilla.org/releases/l10n/mozilla-release/wo was empty. Cloned from beta"
+            ]
         }
     ],
     "date": "2016-11-05",
