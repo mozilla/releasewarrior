@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "tUB0K2CjRFahh4Qyxw0dVA",
             "graphid_2": "",
@@ -15,6 +15,20 @@
             "issues": [
                 "[Bug 1195365](https://bugzil.la/1195365): publish to balrog failed because of changes in balrogclient API. Enabled it manually"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "emailed_cdntest": false,
+                "published_rc_to_beta": false,
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2016-11-01",
