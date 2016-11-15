@@ -14,6 +14,7 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1317582](https://bugzil.la/1317582) - checksums generation broken
+- [Bug 1317584](https://bugzil.la/1317584) - EME repacks broken
 
 

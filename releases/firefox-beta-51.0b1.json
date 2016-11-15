@@ -9,7 +9,10 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1317582](https://bugzil.la/1317582) - checksums generation broken",
+                "[Bug 1317584](https://bugzil.la/1317584) - EME repacks broken"
+            ]
         }
     ],
     "date": "2016-11-15",
