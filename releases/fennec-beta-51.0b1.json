@@ -7,7 +7,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Builds are still broken after merge, see [Bug 1317359](https://bugzil.la/1317359). We'll be doing a build2"
+            ]
         }
     ],
     "date": "2016-11-15",

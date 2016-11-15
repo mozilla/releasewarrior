@@ -9,6 +9,6 @@
 - [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- Builds are still broken after merge, see [Bug 1317359](https://bugzil.la/1317359). We'll be doing a build2
 
 
