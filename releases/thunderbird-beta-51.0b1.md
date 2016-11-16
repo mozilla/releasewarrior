@@ -9,6 +9,6 @@
 - [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- [Bug 1317863](https://bugzil.la/1317863) - l10n repacks failing on all platforms
 
 
