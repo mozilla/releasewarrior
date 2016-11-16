@@ -21,6 +21,7 @@
 
 ### Issues
 - Missed landing half of [Bug 1317359](https://bugzil.la/1317359)
+- Adjust SDK causing build bustage [Bug 1317880](https://bugzil.la/1317880)
 
 :bomb: _**aborted release. starting new build num**_ :bomb:
 

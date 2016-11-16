@@ -19,7 +19,8 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "Missed landing half of [Bug 1317359](https://bugzil.la/1317359)"
+                "Missed landing half of [Bug 1317359](https://bugzil.la/1317359)",
+                "Adjust SDK causing build bustage [Bug 1317880](https://bugzil.la/1317880)"
             ]
         },
         {
