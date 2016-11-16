@@ -32,6 +32,6 @@
 - [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- [Bug 1318052](https://bugzil.la/1318052): checksums builder failed
 
 

@@ -30,7 +30,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1318052](https://bugzil.la/1318052): checksums builder failed"
+            ]
         }
     ],
     "date": "2016-11-15",
