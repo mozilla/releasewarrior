@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- 'firefox mozilla-beta checksums builder', exception. possibly completed too quick for bbb, solution: tctalker rerun+report_completed to resolve since bbot reported that it did run green
 
 

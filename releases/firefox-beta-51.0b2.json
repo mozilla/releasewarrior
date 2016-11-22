@@ -9,7 +9,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "'firefox mozilla-beta checksums builder', exception. possibly completed too quick for bbb, solution: tctalker rerun+report_completed to resolve since bbot reported that it did run green"
+            ]
         }
     ],
     "date": "2016-11-21",
