@@ -18,5 +18,6 @@
 - final verify doesn't wait on funsize balrog submission tasks. tracking fix: https://github.com/mozilla/releasetasks/pull/209
 - final verify failing (even post funsize balrog fix) because of ka,kab locales. expected. ignoring. see earlier 51 betas
 - bouncer aliases and mark release as shipped ran too quickly in bbot, tc set status as exception. used tctalker to mark them as green
+- like final verify, some update verify tests are failing because of ka, kab. ignored
 
 
