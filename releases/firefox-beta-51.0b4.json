@@ -7,7 +7,7 @@
             "human_tasks": {
                 "emailed_cdntest": false,
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": [
                 "[Bug 1303106](https://bugzil.la/1303106) broke funsize balrog submission. backed out. reran funsize docker image task (run1) but funsize tasks ignored generated image from run1 by using cache of run0. cancel'd every funsize balrog task pending/running to force funsize-balrog worker instances to die and regen. rerun'd every canceled and failed task"
