@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1303106](https://bugzil.la/1303106) broke funsize balrog submission. backed out. reran funsize docker image task (run1) but funsize tasks ignored generated image from run1 by using cache of run0. cancel'd every funsize balrog task pending/running to force funsize-balrog worker instances to die and regen. rerun'd every canceled and failed task
 
 
