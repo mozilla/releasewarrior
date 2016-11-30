@@ -15,7 +15,7 @@
             "buildnum": 2,
             "human_tasks": {
                 "published_release": false,
-                "pushed_mirrors": false,
+                "pushed_mirrors": true,
                 "submitted_shipit": true
             },
             "issues": []
