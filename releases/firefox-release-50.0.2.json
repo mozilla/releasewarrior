@@ -6,8 +6,8 @@
             "graphid": "VfPPzU3PR0SkUNr3IbOnhw",
             "human_tasks": {
                 "emailed_localtest": true,
-                "published_release": false,
-                "pushed_mirrors": false,
+                "published_release": true,
+                "pushed_mirrors": true,
                 "submitted_shipit": true
             },
             "issues": [
