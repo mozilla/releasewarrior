@@ -14,7 +14,7 @@
             "aborted": false,
             "buildnum": 2,
             "human_tasks": {
-                "published_release": false,
+                "published_release": true,
                 "pushed_mirrors": true,
                 "submitted_shipit": true
             },
