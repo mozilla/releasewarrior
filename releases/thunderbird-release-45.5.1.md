@@ -22,6 +22,6 @@
 - [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- update verify failing on one task. possible cache issue on s3 against localtest (candidates). getting served wrong mar. can't reproduce locally. see email. log: http://buildbot-master70.bb.releng.use1.mozilla.com:8001/builders/release-comm-esr45-linux64_update_verify_release_2%2F6/builds/1
 
 
