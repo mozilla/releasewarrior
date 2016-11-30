@@ -19,6 +19,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- One of the [complete MARs](http://archive.mozilla.org/pub/firefox/candidates/45.5.1esr-candidates/build1/update/win64/ga-IE/firefox-45.5.1esr.complete.mar) downloaded in update verification was reporting wrong checksum. Manually downloaded the file and compared the checksum with checksums served by balrog.
 
 
