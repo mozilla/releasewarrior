@@ -3,16 +3,15 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "bOFIB-1aQhax372teskb9A",
             "human_tasks": {
-                "emailed_cdntest": false,
                 "published_release": false,
+                "pushed_mirrors": false,
                 "submitted_shipit": true
             },
             "issues": []
         }
     ],
-    "date": "2016-11-29",
-    "product": "firefox",
-    "version": "51.0b5"
+    "date": "2016-11-30",
+    "product": "thunderbird",
+    "version": "45.5.1"
 }
