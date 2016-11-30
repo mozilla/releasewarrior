@@ -10,7 +10,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Created a WNP release blob and created a rule on release-cdntest channel for it"
+            ]
         }
     ],
     "date": "2016-11-29",

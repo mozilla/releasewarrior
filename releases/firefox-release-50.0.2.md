@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Created a WNP release blob and created a rule on release-cdntest channel for it
 
 
