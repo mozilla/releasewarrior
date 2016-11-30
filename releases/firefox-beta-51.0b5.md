@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- bbb was slow. tasks QEhocxF6QqmKaGcVVXpQPw and yY9DUgHFTpO8ROUEU0hXJA (linux64 l10n repacks) were marked as exception. I found the matching bbot job for each and they were green. thus, I marked these as green in tc
 
 
