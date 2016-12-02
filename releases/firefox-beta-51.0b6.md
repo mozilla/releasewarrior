@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- bouncer submission (TNwuOlinQy2CXyUahJwv9A) hit a bridge error and showed as exception in tc while being green on buildbot. Reran
 
 
