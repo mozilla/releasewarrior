@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- bouncer submission (TNwuOlinQy2CXyUahJwv9A) hit a bridge error and showed as exception in tc while being green on buildbot. Reran
+- Several jobs showed as exception in tc while being green on buildbot: bouncer submission (TNwuOlinQy2CXyUahJwv9A), updates (WWDhk2I7TemBzz3g30BNIA), linux repack 6/10 (xbkHS9XISeOoxwl-bOTLFw), linux64 repack 2/10 (uSKcWe4oQgeyb55u7xbvIw), linux64 repack 3/10 (gQvHtKy4QR-NLwiTb7C2VA), linux64 repack 4/10 (R_6w56KESQqC5C9UXot4VQ). Tried report_completed on bouncer, and ot 409/RequestConflict/Run 0 was already claimed by another worker. Rerun also hit an exception.
 
 
