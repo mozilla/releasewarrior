@@ -5,10 +5,10 @@
 ## Build 1
 
 ### ESR Graph 1
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/gdFPlloqRUu15Dl9rR2xsg)
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 
 ### ESR Graph 2
 task graph url: unknown
@@ -19,6 +19,7 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- we forgot to bump in-tree version because there was no actual migration automation
+- we exceeded release-runner maximum ship-it time without passing sanity. rail had to delete from ship-it and resubmit
 
 

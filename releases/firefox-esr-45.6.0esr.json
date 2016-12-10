@@ -3,15 +3,18 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "gdFPlloqRUu15Dl9rR2xsg",
             "graphid_2": "",
             "human_tasks": {
                 "emailed_localtest": false,
                 "published_release": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "we forgot to bump in-tree version because there was no actual migration automation",
+                "we exceeded release-runner maximum ship-it time without passing sanity. rail had to delete from ship-it and resubmit"
+            ]
         }
     ],
     "date": "2016-12-09",
