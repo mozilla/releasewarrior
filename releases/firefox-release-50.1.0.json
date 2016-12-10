@@ -22,7 +22,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "partner, sha1 and eme repacks failed again"
+            ]
         }
     ],
     "date": "2016-12-07",

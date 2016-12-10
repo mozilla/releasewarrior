@@ -30,6 +30,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- partner, sha1 and eme repacks failed again
 
 
