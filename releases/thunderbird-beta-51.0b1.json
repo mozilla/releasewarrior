@@ -36,7 +36,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1323107](https://bugzil.la/1323107): Windows repacks are broken"
+            ]
         }
     ],
     "date": "2016-11-16",
