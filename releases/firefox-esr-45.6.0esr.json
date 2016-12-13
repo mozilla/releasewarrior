@@ -8,7 +8,7 @@
             "human_tasks": {
                 "emailed_localtest": true,
                 "published_release": false,
-                "pushed_mirrors": false,
+                "pushed_mirrors": true,
                 "submitted_shipit": true
             },
             "issues": [
