@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- BBB reported the checksum builder as exception. Reran/resolved to workaround, but because the builder is not idempotent it regenerated the GPG signature. As a result the partner repacks push to cdns builder failed, because it refused to overwrite the signature. Forced the uptake monitoring builder to work around.
 
 
