@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Bridge problem for uptake monitoring meant it was in exception state in the tc graph, reran to unblock update verify & other downstream
 
 
