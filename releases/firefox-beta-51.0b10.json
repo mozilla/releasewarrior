@@ -3,11 +3,11 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "yTy-jwVxS1qGjIAWEt17bw",
             "human_tasks": {
                 "emailed_cdntest": false,
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": []
         }
