@@ -8,7 +8,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "held up on [Bug 1323107](https://bugzil.la/1323107) - thunderbird version 51 beta, all win32repacks fail"
+            ]
         }
     ],
     "date": "2016-12-15",

@@ -10,6 +10,6 @@
 - [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- held up on [Bug 1323107](https://bugzil.la/1323107) - thunderbird version 51 beta, all win32repacks fail
 
 
