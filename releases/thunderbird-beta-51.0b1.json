@@ -45,9 +45,11 @@
             "buildnum": 5,
             "human_tasks": {
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Failed: CalledProcessError()"
+            ]
         }
     ],
     "date": "2016-11-16",
