@@ -41,7 +41,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 5,
             "human_tasks": {
                 "published_release": false,
@@ -50,6 +50,15 @@
             "issues": [
                 "Failed: CalledProcessError()"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 6,
+            "human_tasks": {
+                "published_release": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2016-11-16",
