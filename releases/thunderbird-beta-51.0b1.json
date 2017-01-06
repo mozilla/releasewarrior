@@ -30,7 +30,7 @@
             "issues": []
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 4,
             "human_tasks": {
                 "published_release": false,
@@ -39,6 +39,15 @@
             "issues": [
                 "[Bug 1323107](https://bugzil.la/1323107): Windows repacks are broken"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 5,
+            "human_tasks": {
+                "published_release": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2016-11-16",

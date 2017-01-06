@@ -44,4 +44,15 @@
 ### Issues
 - [Bug 1323107](https://bugzil.la/1323107): Windows repacks are broken
 
+:bomb: _**aborted release. starting new build num**_ :bomb:
+
+## Build 5
+
+### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+
+### Issues
+- none
+
 
