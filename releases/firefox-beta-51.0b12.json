@@ -6,7 +6,7 @@
             "graphid": "Upzna0y3Ra2F2TUIqEp24g",
             "human_tasks": {
                 "emailed_cdntest": true,
-                "published_release": false,
+                "published_release": true,
                 "submitted_shipit": true
             },
             "issues": []
