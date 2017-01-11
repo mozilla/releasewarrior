@@ -55,4 +55,15 @@
 ### Issues
 - [Bug 1306252](https://bugzil.la/1306252): Failed: CalledProcessError() - kab in l10n_changesets but it doesn't appear to be under shipped_locales
 
+:bomb: _**aborted release. starting new build num**_ :bomb:
+
+## Build 6
+
+### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+
+### Issues
+- none
+
 
