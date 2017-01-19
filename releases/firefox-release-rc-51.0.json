@@ -22,13 +22,15 @@
             "graphid": "",
             "graphid_2": "",
             "human_tasks": {
-                "emailed_cdntest": false,
+                "emailed_cdntest": true,
                 "published_rc_to_beta": false,
                 "published_release": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Ship-it bug - did not move to Reviews/Running after amending partials sanity. [Bug 1332247](https://bugzil.la/1332247)"
+            ]
         }
     ],
     "date": "2017-01-17",

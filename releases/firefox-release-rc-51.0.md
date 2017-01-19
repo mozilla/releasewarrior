@@ -30,8 +30,8 @@ task graph url: unknown
 task graph url: unknown
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
 - [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
 
 ### RC graph 2
@@ -42,6 +42,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Ship-it bug - did not move to Reviews/Running after amending partials sanity. [Bug 1332247](https://bugzil.la/1332247)
 
 
