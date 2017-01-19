@@ -1,0 +1,20 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "emailed_localtest": false,
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": []
+        }
+    ],
+    "date": "2017-01-19",
+    "product": "firefox",
+    "version": "45.7.0esr"
+}
