@@ -18,7 +18,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "TIL: we never upload Fennec RC to Google Play Store because of naming conflicts with upcoming 'main release'"
+            ]
         }
     ],
     "date": "2017-01-17",
