@@ -12,7 +12,6 @@
 ### Issues
 - none
 
-:bomb: _aborted release. starting new build num_ :bomb:
 
 ## Build 2
 
