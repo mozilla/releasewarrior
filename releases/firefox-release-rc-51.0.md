@@ -20,6 +20,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Ship-it bug - title not visible as link when partials sanity fails. [Bug 1332222](https://bugzil.la/1332222)
 
 
