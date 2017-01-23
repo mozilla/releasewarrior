@@ -19,6 +19,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Graph2 tasks are also scheduled in graph1. [Bug 1333041](https://bugzil.la/1333041)
 
 

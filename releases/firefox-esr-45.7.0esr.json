@@ -11,7 +11,9 @@
                 "pushed_mirrors": true,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Graph2 tasks are also scheduled in graph1. [Bug 1333041](https://bugzil.la/1333041)"
+            ]
         }
     ],
     "date": "2017-01-19",
