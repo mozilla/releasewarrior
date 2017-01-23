@@ -11,7 +11,7 @@
             "issues": []
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "human_tasks": {
                 "published_release": false,
@@ -21,6 +21,16 @@
             "issues": [
                 "TIL: we never upload Fennec RC to Google Play Store because of naming conflicts with upcoming 'main release'"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "human_tasks": {
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-01-17",
