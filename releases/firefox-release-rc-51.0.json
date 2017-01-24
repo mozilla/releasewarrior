@@ -24,7 +24,7 @@
             "human_tasks": {
                 "emailed_cdntest": true,
                 "published_rc_to_beta": true,
-                "published_release": false,
+                "published_release": true,
                 "pushed_mirrors": true,
                 "submitted_shipit": true
             },

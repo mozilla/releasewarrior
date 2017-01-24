@@ -39,7 +39,7 @@ task graph url: unknown
 
 #### Status
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
-- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - Ship-it bug - did not move to Reviews/Running after amending partials sanity. [Bug 1332247](https://bugzil.la/1332247)
