@@ -15,5 +15,6 @@
 
 ### Issues
 - Same Ship-it issue as 51.0-build2. Known [Bug 1269627](https://bugzil.la/1269627) of tc scheduler returning 503. Rail tweaked the database <update firefox_release set status='Started', ready=1, complete=1 where name='Firefox-52.0b1-build1'>
+- busted due to migration bug in macosx builds [Bug 1333443](https://bugzil.la/1333443)
 
 
