@@ -43,5 +43,6 @@ task graph url: unknown
 
 ### Issues
 - Ship-it bug - did not move to Reviews/Running after amending partials sanity. [Bug 1332247](https://bugzil.la/1332247)
+- Because of above bug ^ we ended up having https://people-mozilla.org/~mtabara/shipit_issues.png; Rail fixed the Ship-it DBby running <update firefox_release set ready=1, complete=1 where name='Firefox-51.0-build2'>
 
 
