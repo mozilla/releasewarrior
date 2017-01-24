@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "Tr2OXLVyS5-kS58hKnMZDw",
             "human_tasks": {
@@ -13,6 +13,17 @@
                 "Same Ship-it issue as 51.0-build2. Known [Bug 1269627](https://bugzil.la/1269627) of tc scheduler returning 503. Rail tweaked the database <update firefox_release set status='Started', ready=1, complete=1 where name='Firefox-52.0b1-build1'>",
                 "busted due to migration bug in macosx builds [Bug 1333443](https://bugzil.la/1333443)"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "emailed_cdntest": false,
+                "published_release": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-01-24",
