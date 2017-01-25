@@ -10,7 +10,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1333663](https://bugzil.la/1333663): Clamav false positive"
+            ]
         }
     ],
     "date": "2017-01-24",
