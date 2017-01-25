@@ -15,7 +15,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "xVfnt7WOT6ebJYioCXsiZA",
             "human_tasks": {
@@ -27,6 +27,18 @@
             "issues": [
                 "Websense startup crash [Bug 1294650](https://bugzil.la/1294650)"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "human_tasks": {
+                "emailed_localtest": false,
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-01-24",
