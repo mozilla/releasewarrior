@@ -30,6 +30,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Websense startup crash [Bug 1294650](https://bugzil.la/1294650)
 
 

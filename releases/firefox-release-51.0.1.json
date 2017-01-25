@@ -24,7 +24,9 @@
                 "pushed_mirrors": true,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Websense startup crash [Bug 1294650](https://bugzil.la/1294650)"
+            ]
         }
     ],
     "date": "2017-01-24",
