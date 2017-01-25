@@ -1,0 +1,19 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "human_tasks": {
+                "emailed_localtest": false,
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": []
+        }
+    ],
+    "date": "2017-01-24",
+    "product": "firefox",
+    "version": "51.0.1"
+}
