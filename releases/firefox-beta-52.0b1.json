@@ -20,7 +20,7 @@
             "graphid": "WNGYY6nMTliD_CcUCV_Uag",
             "human_tasks": {
                 "emailed_cdntest": true,
-                "published_release": false,
+                "published_release": true,
                 "submitted_shipit": true
             },
             "issues": []
