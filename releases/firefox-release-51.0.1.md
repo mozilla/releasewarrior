@@ -5,7 +5,7 @@
 ## Build 1
 
 ### Release Graph
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/nCK56z6UTne5STaBP3LH0w)
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
