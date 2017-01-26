@@ -7,7 +7,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "macosx repack issue [Bug 1333878](https://bugzil.la/1333878)"
+            ]
         }
     ],
     "date": "2017-01-25",
