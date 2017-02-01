@@ -80,6 +80,28 @@
             "date": "2017-01-25",
             "product": "thunderbird",
             "version": "52.0b1"
+        },
+        {
+            "builds": [
+                {
+                    "buildnum": 1,
+                    "issues": []
+                }
+            ],
+            "date": "2017-01-31",
+            "product": "fennec",
+            "version": "52.0b2"
+        },
+        {
+            "builds": [
+                {
+                    "buildnum": 1,
+                    "issues": []
+                }
+            ],
+            "date": "2017-01-31",
+            "product": "firefox",
+            "version": "52.0b2"
         }
     ]
 }
