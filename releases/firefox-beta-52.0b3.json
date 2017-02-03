@@ -9,7 +9,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Px7U-IohR_OD_zKDNFQCUg firefox mozilla-beta win32 l10n repack 4/10 timed out. Manually rerun using tctalker"
+            ]
         }
     ],
     "date": "2017-02-03",

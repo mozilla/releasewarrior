@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Px7U-IohR_OD_zKDNFQCUg firefox mozilla-beta win32 l10n repack 4/10 timed out. Manually rerun using tctalker
 
 
