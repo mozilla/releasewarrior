@@ -15,5 +15,6 @@
 
 ### Issues
 - Px7U-IohR_OD_zKDNFQCUg firefox mozilla-beta win32 l10n repack 4/10 timed out. Manually rerun using tctalker
+- No cdntest email sent. QA could test updates before test verification tasks were done
 
 
