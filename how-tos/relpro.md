@@ -210,3 +210,9 @@ $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.
 * Other *not* release-promotion based releases (Thunderbird, Fennec, etc) are needed to be marked as shipped on Ship It. To do so, visit
   https://ship-it.mozilla.org/releases.html, find the release in question, and
   click the "Shipped!" button.
+
+# Troubleshoot
+
+## Intermittent failures
+
+If a task failed because of an intermittent failure (e.g.: network error, timeout), `rerun` it manually via [tctalker](https://github.com/mozilla/tctalker). Some tasks don't have automatic reruns set, but they do have 5 retries left. Thanks to reruns, you don't need to retrigger a task (which would have meant to reschedule the remaining subgraph).
