@@ -9,7 +9,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Partner repacks broken by new softonic config, [Bug 1337297](https://bugzil.la/1337297)"
+            ]
         }
     ],
     "date": "2017-02-06",
