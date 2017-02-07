@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- Partner repacks broken by new softonic config, [Bug 1337297](https://bugzil.la/1337297)
+- Windows partner repacks broken by new softonic config, [Bug 1337297](https://bugzil.la/1337297). Landed a fix and reran win32 & win64 tasks with tctalker.
 
 
