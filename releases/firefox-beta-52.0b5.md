@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Three partner repacks 'running' for a long time - macosx64 EME-free repacks, macosx64 partner repacks, win64 EME-free repacks. Actually green in buildbot but not reflected back to TC. jonasf1 commented on irc 'looked a queue timeouts, looks like a pulse disconnect, crash and restart'. Cancel and rerun so we get logs to go with our bits
 
 
