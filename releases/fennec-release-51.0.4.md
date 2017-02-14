@@ -11,5 +11,6 @@
 
 ### Issues
 - Partner-driven - not planning to push to Google Play
+- Repack 9/10 hit an issue with mock and s3, rerun.
 
 
