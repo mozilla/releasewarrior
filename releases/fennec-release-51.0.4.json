@@ -6,9 +6,11 @@
             "human_tasks": {
                 "published_release": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Partner-driven - not planning to push to Google Play"
+            ]
         }
     ],
     "date": "2017-02-14",
