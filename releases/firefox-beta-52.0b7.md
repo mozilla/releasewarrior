@@ -15,5 +15,6 @@
 
 ### Issues
 - macosx64 beta update verification 8/12 (taskId: 2Z1wkBN5RSCfOk8lZR26vA) failed because mar failed to be retrieved from cache
+- Publish release tasks took about 85 minutes to get started. Buildbot bridge had about 4k messages to process at the time of the resolution of the human task
 
 
