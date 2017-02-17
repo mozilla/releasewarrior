@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- macosx64 beta update verification 8/12 (taskId: 2Z1wkBN5RSCfOk8lZR26vA) failed because mar failed to be retrieved from cache
 
 
