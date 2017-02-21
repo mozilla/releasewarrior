@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Failure for ``[beetmover] firefox mozilla-beta partner repacks push to releases`` due to busted boto v2.46 on pypi. They fixed that promptly with v2.46.1 so just reran the job, but why does beetmover not use internal pypi. Filed [Bug 1341154](https://bugzil.la/1341154).
 
 
