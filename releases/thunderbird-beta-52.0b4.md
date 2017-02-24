@@ -10,5 +10,6 @@
 
 ### Issues
 - Source builder broken in fallout from [Bug 1338099](https://bugzil.la/1338099)
+- Manually pushed to CDNs to workaround missing source tarball
 
 
