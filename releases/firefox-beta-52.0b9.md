@@ -31,5 +31,6 @@ task graph url: unknown
 
 ### Issues
 - Snap build failed because of an update of desktop-gtk3 [Bug 1342362](https://bugzil.la/1342362)
+- Manually resolved the uptake monitoring task to skip the sha1 blocking.
 
 
