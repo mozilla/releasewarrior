@@ -23,7 +23,7 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "Snap build failed because of an update of desktop-gtk3 [Bug 1342362](https://bugzilla.mozilla.org/show_bug.cgi\?id\=1342362)"
+                "Snap build failed because of an update of desktop-gtk3 [Bug 1342362](https://bugzil.la/1342362)"
             ]
         }
     ],
