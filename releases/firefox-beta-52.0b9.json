@@ -19,7 +19,7 @@
             "graphid": "",
             "human_tasks": {
                 "emailed_cdntest": true,
-                "published_release": false,
+                "published_release": true,
                 "submitted_shipit": true
             },
             "issues": [
