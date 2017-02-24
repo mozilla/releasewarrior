@@ -30,6 +30,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Snap build failed because of an update of desktop-gtk3 [Bug 1342362](https://bugzilla.mozilla.org/show_bug.cgi?id=1342362)
 
 
