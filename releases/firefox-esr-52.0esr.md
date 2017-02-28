@@ -22,5 +22,6 @@ task graph url: unknown
 - [Bug 1343104](https://bugzil.la/1343104) - Add mozilla-esr52 to tc-vcs caches
 - [Bug 1343130](https://bugzil.la/1343130) - Enable partner repacks builder on mozilla-esr52
 - update verify tasks expected to fail
+- need build2 for the partner repack that is failing
 
 
