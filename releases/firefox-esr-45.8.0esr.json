@@ -1,0 +1,22 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "emailed_localtest": false,
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": [
+                "SPECIAL REQUIREMENT: [add OS X watershed rule when 45.8.0esr ships](https://bugzilla.mozilla.org/show_bug.cgi?id=1275609)"
+            ]
+        }
+    ],
+    "date": "2017-02-27",
+    "product": "firefox",
+    "version": "45.8.0esr"
+}
