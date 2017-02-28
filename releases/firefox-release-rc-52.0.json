@@ -12,7 +12,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1343173](https://bugzil.la/1343173): kn complete dmg needed to be purged from cache"
+            ]
         }
     ],
     "date": "2017-02-27",

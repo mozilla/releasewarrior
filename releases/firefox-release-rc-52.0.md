@@ -20,6 +20,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1343173](https://bugzil.la/1343173): kn complete dmg needed to be purged from cache
 
 
