@@ -13,7 +13,8 @@
             },
             "issues": [
                 "SPECIAL REQUIREMENT: [add OS X watershed rule when 45.8.0esr ships](https://bugzilla.mozilla.org/show_bug.cgi?id=1275609)",
-                "[Bug 1343176](https://bugzil.la/1343176): ru complete dmg needed to be purged from cache"
+                "[Bug 1343176](https://bugzil.la/1343176): ru complete dmg needed to be purged from cache",
+                "Manually reran 2Xog9m6-Q-WRBO3leCp6Gg and WZ2g1ir1Qf2_plR8hKKoug after [Bug 1343176](https://bugzil.la/1343176) was fixed"
             ]
         }
     ],
