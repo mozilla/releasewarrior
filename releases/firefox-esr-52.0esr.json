@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "xCgWXiNNTn28rKu4QKzJBw",
             "graphid_2": "",
@@ -17,6 +17,19 @@
                 "update verify tasks expected to fail",
                 "need build2 for the partner repack that is failing"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "emailed_localtest": false,
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-02-27",
