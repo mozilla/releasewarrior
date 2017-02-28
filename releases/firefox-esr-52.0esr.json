@@ -11,7 +11,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1343104](https://bugzil.la/1343104) - Add mozilla-esr52 to tc-vcs caches"
+            ]
         }
     ],
     "date": "2017-02-27",
