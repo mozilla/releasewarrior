@@ -20,5 +20,6 @@ task graph url: unknown
 
 ### Issues
 - SPECIAL REQUIREMENT: [add OS X watershed rule when 45.8.0esr ships](https://bugzilla.mozilla.org/show_bug.cgi?id=1275609)
+- [Bug 1343176](https://bugzil.la/1343176): ru complete dmg needed to be purged from cache
 
 
