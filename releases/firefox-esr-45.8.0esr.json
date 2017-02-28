@@ -3,13 +3,13 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "d89f8c619f96913b2ac748eeb049dcef6c0ccf75",
             "graphid_2": "",
             "human_tasks": {
                 "emailed_localtest": false,
                 "published_release": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": [
                 "SPECIAL REQUIREMENT: [add OS X watershed rule when 45.8.0esr ships](https://bugzilla.mozilla.org/show_bug.cgi?id=1275609)"
