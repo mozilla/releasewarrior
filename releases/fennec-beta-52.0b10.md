@@ -9,6 +9,6 @@
 - [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- fennec source builder is failing because of build sys [Bug 1342383](https://bugzil.la/1342383)
 
 
