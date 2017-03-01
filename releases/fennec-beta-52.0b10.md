@@ -10,5 +10,6 @@
 
 ### Issues
 - fennec source builder is failing because of build sys [Bug 1342383](https://bugzil.la/1342383)
+- post-release tasks failed because of [Bug 1342383](https://bugzil.la/1342383) mentioned above
 
 
