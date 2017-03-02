@@ -28,7 +28,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "BEFORE PUBLISH RELEASE: [Bug 1341100](https://bugzil.la/1341100) - Setup WNP for Firefox 52.0 release"
+            ]
         }
     ],
     "date": "2017-02-27",
