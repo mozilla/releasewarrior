@@ -10,5 +10,6 @@
 
 ### Issues
 - fennec source builder still failing bc [Bug 1342383](https://bugzil.la/1342383). requested backout in comment 9
+- will need to force push to mirrors prior to running post release builder
 
 
