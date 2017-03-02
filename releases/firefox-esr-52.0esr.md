@@ -43,6 +43,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1343107](https://bugzil.la/1343107) - docker image generating tasks failing bc tc-vcs hg version is old and we don't generate tarballs for esr52 yet
 
 
