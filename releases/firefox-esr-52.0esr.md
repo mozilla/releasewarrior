@@ -64,6 +64,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1343107](https://bugzil.la/1343107#c20): docker images don't live under the same directory whether you're on jamun or on esr52
 
 

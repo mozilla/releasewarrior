@@ -44,7 +44,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1343107](https://bugzil.la/1343107#c20): docker images don't live under the same directory whether you're on jamun or on esr52"
+            ]
         }
     ],
     "date": "2017-02-27",
