@@ -22,7 +22,7 @@
             "graphid": "Noc09qlSTsOmJGNsv8DU1w",
             "graphid_2": "",
             "human_tasks": {
-                "emailed_cdntest": false,
+                "emailed_cdntest": true,
                 "published_rc_to_beta": false,
                 "published_release": false,
                 "pushed_mirrors": false,
