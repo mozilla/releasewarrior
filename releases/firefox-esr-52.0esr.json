@@ -19,7 +19,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "-1hg14WTSJaAE5Y2hhulig",
             "graphid_2": "",
@@ -32,6 +32,19 @@
             "issues": [
                 "[Bug 1343107](https://bugzil.la/1343107) - docker image generating tasks failing bc tc-vcs hg version is old and we don't generate tarballs for esr52 yet"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "emailed_localtest": false,
+                "published_release": false,
+                "pushed_mirrors": false,
+                "submitted_shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-02-27",
