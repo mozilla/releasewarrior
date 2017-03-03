@@ -51,13 +51,13 @@
         {
             "aborted": false,
             "buildnum": 4,
-            "graphid": "",
+            "graphid": "05P3BelnQ96DyvinOdiOaQ",
             "graphid_2": "",
             "human_tasks": {
                 "emailed_localtest": false,
                 "published_release": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": []
         }
