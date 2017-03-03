@@ -25,7 +25,7 @@
                 "emailed_cdntest": true,
                 "published_rc_to_beta": false,
                 "published_release": false,
-                "pushed_mirrors": true,
+                "pushed_mirrors": false,
                 "submitted_shipit": true
             },
             "issues": [
