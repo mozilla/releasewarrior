@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- PRIOR TO PUBLISH: [Bug 1318921](https://bugzil.la/1318921) - Migrate desktop Firefox Beta 52 on XP/2003/Vista to ESR 52
 
 
