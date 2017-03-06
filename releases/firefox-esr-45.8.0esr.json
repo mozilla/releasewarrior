@@ -21,7 +21,7 @@
             "aborted": false,
             "buildnum": 2,
             "graphid": "GoVBtX67QVGUxdwgHI1e8Q",
-            "graphid_2": "",
+            "graphid_2": "https://tools.taskcluster.net/task-group-inspector/#/XX2poWUfSIeMt4SsFlnG_Q",
             "human_tasks": {
                 "emailed_localtest": true,
                 "published_release": false,

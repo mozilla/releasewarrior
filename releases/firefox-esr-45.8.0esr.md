@@ -34,7 +34,7 @@ task graph url: unknown
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 
 ### ESR Graph 2
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/https://tools.taskcluster.net/task-group-inspector/#/XX2poWUfSIeMt4SsFlnG_Q)
 
 #### Status
 - [x] [emailed esr-localtest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
