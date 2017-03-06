@@ -20,7 +20,7 @@
             "aborted": false,
             "buildnum": 2,
             "graphid": "Noc09qlSTsOmJGNsv8DU1w",
-            "graphid_2": "https://tools.taskcluster.net/task-group-inspector/#/bnSOK6pqS3KLPsPJ4pYb8w",
+            "graphid_2": "bnSOK6pqS3KLPsPJ4pYb8w",
             "human_tasks": {
                 "emailed_cdntest": true,
                 "published_rc_to_beta": true,
