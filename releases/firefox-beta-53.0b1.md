@@ -15,5 +15,6 @@ task graph url: unknown
 
 ### Issues
 - PRIOR TO PUBLISH: [Bug 1318921](https://bugzil.la/1318921) - Migrate desktop Firefox Beta 52 on XP/2003/Vista to ESR 52
+- PRIOR TO PUBLISH: [Bug 1319442](https://bugzil.la/1319442) - Stop advertising Firefox updates to 32-bit Linux clients with SSE on beta channel
 
 
