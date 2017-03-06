@@ -54,9 +54,9 @@
             "graphid": "05P3BelnQ96DyvinOdiOaQ",
             "graphid_2": "Edaw4v_5TcyHadEkwvU5fw",
             "human_tasks": {
-                "emailed_localtest": false,
+                "emailed_localtest": true,
                 "published_release": false,
-                "pushed_mirrors": false,
+                "pushed_mirrors": true,
                 "submitted_shipit": true
             },
             "issues": []

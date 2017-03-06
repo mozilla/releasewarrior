@@ -80,8 +80,8 @@ task graph url: unknown
 [task group](https://tools.taskcluster.net/push-inspector/#/Edaw4v_5TcyHadEkwvU5fw)
 
 #### Status
-- [ ] [emailed esr-localtest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
-- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [x] [emailed esr-localtest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
+- [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
