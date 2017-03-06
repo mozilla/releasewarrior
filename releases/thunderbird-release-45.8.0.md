@@ -12,5 +12,7 @@
 ### Issues
 - Windows en-US build failed due to slave missing tooltool token, reran job
 - A little network flakiness resulted in repacks Linux64 7/10 and Linux 4/10 having a issues talking to clobberer, and linux64 10/10 hung during signing, and linux 3/10 failing to resolve archive.m.o. Reran all jobs
+- Download error in av job, rerun
+- 504 Gateway Timeout errors in linux64 update verify 2/6, rerun
 
 
