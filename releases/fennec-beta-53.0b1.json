@@ -12,11 +12,20 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "human_tasks": {
                 "published_release": false,
                 "submitted_shipit": true
+            },
+            "issues": []
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "human_tasks": {
+                "published_release": false,
+                "submitted_shipit": false
             },
             "issues": []
         }
