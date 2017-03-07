@@ -7,7 +7,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "Single locale paths issue - [Bug 1345232](https://bugzil.la/1345232)"
+            ]
         }
     ],
     "date": "2017-03-06",
