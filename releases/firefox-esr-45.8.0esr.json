@@ -24,7 +24,7 @@
             "graphid_2": "XX2poWUfSIeMt4SsFlnG_Q",
             "human_tasks": {
                 "emailed_localtest": true,
-                "published_release": false,
+                "published_release": true,
                 "pushed_mirrors": true,
                 "submitted_shipit": true
             },
