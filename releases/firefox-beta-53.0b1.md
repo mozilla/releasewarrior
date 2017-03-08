@@ -18,5 +18,6 @@
 - PRIOR TO PUBLISH: [Bug 1319442](https://bugzil.la/1319442) - Stop advertising Firefox updates to 32-bit Linux clients with SSE on beta channel
 - PRIOR TO PUBLISH: [Bug 1325583](https://bugzil.la/1325583) - Stop advertising Firefox updates to 32bit Mac clients on the beta channel
 - had to remove "be" from locales list. appears to be removed but still expected. will file
+- shipit thought taskcluster graph submission failed but it succeeded. nthomas updated db entry to ready=1 status=Started
 
 
