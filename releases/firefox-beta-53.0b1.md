@@ -20,5 +20,6 @@
 - had to remove "be" from locales list. appears to be removed but still expected. will file
 - shipit thought taskcluster graph submission failed but it succeeded. nthomas updated db entry to ready=1 status=Started
 - shipit release row also needed complete=1. because that wasn't manually updated, releaserunner kicked off a new graph. nick fixed the row, jlund deleted the first graph with tctalker cancel_graph
+- Task t7eS84E9QaqQ5NtJ_UsInw ([funsize] MAR signing task win32 en-US for 52.0b8) got stuck in a running state but had actually hit an error 'TaskclusterRestFailure: Run 0 was already claimed by another worker'. Did a cancel and rerun using tctalker
 
 
