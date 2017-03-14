@@ -15,5 +15,6 @@
 
 ### Issues
 - [Bug 1347100](https://bugzil.la/1347100) - Update verification: FAIL: no partial update found for Firefox 53.0b2, ur locale
+- Cancel and rerun every {win{32,64},macosx64} update verification job because BBB failed without reporting results
 
 
