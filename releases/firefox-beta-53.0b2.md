@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1347100](https://bugzil.la/1347100) - Update verification: FAIL: no partial update found for Firefox 53.0b2, ur locale
 
 
