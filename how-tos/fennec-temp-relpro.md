@@ -21,7 +21,7 @@ Grab the `builduild number`, the `revision` and the `version` from the Ship-it e
 
 Nothing to do here for the moment. The source builder needs to be fixed so for the moment it is turned off.
 
-## Start off the Fenenc graph
+## Start off the Fennec graph
 
 The way this works is by triggering a graph that contains most of the builders (sans source builder, checksums and others which are still under development).
 One of the tasks is a `decision task` which will, at its turn, generate another graph for which all the tasks
