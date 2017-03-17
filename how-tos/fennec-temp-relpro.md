@@ -62,19 +62,14 @@ The hook that triggers the Fennec graph is [here](https://tools.taskcluster.net/
 
 ### Use pushapk_scriptworker
 
-1. Fetch the [base task definition](https://github.com/mozilla-releng/pushapkscript/blob/master/task_example.json)
-2. Paste it onto [TC's task creator](https://tools.taskcluster.net/task-creator/)
-3. Modify the [fields that need to be changed](https://github.com/mozilla-releng/pushapkscript#taskjson):
-  * For the APKs locations, use the signed tasks.
-  * Use the scope `'project:releng:googleplay:beta'`
-  * Change `google_play_track` to `production`
+1. Fetch the [one of the last completed task](https://queue.taskcluster.net/v1/task/N1Qa_WGmRbaAgjqZlpW--Q)
+1. Paste it onto [TC's task creator](https://tools.taskcluster.net/task-creator/)
+1. Modify the [fields that need to be changed](https://github.com/mozilla-releng/pushapkscript#taskjson):
+  * `payload` => `apks`, pick the ones from the signed tasks.
+  * change the `dependencies` to match the taskIds put in the payload.
+  * change `taskGroupId` to match the fennec graph
   * Keep `dry_run` to `true`
-4. You may want to attach this task to the rest of the graph. To do so, add in your task definition:
-```
-schedulerId: gecko-level-3
-taskGroupId: $ACTUAL_TASKGROUP_ID
-```
-5. If everything passed, create second task with the same definition, but flip `dry_run` to false.
+1. If everything passed, create second task with the same definition, but flip `dry_run` to `false`.
 
 ### Fallback steps
 
