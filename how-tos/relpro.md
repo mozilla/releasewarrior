@@ -17,6 +17,9 @@
 * Sort the table by "State" ascending, so you get unscheduled and  scheduled tasks first
 
 ## tctalker setup
+
+(Note: you can also use the new [taskcluster cli](https://github.com/taskcluster/taskcluster-cli) for many/most/all of the tctalker requirements.)
+
 * **You need tctalker to play nicely with taskcluster jobs**
 * navigate to [Taskcluster tools](https://tools.taskcluster.net) and make sure you're logged-in
 * make sure the following scopes are listed under your [Taskcluster credentials](https://tools.taskcluster.net/credentials/):
