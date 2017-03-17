@@ -17,9 +17,9 @@
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "WiefBqJ8QDqcKlUfLULBaw",
             "human_tasks": {
-                "emailed_localtest": false,
+                "emailed_localtest": true,
                 "published_release": false,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
