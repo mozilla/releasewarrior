@@ -45,5 +45,6 @@ task graph url: unknown
 - ftr: manually bumped next version on FIREFOX_ESR_52_0_X_RELBRANCH via https://hg.mozilla.org/releases/mozilla-esr52/rev/b7074346b82ed2819c448ebc66bdc3f497507897
 - esr-localtest needed the ESR52 rule adjusted so that it had higher priority than ESR45, and matched on version >= 52.0 instead of > 52.0. esr-cdntest and esr channels were OK
 - NEEDS ACTION: [Bug 1348428](https://bugzil.la/1348428) - shipit not reporting 52.0.1esr as FIREFOX_ESR_NEXT
+- jlorenzo killed running/pending funsize to speed up 52.0.1 release; aki reran cancelled once release was ready
 
 
