@@ -8,9 +8,7 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": [
-                "[Bug 1346246](https://bugzil.la/1346246) - snap broken"
-            ]
+            "issues": []
         }
     ],
     "date": "2017-03-16",

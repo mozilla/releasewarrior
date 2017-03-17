@@ -9,6 +9,6 @@
 - [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- [Bug 1346246](https://bugzil.la/1346246) - snap broken
+- none
 
 
