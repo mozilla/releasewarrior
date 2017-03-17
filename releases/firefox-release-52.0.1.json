@@ -11,7 +11,7 @@
                 "submitted_shipit": true
             },
             "issues": [
-                "en-US beetmover failed because of a missing template in m-r. Build aborted"
+                "en-US beetmover failed because of a missing uplift of [Bug 1343524](https://bugzil.la/1343524). Build aborted"
             ]
         },
         {

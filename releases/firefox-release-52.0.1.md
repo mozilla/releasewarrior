@@ -14,7 +14,7 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- en-US beetmover failed because of a missing template in m-r. Build aborted
+- en-US beetmover failed because of a missing uplift of [Bug 1343524](https://bugzil.la/1343524). Build aborted
 
 :bomb: _aborted release. starting new build num_ :bomb:
 
