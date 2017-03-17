@@ -16,5 +16,6 @@
 ### Issues
 - snap failed, probably [Bug 1346246](https://bugzil.la/1346246)
 - [Bug 1347100](https://bugzil.la/1347100) - Update verification: FAIL: no partial update found for Firefox 53.0b3, ur locale
+- Cancelled release, because 53.0b4 came on the same day (which is sec driven). Task group cX7gaRHARguLeGDAev_bkQ has been cancelled and ship-it manually updated.
 
 
