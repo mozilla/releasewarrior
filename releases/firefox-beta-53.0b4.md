@@ -15,5 +15,6 @@
 
 ### Issues
 - [Bug 1346246](https://bugzil.la/1346246) - snap broken
+- jlorenzo killed running/pending funsize to speed up 52.0.1 release; aki reran cancelled once release was ready
 
 
