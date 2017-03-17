@@ -20,7 +20,7 @@
             "graphid": "WiefBqJ8QDqcKlUfLULBaw",
             "human_tasks": {
                 "emailed_localtest": true,
-                "published_release": false,
+                "published_release": true,
                 "pushed_mirrors": true,
                 "submitted_shipit": true
             },
