@@ -42,5 +42,6 @@ task graph url: unknown
 ### Issues
 - After the uplift of [Bug 1343524](https://bugzil.la/1343524), release-runner was in an odd shape. It declared no "signed_task_id" which seems like a file in release runner was not updated. After some investigation, it might have been a .pyc that needed to be refreshed.
 - update verify died trying to test 45.8.0 updates
+- ftr: manually bumped next version on FIREFOX_ESR_52_0_X_RELBRANCH via https://hg.mozilla.org/releases/mozilla-esr52/rev/b7074346b82ed2819c448ebc66bdc3f497507897
 
 
