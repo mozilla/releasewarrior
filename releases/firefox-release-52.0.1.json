@@ -10,7 +10,9 @@
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "en-US beetmover failed because of a missing template in m-r. Build aborted"
+            ]
         }
     ],
     "date": "2017-03-16",
