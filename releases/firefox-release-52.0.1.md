@@ -30,6 +30,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- After the uplift of [Bug 1343524](https://bugzil.la/1343524), release-runner was in an odd shape. It declared no "signed_task_id" which seems like a file in release runner was not updated. After some investigation, it might have been a .pyc that needed to be refreshed.
 
 
