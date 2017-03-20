@@ -8,7 +8,9 @@
                 "published_release": false,
                 "submitted_shipit": true
             },
-            "issues": []
+            "issues": [
+                "what's new locale name issue with pushapk [issue 21](https://github.com/mozilla/releasewarrior/blob/master/releases/firefox-beta-53.0b3.md)"
+            ]
         }
     ],
     "date": "2017-03-16",
