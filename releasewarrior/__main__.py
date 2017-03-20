@@ -18,7 +18,8 @@ def setup_logging():
     console = logging.StreamHandler()
     # flip this to INFO once done testing
     console.setLevel(logging.DEBUG)
-    console.setFormatter(logging.Formatter('%(name)-12s: %(levelname)-8s %(message)s'))
+    console.setFormatter(logging.Formatter('%(message)s'))
+    logging.getLogger('git').setLevel(logging.WARNING)
 
     # add console logging to root logger
     logging.getLogger('').addHandler(console)
@@ -96,13 +97,18 @@ def parse_args():
                                     '$release channel and ran post release tasks')
     parser_update.add_argument('--issue', action='append', dest='issues',
                                help='issue to add to release in question')
-    parser_update.add_argument('--buildnum-aborted', action='store_true', dest='aborted',
+    parser_update.add_argument('--buildnum-aborted', '--abort', action='store_true', dest='aborted',
                                help='current buildnum is aborted. new buildnum will be added '
                                     'after this update call.')
 
     # postmortem options
     parser_postmortem.add_argument('date', type=lambda x: datetime.datetime.strptime(x, "%Y-%m-%d"),
                                    help='the date of the upcoming postmortem meeting')
+
+    # status options
+    parser_status.add_argument(
+        'pattern', nargs='?', metavar='REGEX',
+         help='Filter releases using a regex. The search is performed in "{product} {version}"')
 
     return parser.parse_args()
 
@@ -114,10 +120,11 @@ def main():
 
     logger = setup_logging()
 
+    # print status if no arguments passed
+    if (len(sys.argv) < 2):
+        sys.argv.append("status")
+
     args = parse_args()
     logger.debug("RUNNING with args: %s", ' '.join(sys.argv[1:]))
 
     args.command(args).run()  # <3 argparse for this
-
-
-

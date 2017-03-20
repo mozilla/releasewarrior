@@ -7,7 +7,7 @@
 
 ### ESR Graph 1
 {% if build['graphid'] %}
-[task graph](https://tools.taskcluster.net/task-group-inspector/#{{ build['graphid'] }})
+[task group](https://tools.taskcluster.net/push-inspector/#/{{ build['graphid'] }})
 {% else %}
 task graph url: unknown
 {% endif %}
@@ -17,15 +17,15 @@ task graph url: unknown
 
 ### ESR Graph 2
 {% if build['graphid_2'] %}
-[task graph](https://tools.taskcluster.net/task-group-inspector/#{{ build['graphid_2'] }})
+[task group](https://tools.taskcluster.net/push-inspector/#/{{ build['graphid_2'] }})
 {% else %}
 task graph url: unknown
 {% endif %}
 
 #### Status
-- [{% if build["human_tasks"]['pushed_mirrors'] %}x{% else %} {% endif %}] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [{% if build["human_tasks"]['emailed_localtest'] %}x{% else %} {% endif %}] [emailed esr-localtest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
-- [{% if build["human_tasks"]['published_release'] %}x{% else %} {% endif %}] published release tasks [part 1](../how-tos/relpro.md#3-publish-release) [part 2](../how-tos/relpro.md#4-post-release-step)
+- [{% if build["human_tasks"]['pushed_mirrors'] %}x{% else %} {% endif %}] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [{% if build["human_tasks"]['published_release'] %}x{% else %} {% endif %}] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 {% for issue in build['issues'] %}

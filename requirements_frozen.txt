@@ -1,0 +1,5 @@
+gitdb2==2.0.0
+GitPython==2.1.0
+Jinja2==2.8
+MarkupSafe==0.23
+smmap2==2.0.1
