@@ -16,5 +16,6 @@
 
 ### Issues
 - snap failed, probably [Bug 1346246](https://bugzil.la/1346246)
+- updating FirefoxSignoffs 'update' button gives error for aki
 
 
