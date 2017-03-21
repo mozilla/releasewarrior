@@ -5,7 +5,7 @@
 ## Build 1
 
 ### Beta Graph
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/b4hVu9piR62ZU1Kq3DTIoA)
 
 
 #### Status
