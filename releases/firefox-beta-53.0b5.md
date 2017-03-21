@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- snap failed, probably [Bug 1346246](https://bugzil.la/1346246)
 
 
