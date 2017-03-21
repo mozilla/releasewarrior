@@ -6,6 +6,7 @@
             "graphid": "",
             "human_tasks": {
                 "published_release": false,
+                "emailed_localtest": true,
                 "submitted_shipit": true
             },
             "issues": []
