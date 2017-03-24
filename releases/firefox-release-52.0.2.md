@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1350285](https://bugzil.la/1350285) - Cannot robust checkout https://hg.mozilla.org/releases/l10n/mozilla-release/nb-NO : HTTP Error 413: Request Entity Too Large
 
 
