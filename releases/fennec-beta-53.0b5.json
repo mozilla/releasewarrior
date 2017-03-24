@@ -5,8 +5,8 @@
             "buildnum": 1,
             "graphid": "",
             "human_tasks": {
-                "published_release": false,
                 "emailed_localtest": true,
+                "published_release": true,
                 "submitted_shipit": true
             },
             "issues": []
