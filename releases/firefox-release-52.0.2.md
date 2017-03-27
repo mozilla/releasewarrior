@@ -15,5 +15,6 @@ task graph url: unknown
 
 ### Issues
 - [Bug 1350285](https://bugzil.la/1350285) - Cannot robust checkout https://hg.mozilla.org/releases/l10n/mozilla-release/nb-NO : HTTP Error 413: Request Entity Too Large
+- [Bug 1350841](https://bugzil.la/1350841) - "firefox mozilla-release win64 l10n repack {,artifacts} {1,5}" have been pending for 3 days
 
 
