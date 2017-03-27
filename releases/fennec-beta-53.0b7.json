@@ -7,7 +7,7 @@
             "human_tasks": {
                 "emailed_localtest": false,
                 "published_release": false,
-                "submitted_shipit": false
+                "submitted_shipit": true
             },
             "issues": []
         }
