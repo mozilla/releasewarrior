@@ -6,7 +6,7 @@
             "graphid": "",
             "human_tasks": {
                 "emailed_localtest": true,
-                "published_release": false,
+                "published_release": true,
                 "pushed_mirrors": false,
                 "submitted_shipit": true
             },
