@@ -18,5 +18,6 @@ task graph url: unknown
 - [Bug 1350841](https://bugzil.la/1350841) - "firefox mozilla-release win64 l10n repack {,artifacts} {1,5}" have been pending for 3 days
 - push_to_mirrors and publish_release tasks expired. Recreated them manually under the same graph
 - [Bug 1351264](https://bugzil.la/1351264) - [bbb] {release,esr} uptake monitoring jobs are going backwards in the waiting line
+- Because of the default deadline in Task Creatormanually, the manually created publish_release tasks expired. Recreated them with a 5-day-deadline
 
 
