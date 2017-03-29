@@ -183,16 +183,16 @@ $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.
 * Desktop Firefox Betas, Desktop Firefox Release-Candidate (beta release prior to release release) and Desktop Firefox dot Releases
     * go to the task graph (there is only one) and find taskId of `publish release human decision task`
     * Resolve the "publish release human decision" task using the command below
-    * reply to RelMan's email as soon as this step is completed
+    * reply to RelMan's email as soon as balrog task is completed
 * Desktop Firefox Release and Release-Candidate (RC releases push to release channel)
     * go to the task graph #2 and find taskId of `publish release human decision task`
     * Resolve the "publish release human decision" task using the command below
-    * reply to RelMan's email as soon as this step is completed
+    * reply to RelMan's email as soon as balrog task is completed
 * Desktop Firefox ESRs
     * depending on timing you may have 1 or 2 graphs. Go to the latest one and
       find taskId of `publish release human decision task`
     * Resolve the "publish release human decision" task using the command below
-    * reply to RelMan's email as soon as this step is completed
+    * reply to RelMan's email as soon as balrog task is completed
 ```bash
  tctalker --conf ~/.taskcluster/relpro.json report_completed $TASK_ID
 ```
