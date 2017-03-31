@@ -15,6 +15,6 @@
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- firefox mozilla-beta win64 l10n repack 4/10 hit 1800 seconds no output during hg pull; reran task with taskcluster cli
 
 
