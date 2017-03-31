@@ -67,11 +67,14 @@ DATA_TEMPLATES = {
 # These should be specified in order.
 KNOWN_CHECKBOXES = (
     ('submitted_shipit', 'shipit'),
+    ('graph', ),
     ('emailed_localtest', 'localtest'),
     ('emailed_cdntest', 'cdntest'),
     ('pushed_mirrors', 'mirrors'),
+    ('pushapk', ),
     ('published_release', 'publish'),
     ('published_rc_to_beta', 'beta'),
+    ('fxsignoff', ),
 )
 ALL_CHECKBOXES = tuple([item for sublist in KNOWN_CHECKBOXES for item in sublist])
 ORDERED_HUMAN_TASKS = tuple([sublist[0] for sublist in KNOWN_CHECKBOXES])
