@@ -76,7 +76,7 @@ def parse_args():
     parser_update.add_argument('--graphid-2', '--taskcluster-graphid-2', dest='graphid_2',
                                help='taskcluster graphid used for graph 2 of rc release in question')
     parser_update.add_argument('--checkbox', choices=ALL_CHECKBOXES, dest='checkboxes',
-                               help='Check off a human task')
+                               nargs='+', help='Check off human task(s)')
 
     parser_update.add_argument('--issue', action='append', dest='issues',
                                help='issue to add to release in question')
