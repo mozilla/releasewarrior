@@ -65,9 +65,7 @@ def ensure_branch_and_version_are_valid(branch, version):
         sys.exit(1)
 
 
-def _get_checkbox_value(nick, args, special_arg=None):
-    if special_arg:
-        return (nick, True)
+def _get_checkbox_value(nick, args):
     aliases = [item for sublist in KNOWN_CHECKBOXES for item in sublist if nick == sublist[0]]
     for alias in aliases:
         if args.checkboxes and alias in args.checkboxes:
@@ -82,14 +80,7 @@ def get_update_data(args):
         ("aborted", args.aborted),
         ("issues", args.issues),
     ]
-    human_tasks_data = [
-        _get_checkbox_value("submitted_shipit", args, args.submitted_shipit),
-        _get_checkbox_value("emailed_localtest", args, args.emailed_localtest),
-        _get_checkbox_value("emailed_cdntest", args, args.emailed_cdntest),
-        _get_checkbox_value("pushed_mirrors", args, args.pushed_mirrors),
-        _get_checkbox_value("published_release", args, args.published_release),
-        _get_checkbox_value("published_rc_to_beta", args, args.published_rc_to_beta),
-    ]
+    human_tasks_data = [_get_checkbox_value(x, args) for x in ORDERED_HUMAN_TASKS]
     update_data = {"human_tasks": {}}
     for key, value in build_data:
         if value:
