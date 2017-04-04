@@ -9,7 +9,7 @@
                 "graph": true,
                 "published_release": false,
                 "pushapk": false,
-                "submitted_shipit": true
+                "shipit": true
             },
             "issues": []
         }

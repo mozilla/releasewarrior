@@ -7,7 +7,7 @@
             "human_tasks": {
                 "emailed_cdntest": true,
                 "published_release": true,
-                "submitted_shipit": true
+                "shipit": true
             },
             "issues": []
         }

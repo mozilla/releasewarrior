@@ -9,7 +9,7 @@
                 "emailed_localtest": true,
                 "published_release": true,
                 "pushed_mirrors": true,
-                "submitted_shipit": true
+                "shipit": true
             },
             "issues": [
                 "[Bug 1350285](https://bugzil.la/1350285) - Cannot robust checkout https://hg.mozilla.org/releases/l10n/mozilla-release/nb-NO : HTTP Error 413: Request Entity Too Large",

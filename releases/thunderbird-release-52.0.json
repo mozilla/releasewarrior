@@ -6,7 +6,7 @@
             "human_tasks": {
                 "published_release": false,
                 "pushed_mirrors": false,
-                "submitted_shipit": true
+                "shipit": true
             },
             "issues": [
                 "all windows and linux repacks failing, source builder failing"

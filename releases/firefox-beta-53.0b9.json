@@ -7,7 +7,7 @@
             "human_tasks": {
                 "emailed_cdntest": true,
                 "published_release": true,
-                "submitted_shipit": true
+                "shipit": true
             },
             "issues": [
                 "[Bug 1353233](https://bugzil.la/1353233) - partial submission error"

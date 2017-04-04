@@ -13,9 +13,9 @@ task graph url: unknown
 {% endif %}
 
 #### Status
-- [{% if build["human_tasks"]['submitted_shipit'] %}x{% else %} {% endif %}] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [{% if build["human_tasks"]['emailed_cdntest'] %}x{% else %} {% endif %}] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
-- [{% if build["human_tasks"]['published_rc_to_beta'] %}x{% else %} {% endif %}] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
+- [{% if build["human_tasks"]['shipit'] %}x{% else %} {% endif %}] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [{% if build["human_tasks"]['cdntest'] %}x{% else %} {% endif %}] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
+- [{% if build["human_tasks"]['beta'] %}x{% else %} {% endif %}] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
 
 ### RC graph 2
 {% if build['graphid_2'] %}
@@ -25,8 +25,8 @@ task graph url: unknown
 {% endif %}
 
 #### Status
-- [{% if build["human_tasks"]['pushed_mirrors'] %}x{% else %} {% endif %}] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
-- [{% if build["human_tasks"]['published_release'] %}x{% else %} {% endif %}] [published release tasks](../how-tos/relpro.md#3-publish-release)
+- [{% if build["human_tasks"]['mirrors'] %}x{% else %} {% endif %}] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [{% if build["human_tasks"]['publish'] %}x{% else %} {% endif %}] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 {% for issue in build['issues'] %}
