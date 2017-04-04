@@ -100,6 +100,7 @@ chmod 755 beta2release_l10n.sh
 chmod 600 ffxbld_rsa
 ./beta2release_l10n.sh # Can be rerun. Cloned locales are skipped. If a locale failed pushing, delete the repo.
 ```
+1. not sure if we need to run l10n-bumper on m-r
 
 ### It's done!
 
@@ -138,6 +139,13 @@ hg -R build/mozilla-beta diff # Validate it with someone else
 python mozharness-aurora/scripts/merge_day/gecko_migration.py \
   -c selfserve/production.py -c merge_day/aurora_to_beta.py \
   --create-virtualenv --commit-changes --push --trigger-builders
+```
+1. run l10n-bumper against beta
+```
+ssh buildbot-master01.bb.releng.use1.mozilla.com
+sudo su - cltbld
+cd /builds/l10n-bumper
+mozharness/scripts/l10n_bumper.py -c configs/l10n_bumper/mozilla-beta.py --ignore-closed-tree
 ```
 1. Verify changesets are visible on [hg pushlog](https://hg.mozilla.org/releases/mozilla-beta/pushloghtml) and [Treeherder]( https://treeherder.mozilla.org/#/jobs?repo=mozilla-beta). It may take a couple of minutes to appear.
 1. Tell sheriffs this particular migration is done
