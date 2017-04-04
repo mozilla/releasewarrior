@@ -15,6 +15,6 @@
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- [Bug 1353233](https://bugzil.la/1353233) - partial submission error
 
 
