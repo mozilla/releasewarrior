@@ -6,9 +6,9 @@
             "graphid": "uVnXWZZUTyitgmduAHVKCQ",
             "human_tasks": {
                 "emailed_localtest": true,
-                "graph": false,
-                "pushapk": false,
+                "graph": true,
                 "published_release": false,
+                "pushapk": false,
                 "submitted_shipit": true
             },
             "issues": []
