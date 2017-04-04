@@ -4,8 +4,7 @@ import logging
 import re
 import sys
 
-from releasewarrior.config import ARCHIVED_RELEASES_PATH, KNOWN_CHECKBOXES, \
-    ORDERED_HUMAN_TASKS, RELEASES_PATH
+from releasewarrior.config import ARCHIVED_RELEASES_PATH, ORDERED_HUMAN_TASKS, RELEASES_PATH
 
 logger = logging.getLogger('releasewarrior')
 
@@ -66,10 +65,8 @@ def ensure_branch_and_version_are_valid(branch, version):
 
 
 def _get_checkbox_value(nick, args):
-    aliases = [item for sublist in KNOWN_CHECKBOXES for item in sublist if nick == sublist[0]]
-    for alias in aliases:
-        if args.checkboxes and alias in args.checkboxes:
-            return (nick, True)
+    if args.checkboxes and nick in args.checkboxes:
+        return (nick, True)
     return (nick, False)
 
 

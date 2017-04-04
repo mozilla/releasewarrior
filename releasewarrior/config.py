@@ -5,6 +5,7 @@ SEARCH_PATH = (
     os.getcwd(),
 )
 
+
 def find_repo_path(search_path):
     for path in search_path:
         if os.path.exists(os.path.join(path, '.git')):
@@ -13,6 +14,7 @@ def find_repo_path(search_path):
                     return path
     else:
         raise Exception("Can't find releasewarrior.git in {}!".format(search_path))
+
 
 REPO_PATH = find_repo_path(SEARCH_PATH)  # abs path to dir that contains .git
 TEMPLATES_PATH = os.path.join(REPO_PATH, 'templates')
@@ -65,16 +67,14 @@ DATA_TEMPLATES = {
 
 # The official json nick, followed by human-friendly alias(es)
 # These should be specified in order.
-KNOWN_CHECKBOXES = (
-    ('submitted_shipit', 'shipit'),
-    ('graph', ),
-    ('emailed_localtest', 'localtest'),
-    ('emailed_cdntest', 'cdntest'),
-    ('pushed_mirrors', 'mirrors'),
-    ('pushapk', ),
-    ('published_release', 'publish'),
-    ('published_rc_to_beta', 'beta'),
-    ('fxsignoff', ),
+ORDERED_HUMAN_TASKS = (
+    'shipit',
+    'graph',
+    'localtest',
+    'cdntest',
+    'mirrors',
+    'pushapk',
+    'publish',
+    'beta',
+    'fxsignoff',
 )
-ALL_CHECKBOXES = tuple([item for sublist in KNOWN_CHECKBOXES for item in sublist])
-ORDERED_HUMAN_TASKS = tuple([sublist[0] for sublist in KNOWN_CHECKBOXES])

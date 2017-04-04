@@ -6,7 +6,7 @@ import logging
 
 from releasewarrior.commands import CreateRelease, UpdateRelease, Postmortem, Status
 from releasewarrior.commands import SyncRelease
-from releasewarrior.config import ALL_CHECKBOXES, LOG_PATH
+from releasewarrior.config import ORDERED_HUMAN_TASKS, LOG_PATH
 
 
 def setup_logging():
@@ -75,7 +75,7 @@ def parse_args():
                                help='taskcluster graphid used for release in question')
     parser_update.add_argument('--graphid-2', '--taskcluster-graphid-2', dest='graphid_2',
                                help='taskcluster graphid used for graph 2 of rc release in question')
-    parser_update.add_argument('--checkbox', choices=ALL_CHECKBOXES, dest='checkboxes',
+    parser_update.add_argument('--checkbox', choices=ORDERED_HUMAN_TASKS, dest='checkboxes',
                                nargs='+', help='Check off human task(s)')
 
     parser_update.add_argument('--issue', action='append', dest='issues',
