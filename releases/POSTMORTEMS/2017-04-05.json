@@ -52,6 +52,17 @@
             "date": "2017-04-03",
             "product": "firefox",
             "version": "53.0b9"
+        },
+        {
+            "builds": [
+                {
+                    "buildnum": 1,
+                    "issues": []
+                }
+            ],
+            "date": "2017-04-03",
+            "product": "fennec",
+            "version": "53.0b9"
         }
     ]
 }
