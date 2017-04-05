@@ -5,10 +5,10 @@
             "buildnum": 1,
             "graphid": "uVnXWZZUTyitgmduAHVKCQ",
             "human_tasks": {
-                "emailed_localtest": true,
                 "graph": true,
-                "published_release": false,
-                "pushapk": false,
+                "localtest": true,
+                "publish": false,
+                "pushapk": true,
                 "shipit": true
             },
             "issues": []
