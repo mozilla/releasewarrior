@@ -17,12 +17,12 @@
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "GHaG2kXDS8aL4ecWY11HQA",
             "human_tasks": {
                 "cdntest": false,
                 "fxsignoff": false,
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }

@@ -22,11 +22,11 @@ task graph url: unknown
 ## Build 2
 
 ### Beta Graph
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/GHaG2kXDS8aL4ecWY11HQA)
 
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 - [ ] Update "Firefoxsignoff" rule in Balrog
