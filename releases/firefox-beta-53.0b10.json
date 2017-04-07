@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "",
             "human_tasks": {
@@ -13,6 +13,18 @@
             "issues": [
                 "[Bug 1348637](https://bugzil.la/1348637) - Pulling fails with stream ended unexpectedly"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "cdntest": false,
+                "fxsignoff": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-04-07",
