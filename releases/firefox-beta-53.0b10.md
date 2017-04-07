@@ -15,6 +15,6 @@ task graph url: unknown
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- [Bug 1348637](https://bugzil.la/1348637) - Pulling fails with stream ended unexpectedly
 
 

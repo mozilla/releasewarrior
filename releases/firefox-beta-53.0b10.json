@@ -10,7 +10,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1348637](https://bugzil.la/1348637) - Pulling fails with stream ended unexpectedly"
+            ]
         }
     ],
     "date": "2017-04-07",
