@@ -19,7 +19,7 @@
             "buildnum": 2,
             "graphid": "GHaG2kXDS8aL4ecWY11HQA",
             "human_tasks": {
-                "cdntest": false,
+                "cdntest": true,
                 "fxsignoff": false,
                 "publish": false,
                 "shipit": true
