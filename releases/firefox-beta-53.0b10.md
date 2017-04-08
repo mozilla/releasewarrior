@@ -32,6 +32,6 @@ task graph url: unknown
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- [Bug 1354625](https://bugzil.la/1354625) - had to nuke a lot of hg-share dirs on linux; markco spun up a new win ami
 
 

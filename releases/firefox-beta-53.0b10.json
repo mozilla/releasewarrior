@@ -24,7 +24,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1354625](https://bugzil.la/1354625) - had to nuke a lot of hg-share dirs on linux; markco spun up a new win ami"
+            ]
         }
     ],
     "date": "2017-04-07",
