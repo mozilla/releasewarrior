@@ -88,17 +88,19 @@ python mozharness-central/scripts/merge_day/gecko_migration.py -c mozharness-esr
 
 ### Uplift locales
 
-1. Get a copy of the key called `ffxbld_rsa` on a buildbot master (ctlbld).
-1. There are several tens of repos to upgrade. Using an external machine saves time.
+1. There are several tens of repos to upgrade. Using an external machine saves time.  You need access to ffxbld_rsa, so probably use a buildbot master; **Do not copy ffxbld_rsa around!**
+
 ```sh
-ssh cruncher-aws.srv.releng.usw2.mozilla.com
+ssh buildbot-master01.bb.releng.use1.mozilla.com
 screen
 mkdir l10n && cd l10n
 wget https://hg.mozilla.org/build/braindump/raw-file/default/releases-related/beta2release_l10n.sh
 chmod 755 beta2release_l10n.sh
-# copy ffxbld_rsa in the current folder
-chmod 600 ffxbld_rsa
-./beta2release_l10n.sh # Can be rerun. Cloned locales are skipped. If a locale failed pushing, delete the repo.
+export SSH_KEY=/home/cltbld/.ssh/ffxbld_rsa
+./beta2release_l10n.sh 2>&1 | tee l10n.log  # Can be rerun. Cloned locales are skipped. If a locale failed pushing, delete the repo.
+# after you're done, clean up
+cd
+rm -rf l10n
 ```
 
 ### It's done!
