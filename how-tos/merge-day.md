@@ -107,11 +107,13 @@ rm -rf l10n
 
 1. Reply to the migration request with the template:
 
-> This is now complete:
-    * mozilla-beta is merged to mozilla-release, new version is XX.Y
-    * l10n mozilla-beta repos are merged to mozilla-release
-    * esr is now XX.Y.Z
-    * beta will stay closed until next Monday
+```
+This is now complete:
+* mozilla-beta is merged to mozilla-release, new version is XX.Y
+* l10n mozilla-beta repos are merged to mozilla-release
+* esr is now XX.Y.Z
+* beta will stay closed until next Monday
+```
 
 ## Day 11 - Prep day #2
 1. Similar to prep day #1 (you may need to redownload `mozharness-central`):
