@@ -1,0 +1,23 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "cdntest": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": [
+                "SPECIAL REQUIREMENT: [Bug 1354115](https://bugzil.la/1354115) - remove special WebSense rules for non-blacklisted and unknown WebSense users"
+            ]
+        }
+    ],
+    "date": "2017-04-10",
+    "product": "firefox",
+    "version": "53.0"
+}
