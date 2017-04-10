@@ -21,7 +21,7 @@
             "human_tasks": {
                 "cdntest": true,
                 "fxsignoff": false,
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": [
