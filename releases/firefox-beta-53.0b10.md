@@ -29,7 +29,7 @@ task graph url: unknown
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [x] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
 - [x] [published release tasks](../how-tos/relpro.md#3-publish-release)
-- [ ] Update "Firefoxsignoff" rule in Balrog
+- [x] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
 - [Bug 1354625](https://bugzil.la/1354625) - had to nuke a lot of hg-share dirs on linux; markco spun up a new win ami

@@ -20,7 +20,7 @@
             "graphid": "GHaG2kXDS8aL4ecWY11HQA",
             "human_tasks": {
                 "cdntest": true,
-                "fxsignoff": false,
+                "fxsignoff": true,
                 "publish": true,
                 "shipit": true
             },
