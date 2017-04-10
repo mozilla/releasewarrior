@@ -100,7 +100,6 @@ chmod 755 beta2release_l10n.sh
 chmod 600 ffxbld_rsa
 ./beta2release_l10n.sh # Can be rerun. Cloned locales are skipped. If a locale failed pushing, delete the repo.
 ```
-1. not sure if we need to run l10n-bumper on m-r
 
 ### It's done!
 
