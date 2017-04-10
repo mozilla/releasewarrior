@@ -32,7 +32,7 @@ graphlog=
 
 ## Day 1 - Prep day #1
 
-1. On the merge day bug, create 2 patches to bump [gecko_versions.json](https://dxr.mozilla.org/mozilla-central/source/mozilla/gecko_versions.json). Get them reviewed but **don't land them yet**
+1. On the merge day bug, create 2 patches to bump [gecko_versions.json](https://dxr.mozilla.org/build-central/source/buildbot-configs/mozilla/gecko_versions.json). Get them reviewed but **don't land them yet**
   1. patch 1: bump **only mozilla-release**. It will serve Firefox's release candidate. [Example](https://bug1123369.bugzilla.mozilla.org/attachment.cgi?id=8580307).
   1. patch 2: bump the remaining branches. This includes m-b, m-a, m-c and comm branches. [Example](https://bug1123369.bugzilla.mozilla.org/attachment.cgi?id=8580308).
 
