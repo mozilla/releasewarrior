@@ -33,5 +33,6 @@ task graph url: unknown
 
 ### Issues
 - [Bug 1354625](https://bugzil.la/1354625) - had to nuke a lot of hg-share dirs on linux; markco spun up a new win ami
+- [Bug 1355018](https://bugzil.la/1355018) - Make post-release steps use the unified repo
 
 
