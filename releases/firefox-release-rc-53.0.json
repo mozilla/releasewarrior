@@ -38,18 +38,18 @@
         {
             "aborted": false,
             "buildnum": 3,
-            "graphid": "",
+            "graphid": "thD9fmrUQv6ECT7eY_xNtQ",
             "graphid_2": "",
             "human_tasks": {
                 "beta": false,
                 "cdntest": false,
                 "mirrors": false,
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": [
                 "Even with newer docker images and unified repo, docker images generation is flake https://tools.taskcluster.net/task-inspector/\\#JS5zL2rkRi2jkj2ZofoROQ/1 "
-	    ]
+            ]
         }
     ],
     "date": "2017-04-10",
