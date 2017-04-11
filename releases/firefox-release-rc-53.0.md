@@ -23,6 +23,6 @@ task graph url: unknown
 - SPECIAL REQUIREMENT: [Bug 1354115](https://bugzil.la/1354115) - remove special WebSense rules for non-blacklisted and unknown WebSense users
 - [Bug 1318919](https://bugzil.la/1318919) - we forgot we had to update m-r for tc linux
 - docker image hg clone timeouts https://github.com/mozilla/releasetasks/pull/229
-- busted linux hg clones again for l10n
+- [Bug 1355404](https://bugzil.la/1355404) busted linux hg clones again for l10n
 
 
