@@ -20,7 +20,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "",
             "graphid_2": "",
@@ -35,6 +35,20 @@
                 "Even with newer docker images and unified repo, docker images generation is flake https://tools.taskcluster.net/task-inspector/\\#JS5zL2rkRi2jkj2ZofoROQ/1 ",
                 "releaserunner did not pick the latest changes of releasetasks. cancelled the build"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "cdntest": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-04-10",
