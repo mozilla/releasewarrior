@@ -11,7 +11,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "cot sha verification issue for beetmover-checksums; retried and worked"
+            ]
         }
     ],
     "date": "2017-04-10",
