@@ -20,5 +20,6 @@ task graph url: unknown
 
 ### Issues
 - [Bug 1355305](https://bugzil.la/1355305) - source tarball task missing tc-vcs tarball
+- hung windows l10n jobs -- cancelled&reran
 
 
