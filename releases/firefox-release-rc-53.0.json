@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "p6Q9UsUrS9eSv1s4z0Cg3A",
             "graphid_2": "",
@@ -18,6 +18,20 @@
                 "docker image hg clone timeouts https://github.com/mozilla/releasetasks/pull/229",
                 "[Bug 1355404](https://bugzil.la/1355404) busted linux hg clones again for l10n"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "cdntest": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-04-10",

@@ -25,4 +25,26 @@ task graph url: unknown
 - docker image hg clone timeouts https://github.com/mozilla/releasetasks/pull/229
 - [Bug 1355404](https://bugzil.la/1355404) busted linux hg clones again for l10n
 
+:bomb: _aborted release. starting new build num_ :bomb:
+
+## Build 2
+
+### RC graph 1
+task graph url: unknown
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
+- [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
+
+### RC graph 2
+task graph url: unknown
+
+#### Status
+- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
+
+### Issues
+- none
+
 
