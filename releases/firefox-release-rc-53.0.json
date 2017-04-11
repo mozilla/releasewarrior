@@ -13,7 +13,8 @@
                 "shipit": false
             },
             "issues": [
-                "SPECIAL REQUIREMENT: [Bug 1354115](https://bugzil.la/1354115) - remove special WebSense rules for non-blacklisted and unknown WebSense users"
+                "SPECIAL REQUIREMENT: [Bug 1354115](https://bugzil.la/1354115) - remove special WebSense rules for non-blacklisted and unknown WebSense users",
+                "[Bug 1318919](https://bugzil.la/1318919) - we forgot we had to update m-r for tc linux"
             ]
         }
     ],
