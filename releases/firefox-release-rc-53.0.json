@@ -42,7 +42,7 @@
             "graphid_2": "",
             "human_tasks": {
                 "beta": false,
-                "cdntest": false,
+                "cdntest": true,
                 "mirrors": false,
                 "publish": false,
                 "shipit": true
