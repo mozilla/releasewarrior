@@ -19,6 +19,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- [Bug 1355305](https://bugzil.la/1355305) - source tarball task missing tc-vcs tarball
 
 

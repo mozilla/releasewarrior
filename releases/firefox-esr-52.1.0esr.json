@@ -11,7 +11,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1355305](https://bugzil.la/1355305) - source tarball task missing tc-vcs tarball"
+            ]
         }
     ],
     "date": "2017-04-10",
