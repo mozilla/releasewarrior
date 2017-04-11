@@ -32,7 +32,6 @@
                 "shipit": false
             },
             "issues": [
-                "Even with newer docker images and unified repo, docker images generation is flake https://tools.taskcluster.net/task-inspector/\\#JS5zL2rkRi2jkj2ZofoROQ/1 ",
                 "releaserunner did not pick the latest changes of releasetasks. cancelled the build"
             ]
         },
@@ -48,7 +47,9 @@
                 "publish": false,
                 "shipit": false
             },
-            "issues": []
+            "issues": [
+                "Even with newer docker images and unified repo, docker images generation is flake https://tools.taskcluster.net/task-inspector/\\#JS5zL2rkRi2jkj2ZofoROQ/1 "
+	    ]
         }
     ],
     "date": "2017-04-10",

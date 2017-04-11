@@ -45,7 +45,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- Even with newer docker images and unified repo, docker images generation is flake https://tools.taskcluster.net/task-inspector/\#JS5zL2rkRi2jkj2ZofoROQ/1 
 - releaserunner did not pick the latest changes of releasetasks. cancelled the build
 
 :bomb: _aborted release. starting new build num_ :bomb:
@@ -68,6 +67,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Even with newer docker images and unified repo, docker images generation is flake https://tools.taskcluster.net/task-inspector/\#JS5zL2rkRi2jkj2ZofoROQ/1 
 
 
