@@ -40,6 +40,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Cannot clone the unified repo with the hg client included in taskcluster/image)builder:0.1.3. Created a new image docker with hg 4.1.1. Build2 aborted 
 
 
