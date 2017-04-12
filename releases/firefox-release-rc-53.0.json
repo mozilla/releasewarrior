@@ -41,7 +41,7 @@
             "graphid": "thD9fmrUQv6ECT7eY_xNtQ",
             "graphid_2": "",
             "human_tasks": {
-                "beta": false,
+                "beta": true,
                 "cdntest": true,
                 "mirrors": false,
                 "publish": false,
