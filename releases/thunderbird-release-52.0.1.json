@@ -6,9 +6,11 @@
             "human_tasks": {
                 "mirrors": false,
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
-            "issues": []
+            "issues": [
+                "4 linux64 repacks failed to download the en-US build, hitting a red timeout talking to archive.mozilla.org. Jobs rerun."
+            ]
         }
     ],
     "date": "2017-04-12",
