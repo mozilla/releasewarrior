@@ -19,6 +19,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- releasetasks needs to be on the esr45 branch (on bm85) otherwise the release graph is too recent. We also need to backport the unified repo patch on that branch. Build1 aborted 
 
 

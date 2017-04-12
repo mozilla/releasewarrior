@@ -11,7 +11,9 @@
                 "publish": false,
                 "shipit": false
             },
-            "issues": []
+            "issues": [
+                "releasetasks needs to be on the esr45 branch (on bm85) otherwise the release graph is too recent. We also need to backport the unified repo patch on that branch. Build1 aborted "
+            ]
         }
     ],
     "date": "2017-04-12",
