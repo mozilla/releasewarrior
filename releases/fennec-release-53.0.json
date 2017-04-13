@@ -7,7 +7,7 @@
             "graphid_2": "",
             "human_tasks": {
                 "graph": true,
-                "localtest": false,
+                "localtest": true,
                 "mirrors": false,
                 "publish": false,
                 "pushapk": false,
