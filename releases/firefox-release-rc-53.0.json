@@ -70,14 +70,14 @@
         {
             "aborted": false,
             "buildnum": 5,
-            "graphid": "",
+            "graphid": "gc6UVbqRQjW75dwe8tTCrA",
             "graphid_2": "",
             "human_tasks": {
                 "beta": false,
                 "cdntest": false,
                 "mirrors": false,
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
