@@ -69,4 +69,26 @@ task graph url: unknown
 ### Issues
 - Even with newer docker images and unified repo, docker images generation is flake https://tools.taskcluster.net/task-inspector/\#JS5zL2rkRi2jkj2ZofoROQ/1 
 
+:bomb: _aborted release. starting new build num_ :bomb:
+
+## Build 4
+
+### RC graph 1
+task graph url: unknown
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
+- [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
+
+### RC graph 2
+task graph url: unknown
+
+#### Status
+- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
+
+### Issues
+- none
+
 
