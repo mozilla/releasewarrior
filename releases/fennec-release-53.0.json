@@ -5,12 +5,12 @@
             "buildnum": 1,
             "graphid": "gc6UVbqRQjW75dwe8tTCrA",
             "human_tasks": {
-                "graph": false,
+                "graph": true,
                 "localtest": false,
                 "mirrors": false,
                 "publish": false,
                 "pushapk": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": [
                 "SPECIAL REQUIREMENT: After the dry-run task passed, do [bug 1354038](https://bugzil.la/1354038)",
