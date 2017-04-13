@@ -43,7 +43,7 @@ cd merge_day
 wget https://hg.mozilla.org/build/tools/raw-file/default/buildfarm/utils/archiver_client.py
 python archiver_client.py mozharness --destination mozharness-central --repo mozilla-central --rev default --debug  # Central must be used against every branch
 python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/beta_to_release.py
-```
+ ```
 1. The script should have created a diff:
 ```sh
 hg -R build/mozilla-release diff
@@ -98,7 +98,7 @@ mkdir l10n && cd l10n
 wget https://hg.mozilla.org/build/braindump/raw-file/default/releases-related/beta2release_l10n.sh
 chmod 755 beta2release_l10n.sh
 export SSH_KEY=/home/cltbld/.ssh/ffxbld_rsa
-./beta2release_l10n.sh 2>&1 | tee l10n.log  # Can be rerun. Cloned locales are skipped. If a locale failed pushing, delete the repo.
+./beta2release_l10n.sh 2>&1 | tee -a l10n.log  # Can be rerun. Cloned locales are skipped. If a locale failed pushing, delete the repo.
 # after you're done, clean up
 cd
 rm -rf l10n
