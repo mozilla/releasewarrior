@@ -93,6 +93,7 @@ python mozharness-central/scripts/merge_day/gecko_migration.py -c mozharness-esr
 ```sh
 ssh buildbot-master01.bb.releng.use1.mozilla.com
 screen
+sudo su - cltbld
 mkdir l10n && cd l10n
 wget https://hg.mozilla.org/build/braindump/raw-file/default/releases-related/beta2release_l10n.sh
 chmod 755 beta2release_l10n.sh
