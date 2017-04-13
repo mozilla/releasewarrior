@@ -74,10 +74,10 @@ task graph url: unknown
 ## Build 4
 
 ### RC graph 1
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/z_-Tl0p4Rxu6eV3whAlKrw)
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [emailed beta-cdntest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
 - [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
 
