@@ -1,0 +1,19 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "human_tasks": {
+                "mirrors": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": [
+                "SPECIAL REQUIREMENT: After the dry-run task passed, do [bug 1354038](https://bugzil.la/1354038)"
+            ]
+        }
+    ],
+    "date": "2017-04-12",
+    "product": "fennec",
+    "version": "53.0"
+}
