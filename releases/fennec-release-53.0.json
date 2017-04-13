@@ -2,10 +2,15 @@
     "builds": [
         {
             "aborted": false,
+            "graphid": null,
             "buildnum": 1,
             "human_tasks": {
                 "mirrors": false,
+                "graph": false,
                 "publish": false,
+                "localtest": false,
+                "mirrors": false,
+                "pushapk": false,
                 "shipit": false
             },
             "issues": [
