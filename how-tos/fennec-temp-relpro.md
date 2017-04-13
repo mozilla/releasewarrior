@@ -8,7 +8,6 @@ These steps are meant to be specifically for Fennec-53.0b1.
 2. skip source
 3. start off the Fenenc graph
 4. steps after QA signed off
-5. mark release as shipped in ship-it
 
 # Detailed descriptions
 
