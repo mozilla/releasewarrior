@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "Qy7Ali2QRAOMRlvybn6G8Q",
             "graphid_2": "",
@@ -15,6 +15,19 @@
                 "[Bug 1355305](https://bugzil.la/1355305) - source tarball task missing tc-vcs tarball",
                 "hung windows l10n jobs -- cancelled&reran"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "localtest": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-04-10",
