@@ -11,5 +11,6 @@
 
 ### Issues
 - SPECIAL REQUIREMENT: After the dry-run task passed, do [bug 1354038](https://bugzil.la/1354038)
+- Busted releaserunner -- Failed CalledProcessError
 
 
