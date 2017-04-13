@@ -52,7 +52,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 4,
             "graphid": "z_-Tl0p4Rxu6eV3whAlKrw",
             "graphid_2": "",
@@ -66,6 +66,20 @@
             "issues": [
                 "Busted releaserunner -- broken docker image creation due to esr45 branch releasetasks"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 5,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "cdntest": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-04-10",
