@@ -41,6 +41,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Just like build 1, some l10n repacks are falsely stuck in pending. Cancelled the jobs. However, win32 l10n repack 3/12 was really stuck => cancelled and rerun
 
 
