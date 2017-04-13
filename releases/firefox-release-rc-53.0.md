@@ -89,6 +89,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Busted releaserunner -- broken docker image creation due to esr45 branch releasetasks
 
 

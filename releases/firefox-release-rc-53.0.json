@@ -63,7 +63,9 @@
                 "publish": false,
                 "shipit": false
             },
-            "issues": []
+            "issues": [
+                "Busted releaserunner -- broken docker image creation due to esr45 branch releasetasks"
+            ]
         }
     ],
     "date": "2017-04-10",
