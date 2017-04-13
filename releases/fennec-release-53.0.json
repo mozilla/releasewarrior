@@ -2,14 +2,13 @@
     "builds": [
         {
             "aborted": false,
-            "graphid": null,
             "buildnum": 1,
+            "graphid": "gc6UVbqRQjW75dwe8tTCrA",
             "human_tasks": {
-                "mirrors": false,
                 "graph": false,
-                "publish": false,
                 "localtest": false,
                 "mirrors": false,
+                "publish": false,
                 "pushapk": false,
                 "shipit": false
             },
