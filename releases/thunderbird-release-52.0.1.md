@@ -11,5 +11,6 @@
 
 ### Issues
 - 4 linux64 repacks failed to download the en-US build, hitting a red timeout talking to archive.mozilla.org. Jobs rerun.
+- [Bug 1356562](https://bugzil.la/1356562) - [Thunderbird] update_verify: Linux updates fail because libgtk-3 is missing
 
 
