@@ -63,6 +63,15 @@ There are 2 "human decision" (aka "breakpoint") tasks to resolve *at the same ti
 
 ### PushApk: Fallback steps
 
+If pushapk's task expires in graph 1, do the following:
+
+- select the task definition and copy it
+- edit it:
+    - update the timestamps
+    - remove the breakpoint dependency from `task.dependencies`
+    - I'm not sure "edit and recreate" will work, since the taskGroupId will change?
+- resubmit it
+
 In the eventuality of a failure of pushapk_scriptworker, there are [instructions to manually publish APKs](https://github.com/mozilla-releng/mozapkpublisher#what-to-do-when-pushapk_scriptworker-doesnt-work).
 
 #### manually run l10n-bumper
