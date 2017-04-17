@@ -4,10 +4,12 @@
             "aborted": false,
             "buildnum": 1,
             "human_tasks": {
-                "publish": false,
-                "shipit": false
+                "publish": true,
+                "shipit": true
             },
-            "issues": []
+            "issues": [
+                "We lost track of TB53.0b1"
+            ]
         }
     ],
     "date": "2017-04-17",
