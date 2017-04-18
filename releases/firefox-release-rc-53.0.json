@@ -93,7 +93,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1357548](https://bugzil.la/1357548) - we need to get rid of opt-linux64 in releasetasks"
+            ]
         }
     ],
     "date": "2017-04-10",
