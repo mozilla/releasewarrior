@@ -7,7 +7,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "continued gtk issues with linux update verify"
+            ]
         }
     ],
     "date": "2017-04-17",
