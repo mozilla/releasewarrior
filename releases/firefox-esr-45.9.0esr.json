@@ -37,7 +37,7 @@
             "graphid_2": "5-A6yeP6QOqH38DlEHcQbg",
             "human_tasks": {
                 "localtest": true,
-                "mirrors": false,
+                "mirrors": true,
                 "publish": false,
                 "shipit": true
             },
