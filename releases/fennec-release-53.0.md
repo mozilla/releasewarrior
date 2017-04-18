@@ -21,5 +21,6 @@ task graph url: unknown
 - SPECIAL REQUIREMENT: After the dry-run task passed, do [bug 1354038](https://bugzil.la/1354038)
 - [bug 1355342](https://bugzil.la/1355342) - Busted releaserunner -- Failed CalledProcessError
 - we didn't uplift all locales. aki landed [some fixes](https://hg.mozilla.org/build/braindump/log/default/releases-related/beta2release_l10n.sh) and doc updates; we should retry the l10n repacks after
+- [Bug 1357288](https://bugzil.la/1357288) - updates are turned off on tc fennec
 
 
