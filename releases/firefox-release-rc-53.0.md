@@ -135,5 +135,6 @@ task graph url: unknown
 ### Issues
 - [Bug 1357548](https://bugzil.la/1357548) - we need to get rid of opt-linux64 in releasetasks
 - F31UZeLQT7q4viqBpvQpuw was complete without push to mirrors - human error?
+- pending uptake monitoring https://github.com/mozilla-releng/build-cloud-tools/pull/288
 
 
