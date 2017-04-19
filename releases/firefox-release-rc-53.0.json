@@ -89,7 +89,7 @@
             "human_tasks": {
                 "beta": true,
                 "cdntest": true,
-                "mirrors": false,
+                "mirrors": true,
                 "publish": false,
                 "shipit": true
             },
