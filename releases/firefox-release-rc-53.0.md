@@ -140,5 +140,6 @@ task graph url: unknown
 - bbb out of sync - tasks ran but stayed pending. saw green in https://secure.pub.build.mozilla.org/buildapi/self-serve/mozilla-release
 - no reminder about 25% throttling + 0% scheduled update; https://github.com/mozilla/releasewarrior/pull/72
 - fallback mapping steps https://github.com/mozilla/releasewarrior/pull/73
+- wnp - not doc'ed?
 
 
