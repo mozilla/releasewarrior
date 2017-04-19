@@ -38,7 +38,7 @@
             "human_tasks": {
                 "localtest": true,
                 "mirrors": true,
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": []
