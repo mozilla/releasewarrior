@@ -6,7 +6,7 @@
             "graphid": "TQDEiWGXRmW7b-8OeXkuPA",
             "graphid_2": "",
             "human_tasks": {
-                "graph": false,
+                "graph": true,
                 "localtest": false,
                 "publish": false,
                 "pushapk": false,
