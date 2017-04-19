@@ -137,5 +137,6 @@ task graph url: unknown
 - F31UZeLQT7q4viqBpvQpuw was complete without push to mirrors - human error? [jlorenzo] Yes, sorry about that :(
 - pending uptake monitoring https://github.com/mozilla-releng/build-cloud-tools/pull/288
 - SPECIAL REQUIREMENT: [Bug 1354736](https://bugzil.la/1354736) - Setup WNP for Firefox 53.0 release
+- bbb out of sync - tasks ran but stayed pending. saw green in https://secure.pub.build.mozilla.org/buildapi/self-serve/mozilla-release
 
 
