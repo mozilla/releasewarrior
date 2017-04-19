@@ -2,11 +2,11 @@
 
 ## Completed Releases
 {% for release in complete_releases %}
-### Release: {{ release["product"].capitalize() }} {{ release["version"] }} {{ release["date"] }}
+## Release: {{ release["product"].capitalize() }} {{ release["version"] }} {{ release["date"] }}
 
 {% for build in release['builds'] %}
-### Buildnum {{ build["buildnum"] }}
-#### Issues
+## Buildnum {{ build["buildnum"] }}
+### Issues
 {% for issue in build["issues"] %}
 - {{ issue }}
 {% endfor %}
@@ -20,11 +20,11 @@
 
 ## Incomplete Releases
 {% for release in incomplete_releases %}
-### Release: {{ release["product"].capitalize() }} {{ release["version"] }} {{ release["date"] }}
+## Release: {{ release["product"].capitalize() }} {{ release["version"] }} {{ release["date"] }}
 
 {% for build in release['builds'] %}
-### Buildnum {{ build["buildnum"] }}
-#### Issues
+## Buildnum {{ build["buildnum"] }}
+### Issues
 {% for issue in build["issues"] %}
 - {{ issue }}
 {% endfor %}
