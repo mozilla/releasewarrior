@@ -130,7 +130,7 @@ task graph url: unknown
 
 #### Status
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
-- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - [Bug 1357548](https://bugzil.la/1357548) - we need to get rid of opt-linux64 in releasetasks

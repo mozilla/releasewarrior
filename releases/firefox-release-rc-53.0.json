@@ -90,7 +90,7 @@
                 "beta": true,
                 "cdntest": true,
                 "mirrors": true,
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": [
