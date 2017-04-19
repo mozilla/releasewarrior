@@ -12,7 +12,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "buildbot triggered builds! how did this happen?"
+            ]
         }
     ],
     "date": "2017-04-19",
