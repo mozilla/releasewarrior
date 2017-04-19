@@ -185,6 +185,7 @@ $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.
     * Resolve the "publish release human decision" task using the command below
     * reply to RelMan's email as soon as balrog task is completed
 * Desktop Firefox Release and Release-Candidate (RC releases push to release channel)
+    * **IMPORTANT**: you will need to set updates at 25% on release day, and schedule an update for 24hrs to set this rule to 0%!
     * go to the task graph #2 and find taskId of `publish release human decision task`
     * Resolve the "publish release human decision" task using the command below
     * reply to RelMan's email as soon as balrog task is completed
