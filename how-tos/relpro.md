@@ -151,9 +151,9 @@ $ cd /builds/releaserunner/tools/buildfarm/release/
 $ hg pull -u # make sure we are up to date. note: make sure this is on default and clean first
 $ source /builds/releaserunner/bin/activate
 # call releasetasks_graph_gen.py with --dry-run and sanity check the graph output that would be submitted
-$ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-esr45_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1 --dry-run
+$ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-esr52_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1 --dry-run
 # call releasetasks_graph_gen.py for reals which will submit the graph to Taskcluster
-$ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-esr45_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1
+$ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-esr52_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1
 ```
 
 
@@ -183,16 +183,17 @@ $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.
 * Desktop Firefox Betas, Desktop Firefox Release-Candidate (beta release prior to release release) and Desktop Firefox dot Releases
     * go to the task graph (there is only one) and find taskId of `publish release human decision task`
     * Resolve the "publish release human decision" task using the command below
-    * reply to RelMan's email as soon as this step is completed
+    * reply to RelMan's email as soon as balrog task is completed
 * Desktop Firefox Release and Release-Candidate (RC releases push to release channel)
+    * **IMPORTANT**: you will need to set updates at 25% on release day, and schedule an update for 24hrs to set this rule to 0%!
     * go to the task graph #2 and find taskId of `publish release human decision task`
     * Resolve the "publish release human decision" task using the command below
-    * reply to RelMan's email as soon as this step is completed
+    * reply to RelMan's email as soon as balrog task is completed
 * Desktop Firefox ESRs
     * depending on timing you may have 1 or 2 graphs. Go to the latest one and
       find taskId of `publish release human decision task`
     * Resolve the "publish release human decision" task using the command below
-    * reply to RelMan's email as soon as this step is completed
+    * reply to RelMan's email as soon as balrog task is completed
 ```bash
  tctalker --conf ~/.taskcluster/relpro.json report_completed $TASK_ID
 ```

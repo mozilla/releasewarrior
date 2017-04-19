@@ -79,7 +79,7 @@ example:
 
 say you want to update ff 18.0b3 by checking off submitted to shipit, adding a link to taskcluster graphid, and add an issue that came up with timing out.
 
-`$ release update firefox beta 18.0b3 --shipit --graphid 1234567 --issue "win64 l10n hg timeout, retriggered"`
+`$ release update firefox beta 18.0b3 --checkbox shipit --graphid 1234567 --issue "win64 l10n hg timeout, retriggered"`
 
 notice: you can update a release with many things at once. use `release update --help` to see all the update options
 

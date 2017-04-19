@@ -4,7 +4,7 @@ import logging
 import re
 import sys
 
-from releasewarrior.config import RELEASES_PATH, ARCHIVED_RELEASES_PATH
+from releasewarrior.config import ARCHIVED_RELEASES_PATH, ORDERED_HUMAN_TASKS, RELEASES_PATH
 
 logger = logging.getLogger('releasewarrior')
 
@@ -64,6 +64,12 @@ def ensure_branch_and_version_are_valid(branch, version):
         sys.exit(1)
 
 
+def _get_checkbox_value(nick, args):
+    if args.checkboxes and nick in args.checkboxes:
+        return (nick, True)
+    return (nick, False)
+
+
 def get_update_data(args):
     build_data = [
         ("graphid", args.graphid),
@@ -71,14 +77,7 @@ def get_update_data(args):
         ("aborted", args.aborted),
         ("issues", args.issues),
     ]
-    human_tasks_data = [
-        ("submitted_shipit", args.submitted_shipit),
-        ("emailed_localtest", args.emailed_localtest),
-        ("emailed_cdntest", args.emailed_cdntest),
-        ("pushed_mirrors", args.pushed_mirrors),
-        ("published_release", args.published_release),
-        ("published_rc_to_beta", args.published_rc_to_beta),
-    ]
+    human_tasks_data = [_get_checkbox_value(x, args) for x in ORDERED_HUMAN_TASKS]
     update_data = {"human_tasks": {}}
     for key, value in build_data:
         if value:
@@ -126,14 +125,6 @@ def release_exists(data_file, ignore_archive=False):
 
 
 def get_remaining_tasks_ordered(release_human_tasks):
-    ORDERED_HUMAN_TASKS = [
-        'submitted_shipit',
-        'emailed_localtest',
-        'emailed_cdntest',
-        'pushed_mirrors',
-        'published_release',
-        'published_rc_to_beta',
-    ]
     # TODO - human_tasks is a dict so we lose order. find a better way to put back in order
     # this is a hack because ORDERED_HUMAN_TASKS is hardcoded and may get out of date
     remaining_tasks = [task for task, done in release_human_tasks.items() if not done]

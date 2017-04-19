@@ -3,15 +3,16 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "FNN62sV6RKqHhVcjZ2USHQ",
             "human_tasks": {
-                "published_release": false,
+                "emailed_cdntest": true,
+                "published_release": true,
                 "submitted_shipit": true
             },
             "issues": []
         }
     ],
-    "date": "2017-03-16",
-    "product": "fennec",
-    "version": "53.0b4"
+    "date": "2017-03-23",
+    "product": "firefox",
+    "version": "53.0b6"
 }

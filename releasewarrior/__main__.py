@@ -6,7 +6,7 @@ import logging
 
 from releasewarrior.commands import CreateRelease, UpdateRelease, Postmortem, Status
 from releasewarrior.commands import SyncRelease
-from releasewarrior.config import LOG_PATH
+from releasewarrior.config import ORDERED_HUMAN_TASKS, LOG_PATH
 
 
 def setup_logging():
@@ -75,26 +75,9 @@ def parse_args():
                                help='taskcluster graphid used for release in question')
     parser_update.add_argument('--graphid-2', '--taskcluster-graphid-2', dest='graphid_2',
                                help='taskcluster graphid used for graph 2 of rc release in question')
-    parser_update.add_argument('--shipit', '--submitted-shipit',
-                               action='store_true', dest='submitted_shipit',
-                               help='update release that we submitted to ship it (started release)')
-    parser_update.add_argument('--cdntest', '--emailed-cdntest',
-                               action='store_true', dest='emailed_cdntest',
-                               help='update release that we emailed drivers that release is on cdntest')
-    parser_update.add_argument('--localtest', '--emailed-localtest',
-                               action='store_true', dest='emailed_localtest',
-                               help='update release that we emailed drivers that release is on localtest')
-    parser_update.add_argument('--mirrors', '--pushed-mirrors',
-                               action='store_true', dest='pushed_mirrors',
-                               help='update release that we have pushed to mirrors (releases dir)')
-    parser_update.add_argument('--published-rc-beta-release',
-                               action='store_true', dest='published_rc_to_beta',
-                               help='update release that we have submitted release build to beta '
-                                    'channel on balrog. This is used for RC release builds.')
-    parser_update.add_argument('--published-release',
-                               action='store_true', dest='published_release',
-                               help='update release that we have published release on the '
-                                    '$release channel and ran post release tasks')
+    parser_update.add_argument('--checkbox', choices=ORDERED_HUMAN_TASKS, dest='checkboxes',
+                               nargs='+', help='Check off human task(s)')
+
     parser_update.add_argument('--issue', action='append', dest='issues',
                                help='issue to add to release in question')
     parser_update.add_argument('--buildnum-aborted', '--abort', action='store_true', dest='aborted',
