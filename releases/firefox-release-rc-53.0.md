@@ -136,5 +136,6 @@ task graph url: unknown
 - [Bug 1357548](https://bugzil.la/1357548) - we need to get rid of opt-linux64 in releasetasks
 - F31UZeLQT7q4viqBpvQpuw was complete without push to mirrors - human error?
 - pending uptake monitoring https://github.com/mozilla-releng/build-cloud-tools/pull/288
+- SPECIAL REQUIREMENT: [Bug 1354736](https://bugzil.la/1354736) - Setup WNP for Firefox 53.0 release
 
 
