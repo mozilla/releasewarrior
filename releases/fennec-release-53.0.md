@@ -8,7 +8,7 @@
 [task group](https://tools.taskcluster.net/push-inspector/#/gc6UVbqRQjW75dwe8tTCrA)
 
 ### Release graph 2
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/RIu_mZG9RdmPr1QQ8MUB1w)
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
