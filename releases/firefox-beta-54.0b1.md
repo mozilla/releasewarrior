@@ -15,6 +15,6 @@ task graph url: unknown
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- [Bug 1358112](https://bugzil.la/1358112) - Cannot generate beetmover docker image, antivirus times out because it's outdated
 
 
