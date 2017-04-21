@@ -6,7 +6,7 @@
             "graphid": "",
             "human_tasks": {
                 "cdntest": true,
-                "fxsignoff": false,
+                "fxsignoff": true,
                 "publish": true,
                 "shipit": true
             },
