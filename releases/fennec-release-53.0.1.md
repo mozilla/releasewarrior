@@ -19,5 +19,6 @@ task graph url: unknown
 
 ### Issues
 - buildbot triggered builds! how did this happen?
+- QE didn't sign off the fix. Build aborted
 
 

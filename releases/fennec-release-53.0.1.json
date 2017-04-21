@@ -13,7 +13,8 @@
                 "shipit": true
             },
             "issues": [
-                "buildbot triggered builds! how did this happen?"
+                "buildbot triggered builds! how did this happen?",
+                "QE didn't sign off the fix. Build aborted"
             ]
         }
     ],
