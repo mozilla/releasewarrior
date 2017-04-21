@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "TQDEiWGXRmW7b-8OeXkuPA",
             "graphid_2": "",
@@ -16,6 +16,20 @@
                 "buildbot triggered builds! how did this happen?",
                 "QE didn't sign off the fix. Build aborted"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "graph": false,
+                "localtest": false,
+                "publish": false,
+                "pushapk": false,
+                "shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-04-19",
