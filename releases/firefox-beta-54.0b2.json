@@ -1,0 +1,21 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "human_tasks": {
+                "cdntest": false,
+                "fxsignoff": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": [
+                "SPECIAL REQUIREMENT: [Bug 1358177](https://bugzil.la/1358177) - Firefox 54.0b2: 'my' locale submit complete MAR metadata to balrog"
+            ]
+        }
+    ],
+    "date": "2017-04-24",
+    "product": "firefox",
+    "version": "54.0b2"
+}
