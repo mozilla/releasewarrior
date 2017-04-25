@@ -7,8 +7,8 @@
             "human_tasks": {
                 "graph": true,
                 "localtest": true,
-                "publish": false,
-                "pushapk": false,
+                "publish": true,
+                "pushapk": true,
                 "shipit": true
             },
             "issues": []
