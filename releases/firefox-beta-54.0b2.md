@@ -16,5 +16,6 @@
 
 ### Issues
 - SPECIAL REQUIREMENT: [Bug 1358177](https://bugzil.la/1358177) - Firefox 54.0b2: 'my' locale submit complete MAR metadata to balrog
+- Ship-it submission failed due to 'Retrying because of: 503 Server Error: Service Unavailable' with 12 attemps. Graph eventually submitted but reported as failed in Ship-it UI
 
 
