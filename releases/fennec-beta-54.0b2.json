@@ -3,9 +3,9 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "i_r6G1YMTzKuE90dZbqGzQ",
             "human_tasks": {
-                "graph": false,
+                "graph": true,
                 "localtest": false,
                 "publish": false,
                 "pushapk": false,
