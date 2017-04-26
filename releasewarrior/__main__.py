@@ -86,7 +86,7 @@ def parse_args():
 
     # postmortem options
     parser_postmortem.add_argument('date', type=lambda x: datetime.datetime.strptime(x, "%Y-%m-%d"),
-                                   help='the date of the upcoming postmortem meeting')
+                                   help='the date of the upcoming postmortem meeting in YYYY-MM-DD format')
 
     # status options
     parser_status.add_argument(
