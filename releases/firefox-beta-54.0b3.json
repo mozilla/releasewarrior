@@ -6,8 +6,8 @@
             "graphid": "dsD4UfsyRBuU7Wzih9C7RQ",
             "human_tasks": {
                 "cdntest": true,
-                "fxsignoff": false,
-                "publish": false,
+                "fxsignoff": true,
+                "publish": true,
                 "shipit": true
             },
             "issues": [
