@@ -16,5 +16,6 @@
 
 ### Issues
 - Manually submitted <my> locale information. Some side effects there due to mismatch of buildids. Comments are in [Bug 1358177](https://bugzil.la/1358177)
+- more bbb slowness in resolving tasks - shown as pending while the job has already been completed
 
 
