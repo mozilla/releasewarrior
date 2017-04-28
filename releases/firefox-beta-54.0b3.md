@@ -15,6 +15,6 @@
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- Manually submitted <my> locale information. Some side effects there due to mismatch of buildids. Comments are in [Bug 1358177](https://bugzil.la/1358177)
 
 
