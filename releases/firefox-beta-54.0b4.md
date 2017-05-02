@@ -15,6 +15,6 @@
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- Error stashed as MAR in 54.0b4 for te locale in Mac updates makes final verification fail - [Bug 1361255](https://bugzil.la/1361255). Eventually removed partial mar for that specific 54.0b3->54.0b4 update so that Mac users on te locale will get a complete mar instead of a partial mar.
 
 
