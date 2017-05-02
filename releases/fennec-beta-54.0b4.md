@@ -5,7 +5,8 @@
 ## Build 1
 
 ### Beta Graph
-[task group](https://tools.taskcluster.net/push-inspector/#/_CijLgM4Tdy4DUWG-0fs8Q)
+- [task group](https://tools.taskcluster.net/push-inspector/#/_CijLgM4Tdy4DUWG-0fs8Q)
+- [task group](https://tools.taskcluster.net/push-inspector/#/qT1cGgzZT7aNtU-xYYC8-g)
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
