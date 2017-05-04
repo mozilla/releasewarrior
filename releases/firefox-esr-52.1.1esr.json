@@ -1,0 +1,20 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "localtest": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": []
+        }
+    ],
+    "date": "2017-05-04",
+    "product": "firefox",
+    "version": "52.1.1esr"
+}
