@@ -120,8 +120,7 @@ This is now complete:
 1. Similar to prep day #1 (you may need to redownload `mozharness-central`):
 ```sh
 # go to merge_day directory, created on day 1
-python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/aurora_to_beta.py
-python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/central_to_aurora.py
+python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/central_to_beta.py
 ```
 
 ## Day 14 - Stabilizing Branches Merge Day
@@ -130,36 +129,12 @@ python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/cent
 
 1. Do the same things as part 1, except you should land "patch 2" instead.
 
-### Merge aurora to beta
-
-It's almost identical to beta to release:
-
-1. [Close mozilla-aurora](https://mozilla-releng.net/treestatus/show/mozilla-aurora). Check "Remember this change to undo later".
-1. 
-```sh
-# go to merge_day directory, created on day 1
-python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/aurora_to_beta.py
-hg -R build/mozilla-beta diff # Validate it with someone else
-python mozharness-aurora/scripts/merge_day/gecko_migration.py \
-  -c selfserve/production.py -c merge_day/aurora_to_beta.py \
-  --create-virtualenv --commit-changes --push --trigger-builders
-```
-1. run l10n-bumper against beta
-```
-ssh buildbot-master01.bb.releng.use1.mozilla.com
-sudo su - cltbld
-cd /builds/l10n-bumper
-mozharness/scripts/l10n_bumper.py -c configs/l10n_bumper/mozilla-beta.py --ignore-closed-tree
-```
-1. Verify changesets are visible on [hg pushlog](https://hg.mozilla.org/releases/mozilla-beta/pushloghtml) and [Treeherder]( https://treeherder.mozilla.org/#/jobs?repo=mozilla-beta). It may take a couple of minutes to appear.
-1. Tell sheriffs this particular migration is done
-
-### Merge central to aurora
+### Merge central to beta
 
 1. No need to close central.
 1. 
 ```sh
-python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/central_to_aurora.py
+python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/central_to_beta.py
 hg -R build/mozilla-aurora diff # Validate it with someone else
 scp cltbld@buildbot-master81.bb.releng.scl3.mozilla.com:/builds/buildbot/build_scheduler/master/BuildSlaves.py oauth.txt
 python mozharness-central/scripts/merge_day/gecko_migration.py \
@@ -168,4 +143,11 @@ python mozharness-central/scripts/merge_day/gecko_migration.py \
   --create-virtualenv --commit-changes \
   --push --trigger-builders
 ```
-1. Verify changesets are visible on [hg pushlog](https://hg.mozilla.org/releases/mozilla-aurora/pushloghtml) and [Treeherder]( https://treeherder.mozilla.org/#/jobs?repo=mozilla-aurora). It may take a couple of minutes to appear.
+1. Verify changesets are visible on [hg pushlog](https://hg.mozilla.org/releases/mozilla-beta/pushloghtml) and [Treeherder]( https://treeherder.mozilla.org/#/jobs?repo=mozilla-beta). It may take a couple of minutes to appear.
+1. run l10n-bumper against beta
+```
+ssh buildbot-master01.bb.releng.use1.mozilla.com
+sudo su - cltbld
+cd /builds/l10n-bumper
+mozharness/scripts/l10n_bumper.py -c configs/l10n_bumper/mozilla-beta.py --ignore-closed-tree
+```
