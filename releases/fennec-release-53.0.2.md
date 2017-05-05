@@ -18,6 +18,6 @@ task graph url: unknown
 - [ ] [push to mirrors and publish release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#steps-after-qa-signed-off)
 
 ### Issues
-- provisioner issues spawning gecko-symbol-upload workerTypes; pinged #taskcluster
+- [Bug 1355783](https://bugzil.la/1355783) provisioner issues spawning gecko-symbol-upload workerTypes; pinged #taskcluster
 
 

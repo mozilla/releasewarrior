@@ -13,7 +13,7 @@
                 "shipit": true
             },
             "issues": [
-                "provisioner issues spawning gecko-symbol-upload workerTypes; pinged #taskcluster"
+                "[Bug 1355783](https://bugzil.la/1355783) provisioner issues spawning gecko-symbol-upload workerTypes; pinged #taskcluster"
             ]
         }
     ],
