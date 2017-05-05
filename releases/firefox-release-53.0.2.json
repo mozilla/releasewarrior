@@ -10,7 +10,9 @@
                 "publish": true,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "Missing WNP blobs added manually. More on this [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1354736#c28)"
+            ]
         }
     ],
     "date": "2017-05-04",

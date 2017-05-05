@@ -14,6 +14,6 @@
 - [x] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Missing WNP blobs added manually. More on this [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1354736#c28)
 
 
