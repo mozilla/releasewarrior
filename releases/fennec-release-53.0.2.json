@@ -12,7 +12,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "provisioner issues spawning gecko-symbol-upload workerTypes; pinged #taskcluster"
+            ]
         }
     ],
     "date": "2017-05-04",
