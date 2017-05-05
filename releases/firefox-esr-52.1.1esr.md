@@ -16,7 +16,7 @@ task graph url: unknown
 #### Status
 - [x] [emailed esr-localtest](../how-tos/relpro.md#1-email-drivers-re-release-live-on-test-channel)
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
-- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - Intermittent SIGKILL failed to kill process on win64 l10n repack 7/10. Rerun
