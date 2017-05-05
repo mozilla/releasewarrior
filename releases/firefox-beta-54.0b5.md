@@ -15,6 +15,6 @@
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- Intermittent SIGKILL failed to kill process on win64 l10n repack 4/10. Rerun
 
 

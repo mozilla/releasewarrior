@@ -10,7 +10,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "Intermittent SIGKILL failed to kill process on win64 l10n repack 4/10. Rerun"
+            ]
         }
     ],
     "date": "2017-05-04",
