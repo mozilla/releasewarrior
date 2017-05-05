@@ -6,7 +6,7 @@
             "graphid": "iqZMxP-aRXePMi_4-vmkwA",
             "human_tasks": {
                 "cdntest": true,
-                "fxsignoff": false,
+                "fxsignoff": true,
                 "publish": true,
                 "shipit": true
             },
