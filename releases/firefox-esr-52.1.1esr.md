@@ -19,6 +19,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- Intermittent SIGKILL failed to kill process on win64 l10n repack 7/10. Rerun
 
 
