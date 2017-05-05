@@ -15,7 +15,7 @@ task graph url: unknown
 - [x] [manually kick off graph](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#start-off-the-fennec-graph)
 - [x] emailed release-localtest
 - [x] [run pushapk](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#run-pushapk-manually)
-- [ ] [push to mirrors and publish release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#steps-after-qa-signed-off)
+- [x] [push to mirrors and publish release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#steps-after-qa-signed-off)
 
 ### Issues
 - [Bug 1355783](https://bugzil.la/1355783) provisioner issues spawning gecko-symbol-upload workerTypes; pinged #taskcluster
