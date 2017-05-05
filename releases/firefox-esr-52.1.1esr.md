@@ -20,5 +20,6 @@ task graph url: unknown
 
 ### Issues
 - Intermittent SIGKILL failed to kill process on win64 l10n repack 7/10. Rerun
+- [Bug 1362480](https://bugzil.la/1362480) - unable to version bump off a relbranch
 
 
