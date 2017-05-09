@@ -12,7 +12,9 @@
                 "pushapk": true,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1363286](https://bugzil.la/1363286) - Fennec 54.0b4 never made it to the mirrors (~releases). Repushed subgraph on 2017-05-09"
+            ]
         }
     ],
     "date": "2017-05-01",

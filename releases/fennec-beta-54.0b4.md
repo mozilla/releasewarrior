@@ -16,6 +16,6 @@
 - [x] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- [Bug 1363286](https://bugzil.la/1363286) - Fennec 54.0b4 never made it to the mirrors (~releases). Repushed subgraph on 2017-05-09
 
 
