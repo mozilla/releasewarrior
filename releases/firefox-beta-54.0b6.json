@@ -9,7 +9,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1363334](https://bugzil.la/1363334) - update verification fails for Firefox 54.0b6 chunks {1,2,3,4} on all platforms"
+            ]
         }
     ],
     "date": "2017-05-08",

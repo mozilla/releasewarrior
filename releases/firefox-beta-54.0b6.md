@@ -14,6 +14,6 @@
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- [Bug 1363334](https://bugzil.la/1363334) - update verification fails for Firefox 54.0b6 chunks {1,2,3,4} on all platforms
 
 
