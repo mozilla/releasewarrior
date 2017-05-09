@@ -16,6 +16,6 @@
 - [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- [Bug 1363287](https://bugzil.la/1363287) - target.awsy.tests.zip missing from Fennec beetmover jobs.
 
 

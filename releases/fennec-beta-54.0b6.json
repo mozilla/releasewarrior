@@ -12,7 +12,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "[Bug 1363287](https://bugzil.la/1363287) - target.awsy.tests.zip missing from Fennec beetmover jobs."
+            ]
         }
     ],
     "date": "2017-05-08",
