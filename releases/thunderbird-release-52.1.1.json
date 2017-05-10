@@ -8,7 +8,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "delayed tagging https://github.com/mozilla-releng/build-cloud-tools/pull/295"
+            ]
         }
     ],
     "date": "2017-05-09",
