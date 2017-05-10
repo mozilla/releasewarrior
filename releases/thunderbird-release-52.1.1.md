@@ -12,5 +12,6 @@
 ### Issues
 - delayed tagging https://github.com/mozilla-releng/build-cloud-tools/pull/295
 - delayed tagging caused mac and windows builds to fail; retriggered
+- [Bug 1363711](https://bugzil.la/1363711) - failed at thunderbird_release_updates.
 
 
