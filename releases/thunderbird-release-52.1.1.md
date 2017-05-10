@@ -11,5 +11,6 @@
 
 ### Issues
 - delayed tagging https://github.com/mozilla-releng/build-cloud-tools/pull/295
+- delayed tagging caused mac and windows builds to fail; retriggered
 
 
