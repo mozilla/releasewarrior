@@ -7,7 +7,7 @@
             "human_tasks": {
                 "fxsignoff": false,
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": [
                 "NOTE: First beta with new mac signing cert; make sure updates work!",
