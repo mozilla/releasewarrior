@@ -16,5 +16,6 @@ task graph url: unknown
 ### Issues
 - NOTE: First beta with new mac signing cert; make sure updates work!
 - firefox mozilla-beta win64 l10n repack 10/10 timeout; reran
+- firefox mozilla-beta win64 l9n repack 10/10 timeout; reran
 
 
