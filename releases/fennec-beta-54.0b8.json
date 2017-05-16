@@ -12,7 +12,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "Pushapk failing for python deps mismatch. [Bug 1365290](https://bugzil.la/1365290)"
+            ]
         }
     ],
     "date": "2017-05-15",
