@@ -10,8 +10,17 @@
             "issues": []
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
             "human_tasks": {
                 "publish": false,
                 "shipit": false
