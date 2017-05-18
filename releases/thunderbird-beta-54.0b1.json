@@ -23,7 +23,7 @@
             "buildnum": 3,
             "human_tasks": {
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
