@@ -9,7 +9,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "graph ids starting with a '-' are interpreted as commandline options"
+            ]
         }
     ],
     "date": "2017-05-18",

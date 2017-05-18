@@ -14,6 +14,6 @@
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- graph ids starting with a '-' are interpreted as commandline options
 
 
