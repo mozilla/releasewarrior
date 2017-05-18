@@ -5,7 +5,7 @@
 ## Build 1
 
 ### Beta Graph
-[task group](https://tools.taskcluster.net/push-inspector/#/\-W8h5J3LQ3SDU25KXX82rw)
+[task group](https://tools.taskcluster.net/push-inspector/#/-W8h5J3LQ3SDU25KXX82rw)
 
 
 #### Status
