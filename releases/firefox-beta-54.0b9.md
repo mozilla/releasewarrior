@@ -15,5 +15,6 @@
 
 ### Issues
 - graph ids starting with a '-' are interpreted as commandline options
+- funsize-balrog-submitter failed 6 times in a row on cloning; reran
 
 
