@@ -19,5 +19,6 @@ task graph url: unknown
 
 ### Issues
 - hit 'Sanity checks failed. Errors: list indices must be integers, not str' on shipit - fallout from https://hg.mozilla.org/build/tools/rev/8a9951b2888c ?
+- [Bug 1366293](https://bugzil.la/1366293) - version bump failing, most likely due to relbranch side effect.
 
 
