@@ -22,7 +22,7 @@
             "aborted": false,
             "buildnum": 3,
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": []
