@@ -6,7 +6,7 @@
             "graphid": "Y-IRKWK9QDm6lbSp11B-dA",
             "human_tasks": {
                 "fxsignoff": false,
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": [
