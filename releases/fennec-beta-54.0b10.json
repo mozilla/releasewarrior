@@ -13,7 +13,8 @@
                 "shipit": false
             },
             "issues": [
-                "SPECIAL REQUIREMENT: [Bug 1358420](https://bugzil.la/1358420) - 55.0b1 - will likely have to manually change rollout from 10 to 100% after pushing"
+                "SPECIAL REQUIREMENT: [Bug 1358420](https://bugzil.la/1358420) - 55.0b1 - will likely have to manually change rollout from 10 to 100% after pushing",
+                "between [Bug 1366916](https://bugzil.la/1366916) and [Bug 1347635](https://bugzil.la/1347635) we had to burn 54.0b10 build 1"
             ]
         }
     ],
