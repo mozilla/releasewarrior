@@ -26,7 +26,7 @@
                 "graph": true,
                 "localtest": true,
                 "publish": false,
-                "pushapk": false,
+                "pushapk": true,
                 "shipit": true
             },
             "issues": []
