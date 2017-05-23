@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] Update "Firefoxsignoff" rule in Balrog
 
 ### Issues
-- none
+- [Bug 1366916](https://bugzil.la/1366916) - version bumping failed after b9 due to alphabetical comparison
 
 
