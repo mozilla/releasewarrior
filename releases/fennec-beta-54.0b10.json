@@ -1,0 +1,23 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "graph": false,
+                "localtest": false,
+                "publish": false,
+                "pushapk": false,
+                "shipit": false
+            },
+            "issues": [
+                "SPECIAL REQUIREMENT: [Bug 1358420](https://bugzil.la/1358420) - 55.0b1 - will likely have to manually change rollout from 10 to 100% after pushing"
+            ]
+        }
+    ],
+    "date": "2017-05-22",
+    "product": "fennec",
+    "version": "54.0b10"
+}
