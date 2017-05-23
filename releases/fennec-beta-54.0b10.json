@@ -23,7 +23,7 @@
             "graphid": "4i2uBZtPRweZJtR8CtHWug",
             "graphid_2": "i8w_yFHhRI6lFXAUPEJ_kg",
             "human_tasks": {
-                "graph": false,
+                "graph": true,
                 "localtest": false,
                 "publish": false,
                 "pushapk": false,
