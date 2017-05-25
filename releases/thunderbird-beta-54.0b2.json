@@ -4,8 +4,8 @@
             "aborted": false,
             "buildnum": 1,
             "human_tasks": {
-                "publish": false,
-                "shipit": false
+                "publish": true,
+                "shipit": true
             },
             "issues": []
         }
