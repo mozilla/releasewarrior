@@ -3,10 +3,10 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "9BbVI5jUT3mpKEEkP7y0PQ",
             "human_tasks": {
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
