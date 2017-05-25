@@ -13,6 +13,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- unknown funsize_product; rail fixed https://hg.mozilla.org/build/tools/rev/ede5d6057708
 
 

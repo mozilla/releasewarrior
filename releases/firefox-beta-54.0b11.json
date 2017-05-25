@@ -8,7 +8,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "unknown funsize_product; rail fixed https://hg.mozilla.org/build/tools/rev/ede5d6057708"
+            ]
         }
     ],
     "date": "2017-05-25",
