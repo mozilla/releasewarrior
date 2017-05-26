@@ -40,7 +40,7 @@
             "buildnum": 4,
             "graphid": "ffMBc4HPRvWFPLsIMzN84g",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": []
