@@ -4,12 +4,12 @@
             "aborted": false,
             "buildnum": 1,
             "graphid": "gc6UVbqRQjW75dwe8tTCrA",
-            "graphid_2": "",
+            "graphid_2": "RIu_mZG9RdmPr1QQ8MUB1w",
             "human_tasks": {
                 "graph": true,
                 "localtest": true,
-                "publish": false,
-                "pushapk": false,
+                "publish": true,
+                "pushapk": true,
                 "shipit": true
             },
             "issues": [
