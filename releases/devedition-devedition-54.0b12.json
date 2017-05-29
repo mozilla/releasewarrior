@@ -1,0 +1,17 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false
+            },
+            "issues": []
+        }
+    ],
+    "date": "2017-05-29",
+    "product": "devedition",
+    "version": "54.0b12"
+}
