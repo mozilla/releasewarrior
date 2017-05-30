@@ -5,7 +5,7 @@
             "buildnum": 1,
             "graphid": "bLzGyvPdStiPspyhA2uxwQ",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": []
