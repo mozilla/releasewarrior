@@ -12,7 +12,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "container failure within . Reran"
+            ]
         }
     ],
     "date": "2017-05-30",
