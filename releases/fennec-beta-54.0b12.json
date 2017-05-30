@@ -13,7 +13,7 @@
                 "shipit": true
             },
             "issues": [
-                "container failure within . Reran",
+                "container failure within build-android-x86. Reran",
                 "[Bug 1368627](https://bugzil.la/1368627) - funsize_product missing from Fennec templates."
             ]
         }

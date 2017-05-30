@@ -16,7 +16,7 @@
 - [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- container failure within . Reran
+- container failure within build-android-x86. Reran
 - [Bug 1368627](https://bugzil.la/1368627) - funsize_product missing from Fennec templates.
 
 
