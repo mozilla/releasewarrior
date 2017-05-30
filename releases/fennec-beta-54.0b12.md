@@ -17,5 +17,6 @@
 
 ### Issues
 - container failure within . Reran
+- [Bug 1368627](https://bugzil.la/1368627) - funsize_product missing from Fennec templates.
 
 
