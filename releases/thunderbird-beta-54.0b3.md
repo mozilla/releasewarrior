@@ -10,5 +10,6 @@
 
 ### Issues
 - CalledProcessError due to a revision with a space. Maybe shipit should strip spaces?
+- [Bug 1369479](https://bugzil.la/1369479) - failed at thunderbird_beta_updates
 
 
