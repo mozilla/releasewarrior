@@ -1,0 +1,22 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": [
+                "NOTE: First rc with new mac signing cert; make sure updates work!"
+            ]
+        }
+    ],
+    "date": "2017-06-05",
+    "product": "firefox",
+    "version": "54.0"
+}
