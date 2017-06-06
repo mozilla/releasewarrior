@@ -6,13 +6,14 @@
             "graphid": "BqoYe8UfRXGCH9DA_niFBA",
             "graphid_2": "",
             "human_tasks": {
-                "beta": false,
+                "beta": true,
                 "mirrors": false,
                 "publish": false,
                 "shipit": true
             },
             "issues": [
-                "NOTE: First rc with new mac signing cert; make sure updates work!"
+                "NOTE: First rc with new mac signing cert; make sure updates work!",
+                "<asasaki>: https://bugzilla.mozilla.org/show_bug.cgi?id=1370589 r-d email confusion; said it was on release when only beta"
             ]
         }
     ],

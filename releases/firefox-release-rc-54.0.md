@@ -9,7 +9,7 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
+- [x] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
 
 ### RC graph 2
 task graph url: unknown
@@ -20,5 +20,6 @@ task graph url: unknown
 
 ### Issues
 - NOTE: First rc with new mac signing cert; make sure updates work!
+- <asasaki>: https://bugzilla.mozilla.org/show_bug.cgi?id=1370589 r-d email confusion; said it was on release when only beta
 
 
