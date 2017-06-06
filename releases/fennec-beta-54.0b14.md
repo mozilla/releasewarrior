@@ -17,5 +17,6 @@
 
 ### Issues
 - <asasaki>: [bug 1370428](https://bugzil.la/1370428) broken decision task - data.routes should NOT have more than 10 items
+- <mihaitabara>: (question) how did we end up with two signing-android-x86-nightly/opt?
 
 
