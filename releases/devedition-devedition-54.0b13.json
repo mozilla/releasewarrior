@@ -8,7 +8,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "<mihaitabara>: Aborting this as no QE blessed this build."
+            ]
         }
     ],
     "date": "2017-06-02",

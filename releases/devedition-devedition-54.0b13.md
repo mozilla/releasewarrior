@@ -13,6 +13,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- <mihaitabara>: Aborting this as no QE blessed this build.
 
 
