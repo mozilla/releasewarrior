@@ -13,7 +13,7 @@
                 "shipit": true
             },
             "issues": [
-                "<asasaki>: broken decision task - data.routes should NOT have more than 10 items"
+                "<asasaki>: [bug 1370428](https://bugzil.la/1370428) broken decision task - data.routes should NOT have more than 10 items"
             ]
         }
     ],
