@@ -12,7 +12,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "<asasaki>: broken decision task - data.routes should NOT have more than 10 items"
+            ]
         }
     ],
     "date": "2017-06-05",
