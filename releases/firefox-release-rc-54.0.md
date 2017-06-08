@@ -41,6 +41,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- asasaki: Failed to start release promotion (graph ID: 3PD_Kpn3SnOa8CHJJPxgkw). Error(s): None
 
 

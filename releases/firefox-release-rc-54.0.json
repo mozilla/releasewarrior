@@ -27,7 +27,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "asasaki: Failed to start release promotion (graph ID: 3PD_Kpn3SnOa8CHJJPxgkw). Error(s): None"
+            ]
         }
     ],
     "date": "2017-06-05",
