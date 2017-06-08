@@ -17,7 +17,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "3PD_Kpn3SnOa8CHJJPxgkw",
             "graphid_2": "",
@@ -30,6 +30,19 @@
             "issues": [
                 "asasaki: Failed to start release promotion (graph ID: 3PD_Kpn3SnOa8CHJJPxgkw). Error(s): None"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-06-05",
