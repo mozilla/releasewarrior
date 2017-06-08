@@ -34,13 +34,13 @@
         {
             "aborted": false,
             "buildnum": 3,
-            "graphid": "",
+            "graphid": "7kRE2qbnSq2jM4h39BaBPQ",
             "graphid_2": "",
             "human_tasks": {
                 "beta": false,
                 "mirrors": false,
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
