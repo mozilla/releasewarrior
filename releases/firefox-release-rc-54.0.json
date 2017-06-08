@@ -19,13 +19,13 @@
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "3PD_Kpn3SnOa8CHJJPxgkw",
             "graphid_2": "",
             "human_tasks": {
                 "beta": false,
                 "mirrors": false,
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
