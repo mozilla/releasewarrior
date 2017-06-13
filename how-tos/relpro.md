@@ -156,90 +156,50 @@ $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.
 $ python releasetasks_graph_gen.py --release-runner-ini=../../../release-runner.ini --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-esr52_firefox_rc_graph_2.yml --common-task-id=$TASK_TASKID_FROM_GRAPH1
 ```
 
-## 3. signoffs
+
+## 3. publish release
 
 ### why
-* to guard against bad actors and compromised credentials we require that any changes to primary release channels (aurora, beta, release, esr) in balrog are signed off on by at least two people.
+* the publish release human decision task makes the release go _live_. it
+  requires sign off from rel-man / QE. It triggers the publish to balrog task
+  for all graph types, plus the update bouncer aliases and bump version tasks
+  for betas and RC graph2 graphs.
 
 ### when
-
-* after the scheduled change has been created by the "updates" task, and prior to the desired publish time
-
-### how
-
-* through the Balrog Scheduled Changes UI (https://aus4-admin.mozilla.org/rules/scheduled_changes)
-
-* RelEng
-    * RelEng is responsible for reviewing the scheduled change to ensure that the mechanics are correct. Most notably, the mapping, fallbackMapping, and backgroundRate need to be verified.
-
-* QE
-    * QE is responsible for signing off on a Scheduled Change after they have successfully verified updates on the cdntest channel.
-
-* RelMan
-    * RelMan is responsible for reviewing the scheduled change to ensure that the shipping time is correct and to authorize that the release may be shipped. If circumstances change (eg, we discover a bug we're not willing to ship) after they sign off, they must revoke their signoff in Balrog.
-
-### example
-
-After the Scheduled Change has been created, the Balrog UI will look something like:
-![scheduled change without signoffs](/how-tos/only_scheduled.png?raw=true)
-
-When RelEng reviews it they will look at the Mapping, Fallback Mapping, and Backgound Rate (circled above). If everything looks good to them, they will click on the "Signoff as..." button and be presented with a dialog like:
-![signoff modal dialog](/how-tos/signoff_dialog.png?raw=true)
-
-After they make their Signoff, the primary UI will reflect that:
-![scheduled change with one signoff](/how-tos/one_signoff.png?raw=true)
-
-RelMan and QE will go through a similar process. Once they make their Signoffs the primary UI will reflect that as well:
-![scheduled change with two signoffs](/how-tos/all_signoffs.png?raw=true)
-
-Now that the Signoff requirements have been met, the Scheduled Change will be enacted at the prescribed time.
-
-
-## 4. publish release
-
-### why
-* updates are automatically published by Balrog when the scheduled change created by
-  release promotion hits its scheduled time and all required signoffs have been
-  completed.
-
-    * It is expected that RelEng, QE and RelMan will sign off on the scheduled changes ahead
-      of the ship date.
-    * If the ship time, throttle rate, or anything else about the release changes between
-      the change being scheduled and the expected ship time, the scheduled change should
-      be updated (or deleted) to reflect the change. After doing so, Signoff will be
-      required again.
-
-* the publish release human decision task should be triggered after the release
-  has been published in Balrog. It triggers the update bouncer aliases, mark as shipped,
-  and bump version tasks.
-
-### when
-* All Desktop Firefox releases
-    * Wait for email on the balrog-db-changes list that shows the mapping on the live channel
-      being changed to the Release being shipped.
+* Desktop Firefox Betas
+    * Wait for email from RelMan or QE with subject request like `please push Firefox 47.0b2 to the beta channel`
+    * sanity check all update verify and the final verify task has completed successfully in the graph
+* Desktop Firefox Release-Candidate (beta release prior to release release)
+    * Wait for email from RelMan or QE with subject request like `please push Firefox 46.0 to the beta channel`
+    * sanity check all beta update verify and the beta final verify task has completed successfully in graph 1
+* Desktop Firefox Release and Release-Candidate (RC and dot releases both push to release channel)
+    * Wait for email from RelMan or QE with subject request like `please push Firefox 46.0 to the release channel`
+    * sanity check all release update verify tasks from graph 1 and the release final verify task has completed successfully from graph 2
+* Desktop Firefox ESRs
+    * Wait for email from RelMan or QE with subject request like `please push Firefox 45.2.0esr to the esr channel`
+    * sanity check all release update verify tasks from graph 1 and the release final verify task has completed successfully from graph 2
 
 ### how
 * Desktop Firefox Betas, Desktop Firefox Release-Candidate (beta release prior to release release) and Desktop Firefox dot Releases
     * go to the task graph (there is only one) and find taskId of `publish release human decision task`
     * Resolve the "publish release human decision" task using the command below
-    * Announce to release-drivers that the release is live
+    * reply to RelMan's email as soon as balrog task is completed
 * Desktop Firefox Release and Release-Candidate (RC releases push to release channel)
+    * **IMPORTANT**: you will need to set updates at 25% on release day, and schedule an update for 24hrs to set this rule to 0%!
+    * go to Balrog and set the Fallback Mapping on the "firefox-release" rule to the current value of the Mapping
     * go to the task graph #2 and find taskId of `publish release human decision task`
     * Resolve the "publish release human decision" task using the command below
-    * Announce to release-drivers that the release is live
-    * Schedule an update to change the background rate of the rule to 0% the next day.
-        * Go to Balrog and "Schedule an Update" for the "firefox-release" rule that changes
-          "backgroundRate" to 0 at 9am Pacific the following day. All other fields should remain the same.
+    * reply to RelMan's email as soon as balrog task is completed
 * Desktop Firefox ESRs
     * depending on timing you may have 1 or 2 graphs. Go to the latest one and
       find taskId of `publish release human decision task`
     * Resolve the "publish release human decision" task using the command below
-    * Announce to release-drivers that the release is live
+    * reply to RelMan's email as soon as balrog task is completed
 ```bash
  tctalker --conf ~/.taskcluster/relpro.json report_completed $TASK_ID
 ```
 
-## 5. post release step
+## 4. post release step
 
 ### why
 * releases are needed to be marked as "shipped" in Ship-it to make the partial
