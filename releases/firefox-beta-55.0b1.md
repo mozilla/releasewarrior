@@ -31,6 +31,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- jlund: build2 seemed to ignore fix from build1. is mozharness_revision ignored from shipit?
 
 
