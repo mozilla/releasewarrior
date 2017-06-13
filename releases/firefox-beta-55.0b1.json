@@ -17,10 +17,10 @@
         {
             "aborted": true,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "f9xmnhxiRsWkGNE5qWqqLw",
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
             "issues": [
@@ -30,7 +30,7 @@
         {
             "aborted": false,
             "buildnum": 3,
-            "graphid": "",
+            "graphid": "qKECaomfSd2bqElN4fgtUQ",
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
