@@ -15,19 +15,8 @@
             ]
         },
         {
-            "aborted": true,
-            "buildnum": 2,
-            "graphid": "",
-            "human_tasks": {
-                "publish": false,
-                "shipit": false,
-                "signoff": false
-            },
-            "issues": []
-        },
-        {
             "aborted": false,
-            "buildnum": 3,
+            "buildnum": 2,
             "graphid": "",
             "human_tasks": {
                 "publish": false,
