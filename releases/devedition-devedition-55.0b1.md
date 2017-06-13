@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- jlund: [Bug 1372482](https://bugzil.la/1372482) - linux 55.0 repack betas are broken post merge because mock can't find /tools/buildbot/bin/python
 
 
