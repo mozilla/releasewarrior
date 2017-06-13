@@ -15,5 +15,6 @@
 
 ### Issues
 - nthomas: [Bug 1372461](https://bugzil.la/1372461) - l10n upload problems. Fallout from [Bug 1339870](https://bugzil.la/1339870), deploy rolled back
+- jlund: [Bug 1372482](https://bugzil.la/1372482) - linux 55.0 repack betas are broken post merge because mock can't find /tools/buildbot/bin/python
 
 
