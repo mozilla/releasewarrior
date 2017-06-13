@@ -7,7 +7,7 @@
             "graphid_2": "4Ct6Cb_fRhaZQo5a3Ll5rA",
             "human_tasks": {
                 "mirrors": true,
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": []
