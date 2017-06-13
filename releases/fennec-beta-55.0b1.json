@@ -27,7 +27,7 @@
             "graphid_2": "T_ZcoEWkTHqY0nW4Tru3Ew",
             "human_tasks": {
                 "graph": true,
-                "localtest": false,
+                "localtest": true,
                 "publish": false,
                 "pushapk": false,
                 "shipit": true
