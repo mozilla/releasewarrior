@@ -19,5 +19,6 @@
 - SPECIAL REQUIREMENT: [Bug 1358420](https://bugzil.la/1358420) - 55.0b1 - Allow fennec beta staged rollout
 - asasaki: broken decision task; we need to remove --triggered-by=nightly from the decision task template in releasetasks for beta
 - jlund: [Bug 1372487](https://bugzil.la/1372487) - remove reference to triggered_by in releasetasks for beta
+- mihaitabara: Could not review/merge jlund patch due to missing write access to releasetasks. Reopened and addressed question in [Bug 1369392](https://bugzil.la/1369392).
 
 
