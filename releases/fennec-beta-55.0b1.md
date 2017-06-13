@@ -17,5 +17,6 @@
 
 ### Issues
 - SPECIAL REQUIREMENT: [Bug 1358420](https://bugzil.la/1358420) - 55.0b1 - Allow fennec beta staged rollout
+- asasaki: broken decision task; we need to remove --triggered-by=nightly from the decision task template in releasetasks for beta
 
 
