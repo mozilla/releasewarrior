@@ -14,7 +14,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "",
             "human_tasks": {
@@ -25,6 +25,17 @@
             "issues": [
                 "jlund: build2 seemed to ignore fix from build1. is mozharness_revision ignored from shipit?"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-06-12",
