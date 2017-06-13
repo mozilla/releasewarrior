@@ -14,7 +14,7 @@
 task graph url: unknown
 
 #### Status
-- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
