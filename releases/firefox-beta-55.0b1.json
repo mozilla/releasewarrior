@@ -42,13 +42,23 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 4,
             "graphid": "MJ4-tjfoSia6whqBHH9Rnw",
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
                 "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": false,
+            "buildnum": 5,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false
             },
             "issues": []
         }
