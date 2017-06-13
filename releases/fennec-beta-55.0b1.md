@@ -22,4 +22,22 @@
 - mihaitabara: Could not review/merge jlund patch due to missing write access to releasetasks. Reopened and addressed question in [Bug 1369392](https://bugzil.la/1369392).
 - mihaitabara: Missing with-adjust-sdk-keyfile breaks l10n repacks. [Bug 1372541](https://bugzil.la/1372541)
 
+:bomb: _**aborted release. starting new build num**_ :bomb:
+
+## Build 2
+
+### Beta Graph
+- first task graph url: unknown
+- second task graph url: unknown
+
+### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [manually kick off graph](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#start-off-the-fennec-graph)
+- [ ] emailed beta-localtest
+- [ ] [run pushapk](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#run-pushapk-manually)
+- [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+
+### Issues
+- none
+
 

@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "jVcpjGDfT3iUclWteIbrmA",
             "graphid_2": "uR6dZ6pWT7OjUcEp1qbIzA",
@@ -19,6 +19,20 @@
                 "mihaitabara: Could not review/merge jlund patch due to missing write access to releasetasks. Reopened and addressed question in [Bug 1369392](https://bugzil.la/1369392).",
                 "mihaitabara: Missing with-adjust-sdk-keyfile breaks l10n repacks. [Bug 1372541](https://bugzil.la/1372541)"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "graph": false,
+                "localtest": false,
+                "publish": false,
+                "pushapk": false,
+                "shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-06-12",
