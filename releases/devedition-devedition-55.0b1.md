@@ -10,8 +10,7 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - nthomas: [Bug 1372461](https://bugzil.la/1372461) - l10n upload problems. Fallout from [Bug 1339870](https://bugzil.la/1339870), deploy rolled back
@@ -27,8 +26,7 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - jlund: build2 seemed to ignore fix from build1. is mozharness_revision ignored from shipit?
@@ -43,8 +41,7 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - jlund: waiting for ci builds from beta 6872377277a618b2b9e0d2b4c2b9e51765ac199e
@@ -60,8 +57,22 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
+
+### Issues
+- none
+
+:bomb: _aborted release. starting new build num_ :bomb:
+
+## Build 5
+
+### Beta Graph
+task graph url: unknown
+
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - none
