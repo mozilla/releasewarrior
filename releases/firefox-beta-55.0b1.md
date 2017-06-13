@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- nthomas: [Bug 1372461](https://bugzil.la/1372461) - l10n upload problems. Fallout from [Bug 1339870](https://bugzil.la/1339870), deploy rolled back
 
 
