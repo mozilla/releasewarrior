@@ -22,7 +22,9 @@
                 "shipit": false,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "jlund: build2 seemed to ignore fix from build1. is mozharness_revision ignored from shipit?"
+            ]
         }
     ],
     "date": "2017-06-12",
