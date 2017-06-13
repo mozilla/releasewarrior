@@ -32,10 +32,12 @@
             "graphid": "",
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "jlund: waiting for ci builds from beta 6872377277a618b2b9e0d2b4c2b9e51765ac199e"
+            ]
         }
     ],
     "date": "2017-06-12",
