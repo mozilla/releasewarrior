@@ -3,15 +3,15 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "bLzGyvPdStiPspyhA2uxwQ",
+            "graphid": "TTRsumpDRPuY0nAOG2LXfw",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": []
         }
     ],
-    "date": "2017-05-29",
-    "product": "firefox",
-    "version": "54.0b12"
+    "date": "2017-06-05",
+    "product": "devedition",
+    "version": "54.0b14"
 }

@@ -1,0 +1,5 @@
+{
+    "issues": [
+        "SPECIAL REQUIREMENT: after first week mergeduty on 1st of August is completed, before we trigger the RC, we need to land and merge this [PR](https://github.com/mozilla-releng/releasetasks/pull/247)"
+    ]
+}
