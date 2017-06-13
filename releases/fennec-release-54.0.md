@@ -28,14 +28,14 @@
 [task group](https://tools.taskcluster.net/push-inspector/#/vO22_FDrSj6RP_NmJXG-Kg)
 
 ### Release graph 2
-[task group](https://tools.taskcluster.net/push-inspector/#/Zoht8lx5RFS2nilc9-rljg)
+[task group](https://tools.taskcluster.net/push-inspector/#/19vsX0HUSX2FdQtq0PzCYg)
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [x] [manually kick off graph](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#start-off-the-fennec-graph)
 - [x] emailed release-localtest
 - [x] [run pushapk](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#run-pushapk-manually)
-- [x] [push to mirrors and publish release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#steps-after-qa-signed-off)
+- [ ] [push to mirrors and publish release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#steps-after-qa-signed-off)
 
 ### Issues
 - none

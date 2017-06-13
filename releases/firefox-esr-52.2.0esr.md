@@ -11,10 +11,10 @@
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 
 ### ESR Graph 2
-[task group](https://tools.taskcluster.net/push-inspector/#/4Ct6Cb_fRhaZQo5a3Ll5rA)
+task graph url: unknown
 
 #### Status
-- [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues

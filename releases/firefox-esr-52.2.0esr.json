@@ -4,9 +4,9 @@
             "aborted": false,
             "buildnum": 1,
             "graphid": "zxmc8zD6R3ivaUfeZsgWxg",
-            "graphid_2": "4Ct6Cb_fRhaZQo5a3Ll5rA",
+            "graphid_2": "",
             "human_tasks": {
-                "mirrors": true,
+                "mirrors": false,
                 "publish": false,
                 "shipit": true
             },

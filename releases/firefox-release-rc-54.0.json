@@ -35,11 +35,11 @@
             "aborted": false,
             "buildnum": 3,
             "graphid": "7kRE2qbnSq2jM4h39BaBPQ",
-            "graphid_2": "p4IAKv6YRx6r8DK4AaQDmw",
+            "graphid_2": "",
             "human_tasks": {
                 "beta": true,
-                "mirrors": true,
-                "publish": true,
+                "mirrors": false,
+                "publish": false,
                 "shipit": true
             },
             "issues": []

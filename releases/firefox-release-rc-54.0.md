@@ -55,11 +55,11 @@ task graph url: unknown
 - [x] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
 
 ### RC graph 2
-[task group](https://tools.taskcluster.net/push-inspector/#/p4IAKv6YRx6r8DK4AaQDmw)
+task graph url: unknown
 
 #### Status
-- [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
-- [x] [published release tasks](../how-tos/relpro.md#3-publish-release)
+- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - none
