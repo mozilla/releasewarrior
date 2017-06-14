@@ -75,6 +75,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- nthomas: [Bug 1372798](https://bugzil.la/1372798) - be locale has returned but complete not in Balrog, so we get update and final verify errors
 
 
