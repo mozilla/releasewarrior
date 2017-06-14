@@ -76,5 +76,6 @@
 
 ### Issues
 - nthomas: [Bug 1372798](https://bugzil.la/1372798) - be locale has returned but complete not in Balrog, so we get update and final verify errors
+- jlorenzo: Special requirement: Set update rate at 0%, so devedition will be the staging population
 
 
