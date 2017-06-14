@@ -55,10 +55,10 @@
         {
             "aborted": false,
             "buildnum": 5,
-            "graphid": "",
+            "graphid": "Ep4OjONuRNWdnXg54Zkg8A",
             "human_tasks": {
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
