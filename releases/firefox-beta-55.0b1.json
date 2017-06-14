@@ -57,7 +57,7 @@
             "buildnum": 5,
             "graphid": "Ep4OjONuRNWdnXg54Zkg8A",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": [
