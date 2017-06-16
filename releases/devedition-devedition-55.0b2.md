@@ -10,7 +10,7 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - nthomas: [Bug 1372798](https://bugzil.la/1372798) - no partial offered to 55.0b1 be, giving update verify failures. Added buildID to 55.0b1 blob, see comment #4
