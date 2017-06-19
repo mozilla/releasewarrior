@@ -13,6 +13,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
-- none
+- mihaitabara: A bunch of failed connections to signing8.srv.releng.mdc1.mozilla.com broke win32/win64 l10n repacks. Rerun them
 
 

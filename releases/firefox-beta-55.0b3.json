@@ -9,7 +9,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "mihaitabara: A bunch of failed connections to signing8.srv.releng.mdc1.mozilla.com broke win32/win64 l10n repacks. Rerun them"
+            ]
         }
     ],
     "date": "2017-06-19",
