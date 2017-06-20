@@ -10,7 +10,7 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [published release tasks](../how-tos/relpro.md#3-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#3-publish-release)
 
 ### Issues
 - mihaitabara: A bunch of failed connections to signing8.srv.releng.mdc1.mozilla.com broke win32/win64 l10n repacks. Rerun them
