@@ -12,7 +12,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "mihaitabara: Permission issue while pushing to Google Play store - most likely due to key rotation."
+            ]
         }
     ],
     "date": "2017-06-19",
