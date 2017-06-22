@@ -6,10 +6,12 @@
             "human_tasks": {
                 "mirrors": false,
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: [Bug 1375340](https://bugzil.la/1375340) - Balrog POST errors in en-US builds"
+            ]
         }
     ],
     "date": "2017-06-22",
