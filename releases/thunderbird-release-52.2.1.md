@@ -1,6 +1,6 @@
-# Thunderbird 52.2.0
+# Thunderbird 52.2.1
 
-### Started 2017-06-12
+### Started 2017-06-22
 
 ## Build 1
 
@@ -10,6 +10,6 @@
 - [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- nthomas: [Bug 1375340](https://bugzil.la/1375340) - Balrog POST errors in en-US builds
 
 

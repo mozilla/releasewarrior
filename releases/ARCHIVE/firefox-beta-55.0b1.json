@@ -3,7 +3,7 @@
         {
             "aborted": true,
             "buildnum": 1,
-            "graphid": "WWOA3TLXTOOQUdzIBabsDw",
+            "graphid": "AoGGiQ6JRKyvkT6MWV3A9w",
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
@@ -17,7 +17,7 @@
         {
             "aborted": true,
             "buildnum": 2,
-            "graphid": "ePMKgG_VT5SV42u-52KEMw",
+            "graphid": "f9xmnhxiRsWkGNE5qWqqLw",
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
@@ -30,7 +30,7 @@
         {
             "aborted": true,
             "buildnum": 3,
-            "graphid": "0acG-IR-Rzmuum39V11X6w",
+            "graphid": "qKECaomfSd2bqElN4fgtUQ",
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
@@ -44,7 +44,7 @@
         {
             "aborted": true,
             "buildnum": 4,
-            "graphid": "VmbzwNNjRr-oCZiQMhamQg",
+            "graphid": "MJ4-tjfoSia6whqBHH9Rnw",
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
@@ -55,15 +55,18 @@
         {
             "aborted": false,
             "buildnum": 5,
-            "graphid": "nGX4XKj3STqnwEjawWeE1g",
+            "graphid": "Ep4OjONuRNWdnXg54Zkg8A",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "nthomas: [Bug 1372798](https://bugzil.la/1372798) - be locale has returned but complete not in Balrog, so we get update and final verify errors",
+                "jlorenzo: Special requirement: Set update rate at 0%, so devedition will be the staging population"
+            ]
         }
     ],
     "date": "2017-06-12",
-    "product": "devedition",
+    "product": "firefox",
     "version": "55.0b1"
 }

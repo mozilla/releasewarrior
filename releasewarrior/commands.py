@@ -22,7 +22,7 @@ from releasewarrior.config import DATA_TEMPLATES, WIKI_TEMPLATES, POSTMORTEMS_PA
 
 logger = logging.getLogger('releasewarrior')
 
-_UPSTREAM_REPO_URL = re.compile(r'(https://|git@)github\.com[:/]mozilla/releasewarrior(\.git)?')
+_UPSTREAM_REPO_URL = re.compile(r'((?:https|ssh)://|git@)github\.com[:/]mozilla/releasewarrior(\.git)?')
 _SIMPLIFIED_REPO_URL = 'github.com/mozilla/releasewarrior' # Used only to simplify what's logged out
 
 class Command(metaclass=abc.ABCMeta):
@@ -401,9 +401,9 @@ class Status(Command):
                 release["product"], release["version"], curr_build["buildnum"],
                 release["date"])
             if curr_build.get("graphid"):
-                logger.info("Graph: https://tools.taskcluster.net/push-inspector/#/%s ", curr_build["graphid"])
+                logger.info("Graph: https://tools.taskcluster.net/task-group-inspector/#/%s", curr_build["graphid"])
             if curr_build.get("graphid_2"):
-                logger.info("Graph 2: https://tools.taskcluster.net/push-inspector/#/%s ", curr_build["graphid_2"])
+                logger.info("Graph 2: https://tools.taskcluster.net/task-group-inspector/#/%s", curr_build["graphid_2"])
             logger.info("\tincomplete human tasks:")
             for task in remaining_tasks_ordered:
                 logger.info("\t\t* %s", task)

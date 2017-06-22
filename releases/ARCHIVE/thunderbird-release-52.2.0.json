@@ -4,11 +4,13 @@
             "aborted": false,
             "buildnum": 1,
             "human_tasks": {
-                "mirrors": false,
-                "publish": false,
+                "mirrors": true,
+                "publish": true,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "asasaki: 45.x users at 0%, manual only, per r-d request"
+            ]
         }
     ],
     "date": "2017-06-12",

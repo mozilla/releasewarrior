@@ -1,0 +1,20 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "human_tasks": {
+                "mirrors": false,
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": [
+                "nthomas: [Bug 1375340](https://bugzil.la/1375340) - Balrog POST errors in en-US builds"
+            ]
+        }
+    ],
+    "date": "2017-06-22",
+    "product": "thunderbird",
+    "version": "52.2.1"
+}
