@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- callek: ReleaseTasks failure from adding multiple signoffs. Rail did a [Pull Request](https://github.com/mozilla-releng/releasetasks/pull/251) to fix
 
 
