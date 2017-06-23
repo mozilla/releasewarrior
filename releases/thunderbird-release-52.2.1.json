@@ -7,10 +7,11 @@
                 "mirrors": true,
                 "publish": false,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
-                "nthomas: [Bug 1375340](https://bugzil.la/1375340) - Balrog POST errors in en-US builds"
+                "nthomas: [Bug 1375340](https://bugzil.la/1375340) - Balrog POST errors in en-US builds",
+                "callek: Releasewarrior asks for signoff lines in TB, todo: omit that"
             ]
         }
     ],
