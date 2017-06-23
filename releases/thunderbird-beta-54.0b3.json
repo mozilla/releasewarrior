@@ -6,7 +6,7 @@
             "human_tasks": {
                 "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "CalledProcessError due to a revision with a space. Maybe shipit should strip spaces?",
