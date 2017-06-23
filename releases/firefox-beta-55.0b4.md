@@ -33,6 +33,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- nthomas: [Bug 1375802](https://bugzil.la/1375802) - Failure to submit 55.0b4 build2 task graphs
 
 
