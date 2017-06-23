@@ -35,5 +35,6 @@
 ### Issues
 - nthomas: [Bug 1375802](https://bugzil.la/1375802) - Failure to submit 55.0b4 build2 task graphs
 - asasaki: marking signoff as done, but multi signoff is not enabled
+- asasaki: rule 604 was set to 25% rollout; leftover from multiple signoffs? set to 100; probably need cleanup
 
 
