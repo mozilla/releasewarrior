@@ -18,10 +18,10 @@
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "l-5mepecT7Od22-P1k5rZg",
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
             "issues": [
