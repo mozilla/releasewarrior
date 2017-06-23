@@ -5,9 +5,12 @@
             "buildnum": 1,
             "human_tasks": {
                 "publish": false,
-                "shipit": true
+                "shipit": true,
+                "signoff": false
             },
-            "issues": []
+            "issues": [
+                "callek: <wsmwk>  55.0b1 might get abandoned.  not yet totally clear"
+            ]
         }
     ],
     "date": "2017-06-13",
