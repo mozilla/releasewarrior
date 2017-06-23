@@ -4,8 +4,9 @@
             "aborted": false,
             "buildnum": 1,
             "human_tasks": {
-                "publish": false,
-                "shipit": true
+                "publish": true,
+                "shipit": true,
+                "signoff": false
             },
             "issues": [
                 "CalledProcessError due to a revision with a space. Maybe shipit should strip spaces?",
