@@ -21,12 +21,13 @@
             "buildnum": 2,
             "graphid": "Rb_RIFg1SSuMJ6AWf9PDsg",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
-                "nthomas: [Bug 1375802](https://bugzil.la/1375802) - Failure to submit 55.0b4 build2 task graphs"
+                "nthomas: [Bug 1375802](https://bugzil.la/1375802) - Failure to submit 55.0b4 build2 task graphs",
+                "asasaki: marking signoff as done, but multi signoff is not enabled"
             ]
         }
     ],
