@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "XXLNDFv7SZSWlY7PcYwLcw",
             "human_tasks": {
@@ -14,6 +14,17 @@
                 "callek: Multiple Signoff (despite being backed out) required me to manually mark the release as published.",
                 "callek: desktop human task didn't trigger anything else, concern on IRC on if resolving it would have published the release entirely... e-mailed ben and rail, and notified r-d of delay"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-06-22",
