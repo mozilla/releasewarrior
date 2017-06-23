@@ -17,5 +17,6 @@
 - callek: ReleaseTasks failure from adding multiple signoffs. Rail did a [Pull Request](https://github.com/mozilla-releng/releasetasks/pull/251) to fix
 - callek: task 'firefox mozilla-beta updates' failed (through 5 retries) due to multiple signoff enabling, when trying to push updates to release cdntest. Ben filed [Bug 1375670](https://bugzil.la/1375670) to track the issue and reverted multiple signoff for now. Task re-ran
 - callek: Multiple Signoff (despite being backed out) required me to manually mark the release as published.
+- callek: Completed human task didn't trigger anything else, concern on IRC on if resolving it would have published the release entirely... e-mailed ben and rail, and notified r-d of delay
 
 
