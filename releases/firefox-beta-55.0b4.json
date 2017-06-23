@@ -7,7 +7,7 @@
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "callek: ReleaseTasks failure from adding multiple signoffs. Rail did a [Pull Request](https://github.com/mozilla-releng/releasetasks/pull/251) to fix",
