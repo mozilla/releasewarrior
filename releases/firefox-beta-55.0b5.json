@@ -9,7 +9,10 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: Not using Balrog signoffs",
+                "nthomas: Not using Balrog signoffs, resolve the \"publish release human decision task\" per previous SOP"
+            ]
         }
     ],
     "date": "2017-06-27",
