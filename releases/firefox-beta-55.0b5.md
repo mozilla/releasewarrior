@@ -15,5 +15,6 @@
 
 ### Issues
 - nthomas: Not using Balrog signoffs, resolve the "publish release human decision task" per previous SOP
+- mihaitabara: Publish to Balrog no longer works. Manually scheduled it. [Bug 1376502](https://bugzil.la/1376502) tracks that.
 
 
