@@ -10,7 +10,6 @@
                 "signoff": false
             },
             "issues": [
-                "nthomas: Not using Balrog signoffs",
                 "nthomas: Not using Balrog signoffs, resolve the \"publish release human decision task\" per previous SOP"
             ]
         }
