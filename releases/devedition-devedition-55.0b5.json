@@ -7,7 +7,7 @@
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "nthomas: Not using Balrog signoffs, resolve the \"publish release human decision task\" per previous SOP",
