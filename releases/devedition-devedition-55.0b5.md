@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- nthomas: Not using Balrog signoffs, resolve the "publish release human decision task" per previous SOP
 
 
