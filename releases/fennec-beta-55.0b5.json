@@ -10,7 +10,7 @@
                 "localtest": false,
                 "publish": false,
                 "pushapk": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
