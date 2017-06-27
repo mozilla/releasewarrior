@@ -15,5 +15,6 @@
 
 ### Issues
 - nthomas: Not using Balrog signoffs, resolve the "publish release human decision task" per previous SOP
+- mihaitabara: Update verification fails for cak locale. [Bug 1376570](https://bugzil.la/1376570)
 
 
