@@ -40,6 +40,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- mihaitabara: Generate beetmover docker image failed. Rerun succeded
 
 
