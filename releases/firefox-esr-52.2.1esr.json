@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "nr8miYwnTYeH2Y5FB3q4uw",
             "graphid_2": "",
@@ -14,6 +14,19 @@
             "issues": [
                 "mihaitabara: Abort! build from the wrong branch"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "mirrors": false,
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-06-28",
