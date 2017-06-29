@@ -8,7 +8,7 @@
                 "mirrors": true,
                 "publish": false,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": []
         }
