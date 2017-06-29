@@ -41,5 +41,6 @@ task graph url: unknown
 
 ### Issues
 - mihaitabara: Generate beetmover docker image failed. Rerun succeded
+- mihaitabara: Version bump failed since it's based on a relbranch. Manually bumped and tagged.
 
 
