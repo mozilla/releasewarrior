@@ -11,7 +11,7 @@
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
 - none
