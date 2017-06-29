@@ -22,7 +22,7 @@
             "graphid_2": "",
             "human_tasks": {
                 "mirrors": true,
-                "publish": false,
+                "publish": true,
                 "shipit": true,
                 "signoff": true
             },

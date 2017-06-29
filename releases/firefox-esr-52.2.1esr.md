@@ -37,7 +37,7 @@ task graph url: unknown
 #### Status
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
 - mihaitabara: Generate beetmover docker image failed. Rerun succeded
