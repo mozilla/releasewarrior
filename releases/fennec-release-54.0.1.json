@@ -9,7 +9,7 @@
                 "graph": true,
                 "localtest": true,
                 "publish": true,
-                "pushapk": false,
+                "pushapk": true,
                 "shipit": true
             },
             "issues": []
