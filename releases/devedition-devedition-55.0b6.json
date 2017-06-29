@@ -1,0 +1,20 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": [
+                "SPECIAL REQUIREMENT: Double check Update verification for cak locale. [Bug 1376570](https://bugzil.la/1376570)"
+            ]
+        }
+    ],
+    "date": "2017-06-29",
+    "product": "devedition",
+    "version": "55.0b6"
+}
