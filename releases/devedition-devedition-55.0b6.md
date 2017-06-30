@@ -15,5 +15,6 @@
 
 ### Issues
 - SPECIAL REQUIREMENT: Double check Update verification for cak locale. [Bug 1376570](https://bugzil.la/1376570)
+- mihaitabara: Cak locale signature verification fails again in update verification. [Bug 1376570](https://bugzil.la/1376570)
 
 
