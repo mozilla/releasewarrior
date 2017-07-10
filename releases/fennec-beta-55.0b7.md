@@ -16,6 +16,6 @@
 - [x] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- mihaitabara: push to releases script should not silently return success if nothing has been copied over - [Bug 1379599](https://bugzil.la/1379599)
 
 

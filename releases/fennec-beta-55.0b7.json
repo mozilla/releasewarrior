@@ -12,7 +12,9 @@
                 "pushapk": true,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "mihaitabara: push to releases script should not silently return success if nothing has been copied over - [Bug 1379599](https://bugzil.la/1379599)"
+            ]
         }
     ],
     "date": "2017-07-06",
