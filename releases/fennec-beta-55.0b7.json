@@ -13,7 +13,8 @@
                 "shipit": true
             },
             "issues": [
-                "mihaitabara: push to releases script should not silently return success if nothing has been copied over - [Bug 1379599](https://bugzil.la/1379599)"
+                "mihaitabara: push to releases script should not silently return success if nothing has been copied over - [Bug 1379599](https://bugzil.la/1379599)",
+                "mihaitabara: Fennec 57.0b7 accidentally triggered in automation instead of Fennec 55.0b7 - [Bug 1379602](https://bugzil.la/1379602)"
             ]
         }
     ],
