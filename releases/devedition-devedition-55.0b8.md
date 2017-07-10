@@ -14,6 +14,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- rail: [Bug 1379730](https://bugzil.la/1379730) - update devedition mac routes
 
 

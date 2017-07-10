@@ -9,7 +9,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "rail: [Bug 1379730](https://bugzil.la/1379730) - update devedition mac routes"
+            ]
         }
     ],
     "date": "2017-07-10",
