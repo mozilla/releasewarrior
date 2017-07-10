@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- rail: [Bug 1366003](https://bugzil.la/1366003): Needed to update the public GPG key https://hg.mozilla.org/build/tools/rev/56b149869f76
 
 
