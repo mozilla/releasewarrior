@@ -15,5 +15,6 @@
 
 ### Issues
 - rail: [Bug 1366003](https://bugzil.la/1366003): Needed to update the public GPG key https://hg.mozilla.org/build/tools/rev/56b149869f76
+- nthomas: beetmover image generation failed all retries while cloning mozilla-unified, tctalker rerun used
 
 
