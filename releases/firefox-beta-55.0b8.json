@@ -7,7 +7,7 @@
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "rail: [Bug 1366003](https://bugzil.la/1366003): Needed to update the public GPG key https://hg.mozilla.org/build/tools/rev/56b149869f76",
