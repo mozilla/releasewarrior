@@ -15,5 +15,7 @@
 
 ### Issues
 - rail: [Bug 1379730](https://bugzil.la/1379730) - update devedition mac routes
+- nthomas: beetmover image generation failed all retries cloning, rerun with tctalker
+- nthomas: beetmover image generation failed all retries while cloning mozilla-unified, tctalker rerun used
 
 
