@@ -7,7 +7,7 @@
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "rail: [Bug 1379730](https://bugzil.la/1379730) - update devedition mac routes"
