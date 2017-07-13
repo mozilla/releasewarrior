@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- mihaitabara: mozilla-beta win32 l10n repack 9/10 failed for robustcheckout took too long. rerun
 
 
