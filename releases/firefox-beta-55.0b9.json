@@ -16,10 +16,10 @@
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "bLZtf6iuTEGOxvAnL9WE5g",
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
             "issues": []
