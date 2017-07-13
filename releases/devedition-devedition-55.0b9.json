@@ -13,10 +13,10 @@
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "CgIV16QEST2MEYVuWYrm7g",
             "human_tasks": {
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
