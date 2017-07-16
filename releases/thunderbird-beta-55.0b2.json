@@ -8,7 +8,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: should remove balrog signoff from templates for thunderbird releases ??"
+            ]
         }
     ],
     "date": "2017-07-14",
