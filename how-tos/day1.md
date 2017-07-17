@@ -57,6 +57,7 @@ In order to be productive squirrels, we've developed a bunch of tools to help us
 
 - issues regarding specific releases/WNP are filed under [Release Engineering:Releases](https://bugzilla.mozilla.org/enter_bug.cgi?product=Release%20Engineering&component=Releases)
 - issues regarding automation are filed under [Release Engineering:Release Automation](https://bugzilla.mozilla.org/enter_bug.cgi?product=Release%20Engineering&component=Release%20Automation)
+- historically, we've used this [etherpad](https://public.etherpad-mozilla.org/p/releaseduty_handoff) to handoff any information from one squirrely to another when cycle. It's optional but feel free to reuse this
 
 ## FAQ
 
