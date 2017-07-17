@@ -10,5 +10,6 @@
 
 ### Issues
 - nthomas: should remove balrog signoff from templates for thunderbird releases ??
+- mihaitabara: Yes. Let's remove the steps until we decide what's to be done next with signoffs.
 
 
