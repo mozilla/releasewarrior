@@ -6,7 +6,7 @@
             "human_tasks": {
                 "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "nthomas: should remove balrog signoff from templates for thunderbird releases ??"
