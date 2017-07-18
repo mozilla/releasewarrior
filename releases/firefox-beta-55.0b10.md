@@ -14,6 +14,6 @@
 - [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- rok: publish to Balrog fails in 55.0b10 due to expired signoffs timestamp, [Bug 1381882](https://bugzil.la/1381882)
 
 
