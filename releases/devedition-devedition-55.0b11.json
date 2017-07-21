@@ -9,7 +9,9 @@
                 "shipit": true,
                 "signoff": true
             },
-            "issues": []
+            "issues": [
+                "mihaitabara: Mark release as shipped fails for auth errors. [Bug 1383121](https://bugzil.la/1383121)"
+            ]
         }
     ],
     "date": "2017-07-20",

@@ -13,6 +13,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- mihaitabara: Mark release as shipped fails for auth errors. [Bug 1383121](https://bugzil.la/1383121)
 
 
