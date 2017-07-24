@@ -6,7 +6,7 @@
             "graphid": "8lbBnkGqT16j02e_21WMeg",
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
             "issues": []
