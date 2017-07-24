@@ -14,6 +14,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- mihaitabara: Checksums builder failing for S3 auth issues. Fallback from [Bug 1367773](https://bugzil.la/1367773)
 
 
