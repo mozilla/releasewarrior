@@ -17,5 +17,6 @@
 
 ### Issues
 - mihaitabara: We might have delays in shipping because of l10n Google Play strings website being done. [Bug 1383642](https://bugzil.la/1383642)
+- mihaitabara: Pushed manually by RelMan. More details on this in [Bug 1384083](https://bugzil.la/1384083)
 
 
