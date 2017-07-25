@@ -15,5 +15,6 @@
 
 ### Issues
 - mihaitabara: Checksums builder failing for S3 auth issues. Fallback from [Bug 1367773](https://bugzil.la/1367773)
+- mihaitabara: Mark release as shipped fails for auth errors. [Bug 1383121](https://bugzil.la/1383121)
 
 
