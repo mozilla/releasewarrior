@@ -16,6 +16,6 @@
 - [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- mihaitabara: We might have delays in shipping because of l10n Google Play strings website being done. [Bug 1383642](https://bugzil.la/1383642)
 
 

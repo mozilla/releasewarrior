@@ -12,7 +12,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "mihaitabara: We might have delays in shipping because of l10n Google Play strings website being done. [Bug 1383642](https://bugzil.la/1383642)"
+            ]
         }
     ],
     "date": "2017-07-24",
