@@ -15,7 +15,7 @@
             "issues": [
                 "mihaitabara: We might have delays in shipping because of l10n Google Play strings website being done. [Bug 1383642](https://bugzil.la/1383642)",
                 "mihaitabara: Pushed manually by RelMan. More details on this in [Bug 1384083](https://bugzil.la/1384083)",
-                "mihaitabara: Mark release as shipped fails for auth errors. [Bug 1383121](https://bugzil.la/1383121)"
+                "mihaitabara: Mark release as shipped fails for auth errors. Will be marked by rail in ShipIt DB as builder needs tree changes to be fixed[Bug 1383121](https://bugzil.la/1383121)"
             ]
         }
     ],
