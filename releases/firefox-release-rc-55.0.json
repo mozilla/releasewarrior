@@ -1,0 +1,24 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false,
+                "signoff": false,
+                "wnp": false
+            },
+            "issues": [
+                "SPECIAL REQUIREMENT: after first week mergeduty on 1st of August is completed, before we trigger the RC, we need to land and merge this [PR](https://github.com/mozilla-releng/releasetasks/pull/247)"
+            ]
+        }
+    ],
+    "date": "2017-07-31",
+    "product": "firefox",
+    "version": "55.0"
+}
