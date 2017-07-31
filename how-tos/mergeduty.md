@@ -54,7 +54,7 @@ hg -R build/mozilla-release diff
 ### Reconfigs part 1
 
 1. Look at the merge day bug and see if patches need to land at this stage.
-1. Land "patch 1"
+1. Land "patch 1" to `default` branch, wait for tests to run and confirm they pass in #releng
 1. Wait 1 hour for the reconfig to happen (via cron job). If you can't wait, ask for a manual reconfig to buildduty folks.
 1. Wait for the go-to-merge email in release-drivers
 
