@@ -26,7 +26,7 @@
                 "beta": false,
                 "mirrors": false,
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false,
                 "wnp": false
             },
