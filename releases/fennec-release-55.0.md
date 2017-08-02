@@ -5,7 +5,7 @@
 ## Build 1
 
 ### Release Graph
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/sicHSR4cQxidBN_hXoJLMw)
 
 ### Release graph 2
 task graph url: unknown
