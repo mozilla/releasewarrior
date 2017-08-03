@@ -5,7 +5,8 @@
             "buildnum": 1,
             "human_tasks": {
                 "publish": false,
-                "shipit": true
+                "shipit": true,
+                "signoff": false
             },
             "issues": []
         }
