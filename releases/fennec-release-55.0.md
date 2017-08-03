@@ -18,6 +18,6 @@ task graph url: unknown
 - [ ] [push to mirrors and publish release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#steps-after-qa-signed-off)
 
 ### Issues
-- none
+- mihaitabara: L10n builds are missing. WONTFIX because not required in GP. [Bug 1386995](https://bugzil.la/1386995)
 
 
