@@ -19,12 +19,12 @@
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "AzRtG2NFS5KTbafi6zYxHg",
             "graphid_2": "",
             "human_tasks": {
                 "mirrors": false,
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
             "issues": []
