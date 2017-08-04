@@ -71,5 +71,6 @@ task graph url: unknown
 
 ### Issues
 - nthomas: [Bug 1387278](https://bugzil.la/1387278) - signing server cert expiry. 5 exceptions - i9sSvkGqTs203D22veGU1w is the last signing job for mac updates, blocking the graph; 4 partner or EME-free repacks. Reran the 5 tasks after catlee renewed the certs.
+- mihaitabara: bn-IN win32 update verification fails in 55.0-build3. [Bug 1387404](https://bugzil.la/1387404)
 
 
