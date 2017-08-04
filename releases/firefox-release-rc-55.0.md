@@ -70,6 +70,6 @@ task graph url: unknown
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- nthomas: [Bug 1387278](https://bugzil.la/1387278) - signing server cert expiry. 5 exceptions - i9sSvkGqTs203D22veGU1w is the last signing job for mac updates, blocking the graph; 4 partner or EME-free repacks
 
 
