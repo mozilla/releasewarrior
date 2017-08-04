@@ -46,7 +46,7 @@
                 "wnp": false
             },
             "issues": [
-                "nthomas: [Bug 1387278](https://bugzil.la/1387278) - signing server cert expiry. 5 exceptions - i9sSvkGqTs203D22veGU1w is the last signing job for mac updates, blocking the graph; 4 partner or EME-free repacks"
+                "nthomas: [Bug 1387278](https://bugzil.la/1387278) - signing server cert expiry. 5 exceptions - i9sSvkGqTs203D22veGU1w is the last signing job for mac updates, blocking the graph; 4 partner or EME-free repacks. Reran the 5 tasks after catlee renewed the certs."
             ]
         }
     ],
