@@ -10,7 +10,7 @@
 - [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- Built before updater changes were properly handles, and backout of removal of pretty name support
 
 :bomb: _**aborted release. starting new build num**_ :bomb:
 

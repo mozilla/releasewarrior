@@ -8,7 +8,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "Built before updater changes were properly handles, and backout of removal of pretty name support"
+            ]
         },
         {
             "aborted": false,
