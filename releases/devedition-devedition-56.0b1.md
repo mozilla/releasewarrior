@@ -13,6 +13,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- nthomas: Forgot to land some funsize fixes on beta and hit issues with python deps
 
 
