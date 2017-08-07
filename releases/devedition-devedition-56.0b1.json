@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "j9-GjuTXQdiWOsiO6fL2Ag",
             "human_tasks": {
@@ -12,6 +12,17 @@
             "issues": [
                 "nthomas: Forgot to land some funsize fixes on beta and hit issues with python deps"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-08-08",
