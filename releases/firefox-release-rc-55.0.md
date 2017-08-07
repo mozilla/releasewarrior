@@ -62,7 +62,7 @@ task graph url: unknown
 - [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
 
 ### RC graph 2
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/kzNGyB4TQLu8X6F604TImw)
 
 #### Status
 - [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
