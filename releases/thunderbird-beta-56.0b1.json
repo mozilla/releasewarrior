@@ -16,7 +16,7 @@
             "aborted": false,
             "buildnum": 2,
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
                 "signoff": true
             },
