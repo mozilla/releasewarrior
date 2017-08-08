@@ -41,7 +41,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 4,
             "graphid": "LcsV9wwyTIOc_1U6_vgzDQ",
             "human_tasks": {
@@ -52,6 +52,17 @@
             "issues": [
                 "mihaitabara: Trailing slash in mar tools urls. [Bug 1388312](https://bugzil.la/1388312)"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 5,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-08-08",
