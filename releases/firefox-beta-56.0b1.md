@@ -46,6 +46,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- mihaitabara: Tracking issues bug - [Bug 1388357](https://bugzil.la/1388357)
 
 
