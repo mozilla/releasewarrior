@@ -22,7 +22,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "asasaki: funsize-balrog issue https://github.com/mozilla-releng/releasetasks/pull/261"
+            ]
         }
     ],
     "date": "2017-08-08",
