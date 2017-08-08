@@ -43,6 +43,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- mihaitabara: [Bug 1388312](https://bugzil.la/1388312) - 56.0b1 update tests fail: MAR_CHANNEL_MISMATCH_ERROR
 
 
