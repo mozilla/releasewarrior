@@ -14,7 +14,7 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- missing update generation patches for backports
 
 :bomb: _aborted release. starting new build num_ :bomb:
 

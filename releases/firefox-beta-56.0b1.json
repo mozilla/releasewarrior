@@ -9,7 +9,7 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": ["missing update generation patches for backports"]
         },
         {
             "aborted": false,
