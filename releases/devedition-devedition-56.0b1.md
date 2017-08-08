@@ -59,6 +59,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- mihaitabara: Trailing slash in mar tools urls. [Bug 1388312](https://bugzil.la/1388312)
 
 

@@ -49,7 +49,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "mihaitabara: Trailing slash in mar tools urls. [Bug 1388312](https://bugzil.la/1388312)"
+            ]
         }
     ],
     "date": "2017-08-08",
