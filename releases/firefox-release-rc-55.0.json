@@ -40,7 +40,7 @@
             "human_tasks": {
                 "beta": true,
                 "mirrors": true,
-                "publish": false,
+                "publish": true,
                 "shipit": true,
                 "signoff": false,
                 "wnp": false

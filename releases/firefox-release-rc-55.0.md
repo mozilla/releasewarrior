@@ -67,7 +67,7 @@ task graph url: unknown
 #### Status
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
 - nthomas: [Bug 1387278](https://bugzil.la/1387278) - signing server cert expiry. 5 exceptions - i9sSvkGqTs203D22veGU1w is the last signing job for mac updates, blocking the graph; 4 partner or EME-free repacks. Reran the 5 tasks after catlee renewed the certs.
