@@ -9,15 +9,17 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": ["missing update generation patches for backports"]
+            "issues": [
+                "missing update generation patches for backports"
+            ]
         },
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "WehanUPTRI2DosLwKyy4lQ",
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
             "issues": []
