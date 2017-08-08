@@ -30,6 +30,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- asasaki: funsize-balrog issue https://github.com/mozilla-releng/releasetasks/pull/261
 
 
