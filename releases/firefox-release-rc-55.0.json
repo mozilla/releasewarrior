@@ -42,7 +42,7 @@
                 "mirrors": true,
                 "publish": true,
                 "shipit": true,
-                "signoff": false,
+                "signoff": true,
                 "wnp": false
             },
             "issues": [
