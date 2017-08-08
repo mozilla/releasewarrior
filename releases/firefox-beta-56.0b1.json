@@ -27,7 +27,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 3,
             "graphid": "b3OstNZvQiW3-FFz5wABOw",
             "human_tasks": {
@@ -39,6 +39,17 @@
                 "mihaitabara: Tracking issues bug - [Bug 1388357](https://bugzil.la/1388357)",
                 "mihaitabara: [Bug 1388312](https://bugzil.la/1388312) - 56.0b1 update tests fail: MAR_CHANNEL_MISMATCH_ERROR"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 4,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-08-07",
