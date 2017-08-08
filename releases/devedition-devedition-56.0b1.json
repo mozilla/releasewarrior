@@ -14,7 +14,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "peh4qWmITmKjaT-Nwcan8A",
             "human_tasks": {
@@ -25,6 +25,17 @@
             "issues": [
                 "asasaki: funsize-balrog issue https://github.com/mozilla-releng/releasetasks/pull/261"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-08-08",
