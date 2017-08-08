@@ -22,6 +22,6 @@
 - [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- mihaitabara: Balrog updater for Thunderbird 56.0b1 fails with BAD REQUEST - [Bug 1388330](https://bugzil.la/1388330)
 
 
