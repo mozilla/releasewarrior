@@ -23,7 +23,7 @@
             "graphid_2": "UFVbfJ1DRGeWhqEC-WJDcw",
             "human_tasks": {
                 "mirrors": true,
-                "publish": false,
+                "publish": true,
                 "shipit": true,
                 "signoff": true
             },
