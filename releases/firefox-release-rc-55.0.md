@@ -59,7 +59,7 @@ task graph url: unknown
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 - [x] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
-- [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
+- [x] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
 
 ### RC graph 2
 [task group](https://tools.taskcluster.net/push-inspector/#/kzNGyB4TQLu8X6F604TImw)
