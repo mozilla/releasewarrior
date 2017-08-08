@@ -7,7 +7,7 @@
             "graphid_2": "Fr6pkWHSR_i0lchytoJobg",
             "human_tasks": {
                 "graph": true,
-                "localtest": false,
+                "localtest": true,
                 "publish": false,
                 "pushapk": false,
                 "shipit": true
