@@ -27,7 +27,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 3,
             "graphid": "BoyrEYDOTWCZSOZ8u23YiA",
             "human_tasks": {
@@ -39,6 +39,17 @@
                 "mihaitabara: [Bug 1388312](https://bugzil.la/1388312) - 56.0b1 update tests fail: MAR_CHANNEL_MISMATCH_ERROR",
                 "mihaitabara: [Bug 1388431](https://bugzil.la/1388431) - [win32/64, macosx64] Devedition: mars should be signed with Nightly key"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 4,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-08-08",

@@ -46,4 +46,19 @@
 - mihaitabara: [Bug 1388312](https://bugzil.la/1388312) - 56.0b1 update tests fail: MAR_CHANNEL_MISMATCH_ERROR
 - mihaitabara: [Bug 1388431](https://bugzil.la/1388431) - [win32/64, macosx64] Devedition: mars should be signed with Nightly key
 
+:bomb: _aborted release. starting new build num_ :bomb:
+
+## Build 4
+
+### Beta Graph
+task graph url: unknown
+
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+
+### Issues
+- none
+
 
