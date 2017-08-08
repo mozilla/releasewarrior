@@ -36,7 +36,8 @@
                 "signoff": false
             },
             "issues": [
-                "mihaitabara: [Bug 1388312](https://bugzil.la/1388312) - 56.0b1 update tests fail: MAR_CHANNEL_MISMATCH_ERROR"
+                "mihaitabara: [Bug 1388312](https://bugzil.la/1388312) - 56.0b1 update tests fail: MAR_CHANNEL_MISMATCH_ERROR",
+                "mihaitabara: [Bug 1388431](https://bugzil.la/1388431) - [win32/64, macosx64] Devedition: mars should be signed with Nightly key"
             ]
         }
     ],
