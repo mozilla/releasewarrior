@@ -71,10 +71,11 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
 - asasaki: bld-lion-r5-006 was having hg-shared issues; sshed in and nuked the specific empty 7ae7fb134bf7aec6ec96a062ff47a69053dd2973/ dir
 - nthomas: [Bug 1388567](https://bugzil.la/1388567) - purge CDN caches after nthomas removed builds in devedition/releases/56.0b1 from previous build
+- nthomas: RelMan wanted to take back shipping after the human decision task as marked completed, so we ended up in limbo where www.mozilla.org was live but updates were disabled
 
 
