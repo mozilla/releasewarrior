@@ -75,5 +75,6 @@
 
 ### Issues
 - asasaki: bld-lion-r5-006 was having hg-shared issues; sshed in and nuked the specific empty 7ae7fb134bf7aec6ec96a062ff47a69053dd2973/ dir
+- nthomas: [Bug 1388567](https://bugzil.la/1388567) - purge CDN caches after nthomas removed builds in devedition/releases/56.0b1 from previous build
 
 
