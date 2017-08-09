@@ -62,7 +62,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: [Bug 1388567](https://bugzil.la/1388567) - purge CDN caches after nthomas removed builds in firefox/releases/56.0b1 from previous build"
+            ]
         }
     ],
     "date": "2017-08-07",

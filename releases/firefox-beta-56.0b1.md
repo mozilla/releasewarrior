@@ -79,6 +79,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- nthomas: [Bug 1388567](https://bugzil.la/1388567) - purge CDN caches after nthomas removed builds in firefox/releases/56.0b1 from previous build
 
 
