@@ -22,10 +22,10 @@
 ## Build 2
 
 ### Release Graph
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/LnnWg8vlRcSDql4q2agPdg)
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
 - [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
