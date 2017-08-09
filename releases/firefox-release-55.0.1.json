@@ -24,7 +24,9 @@
                 "signoff": false,
                 "wnp": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: bld-lion-r5-002 was having hg-shared issues; sshed in and nuked the specific empty 7ae7fb134bf7aec6ec96a062ff47a69053dd2973/ dir"
+            ]
         }
     ],
     "date": "2017-08-09",

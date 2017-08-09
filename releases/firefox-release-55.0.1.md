@@ -32,6 +32,6 @@
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
-- none
+- nthomas: bld-lion-r5-002 was having hg-shared issues; sshed in and nuked the specific empty 7ae7fb134bf7aec6ec96a062ff47a69053dd2973/ dir
 
 
