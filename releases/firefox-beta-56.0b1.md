@@ -76,9 +76,10 @@
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
 
 ### Issues
 - nthomas: [Bug 1388567](https://bugzil.la/1388567) - purge CDN caches after nthomas removed builds in firefox/releases/56.0b1 from previous build
+- nthomas: RelMan wanted to take back shipping after the human decision task as marked completed, so we ended up in limbo where www.mozilla.org was live but updates were disabled
 
 

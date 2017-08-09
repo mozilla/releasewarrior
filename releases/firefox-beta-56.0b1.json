@@ -58,12 +58,13 @@
             "buildnum": 5,
             "graphid": "ZXjg4AYeRpyCsC192RhNPw",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
                 "signoff": true
             },
             "issues": [
-                "nthomas: [Bug 1388567](https://bugzil.la/1388567) - purge CDN caches after nthomas removed builds in firefox/releases/56.0b1 from previous build"
+                "nthomas: [Bug 1388567](https://bugzil.la/1388567) - purge CDN caches after nthomas removed builds in firefox/releases/56.0b1 from previous build",
+                "nthomas: RelMan wanted to take back shipping after the human decision task as marked completed, so we ended up in limbo where www.mozilla.org was live but updates were disabled"
             ]
         }
     ],
