@@ -21,13 +21,14 @@
                 "mirrors": true,
                 "publish": false,
                 "shipit": true,
-                "signoff": false,
+                "signoff": true,
                 "wnp": true
             },
             "issues": [
                 "nthomas: bld-lion-r5-002 was having hg-shared issues; sshed in and nuked the specific empty 7ae7fb134bf7aec6ec96a062ff47a69053dd2973/ dir",
-                "asasaki: bug 1389239 - linux+mac cdntests are pointing at tinderbox-builds; we need to help them point at the new location(s) post-tc-migration",
-                "nthomas: We didn't set up release-cdntest with the WNP page, or the rule for <55 to get 54.0.1, which invalidated QEs testing"
+                "asasaki: [Bug 1389239](https://bugzil.la/1389239) - linux+mac cdntests are pointing at tinderbox-builds; we need to help them point at the new location(s) post-tc-migration",
+                "nthomas: We didn't set up release-cdntest with the WNP page, or the rule for <55 to get 54.0.1, which invalidated QEs testing",
+                "nthomas: We set up scheduled changes for the special update handlig before resolving the human decision task, then deleted the scheduled change from the automation"
             ]
         }
     ],
