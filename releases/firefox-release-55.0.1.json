@@ -26,7 +26,7 @@
             },
             "issues": [
                 "nthomas: bld-lion-r5-002 was having hg-shared issues; sshed in and nuked the specific empty 7ae7fb134bf7aec6ec96a062ff47a69053dd2973/ dir",
-                "asasaki: linux+mac cdntests are pointing at tinderbox-builds; we need to help them point at the new location(s) post-tc-migration"
+                "asasaki: bug 1389239 - linux+mac cdntests are pointing at tinderbox-builds; we need to help them point at the new location(s) post-tc-migration"
             ]
         }
     ],
