@@ -36,5 +36,6 @@
 - asasaki: [Bug 1389239](https://bugzil.la/1389239) - linux+mac cdntests are pointing at tinderbox-builds; we need to help them point at the new location(s) post-tc-migration
 - nthomas: We didn't set up release-cdntest with the WNP page, or the rule for <55 to get 54.0.1, which invalidated QEs testing
 - nthomas: We set up scheduled changes for the special update handlig before resolving the human decision task
+- nthomas: [Bug 1389312](https://bugzil.la/1389312) - publish balrog job fails because it's not submitting a scheduled change. Blocks only the email to r-d about the release channel, which was done manually
 
 
