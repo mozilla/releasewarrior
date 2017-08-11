@@ -7,7 +7,7 @@
             "human_tasks": {
                 "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": []
         }
