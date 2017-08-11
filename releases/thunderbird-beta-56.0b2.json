@@ -4,12 +4,13 @@
             "aborted": false,
             "buildnum": 1,
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
                 "signoff": true
             },
             "issues": [
-                "nthomas: [Bug 1388330](https://bugzil.la/1388330) - update_shipping_beta job fails"
+                "nthomas: [Bug 1388330](https://bugzil.la/1388330) - update_shipping_beta job fails",
+                "nthomas: Human error updating rule manually, left Mapping alone and pointed Fallback Mapping to non-existent Thunderbird-55.0b2-build2"
             ]
         }
     ],
