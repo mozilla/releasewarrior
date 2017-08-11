@@ -8,7 +8,9 @@
                 "shipit": true,
                 "signoff": true
             },
-            "issues": []
+            "issues": [
+                "nthomas: [Bug 1388330](https://bugzil.la/1388330) - update_shipping_beta job fails"
+            ]
         }
     ],
     "date": "2017-08-10",
