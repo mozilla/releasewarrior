@@ -11,6 +11,6 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- kmoir: repacks failed on 2/10 and 10/10 linux64, 7/10 linux - reran the jobs
 
 

@@ -9,7 +9,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "kmoir: repacks failed on 2/10 and 10/10 linux64, 7/10 linux - reran the jobs"
+            ]
         }
     ],
     "date": "2017-08-15",
