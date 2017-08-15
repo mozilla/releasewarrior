@@ -13,5 +13,6 @@
 ### Issues
 - kmoir: repacks failed on 2/10 and 10/10 linux64, 7/10 linux - reran the jobs
 - kmoir: [Bug 1390604](https://bugzil.la/1390604) - all the linux/linux64 update _verify_release jobs for tb 52.3.0 fail
+- kmoir: [Bug 1356562](https://bugzil.la/1356562) - [Thunderbird] update_verify: Linux updates fail because libgtk-3 is missing
 
 
