@@ -12,7 +12,8 @@
                 "wnp": false
             },
             "issues": [
-                "nthomas: Got 503 errors from task scheduler API but the graph was still submitted and is running. Cleaned up ship-it db state and emailled r-d"
+                "nthomas: Got 503 errors from task scheduler API but the graph was still submitted and is running. Cleaned up ship-it db state and emailled r-d",
+                "nthomas: Updated Balrog rule id 627 mapping from Firefox-55.0.1-build2-whatsnew to Firefox-55.0.2-build1. Will need to set it to Firefox-55.0.2-build1-whatsnew once that exists"
             ]
         }
     ],
