@@ -1,0 +1,21 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "candidates": false,
+                "graph": false,
+                "publish": false,
+                "pushapk": false,
+                "shipit": false
+            },
+            "issues": []
+        }
+    ],
+    "date": "2017-08-16",
+    "product": "fennec",
+    "version": "56.0b3"
+}
