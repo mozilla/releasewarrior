@@ -14,6 +14,6 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: Update verify errors with buildID mistmatches from special rule for manual updates. Made rule id 626 point to Firefox-56.0b3-build1 instead of 56.0b2. Reran jobs that ran out of retries.
 
 
