@@ -3,7 +3,7 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "PRcnpRuGTn6R2WsoqZzQOw",
             "human_tasks": {
                 "mirrors": false,
                 "publish": false,
@@ -11,7 +11,9 @@
                 "signoff": false,
                 "wnp": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: Got 503 errors from task scheduler API but the graph was still submitted and is running. Cleaned up ship-it db state and emailled r-d"
+            ]
         }
     ],
     "date": "2017-08-16",
