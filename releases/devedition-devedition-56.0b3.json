@@ -7,9 +7,11 @@
             "human_tasks": {
                 "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
-            "issues": []
+            "issues": [
+                "nthomas: schedule signoff job failed because release_eta was 'in the past'. Manually scheduled a rule change (id 237)"
+            ]
         }
     ],
     "date": "2017-08-15",
