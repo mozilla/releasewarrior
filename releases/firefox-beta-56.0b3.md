@@ -15,5 +15,6 @@
 
 ### Issues
 - nthomas: Update verify errors with buildID mistmatches from special rule for manual updates. Made rule id 626 point to Firefox-56.0b3-build1 instead of 56.0b2. Reran jobs that ran out of retries.
+- nthomas: [Bug 1390071](https://bugzil.la/1390071) - snap job failed, non-blocking
 
 
