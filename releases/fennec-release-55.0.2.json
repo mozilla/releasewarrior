@@ -8,7 +8,7 @@
             "human_tasks": {
                 "candidates": true,
                 "graph": true,
-                "publish": false,
+                "publish": true,
                 "pushapk": true,
                 "shipit": true
             },
