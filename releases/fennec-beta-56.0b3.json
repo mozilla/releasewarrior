@@ -6,7 +6,7 @@
             "graphid": "UsFihTK0QU6Wi0sJAwR_0Q",
             "graphid_2": "jfwawNBNSCaR60P6-o8lWQ",
             "human_tasks": {
-                "candidates": false,
+                "candidates": true,
                 "graph": true,
                 "publish": false,
                 "pushapk": false,
