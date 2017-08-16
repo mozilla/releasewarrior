@@ -12,7 +12,7 @@
             "issues": [
                 "nthomas: Update verify errors with buildID mistmatches from special rule for manual updates. Made rule id 626 point to Firefox-56.0b3-build1 instead of 56.0b2. Reran jobs that ran out of retries.",
                 "nthomas: [Bug 1390071](https://bugzil.la/1390071) - snap job failed, non-blocking",
-                "nthomas: Updates - for users still on 55.0 or older Relman wants to serve 56.0b3 to 50% of background requests and 100% of manual requests. There is a scheduled change (change id 231) set up for this which will need signoff at the same time as the main beta rule"
+                "nthomas: Updates - for users still on 55.0 or older Relman wants to serve 56.0b3 to 50% of background requests and 100% of manual requests. That is set up on beta-cdntest. There is a scheduled change (change id 231) set up for this which will need signoff at the same time as the main beta rule"
             ]
         }
     ],
