@@ -76,7 +76,7 @@ DATA_TEMPLATES = {
 ORDERED_HUMAN_TASKS = (
     'shipit',
     'graph',
-    'localtest',
+    'candidates',
     'beta',
     'betasignoff',
     'wnp',
