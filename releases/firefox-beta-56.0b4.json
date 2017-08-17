@@ -1,12 +1,25 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "FFXri8qpQ-WEscEoLlMTcA",
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
+                "signoff": false
+            },
+            "issues": [
+                "nthomas: 'Failed to start release promotion (graph ID: FFXri8qpQ-WEscEoLlMTcA). Error(s): You didn\\'t give the task-graph scopes allowing it define tasks on the queue.' in ship-it. Graph does exist in TC but all tasks are unscheduled. releaserunner log has 'You only have the scopes: ['docker-worker:*']'. Transient ?? Doing a build2 for deved l10n bustage anyway"
+            ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
                 "signoff": false
             },
             "issues": []
