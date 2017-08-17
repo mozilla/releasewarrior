@@ -15,6 +15,7 @@
 
 ### Issues
 - nthomas: Bustage in mac l10n: 'AttributeError: 'module' object has no attribute \'vfs\'.' due to hg 4.3.1 on machines but older robustcheckout in tree. gps/RyanVM organise uplifts and we'll do build2
+- nthomas: Bustage in windows l10n - [Bug 1391473](https://bugzil.la/1391473). Need xz to build complete mar files
 
 :bomb: _aborted release. starting new build num_ :bomb:
 
