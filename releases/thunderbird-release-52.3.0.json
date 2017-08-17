@@ -7,7 +7,7 @@
                 "mirrors": true,
                 "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "kmoir: repacks failed on 2/10 and 10/10 linux64, 7/10 linux - reran the jobs",
