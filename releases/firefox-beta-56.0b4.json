@@ -16,7 +16,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "dHzoExaZT1Gn8rymeKti7Q",
             "human_tasks": {
@@ -30,6 +30,17 @@
                 "mihaitabara: [Bug 1391297](https://bugzil.la/1391297) - LZMA/SHA384 watershed mess - update verification failing.",
                 "mihaitabara: To sum-up so far, we've had: hg/git, XZ, snap scopes, rules for watershed and now signing issues."
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-08-18",
