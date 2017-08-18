@@ -30,6 +30,6 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- nthomas: Scope issue again so we backed out [b16f9e](https://github.com/mozilla-releng/releasetasks/commit/b16f9e02da4d41657d05b061928bb12da0f8d28a) from releasetasks. Bad graphs are [GjgfvPMfRcy02KAIUWua7w](https://tools.taskcluster.net/groups/GjgfvPMfRcy02KAIUWua7w) and [aWQ10bbMSIOrkZKissLfOA](https://tools.taskcluster.net/groups/aWQ10bbMSIOrkZKissLfOA)
+- nthomas: [Bug 1391560](https://bugzil.la/1391560) - Scope issue again so we backed out [b16f9e](https://github.com/mozilla-releng/releasetasks/commit/b16f9e02da4d41657d05b061928bb12da0f8d28a) from releasetasks. Bad graphs are [GjgfvPMfRcy02KAIUWua7w](https://tools.taskcluster.net/groups/GjgfvPMfRcy02KAIUWua7w) and [aWQ10bbMSIOrkZKissLfOA](https://tools.taskcluster.net/groups/aWQ10bbMSIOrkZKissLfOA)
 
 
