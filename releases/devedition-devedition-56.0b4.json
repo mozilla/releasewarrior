@@ -15,12 +15,23 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "_nPWDM3hRM2H7vvD5VNktg",
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
                 "signoff": false
             },
             "issues": []
