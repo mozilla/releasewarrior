@@ -53,4 +53,20 @@ task graph url: unknown
 ### Issues
 - mihaitabara: Canceling as it was started before we pull latest changes from tools & releasetasks on bm85
 
+:bomb: _aborted release. starting new build num_ :bomb:
+
+## Build 4
+
+### Beta Graph
+task graph url: unknown
+
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none
+
 

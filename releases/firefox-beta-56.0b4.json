@@ -32,7 +32,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 3,
             "graphid": "",
             "human_tasks": {
@@ -43,6 +43,17 @@
             "issues": [
                 "mihaitabara: Canceling as it was started before we pull latest changes from tools & releasetasks on bm85"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 4,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-08-18",
