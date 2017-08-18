@@ -40,7 +40,9 @@
                 "shipit": false,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "mihaitabara: Canceling as it was started before we pull latest changes from tools & releasetasks on bm85"
+            ]
         }
     ],
     "date": "2017-08-18",
