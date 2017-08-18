@@ -15,6 +15,8 @@
 
 ### Issues
 - nthomas: 'Failed to start release promotion (graph ID: FFXri8qpQ-WEscEoLlMTcA). Error(s): You didn\'t give the task-graph scopes allowing it define tasks on the queue.' in ship-it. Graph does exist in TC but all tasks are unscheduled. releaserunner log has 'You only have the scopes: ['docker-worker:*']'. Transient ?? Doing a build2 for deved l10n bustage anyway
+- mihaitabara: nthomas also fixed [Bug 1391473](https://bugzil.la/1391473) - Add xz binaries to buildbot workers  to fix BB for Windows
+- mihaitabara: the mac l10n issues fixed by [Bug 1389715](https://bugzil.la/1389715) - Install Mercurial 4.3 in TaskCluster Docker images
 
 :bomb: _aborted release. starting new build num_ :bomb:
 
