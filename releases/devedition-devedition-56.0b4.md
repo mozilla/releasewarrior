@@ -64,5 +64,6 @@ task graph url: unknown
 
 ### Issues
 - mihaitabara: If build4 ships on Friday, please enable the watershed rules from https://aus4-admin.mozilla.org/rules/scheduled_changes before automation changes are signed-off. Even by a minute but watershes must be live before the default rules go live.
+- kmoir: reran the push to releases task Aw7QIc5YQKmYAFLMuv14Mg
 
 
