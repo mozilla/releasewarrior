@@ -71,5 +71,6 @@ task graph url: unknown
 - kmoir: [Bug 1391843](https://bugzil.la/1391843) - Please purge CDN caches for firefox and devedition 56.0b4
 - kmoir: [Bug 1391560](https://bugzil.la/1391560) - snap builds fails release runner automation for missing scopes
 - kmoir: reran the push to releases task Aw7QIc5YQKmYAFLMuv14Mg
+- mihaitabara: PMARs are fine. However, all update verification is still failing. PMARs are now well signed, en-uS CMAR and PMAR as well but CMAR for l10n still failing. Found the culprit in Makefile update generation and pushed a fix https://bugzilla.mozilla.org/show_bug.cgi?id=1391297#c12. Follow-up build5
 
 
