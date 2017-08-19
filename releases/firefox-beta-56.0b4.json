@@ -45,7 +45,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 4,
             "graphid": "Aw7QIc5YQKmYAFLMuv14Mg",
             "human_tasks": {
@@ -60,6 +60,17 @@
                 "kmoir: reran the push to releases task Aw7QIc5YQKmYAFLMuv14Mg",
                 "mihaitabara: PMARs are fine. However, all update verification is still failing. PMARs are now well signed, en-uS CMAR and PMAR as well but CMAR for l10n still failing. Found the culprit in Makefile update generation and pushed a fix https://bugzilla.mozilla.org/show_bug.cgi?id=1391297#c12. Follow-up build5"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 5,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-08-18",

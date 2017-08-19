@@ -73,4 +73,20 @@ task graph url: unknown
 - kmoir: reran the push to releases task Aw7QIc5YQKmYAFLMuv14Mg
 - mihaitabara: PMARs are fine. However, all update verification is still failing. PMARs are now well signed, en-uS CMAR and PMAR as well but CMAR for l10n still failing. Found the culprit in Makefile update generation and pushed a fix https://bugzilla.mozilla.org/show_bug.cgi?id=1391297#c12. Follow-up build5
 
+:bomb: _aborted release. starting new build num_ :bomb:
+
+## Build 5
+
+### Beta Graph
+task graph url: unknown
+
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none
+
 
