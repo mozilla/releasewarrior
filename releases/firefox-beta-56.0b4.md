@@ -70,5 +70,6 @@ task graph url: unknown
 - mihaitabara: If build4 ships on Friday, please enable the watershed rules from https://aus4-admin.mozilla.org/rules/scheduled_changes before automation changes are signed-off. Even by a minute but watershes must be live before the default rules go live.
 - kmoir: [Bug 1391843](https://bugzil.la/1391843) - Please purge CDN caches for firefox and devedition 56.0b4
 - kmoir: [Bug 1391560](https://bugzil.la/1391560) - snap builds fails release runner automation for missing scopes
+- kmoir: reran the push to releases task Aw7QIc5YQKmYAFLMuv14Mg
 
 
