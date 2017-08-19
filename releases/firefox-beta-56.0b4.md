@@ -68,5 +68,6 @@ task graph url: unknown
 
 ### Issues
 - mihaitabara: If build4 ships on Friday, please enable the watershed rules from https://aus4-admin.mozilla.org/rules/scheduled_changes before automation changes are signed-off. Even by a minute but watershes must be live before the default rules go live.
+- kmoir: [Bug 1391894](https://bugzil.la/1391894) -  invalid credentials when trying to upload 56.0b4 snap edition to the Ubuntu store
 
 
