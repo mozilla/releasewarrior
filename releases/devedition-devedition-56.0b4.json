@@ -39,7 +39,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 4,
             "graphid": "SfN5zKnoQKy5EbhMisaqFw",
             "human_tasks": {
@@ -51,6 +51,17 @@
                 "mihaitabara: If build4 ships on Friday, please enable the watershed rules from https://aus4-admin.mozilla.org/rules/scheduled_changes before automation changes are signed-off. Even by a minute but watershes must be live before the default rules go live.",
                 "kmoir: reran the push to releases task Aw7QIc5YQKmYAFLMuv14Mg"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 5,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-08-18",
