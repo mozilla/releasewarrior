@@ -80,6 +80,6 @@ task graph url: unknown
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- mihaitabara: Reopened [Bug 1391843](https://bugzil.la/1391843) to purget CDN caches from build4.
 
 
