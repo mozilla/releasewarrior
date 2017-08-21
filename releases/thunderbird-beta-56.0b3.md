@@ -10,6 +10,6 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- kmoir: added balrog rule 638 rate 100, priority 100, buildid <20170819123318 for the beta channel
 
 

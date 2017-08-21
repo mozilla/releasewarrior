@@ -8,7 +8,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "kmoir: added balrog rule 638 rate 100, priority 100, buildid <20170819123318 for the beta channel"
+            ]
         }
     ],
     "date": "2017-08-19",
