@@ -14,6 +14,6 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- kmoir: [Bug 1392703](https://bugzil.la/1392703) - firefox mozilla-beta schedule publishing in balrog fails if human decision task was resolved after the release eta
 
 
