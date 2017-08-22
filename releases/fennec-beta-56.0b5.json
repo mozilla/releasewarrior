@@ -7,7 +7,7 @@
             "graphid_2": "",
             "human_tasks": {
                 "candidates": false,
-                "graph": false,
+                "graph": true,
                 "publish": false,
                 "pushapk": false,
                 "shipit": true
