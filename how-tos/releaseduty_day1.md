@@ -108,9 +108,9 @@ The Fennec build is not started automatically after it is submitted to ship-it a
 
 8.  *Is there explicit signoff from relman for devedition builds?*
 
-No, after b1, there isn't signoff from relman on devedition builds.  QA only verifies the devedition builds every two weeks. With the exception of b1, and assume all the tasks complete as expected, the devedition builds are shipped at the same time as we receive signoff for the corresponding devedition builds.
+No, after b1, there isn't signoff from relman on devedition builds.  QA only verifies the devedition builds every two weeks. With the exception of b1, and assuming all the tasks complete as expected, the devedition builds should be shipped at the same time as we receive signoff for the corresponding desktop builds.
 
 
 9. *Can releng adjust the rate of the Firefox apk in the Google play store?*
 
-By default, the push apk task for Fennec sets a rate of 10% in the Google Play store.  Relman is responsible for adjusting the rate to a different number as required. 
+By default, the push apk task for Fennec sets a rate of 10% in the Google Play store.  Relman is responsible for adjusting the rate as required. 
