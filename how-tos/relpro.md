@@ -261,3 +261,7 @@ Now that the Signoff requirements have been met, the Scheduled Change will be en
 ## Intermittent failures
 
 If a task failed because of an intermittent failure (e.g.: network error, timeout), `rerun` it manually via [tctalker](https://github.com/mozilla/tctalker). Some tasks don't have automatic reruns set, but they do have 5 retries left. Thanks to reruns, you don't need to retrigger a task (which would have meant to reschedule the remaining subgraph).
+
+## Flushing caches
+
+If you have more than one build on a beta or release you''ll need to flush the caches to remove the older builds from the CDN caches.  For instance in Firefox beta 46.0b5 we built builds 1 through 5 but of course only shipped build5.  See [Bug 1391843](https://bugzil.la/1391843) - Please purge CDN caches for firefox and devedition 56.0b4 as an example.

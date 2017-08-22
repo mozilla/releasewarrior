@@ -99,3 +99,18 @@ From time to time, a handful of issues precipitate a dot release. When that happ
 channel - for testing purposes, update verify steps are taking place both ways, hence update_verify_release and update_verify_beta steps. Upon successful testing we ship the RC on the beta channel and then on the release channel,
 following which we merge the code for the next release cycle so that the beta release bumps its version. In the lights of this logic, a dot release (e.g. 43.0.1 or 44.0.1) happens a certain amount of time after the official release.
 For that reason, a dot release can't be tested in beta channel as the at-that-moment beta version is greater than the dot release version, hence the updater would refuse to downgrade. Therefore, there is only one cycle of update_verify for dot releases (update_verify_release == update_verify in this case).
+
+
+7.  *How do I start the Fennec build after it has been submitted to ship it by Relman?*
+
+The Fennec build is not started automatically after it is submitted to ship-it as occurs with the desktop builds.  The Fennec build is usually submitted to ship-it by relman at the same time as desktop builds so you'll have to start it manually using the steps here [Fennec Release promotion](https://github.com/mozilla/releasewarrior/fennec-temp-relpro.md) After [bug 134765] (https://bugzilla.mozilla.org/show_bug.cgi?id=1347635) is resolved, the Fennec builds will be started automatically by ship-it.
+
+
+8.  *Is there explicit signoff from relman for devedition builds?*
+
+No, after b1, there isn't signoff from relman on devedition builds.  QA only verifies the devedition builds every two weeks. With the exception of b1, and assume all the tasks complete as expected, the devedition builds are shipped at the same time as we receive signoff for the corresponding devedition builds.
+
+
+9. *Can releng adjust the rate of the Firefox apk in the Google play store?*
+
+By default, the push apk task for Fennec sets a rate of 10% in the Google Play store.  Relman is responsible for adjusting the rate to a different number as required. 
