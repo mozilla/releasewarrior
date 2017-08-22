@@ -15,5 +15,6 @@
 
 ### Issues
 - kmoir: [Bug 1392703](https://bugzil.la/1392703) - firefox mozilla-beta schedule publishing in balrog fails if human decision task was resolved after the release eta
+- kmoir: had to rerun email release-drivers task as it was not scheduled because balrog task failed
 
 
