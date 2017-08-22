@@ -11,5 +11,6 @@
 
 ### Issues
 - kmoir: added balrog rule 638 rate 100, priority 100, buildid <20170819123318 for the beta channel
+- kmoir: [Bug 1391102](https://bugzil.la/1391102) - No workers launched for end of release automation jobs
 
 
