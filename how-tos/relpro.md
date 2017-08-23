@@ -262,6 +262,10 @@ Now that the Signoff requirements have been met, the Scheduled Change will be en
 
 If a task failed because of an intermittent failure (e.g.: network error, timeout), `rerun` it manually via [tctalker](https://github.com/mozilla/tctalker). Some tasks don't have automatic reruns set, but they do have 5 retries left. Thanks to reruns, you don't need to retrigger a task (which would have meant to reschedule the remaining subgraph).
 
+## Flushing caches
+
+If you have more than build1 ran on a beta or release we need to flush the caches to remove the older builds from the CDN caches.  For instance in Firefox beta 46.0b5 we built builds 1 through 5 but we only ship build5.  See [Bug 1391843](https://bugzil.la/1391843) - Please purge CDN caches for firefox and devedition 56.0b4 as an example.
+
 ## Working around Signoffs in Balrog
 
 The Required Signoffs we have implemented in Balrog are there for a reason. In general, you should not try to workaround them. On occasion, extreme circumstances may warrant doing so, however. The most likely reason for this would be no members of a particular group being around, and needing to make an urgent change (eg: shutting off updates).
