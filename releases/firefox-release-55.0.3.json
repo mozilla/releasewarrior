@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "wOoVM7x9Q-2UJMrOau_t0Q",
             "human_tasks": {
@@ -14,6 +14,19 @@
             "issues": [
                 "kmoir: [Bug 1392799](https://bugzil.la/1392799) - many update verify jobs fail for ff 55.0.3 for all platforms"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "mirrors": false,
+                "publish": false,
+                "shipit": false,
+                "signoff": false,
+                "wnp": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-08-22",
