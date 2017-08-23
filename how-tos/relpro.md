@@ -265,3 +265,14 @@ If a task failed because of an intermittent failure (e.g.: network error, timeou
 ## Flushing caches
 
 If you have more than build1 ran on a beta or release we need to flush the caches to remove the older builds from the CDN caches.  For instance in Firefox beta 46.0b5 we built builds 1 through 5 but we only ship build5.  See [Bug 1391843](https://bugzil.la/1391843) - Please purge CDN caches for firefox and devedition 56.0b4 as an example.
+
+## Working around Signoffs in Balrog
+
+The Required Signoffs we have implemented in Balrog are there for a reason. In general, you should not try to workaround them. On occasion, extreme circumstances may warrant doing so, however. The most likely reason for this would be no members of a particular group being around, and needing to make an urgent change (eg: shutting off updates).
+
+Note that even if you are a full fledged administrator, you yourself cannot make more than one Signoff on any given Scheduled Change. This is by design - we do not want a single account to be able make changes to protected Products or Channels. If you are certain you need to workaround the Signoffs, here's how:
+* Find another person with some permissions in Balrog, and who is up to speed on the change you intend to make.
+* Grant them the Role that you need to complete the Required Signoffs (through https://aus4-admin.mozilla.org/permissions).
+* Have them make a Signoff with that Role.
+
+As a concrete example, let's say we required 1 relman, 1 releng, and 1 qe signoff for Firefox release channel changes. Late on a Saturday night we discover a massive crash that requires us to shut off updates. Liz gets in contact with Kim to ask that this happen. Kim Schedules the necessary change in Balrog (which implicitly satisfies the releng signoff), and Liz signs off for relman. Because it is the weekend, and there was no planned work, QE is unavailable. Kim gets in contact with Aki, grants him the "qe" role, and Aki makes a Signoff under the "qe" Role, which fulfills the Signoff requirements. Kim then removes Aki's "qe" Role.
