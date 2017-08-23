@@ -69,6 +69,11 @@ The hook that triggers the Fennec graph is [here](https://tools.taskcluster.net/
 
 There are 2 "human decision" (aka "breakpoint") tasks to resolve *at the same time* (the order doesn't matter, though). One is in the first graph (the one kicked off by releasetasks), it's called `fennec mozilla-beta push to releases human decision task`. The other is in the Chain Of Trust graph, look for `android-push-apk-breakpoint/opt`.
 
+Tip: If the have the graph1 id but not the graph2 id (COT graph) you can determine it by
+1. Click on task group 1
+2. Click on mozilla-beta candidates_fennec
+3. The taskgroup id is the same as the candidates_fennec task id
+
 ### PushApk: Fallback steps
 
 If pushapk's task expires in graph 1, do the following:
