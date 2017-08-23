@@ -6,6 +6,7 @@
 
 ### Beta Graph
 - [task group 1](https://tools.taskcluster.net/push-inspector/#/9X4OgSSST2Oj1UkybzA9kA)
+- [task group 2](https://tools.taskcluster.net/push-inspector/#/wR8_OTyhSyyO4UwEXXOPDw)
 - second task graph url: unknown
 
 ### Status
