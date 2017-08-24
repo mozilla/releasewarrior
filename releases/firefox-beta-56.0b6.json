@@ -9,7 +9,9 @@
                 "shipit": false,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "asasaki: [Bug 1393639](https://bugzil.la/1393639) - tc indexes busted post-wv"
+            ]
         }
     ],
     "date": "2017-08-24",

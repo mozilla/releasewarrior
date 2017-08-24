@@ -14,6 +14,6 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- asasaki: [Bug 1393639](https://bugzil.la/1393639) - tc indexes busted post-wv
 
 
