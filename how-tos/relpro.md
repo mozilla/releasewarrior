@@ -276,3 +276,9 @@ Note that even if you are a full fledged administrator, you yourself cannot make
 * Have them make a Signoff with that Role.
 
 As a concrete example, let's say we required 1 relman, 1 releng, and 1 qe signoff for Firefox release channel changes. Late on a Saturday night we discover a massive crash that requires us to shut off updates. Liz gets in contact with Kim to ask that this happen. Kim Schedules the necessary change in Balrog (which implicitly satisfies the releng signoff), and Liz signs off for relman. Because it is the weekend, and there was no planned work, QE is unavailable. Kim gets in contact with Aki, grants him the "qe" role, and Aki makes a Signoff under the "qe" Role, which fulfills the Signoff requirements. Kim then removes Aki's "qe" Role.
+
+## Balrog channels ##
+
+Firefox beta updates are served on the beta channel, Devedition Beta updates are served on the aurora channel.
+
+## todo talk about Balrog watershed rules
