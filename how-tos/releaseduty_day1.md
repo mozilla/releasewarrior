@@ -113,4 +113,4 @@ No, after b1, there isn't signoff from relman on devedition builds.  QA only ver
 
 9. *Can releng adjust the rate of the Firefox apk in the Google play store?*
 
-By default, the push apk task for Fennec sets a rate of 10% in the Google Play store.  Relman is responsible for adjusting the rate as required. 
+By default, the push apk task for Fennec sets a rate of 10% in the Google Play store for b1, 100% for other betas.  After b1, you will have land a patch on beta to change the rate to 100% on mozilla-beta.  See ( Mobile Firefox push to Play Store always re-sets the update rate to 10%)[https://bugzilla.mozilla.org/show_bug.cgi?id=1393207] for details. Relman is responsible for adjusting the rate as required. Releng folks don't have write access to the google store to change this value.
