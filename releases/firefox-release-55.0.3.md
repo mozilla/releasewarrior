@@ -32,6 +32,6 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- kmoir: [Bug 1392799](https://bugzil.la/1392799) - many update verify jobs fail for ff 55.0.3 for all platforms
 
 
