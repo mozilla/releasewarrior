@@ -24,7 +24,7 @@
                 "publish": false,
                 "shipit": true,
                 "signoff": false,
-                "wnp": false
+                "wnp": true
             },
             "issues": [
                 "kmoir: [Bug 1392799](https://bugzil.la/1392799) - many update verify jobs fail for ff 55.0.3 for all platforms"
