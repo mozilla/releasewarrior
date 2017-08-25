@@ -30,6 +30,6 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: [Bug 1393705](https://bugzil.la/1393705) - binary transpareny job no longer has netflow it needs, non blocking
 
 
