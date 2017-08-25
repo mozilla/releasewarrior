@@ -15,5 +15,6 @@
 
 ### Issues
 - asasaki: [Bug 1393639](https://bugzil.la/1393639) - tc indexes busted post-wv
+- asasaki: backed out widevine until we get this fixed - b7?
 
 
