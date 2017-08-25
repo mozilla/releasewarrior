@@ -19,7 +19,7 @@
             "buildnum": 2,
             "graphid": "sDv-I9d0T1icFMjU14X4EQ",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
                 "signoff": false
             },
