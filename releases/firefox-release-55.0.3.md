@@ -29,7 +29,7 @@
 - [x] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+- [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
 - kmoir: [Bug 1392799](https://bugzil.la/1392799) - many update verify jobs fail for ff 55.0.3 for all platforms
