@@ -9,7 +9,9 @@
                 "shipit": false,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "kmoir: todo [Bug 1393447](https://bugzil.la/1393447) - implement watershed balrog rule for b7 to update 32 bit windows firefox users if 64 bit if their underlying os is 64 bit"
+            ]
         }
     ],
     "date": "2017-08-25",
