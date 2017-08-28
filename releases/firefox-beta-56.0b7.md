@@ -15,5 +15,6 @@ task graph url: unknown
 
 ### Issues
 - kmoir: todo [Bug 1393447](https://bugzil.la/1393447) - implement watershed balrog rule for b7 to update 32 bit windows firefox users if 64 bit if their underlying os is 64 bit
+- asasaki: [Bug 1393639](https://bugzil.la/1393639) - widevine indexes delayed starting b7
 
 
