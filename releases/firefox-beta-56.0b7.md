@@ -38,5 +38,6 @@
 - nthomas: [Bug 1394664](https://bugzil.la/1394664) - snap generation failing with a taskclusterProxy link problem
 - nthomas: [Bug 1393705](https://bugzil.la/1393705) - binary transparency job no longer has netflow it needs, non blocking
 - nthomas: Reran two linux update verify jobs for failures to clone tools
+- nthomas: [Bug 1393447](https://bugzil.la/1393447) - implement watershed balrog rule for b7 to update 32 bit windows firefox users to 64 bit if their underlying os is 64 bit
 
 
