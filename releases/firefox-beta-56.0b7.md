@@ -17,6 +17,7 @@
 - kmoir: todo [Bug 1393447](https://bugzil.la/1393447) - implement watershed balrog rule for b7 to update 32 bit windows firefox users if 64 bit if their underlying os is 64 bit
 - asasaki: [Bug 1393639](https://bugzil.la/1393639) - widevine indexes delayed starting b7
 - asasaki: had to rerun docker image tasks manually
+- asasaki: [Bug 1393639](https://bugzil.la/1393639) - linux shouldn't have repackage indexes specified. build2!
 
 :bomb: _aborted release. starting new build num_ :bomb:
 
