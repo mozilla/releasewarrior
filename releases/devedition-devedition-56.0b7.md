@@ -14,6 +14,6 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: [Bug 1394644](https://bugzil.la/1394644) - Missing release notifications for Firefox 56.0b7
 
 

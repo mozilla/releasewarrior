@@ -9,7 +9,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: [Bug 1394644](https://bugzil.la/1394644) - Missing release notifications for Firefox 56.0b7"
+            ]
         }
     ],
     "date": "2017-08-28",
