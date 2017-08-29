@@ -37,5 +37,6 @@
 - asasaki: firefox mozilla-beta win32 l10n repack 10 of 10 1800 second no output timeout - reran
 - nthomas: [Bug 1394664](https://bugzil.la/1394664) - snap generation failing with a taskclusterProxy link problem
 - nthomas: [Bug 1393705](https://bugzil.la/1393705) - binary transparency job no longer has netflow it needs, non blocking
+- nthomas: Reran two linux update verify jobs for failures to clone tools
 
 
