@@ -35,5 +35,6 @@
 ### Issues
 - kmoir: [Bug 1394644](https://bugzil.la/1394644) - Missing release notifications for Firefox 56.0b7
 - asasaki: firefox mozilla-beta win32 l10n repack 10 of 10 1800 second no output timeout - reran
+- nthomas: [Bug 1394664](https://bugzil.la/1394664) - snap generation failing with a taskclusterProxy link problem
 
 
