@@ -16,5 +16,6 @@
 ### Issues
 - nthomas: [Bug 1394644](https://bugzil.la/1394644) - Missing release notifications for Firefox 56.0b7
 - nthomas: [Bug 1394657](https://bugzil.la/1394657) - reran failing docker image generation. Accidentally reran the "devedition mozilla-beta atomic submission task" - ub9GsdY7SnKp86U3qogCGg; left it pending to avoid potential duplicate jobs
+- nthomas: Reran funsize publish to balrog (Ar2wUwmRRuSkfynF1PV3Vg) for "Error calling 'link' for balrogVPNProxy : Gateway Timeout"
 
 
