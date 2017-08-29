@@ -34,6 +34,5 @@
 
 ### Issues
 - kmoir: [Bug 1394644](https://bugzil.la/1394644) - Missing release notifications for Firefox 56.0b7
-- kmoir: Binary transparency job failed, non blocking
 
 
