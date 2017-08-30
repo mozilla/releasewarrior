@@ -17,5 +17,6 @@
 
 ### Issues
 - kmoir: [Bug 1395279](https://bugzil.la/1395279) - push apk for 56.0b7 failed
+- kmoir: [Bug 1391102](https://bugzil.la/1391102) - No workers launched for end of release automation jobs
 
 
