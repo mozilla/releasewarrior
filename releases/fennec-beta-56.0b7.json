@@ -12,7 +12,9 @@
                 "pushapk": true,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "kmoir: [Bug 1395279](https://bugzil.la/1395279) - push apk for 56.0b7 failed"
+            ]
         }
     ],
     "date": "2017-08-28",
