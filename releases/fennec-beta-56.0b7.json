@@ -14,7 +14,8 @@
             },
             "issues": [
                 "kmoir: [Bug 1395279](https://bugzil.la/1395279) - push apk for 56.0b7 failed",
-                "kmoir: [Bug 1391102](https://bugzil.la/1391102) - No workers launched for end of release automation jobs"
+                "kmoir: [Bug 1391102](https://bugzil.la/1391102) - No workers launched for end of release automation jobs",
+                "kmoir: TODO: still waiting for post release tasks to complete before I checkoff the publish task"
             ]
         }
     ],
