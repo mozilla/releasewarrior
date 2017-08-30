@@ -21,9 +21,9 @@
             "buildnum": 2,
             "graphid": "xzIcLIHqSL2rEcHsUf9j9Q",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "kmoir: [Bug 1394644](https://bugzil.la/1394644) - Missing release notifications for Firefox 56.0b7",
