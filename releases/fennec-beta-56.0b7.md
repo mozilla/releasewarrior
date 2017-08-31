@@ -13,11 +13,10 @@
 - [x] [manually kick off graph](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#start-off-the-fennec-graph)
 - [x] emailed candidates
 - [x] [run pushapk](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#run-pushapk-manually)
-- [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+- [x] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
 - kmoir: [Bug 1395279](https://bugzil.la/1395279) - push apk for 56.0b7 failed
 - kmoir: [Bug 1391102](https://bugzil.la/1391102) - No workers launched for end of release automation jobs
-- kmoir: TODO: still waiting for post release tasks to complete before I checkoff the publish task
 
 
