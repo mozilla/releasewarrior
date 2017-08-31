@@ -1,0 +1,5 @@
+{
+    "issues": [
+        "kmoir: Special rules to implement on beta-cdntest and beta: [Bug 1393447](https://bugzilla.mozilla.org/show_bug.cgi?id=1393447) - Bug 1393447 - implement watershed balrog rule for b7 to update 32 bit windows firefox users if 64 bit if their underlying os is 64 bit"
+    ]
+}
