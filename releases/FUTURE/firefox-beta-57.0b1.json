@@ -1,5 +1,0 @@
-{
-    "issues": [
-        "SPECIAL REQUIREMENT (Not urgent): [Bug 1389420](https://bugzilla.mozilla.org/show_bug.cgi?id=1389420) - merge_day/beta_to_release.py: Rename android-api-15 to android-api-16 once 57 reaches beta"
-    ]
-}
