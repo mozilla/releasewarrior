@@ -23,7 +23,7 @@ Login to [balrog admin](https://aus4-admin.mozilla.org)
 which creates Firefox-56.0b9-build1-win64-migration.json
 4. In balrog add a new release where name is Firefox-56.0b9-build1-win64-migration and product is firefox
 
-### adding new rule
+### Adding new rule
 
 1. Add a rule to Firefox,beta-cdntest that points to that new rule.  It should look like the top rule [in this screenshot](https://bug1393447.bmoattachments.org/attachment.cgi?id=8902907)
 except it should be on the beta-cdntest rule.  The mapping should be to b9 win64 migration release you just added.  The buildid should be updated to reflect the b9 buildid in the release blob.  The comment should say b9 instead of b7.  You don't require signoff for rules in test channels so it will just be added.
@@ -39,7 +39,7 @@ except it should be on the beta-cdntest rule.  The mapping should be to b9 win64
 4. In balrog add a new release where name is Devedition-56.0b9-build1-win64-migration and Product is Firefox and upload your Devedition-56.0b9-build1-win64-migration.json file
 
 
-### adding new rule 
+### Adding new rule 
 
 1.  Add a rule to Firefox,aurora-cdntest that points to that new rule.   It should look like the [second rule in this screenshot](https://bug1393447.bmoattachments.org/attachment.cgi?id=8902907)
 except it should be on the aurora-cdntest rule.  The mapping should be to b9 win64 migration release you just added. The buildid should be updated to reflect the b9 buildid in the release blob.
