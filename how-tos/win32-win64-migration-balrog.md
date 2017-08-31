@@ -49,3 +49,5 @@ The comment should say b9 instead of b7.  You don't need signoff for rules on th
 Softvision QE should now be able to test the 56.0b9 Firefox and Devedition builds on the beta-cdntest and aurora-cdntest channels.
 
 Before the builds are pushed to the beta and aurora channel in balrog, new watersheds need to be added on the beta and aurora channels.  In this case, you can use the existing release blobs you created for testing on the cdntest channel as the mapping in your rules.  You need to create rules on the beta and aurora test channels that look like this [in this screenshot](https://bug1393447.bmoattachments.org/attachment.cgi?id=8902907), with the caveats that the buildid, mapping, and comment should be updated to reflect the values for b9.  Since these rules are on production channels, you'll need to add these rules as scheduled changes and get signoff from qe, relman and releng.
+
+Softvision QE should now be able to test the 56.0b9 Firefox and Devedition builds on the beta aurora channels once they are enabled.
