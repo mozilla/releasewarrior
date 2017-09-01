@@ -7,7 +7,7 @@
             "human_tasks": {
                 "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "nthomas: [Bug 1393705](https://bugzil.la/1393705) - binary transparency failed, disable for now"
