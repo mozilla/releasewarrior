@@ -7,7 +7,7 @@
             "human_tasks": {
                 "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "jlorenzo: Potential source of breakage: [Bug 1394664](https://bugzilla.mozilla.org/show_bug.cgi?id=1394664) - [Bug 1394664](https://bugzil.la/1394664) - Make releaserunner generate nice slugIds",

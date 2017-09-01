@@ -11,7 +11,7 @@
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+- [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
 - jlorenzo: Potential source of breakage: [Bug 1394664](https://bugzilla.mozilla.org/show_bug.cgi?id=1394664) - [Bug 1394664](https://bugzil.la/1394664) - Make releaserunner generate nice slugIds
