@@ -16,5 +16,6 @@
 ### Issues
 - jlorenzo: Potential source of breakage: [Bug 1394664](https://bugzilla.mozilla.org/show_bug.cgi?id=1394664) - [Bug 1394664](https://bugzil.la/1394664) - Make releaserunner generate nice slugIds
 - rail: Potential source of breakage: [Bug 1395516](https://bugzilla.mozilla.org/show_bug.cgi?id=1395516) - releasetasks_graph_gen.py should use release-runner.yml, not ini
+- nthomas: [Bug 1393705](https://bugzil.la/1393705) - binary transparency failed, disable for now
 
 
