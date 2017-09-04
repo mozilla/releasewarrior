@@ -19,7 +19,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "fOOcKf2qQlixNT1ctM39zQ",
             "graphid_2": "BLJjrsnZTJmIvDBW0xCx7A",
@@ -33,6 +33,20 @@
             "issues": [
                 "jlorenzo: [Bug 1396517](https://bugzil.la/1396517) - Chain Of Trust can't find a worker_impl for decision task of Fennec graph 1"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "candidates": false,
+                "graph": false,
+                "publish": false,
+                "pushapk": false,
+                "shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-09-04",
