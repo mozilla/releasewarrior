@@ -54,6 +54,6 @@
 - [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- jlorenzo: Landed a hotfix for [Bug 1396517](https://bugzil.la/1396517) in build 3. Hotfix must be backed out and real fix will occur in scriptworker
 
 

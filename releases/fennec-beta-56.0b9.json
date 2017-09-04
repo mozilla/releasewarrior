@@ -46,7 +46,9 @@
                 "pushapk": false,
                 "shipit": false
             },
-            "issues": []
+            "issues": [
+                "jlorenzo: Landed a hotfix for [Bug 1396517](https://bugzil.la/1396517) in build 3. Hotfix must be backed out and real fix will occur in scriptworker"
+            ]
         }
     ],
     "date": "2017-09-04",
