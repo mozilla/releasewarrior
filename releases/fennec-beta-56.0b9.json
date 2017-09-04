@@ -1,0 +1,24 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "candidates": false,
+                "graph": false,
+                "publish": false,
+                "pushapk": false,
+                "shipit": false
+            },
+            "issues": [
+                "jlorenzo: Potential source of breakage: [Bug 1384482](https://bugzilla.mozilla.org/show_bug.cgi?id=1384482) - Fennec: Make Treeherder and archive.mozilla.org broadcast the right Android API level (API-16+)",
+                "rail: Potential source of breakage: [Bug 1395516](https://bugzilla.mozilla.org/show_bug.cgi?id=1395516) - releasetasks_graph_gen.py should use release-runner.yml, not ini"
+            ]
+        }
+    ],
+    "date": "2017-09-04",
+    "product": "fennec",
+    "version": "56.0b9"
+}

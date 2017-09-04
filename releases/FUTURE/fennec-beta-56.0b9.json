@@ -1,6 +1,0 @@
-{
-    "issues": [
-        "jlorenzo: Potential source of breakage: [Bug 1384482](https://bugzilla.mozilla.org/show_bug.cgi?id=1384482) - Fennec: Make Treeherder and archive.mozilla.org broadcast the right Android API level (API-16+)",
-        "rail: Potential source of breakage: [Bug 1395516](https://bugzilla.mozilla.org/show_bug.cgi?id=1395516) - releasetasks_graph_gen.py should use release-runner.yml, not ini"
-    ]
-}
