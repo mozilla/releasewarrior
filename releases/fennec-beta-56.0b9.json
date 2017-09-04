@@ -10,7 +10,7 @@
                 "graph": false,
                 "publish": false,
                 "pushapk": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": [
                 "jlorenzo: Potential source of breakage: [Bug 1384482](https://bugzilla.mozilla.org/show_bug.cgi?id=1384482) - Fennec: Make Treeherder and archive.mozilla.org broadcast the right Android API level (API-16+)",
