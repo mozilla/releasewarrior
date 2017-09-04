@@ -40,11 +40,11 @@
             "graphid": "RuNCJvZRSDazUTfLOgneVQ",
             "graphid_2": "KMWiwXmNQ4-4uM2vxj-DiA",
             "human_tasks": {
-                "candidates": false,
-                "graph": false,
+                "candidates": true,
+                "graph": true,
                 "publish": false,
                 "pushapk": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": [
                 "jlorenzo: Landed a hotfix for [Bug 1396517](https://bugzil.la/1396517) in build 3. Hotfix must be backed out and real fix will occur in scriptworker"
