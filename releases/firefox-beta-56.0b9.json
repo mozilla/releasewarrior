@@ -11,7 +11,7 @@
             },
             "issues": [
                 "kmoir: Special rules to implement on beta-cdntest and beta: [Bug 1393447](https://bugzilla.mozilla.org/show_bug.cgi?id=1393447) - [Bug 1393447](https://bugzil.la/1393447) - implement watershed balrog rule for b7 to update 32 bit windows firefox users if 64 bit if their underlying os is 64 bit",
-                "nthomas: Reran balrog submission KoVk4emtQNuXZ2a-tTACyQ which failed to link with balrogVPNProxy, retry on exit status of -1 ?"
+                "nthomas: Reran balrog submitter tasks KoVk4emtQNuXZ2a-tTACyQ & fybUVm4bRNOnOBnqz27DJw which failed to link with balrogVPNProxy, retry on exit status of -1 ?"
             ]
         }
     ],
