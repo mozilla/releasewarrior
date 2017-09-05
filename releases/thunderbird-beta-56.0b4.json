@@ -5,10 +5,12 @@
             "buildnum": 1,
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: Win32 build failed, needs some [uplifts](https://hg.mozilla.org/comm-central/pushloghtml?changeset=bb864aeadf15)"
+            ]
         }
     ],
     "date": "2017-09-05",
