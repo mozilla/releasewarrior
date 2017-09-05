@@ -1,0 +1,16 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "human_tasks": {
+                "post_released": true,
+                "submitted_shipit": true
+            },
+            "issues": []
+        }
+    ],
+    "date": "16-06-20",
+    "product": "fennec",
+    "version": "48.0b2"
+}

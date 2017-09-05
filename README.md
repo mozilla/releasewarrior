@@ -18,7 +18,25 @@ cd releasewarrior
 install it in your virtual python environment
 ```
 mkvirtualenv --python=/path/to/python3 releasewarrior
-python setup.py install
+python setup.py develop
+```
+Using the develop target ensures that you get code updates along with data when pulling in changes.
+
+### Using nix-shell
+
+If you are on NixOS or use the Nix package manager, you can simplify the steps
+above  by running `nix-shell` or `nix-shell --run zsh` to use your favourite
+shell.
+
+
+If you change `requirements.txt` or want to refresh the frozen versions used by
+`nix-shell`, run the following command, which requires
+[pypi2nix](https://github.com/garbas/pypi2nix). To install ``pypi2nix`` run
+``nix-env -i pypi2nix``.
+
+
+```
+pypi2nix -v -V "3.5" -r requirements.txt
 ```
 
 ## Overview Flow
@@ -64,7 +82,7 @@ example:
 
 say you want to update ff 18.0b3 by checking off submitted to shipit, adding a link to taskcluster graphid, and add an issue that came up with timing out.
 
-`$ release update firefox beta 18.0b3 --shipit --graphid 1234567 --issue "win64 l10n hg timeout, retriggered"`
+`$ release update firefox beta 18.0b3 --checkbox shipit --graphid 1234567 --issue "win64 l10n hg timeout, retriggered"`
 
 notice: you can update a release with many things at once. use `release update --help` to see all the update options
 
@@ -163,6 +181,12 @@ what happens:
 ## completely manually updating releasewarrior
 
 if commands scare you and you want full control, you could even update the data manually, update a wiki manually, and just commit the changes yourself.
+
+
+## tracking special requirements for upcoming releases
+
+Sometimes you might need to have special requirements or steps for a future release. Since they are one offs, you don't want to add them to the templates.
+The solution is to add upcoming releases to the releases/FUTURE/ dir. See [future release support](releases/FUTURE/README.md) for more details.
 
 ## hand waving
 

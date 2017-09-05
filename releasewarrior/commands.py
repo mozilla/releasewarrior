@@ -4,6 +4,8 @@ import sys
 import logging
 import json
 import datetime
+import re
+import getpass
 from copy import deepcopy
 
 from git import Repo
@@ -13,11 +15,15 @@ from releasewarrior.helpers import ensure_branch_and_version_are_valid, release_
 from releasewarrior.helpers import get_remaining_tasks_ordered
 from releasewarrior.helpers import get_update_data, data_unchanged, get_complete_releases
 from releasewarrior.helpers import get_incomplete_releases
-from releasewarrior.config import REPO_PATH, RELEASES_PATH, TEMPLATES_PATH, ARCHIVED_RELEASES_PATH
+from releasewarrior.helpers import convert_bugs_to_links
+from releasewarrior.config import REPO_PATH, RELEASES_PATH, TEMPLATES_PATH, ARCHIVED_RELEASES_PATH, \
+    FUTURE_RELEASES_PATH
 from releasewarrior.config import DATA_TEMPLATES, WIKI_TEMPLATES, POSTMORTEMS_PATH
 
 logger = logging.getLogger('releasewarrior')
 
+_UPSTREAM_REPO_URL = re.compile(r'((?:https|ssh)://|git@)github\.com[:/]mozilla/releasewarrior(\.git)?')
+_SIMPLIFIED_REPO_URL = 'github.com/mozilla/releasewarrior' # Used only to simplify what's logged out
 
 class Command(metaclass=abc.ABCMeta):
     repo = Repo(REPO_PATH)
@@ -37,20 +43,37 @@ class Command(metaclass=abc.ABCMeta):
         if self.repo.is_dirty():
             logger.warning("releasewarrior repo dirty")
 
+        upstream = self._find_upstream_repo()
+        logger.info('fetching new csets from {}/master'.format(upstream))
+
         # TODO - we should allow csets to exist locally that are not on remote.
-        logger.info("ensuring releasewarrior repo is up to date and in sync with origin")
-        origin = self.repo.remotes.origin
-        logger.info("fetching new csets from origin to origin/master")
-        origin.fetch()
-        commits_behind = list(self.repo.iter_commits('master..origin/master'))
+        logger.info("ensuring releasewarrior repo is up to date and in sync with {}".format(upstream))
+
+        upstream.fetch()
+        commits_behind = list(self.repo.iter_commits('master..{}/master'.format(upstream)))
         if commits_behind:
-            logger.error("local master is behind origin/master. aborting run to be safe.")
+            logger.error('local master is behind {}/master. aborting run to be safe.'.format(upstream))
             sys.exit(1)
 
         # making sure release directories exist
         for directory in [RELEASES_PATH, ARCHIVED_RELEASES_PATH, POSTMORTEMS_PATH]:
             if not os.path.exists(directory):
                 os.makedirs(directory)
+
+    def _find_upstream_repo(self):
+        upstream_repos = [
+            repo for repo in self.repo.remotes if _UPSTREAM_REPO_URL.match(repo.url) is not None
+        ]
+        number_of_repos_found = len(upstream_repos)
+        if number_of_repos_found == 0:
+            raise Exception('No remote repository pointed to "{}" found!'.format(_SIMPLIFIED_REPO_URL))
+        elif number_of_repos_found > 1:
+            raise Exception('More than one repository is pointed to "{}". Found repos: {}'.format(_SIMPLIFIED_REPO_URL, upstream_repos))
+
+        correct_repo = upstream_repos[0]
+        logger.debug('{} is detected as being the remote repository pointed to "{}"'.format(correct_repo, _SIMPLIFIED_REPO_URL))
+        return correct_repo
+
 
     @abc.abstractmethod
     def generate_data(self):
@@ -60,6 +83,8 @@ class Command(metaclass=abc.ABCMeta):
         """generates wiki file based on data file and wiki template"""
         env = Environment(loader=FileSystemLoader(TEMPLATES_PATH),
                           undefined=StrictUndefined, trim_blocks=True)
+        for b in data.get('builds', []):
+            b['issues'] = convert_bugs_to_links(b['issues'])
         template = env.get_template(wiki_template)
         return template.render(**data)
 
@@ -101,6 +126,9 @@ class CreateRelease(Command):
         self.abs_data_file = os.path.join(
             RELEASES_PATH, "{}-{}-{}.json".format(self.product, self.branch, self.version)
         )
+        self.abs_future_data_file = os.path.join(
+            FUTURE_RELEASES_PATH, "{}-{}-{}.json".format(self.product, self.branch, self.version)
+        )
         self.abs_wiki_file = os.path.join(
             RELEASES_PATH, "{}-{}-{}.md".format(self.product, self.branch, self.version)
         )
@@ -119,7 +147,15 @@ class CreateRelease(Command):
 
         logger.info("adding custom initial data: version and date")
         data["version"] = self.version
-        data["date"] = datetime.date.today().strftime("%y-%m-%d")
+        data["date"] = datetime.date.today().strftime("%Y-%m-%d")
+
+        if os.path.exists(self.abs_future_data_file):
+            logger.info("adding custom initial issues data from FUTURE/ file")
+            with open(self.abs_future_data_file) as future_data_file:
+                data["builds"][0]["issues"] = json.load(future_data_file)["issues"]
+
+            logger.info("removing FUTURE/ data file: {}".format(self.abs_future_data_file))
+            self.repo.index.remove([self.abs_future_data_file])
 
         return data
 
@@ -171,7 +207,8 @@ class UpdateRelease(Command):
         logger.info("updating with custom update data")
         for key_change, key_value in self.changes.items():
             if key_change == "issues":
-                new_data['builds'][-1]["issues"].extend(key_value)
+                owned_key_value = ["{}: {}".format(getpass.getuser(), k) for k in key_value]
+                new_data['builds'][-1]["issues"].extend(owned_key_value)
             elif key_change == "human_tasks":
                 new_data['builds'][-1]["human_tasks"].update(key_value)
             else:
@@ -256,11 +293,12 @@ class SyncRelease(Command):
 class Postmortem(Command):
 
     def __init__(self, args):
-        self.date = "{}-{}-{}".format(args.date.year, args.date.month, args.date.day)
+        self.date = "{:%Y-%m-%d}".format(args.date)
         self.abs_data_file = os.path.join(POSTMORTEMS_PATH, "{}.json".format(self.date))
         self.abs_wiki_file = os.path.join(POSTMORTEMS_PATH, "{}.md".format(self.date))
         self.wiki_template_file = WIKI_TEMPLATES["postmortem"]
         self.completed_releases = get_complete_releases()
+        self.incomplete_releases = get_incomplete_releases()
         self.commit_msg = "updating postmortem. updated {} wiki".format(
             os.path.basename(self.abs_wiki_file)
         )
@@ -269,7 +307,8 @@ class Postmortem(Command):
 
     def generate_data(self):
         new_data = {
-            "releases": [],
+            "complete_releases": [],
+            "incomplete_releases": [],
             "date": self.date,
         }
 
@@ -279,7 +318,9 @@ class Postmortem(Command):
                 new_data.update(deepcopy(json.load(current_data_f)))
 
         logger.info("updating postmortem with recently completed releases.")
-        for release in self.completed_releases.values():
+        completed_releases = sorted(self.completed_releases.values(), key=lambda r: r["date"])
+        incomplete_releases = sorted(self.incomplete_releases.values(), key=lambda r: r["date"])
+        for release in completed_releases + incomplete_releases:
             postmortem_release = {
                 "version": release['version'],
                 "product": release['product'],
@@ -291,16 +332,20 @@ class Postmortem(Command):
                     "buildnum": build["buildnum"],
                     "issues": build["issues"],
                 })
-            new_data["releases"].append(postmortem_release)
+            if release in completed_releases:
+                new_data["complete_releases"].append(postmortem_release)
+            else:
+                new_data["incomplete_releases"].append(postmortem_release)
 
         return new_data
 
     def pre_run_check(self):
         super().pre_run_check()
 
-        if not self.completed_releases:
-            logger.error("no current releases found in %s that have all human tasks completed. "
-                         "Use the `update` command to complete current release's human_tasks.",
+        if not self.completed_releases and not self.incomplete_releases:
+            logger.error("no current releases found in %s. "
+                         "Use the `create` command to create releases; "
+                         "use the `update` complete current release's human_tasks.",
                          RELEASES_PATH)
             sys.exit(1)
 
@@ -325,6 +370,7 @@ class Postmortem(Command):
 class Status(Command):
 
     def __init__(self, args):
+        self.pattern = args.pattern
         self.incomplete_releases = get_incomplete_releases()
         self.pre_run_check()
 
@@ -340,10 +386,24 @@ class Status(Command):
     def run(self):
 
         for release in self.incomplete_releases.values():
+            if self.pattern:
+                if not re.search(
+                        self.pattern,
+                        "{} {}".format(release["product"], release["version"]),
+                        flags=re.IGNORECASE):
+                    continue
             remaining_tasks_ordered = get_remaining_tasks_ordered(release["builds"][-1]["human_tasks"])
-            issues = [issue for issue in release["builds"][-1]["issues"]]
+            curr_build = release["builds"][-1]
+            issues = [issue for issue in curr_build["issues"]]
 
-            logger.info("RELEASE IN FLIGHT: %s %s %s", release["product"], release["version"], release["date"])
+            logger.info("=" * 79)
+            logger.info("RELEASE IN FLIGHT: %s %s build%s %s",
+                release["product"], release["version"], curr_build["buildnum"],
+                release["date"])
+            if curr_build.get("graphid"):
+                logger.info("Graph: https://tools.taskcluster.net/task-group-inspector/#/%s", curr_build["graphid"])
+            if curr_build.get("graphid_2"):
+                logger.info("Graph 2: https://tools.taskcluster.net/task-group-inspector/#/%s", curr_build["graphid_2"])
             logger.info("\tincomplete human tasks:")
             for task in remaining_tasks_ordered:
                 logger.info("\t\t* %s", task)

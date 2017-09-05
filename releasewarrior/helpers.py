@@ -4,9 +4,12 @@ import logging
 import re
 import sys
 
-from releasewarrior.config import RELEASES_PATH, ARCHIVED_RELEASES_PATH
+from releasewarrior.config import ARCHIVED_RELEASES_PATH, ORDERED_HUMAN_TASKS, RELEASES_PATH
 
 logger = logging.getLogger('releasewarrior')
+
+BUG_RE = r'(?<!\[)\b[bB][uU][gG]\s*(\d+)(?!\]\(http)\b'  # Don't match already linked bugs
+BUG_REPLACE = r'[Bug \1](https://bugzil.la/\1)'
 
 
 def get_current_releases():
@@ -46,6 +49,9 @@ def ensure_branch_and_version_are_valid(branch, version):
     if branch == 'beta' and 'b' not in version:
         logger.error("beta specified but 'b' not found in version.")
         mismatch = True
+    if branch == 'devedition' and 'b' not in version:
+        logger.error("devedition specified but 'b' not found in version.")
+        mismatch = True
     elif branch in ['release', 'release-rc']:
         if re.search('[a-zA-Z]', version):
             logger.error("%s specified but an alpha char was found in version", branch)
@@ -61,6 +67,12 @@ def ensure_branch_and_version_are_valid(branch, version):
         sys.exit(1)
 
 
+def _get_checkbox_value(nick, args):
+    if args.checkboxes and nick in args.checkboxes:
+        return (nick, True)
+    return (nick, False)
+
+
 def get_update_data(args):
     build_data = [
         ("graphid", args.graphid),
@@ -68,14 +80,7 @@ def get_update_data(args):
         ("aborted", args.aborted),
         ("issues", args.issues),
     ]
-    human_tasks_data = [
-        ("submitted_shipit", args.submitted_shipit),
-        ("emailed_cdntest", args.emailed_cdntest),
-        ("pushed_mirrors", args.pushed_mirrors),
-        ("published_balrog", args.published_balrog),
-        ("published_beta_balrog", args.published_beta_balrog),
-        ("post_released", args.post_released),
-    ]
+    human_tasks_data = [_get_checkbox_value(x, args) for x in ORDERED_HUMAN_TASKS]
     update_data = {"human_tasks": {}}
     for key, value in build_data:
         if value:
@@ -123,15 +128,17 @@ def release_exists(data_file, ignore_archive=False):
 
 
 def get_remaining_tasks_ordered(release_human_tasks):
-    ORDERED_HUMAN_TASKS = [
-        'submitted_shipit',
-        'emailed_cdntest',
-        'pushed_mirrors',
-        'published_balrog',
-        'published_beta_balrog',
-        'post_released',
-    ]
     # TODO - human_tasks is a dict so we lose order. find a better way to put back in order
     # this is a hack because ORDERED_HUMAN_TASKS is hardcoded and may get out of date
     remaining_tasks = [task for task, done in release_human_tasks.items() if not done]
     return [ordered_task for ordered_task in ORDERED_HUMAN_TASKS if ordered_task in remaining_tasks]
+
+
+def convert_bugs_to_links(arr_of_strings):
+    """ This function linkifies Bug entries in issue lists for formatting into
+        markdown format.
+    """
+    new_data = []
+    for item in arr_of_strings:
+        new_data.append(re.sub(BUG_RE, BUG_REPLACE, item))
+    return new_data

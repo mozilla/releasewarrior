@@ -1,0 +1,6 @@
+{
+    "issues": [
+        "SPECIAL REQUIREMENT: [Bug 1393639](https://bugzilla.mozilla.org/show_bug.cgi?id=1393639) - we will need a patch like https://hg.mozilla.org/build/buildbot-configs/rev/31419edb38f8 for mozilla-release for widevine",
+        "SPECIAL REQUIREMENT: [Bug 1389420](https://bugzilla.mozilla.org/show_bug.cgi?id=1389420) - [mozilla-release leftovers] Rename android-api-15 to android-api-16 once 56 reaches release"
+    ]
+}
