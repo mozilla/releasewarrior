@@ -1,6 +1,6 @@
-Create a new release key to sign a new apk product
+## Create a new release key to sign a new apk product
 
-The example product here is "rocket"
+### The example product here is "rocket"
 
 Before the release day:
 1. SSH to a Linux (android) signing server
