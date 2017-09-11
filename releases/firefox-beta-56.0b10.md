@@ -14,6 +14,6 @@
 - [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- nthomas: Reran several windows repack jobs for exceptions getting a signing token. Partly spot instances disappearing, partly fallout from [Bug 1387194](https://bugzil.la/1387194). The latter is also causing delays as jobs try to get a token from mac servers and hit a cert error, eventually they ask a linux server and cotinue
+- nthomas: Reran several windows repack jobs for exceptions getting a signing token. Partly spot instances disappearing, partly fallout from [Bug 1387194](https://bugzil.la/1387194). The latter is also causing delays as jobs try to get a token from servers other than signing-linux4 and hit a cert error, eventually they ask that one working server and continue. catlee landed a buildbotcustom change to how we verify certs.
 
 
