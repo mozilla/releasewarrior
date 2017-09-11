@@ -4,10 +4,10 @@
             "aborted": false,
             "buildnum": 1,
             "graphid": "RAs3wHA3RCqs5mXUsl7jew",
-            "graphid_2": "",
+            "graphid_2": "YVve7RiXS8yaiK1Kgmxllg",
             "human_tasks": {
                 "candidates": false,
-                "graph": false,
+                "graph": true,
                 "publish": false,
                 "pushapk": false,
                 "shipit": true
