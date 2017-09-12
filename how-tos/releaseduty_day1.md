@@ -119,6 +119,6 @@ No, after b1, there isn't signoff from relman on devedition builds.  QA only ver
 
 By default, the push apk task for Fennec sets a rate of 10% in the Google Play store for b1, 100% for other betas.  After b1, you will have land a patch on beta to change the rate to 100% on mozilla-beta.  See ( Mobile Firefox push to Play Store always re-sets the update rate to 10%)[https://bugzilla.mozilla.org/show_bug.cgi?id=1393207] for details. Relman is responsible for adjusting the rate as required. Releng folks don't have write access to the google store to change this value.
 
-10. *How should I inform the releasduty team of upcoming changes in automation that may impact an upcoming release?
+10. *How should I inform the releasduty team of recent changes in automation that may impact an upcoming release?
 
 You can mention it to the current releaseduty folks in the #releaseduty channel. Please also add it to the upcoming release in the ../releases/FUTURE/ dir. See [future release support](../releases/FUTURE/README.md) for more details.
