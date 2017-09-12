@@ -15,5 +15,6 @@
 
 ### Issues
 - nthomas: [Bug 1398964](https://bugzil.la/1398964) - rerun Publish to balrog jobs when they hit "Error calling link for balrogVPNProxy : Gateway Timeout"
+- nthomas: Related to above, we had a second balrog publish failure but ran push to releases/uptake monitoring/final verification. While pushing doesn't require balrog the final verification does, so it failed and retried 3 times, then hit an hg error which didn't retry
 
 
