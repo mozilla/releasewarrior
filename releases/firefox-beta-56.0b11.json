@@ -7,7 +7,7 @@
             "human_tasks": {
                 "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "nthomas: [Bug 1398964](https://bugzil.la/1398964) - rerun Publish to balrog jobs when they hit \"Error calling link for balrogVPNProxy : Gateway Timeout\"",
