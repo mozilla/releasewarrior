@@ -1,0 +1,5 @@
+{
+    "issues": [
+        "SPECIAL REQUIREMENT: cancel bouncer aliases job after graph submission, to prevent 57.0b1 appearing as a download at end of release process"
+    ]
+}
