@@ -18,5 +18,6 @@
 - jlorenzo: One balrog submission task failed: Timeout to connect to balrogVpnProxy. Reran task. It passed
 - jlorenzo: A dozen balrog submission tasks failed because Balrog returned 400: 'Failed to update row, old_data_version doesn't match current data_version'. Reran all tasks and they passed.
 - jlorenzo: Because of issues above, cdntest email went out before Balrog got all mar info uploaded.
+- nthomas: Reran final verification once all data was in Balrog to get it green
 
 
