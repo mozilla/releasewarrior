@@ -32,19 +32,23 @@ graphlog=
 
 ## Day 1 - Prep day #1
 
-1. On the merge day bug, create 2 patches to bump [gecko_versions.json](https://dxr.mozilla.org/build-central/source/buildbot-configs/mozilla/gecko_versions.json). Get them reviewed but **don't land them yet**
-  1. patch 1: bump **only mozilla-release**. It will serve Firefox's release candidate. [Example](https://reviewboard.mozilla.org/r/162518/diff/1#index_header).
-  1. patch 2: bump the remaining branches. This includes m-b, m-a, m-c and comm branches. [Example](https://bug1369535.bmoattachments.org/attachment.cgi?id=8892412).
-
-1. do a no-op trial run of performing the mozilla-beta -> mozilla-release migration:
+1. Make sure you have a fresh copy of [buildbot-configs](https://hg.mozilla.org/build/buildbot-configs/)
 ```sh
-mkdir merge_day
+hg clone ssh://hg.mozilla.org/build/buildbot-configs/
+```
+2. On the merge day bug, create two patches to bump [gecko_versions.json](https://dxr.mozilla.org/build-central/source/buildbot-configs/mozilla/gecko_versions.json). Get them reviewed but **don't land them yet**. Note that reviewboard can't land on buildbot-configs, you will need to push changes manually.
+   * patch 1: bump the version for **only mozilla-release**. It will serve Firefox's release candidate. [Example](https://reviewboard.mozilla.org/r/162518/diff/1#index_header).
+   * patch 2: bump the remaining branches. This includes mozilla-beta, mozilla-central and comm-beta branches. [Example](https://bug1369535.bmoattachments.org/attachment.cgi?id=8892412).
+
+3. Do a no-op trial run of performing the mozilla-beta -> mozilla-release migration:
+```sh
+mkdir -p merge_day
 cd merge_day
 wget https://hg.mozilla.org/build/tools/raw-file/default/buildfarm/utils/archiver_client.py
 python archiver_client.py mozharness --destination mozharness-central --repo mozilla-central --rev default --debug  # Central must be used against every branch
 python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/beta_to_release.py
  ```
-1. The script should have created a diff:
+4. The script should have created changes, and we can make a diff:
 ```sh
 hg -R build/mozilla-release diff
 ```
@@ -54,15 +58,18 @@ hg -R build/mozilla-release diff
 ### Reconfigs part 1
 
 1. Look at the merge day bug and see if patches need to land at this stage.
-1. Land "patch 1" to `default` branch, wait for tests to run and confirm they pass in `#releng`
-1. Wait 1 hour for the reconfig to happen (via cron job). If you can't wait, ask for a manual reconfig to buildduty folks or do it yourself. See appendix below for dedicated instructions on how to do that.
+1. Land "patch 1" (the mozilla-release only version bump) to `default` branch, wait for tests to run and confirm they pass in `#releng`
+1. The reconfiguration is triggered by a cron job every hour exactly on the hour (`0 * * * *` in crontab). Your options are:
+   * Wait for the reconfig to happen via cron.
+   * Ask buildduty to manually trigger it.
+   * Run it yourself, see [below](#appendix-perform-a-manual-reconfig) for instructions
 1. Wait for the go-to-merge email in release-drivers
 
 ### Merge beta to release
 
-1. [Close mozilla-beta](https://mozilla-releng.net/treestatus/show/mozilla-beta). Check "Remember this change to undo later".
-1. Run the [no-op trial run](#day-1-merge-prep-day) one more time, and show the diff to your co-releaseduty.
-1. The diff for `release` should be fairly similar to [this](https://hg.mozilla.org/releases/mozilla-release/rev/70e32e6bf15e)
+1. [Close mozilla-beta](https://mozilla-releng.net/treestatus/show/mozilla-beta). Check "Remember this change to undo later". Please enter a good message as the reason for the closure, such as "Mergeduty - closing beta for VERSION RC week"
+1. Run the [no-op trial run](#day-1---merge-prep-day) one more time, and show the diff to your co-releaseduty.
+1. The diff for `release` should be fairly similar to [this](https://hg.mozilla.org/releases/mozilla-release/rev/70e32e6bf15e), with updated branding as well as the version change.
 1. Push your changes:
 ```sh
 python mozharness-central/scripts/merge_day/gecko_migration.py \
@@ -247,11 +254,11 @@ No need to define Bugzilla integration anymore. Ever since Bugzilla turned on th
 1. GPG encrypt the file to `reconfig.source.sh.gpg`, so you are the only user to be able to read your credentials.
 1. Securely delete the plain text file: `shred --iterations=7 --remove 'reconfig.source.sh'`
 1. Run reconfig. This will:
-* clone locally and merge `default` to `production` for [buildbotcustom](http://hg.mozilla.org/build/buildbotcustom/)
-* clone and merge `default` to `production` for [buildbot-configs](https://hg.mozilla.org/build/buildbot-configs/)
-* perform a forced reconfig
-* update wikipedia with details about date/time of the reconfig
-* (Attention! Won't happen if you run script with `-b` option) Update Bugzilla bugs for patches that just went live to production
+   * clone locally and merge `default` to `production` for [buildbotcustom](http://hg.mozilla.org/build/buildbotcustom/)
+   * clone and merge `default` to `production` for [buildbot-configs](https://hg.mozilla.org/build/buildbot-configs/)
+   * perform a forced reconfig
+   * update wikipedia with details about date/time of the reconfig
+
 
 ```sh
 now="$(date +'%d-%m-%Y')"
@@ -262,3 +269,4 @@ hg clone http://hg.mozilla.org/build/tools/
 cd tools/buildfarm/maintenance/
 bash end_to_end_reconfig.sh -b -w <(gpg -d ~/merge_duty/reconfig.source.sh.gpg) -r "$now"   # A folder with the current date will be created
 ```
+:warning: You may be prompted for your gpg key to decrypt the file, but end_to_end_reconfig.sh won't wait. Ensure your password is cached.
