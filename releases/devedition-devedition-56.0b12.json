@@ -9,7 +9,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: reran a linux64 repack (IUQkjREuT_WDzaFxs95M4A) for a mock install error"
+            ]
         }
     ],
     "date": "2017-09-14",
