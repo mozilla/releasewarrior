@@ -24,10 +24,13 @@
             "graphid": "",
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "jlorenzo: [Bug 1400141](https://bugzil.la/1400141)- About a dozen balrog submission errors, reran failing tasks",
+                "jlorenzo: Manually cancelled bouncer aliases and mark as shipped. Then, bedrock won't show this version to users www.mozilla.org"
+            ]
         }
     ],
     "date": "2017-09-15",

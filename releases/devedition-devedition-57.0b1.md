@@ -30,11 +30,12 @@ task graph url: unknown
 
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- jlorenzo: [Bug 1400141](https://bugzil.la/1400141)- About a dozen balrog submission errors, reran failing tasks
+- jlorenzo: Manually cancelled bouncer aliases and mark as shipped. Then, bedrock won't show this version to users www.mozilla.org
 
 
