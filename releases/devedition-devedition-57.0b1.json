@@ -14,7 +14,8 @@
                 "POTENTIAL ISSUE: Cross-Channel L10n new in this release, should use l10n-central repo. See [Bug 1397721](https://bugzil.la/1397721)",
                 "SPECIAL REQUIREMENT: cancel bouncer aliases job after graph submission, to prevent 57.0b1 appearing as a download at end of release process. DONE!",
                 "nthomas: [Bug 1400119](https://bugzil.la/1400119) - source builder failed",
-                "nthomas: [Bug 1400141](https://bugzil.la/1400141) - balrog submission errors, reran failing tasks"
+                "nthomas: [Bug 1400141](https://bugzil.la/1400141) - balrog submission errors, reran failing tasks",
+                "jlorenzo: Because source builder failed, the rest of the graph was stuck. I didn't manage to force the source-related tasks to complete, because Taskcluster is too smart. To complete a task, you need it to be in pending. Otherwise, taskcluster doesn't accept a failed/exception task to change to complete. Also, running tasks are already claimed, and Taskcluster doesn't allow you to override the status. Workers were too fast to claim tasks. I haven't managed to get the right time window to mark tasks as completed. As a consequnce, build 2 was started with source turned off (hotfix)."
             ]
         }
     ],
