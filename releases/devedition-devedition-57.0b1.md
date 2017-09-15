@@ -21,4 +21,20 @@
 - nthomas: [Bug 1400141](https://bugzil.la/1400141) - balrog submission errors, reran failing tasks
 - jlorenzo: Because source builder failed, the rest of the graph was stuck. I didn't manage to force the source-related tasks to complete, because Taskcluster is too smart. To complete a task, you need it to be in pending. Otherwise, taskcluster doesn't accept a failed/exception task to change to complete. Also, running tasks are already claimed, and Taskcluster doesn't allow you to override the status. Workers were too fast to claim tasks. I haven't managed to get the right time window to mark tasks as completed. As a consequnce, build 2 was started with source turned off (hotfix).
 
+:bomb: _aborted release. starting new build num_ :bomb:
+
+## Build 2
+
+### Beta Graph
+task graph url: unknown
+
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none
+
 

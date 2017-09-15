@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "Zi-rCIvSRUm7t-CFbAaUYw",
             "human_tasks": {
@@ -17,6 +17,17 @@
                 "nthomas: [Bug 1400141](https://bugzil.la/1400141) - balrog submission errors, reran failing tasks",
                 "jlorenzo: Because source builder failed, the rest of the graph was stuck. I didn't manage to force the source-related tasks to complete, because Taskcluster is too smart. To complete a task, you need it to be in pending. Otherwise, taskcluster doesn't accept a failed/exception task to change to complete. Also, running tasks are already claimed, and Taskcluster doesn't allow you to override the status. Workers were too fast to claim tasks. I haven't managed to get the right time window to mark tasks as completed. As a consequnce, build 2 was started with source turned off (hotfix)."
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-09-15",
