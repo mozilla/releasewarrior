@@ -37,5 +37,6 @@
 ### Issues
 - jlorenzo: [Bug 1400141](https://bugzil.la/1400141)- About a dozen balrog submission errors, reran failing tasks
 - jlorenzo: Manually cancelled bouncer aliases and mark as shipped. Then, bedrock won't show this version to users www.mozilla.org
+- jlorenzo: [Bug 1400285](https://bugzil.la/1400285) - 57.0b1: All windows update verification tests are failing: diff: target/bin: No such file or directory
 
 
