@@ -20,5 +20,6 @@
 - jlorenzo: Failed to schedule publishing in balrog, because ETA was set in the past. I created a cloned task via task-creator with an updated ETA
 - jlorenzo: As a consequence of the ETA being updated, I recreated the email r-d task to pick the right dependency and to reflect to new ETA
 - jlorenzo: Cancelled version bump because 57.0 was already on mozilla-beta
+- jlorenzo: Manually pushed the tags FIREFOX_56_0b12_BUILD1 FIREFOX_56_0b12_RELEASE, because they were part of the version bump
 
 
