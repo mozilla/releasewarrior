@@ -39,4 +39,20 @@
 - jlorenzo: Manually cancelled bouncer aliases and mark as shipped. Then, bedrock won't show this version to users www.mozilla.org
 - jlorenzo: [Bug 1400285](https://bugzil.la/1400285) - 57.0b1: All windows update verification tests are failing: diff: target/bin: No such file or directory
 
+:bomb: _aborted release. starting new build num_ :bomb:
+
+## Build 3
+
+### Beta Graph
+task graph url: unknown
+
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none
+
 
