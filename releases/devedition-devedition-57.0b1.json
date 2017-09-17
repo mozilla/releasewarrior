@@ -45,7 +45,8 @@
             "issues": [
                 "nthomas: Manually cancelled bouncer aliases and mark as shipped. Then, bedrock won't show this version to users www.mozilla.org",
                 "nthomas: [Bug 1400656](https://bugzil.la/1400656) - purge devedition/releases/57.0b1/",
-                "nthomas: [Bug 1400141](https://bugzil.la/1400141) - About 15 balrog submission errors, reran failing tasks"
+                "nthomas: [Bug 1400141](https://bugzil.la/1400141) - About 15 balrog submission errors, reran failing tasks",
+                "nthomas: checksums failure after installing boto3 rather than boto, possibly fallout from [Bug 1361930](https://bugzil.la/1361930)"
             ]
         }
     ],
