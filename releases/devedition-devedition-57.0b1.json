@@ -42,7 +42,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: Manually cancelled bouncer aliases and mark as shipped. Then, bedrock won't show this version to users www.mozilla.org"
+            ]
         }
     ],
     "date": "2017-09-15",

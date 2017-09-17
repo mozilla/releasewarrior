@@ -53,6 +53,6 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: Manually cancelled bouncer aliases and mark as shipped. Then, bedrock won't show this version to users www.mozilla.org
 
 
