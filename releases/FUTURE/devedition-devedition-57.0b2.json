@@ -1,5 +1,6 @@
 {
     "issues": [
-        "SPECIAL REQUIREMENT: cancel bouncer aliases job after graph submission, to prevent 57.0b1 appearing as a download at end of release process"
+        "SPECIAL REQUIREMENT: cancel bouncer aliases job after graph submission, to prevent 57.0b1 appearing as a download at end of release process",
+        "SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1400265 Make sure that Firefox 57 b1 and b2 DevEdition are background updates only, NO downloads" 
     ]
 }

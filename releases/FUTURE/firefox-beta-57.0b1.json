@@ -1,6 +1,7 @@
 {
     "issues": [
         "SPECIAL REQUIREMENT: Verify that the patches identified for desktop in [Bug 1397721](https://bugzilla.mozilla.org/show_bug.cgi?id=1397721#c17) has landed and reconfigured.",
+        "SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1400265 Make sure that Firefox 57 b1 and b2 DevEdition are background updates only, NO downloads",
         "POTENTIAL ISSUE: Cross-Channel L10n new in this release, should use l10n-central repo. See [Bug 1397721](https://bugzil.la/1397721)"
     ]
 }
