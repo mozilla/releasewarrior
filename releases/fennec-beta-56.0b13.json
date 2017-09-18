@@ -3,14 +3,14 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "DdNB7PYDSD-cbUpmSxegsw",
             "graphid_2": "",
             "human_tasks": {
                 "candidates": false,
                 "graph": false,
                 "publish": false,
                 "pushapk": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": [
                 "POTENTIAL ISSUE: Cross-Channel L10n will have landed for beta 57 by this release, but should not be enabled for fennec 56. See [Bug 1397721](https://bugzil.la/1397721)",
