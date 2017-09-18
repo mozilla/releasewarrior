@@ -19,4 +19,4 @@ task graph url: unknown
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- kmoir: One balrog submission task failed: Timeout to connect to balrogVpnProxy. Reran task. It passed

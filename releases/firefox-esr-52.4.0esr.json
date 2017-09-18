@@ -11,7 +11,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "kmoir: One balrog submission task failed: Timeout to connect to balrogVpnProxy. Reran task. It passed"
+            ]
         }
     ],
     "date": "2017-09-18",
