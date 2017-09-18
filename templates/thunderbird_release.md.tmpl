@@ -4,6 +4,9 @@
 
 {% for build in builds %}
 ## Build {{ build['buildnum'] }}
+{% if build['aborted'] %}
+:bomb: _aborted release. starting new build num_ :bomb:
+{% endif %}
 
 ### Status
 - [{% if build["human_tasks"]['shipit'] %}x{% else %} {% endif %}] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
@@ -18,9 +21,4 @@
 {% if not build["issues"] %}
 - none
 {% endif %}
-
-{% if build['aborted'] %}
-:bomb: _aborted release. starting new build num_ :bomb:
-{% endif %}
-
 {% endfor %}
