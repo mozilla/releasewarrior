@@ -59,3 +59,4 @@
 - nthomas: push to mirrors failure because [Bug 1400656](https://bugzil.la/1400656) hadn't been done, paged cloudops then reran
 - nthomas: uptake monitoring failed because no uptake of Devedition-57.0b1-Complete-bz2, fallout from [Bug 1395697](https://bugzil.la/1395697). Added a 1-btye keys at pub/devedition/releases/57.0b1/update/win64/en-US/firefox-57.0b1.bz2.complete.mar and so on and reran uptake
 - jlorenzo: Manually cancelled 'mark as shipped' per [Bug 1400265](https://bugzil.la/1400265) comment 4
+- nthomas: Release eta not set so balrog submitter tried to change the rule directly, manually added a signoff
