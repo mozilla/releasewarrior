@@ -282,3 +282,7 @@ As a concrete example, let's say we required 1 relman, 1 releng, and 1 qe signof
 Firefox beta updates are served on the beta channel, Devedition Beta updates are served on the aurora channel.
 
 ## todo talk about Balrog watershed rules
+
+## Creating a clone of a task using a different revision
+
+This works with tasks where the task is on the edge of the graph, and has no dependencies.  Example: create https://tools.taskcluster.net/groups/Co8iBgS1RnKVNOWMZm0TUg/tasks/Co8iBgS1RnKVNOWMZm0TUg/details by cloning the failed task (Actions -> Edit Task) and replaced all revision entries with the new one
