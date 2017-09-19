@@ -38,7 +38,7 @@
             "buildnum": 3,
             "graphid": "PqkUbYFlSqutB9EJQYTi8g",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
                 "signoff": false
             },
