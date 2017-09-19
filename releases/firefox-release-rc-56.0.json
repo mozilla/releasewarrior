@@ -3,14 +3,14 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "aUpBDSw5S2etpFHqxKSCYA",
             "graphid_2": "",
             "human_tasks": {
                 "beta": false,
                 "betasignoff": false,
                 "mirrors": false,
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false,
                 "wnp": false
             },
