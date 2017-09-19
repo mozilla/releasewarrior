@@ -1,0 +1,5 @@
+{
+    "issues": [
+        "SPECIAL REQUIREMENT:  Use the transform_balrog_blob.py script in https://bugzilla.mozilla.org/show_bug.cgi?id=1393789 change the complete mar urls to point to bz2 mars.  Once the new release blob has been submitted to balrog we need resolve the start_update_verify_human_decision task that rail added in releasetasks"
+    ]
+}
