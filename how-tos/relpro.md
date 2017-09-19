@@ -368,17 +368,15 @@ Note that even if you are a full fledged administrator, you yourself cannot make
 
 As a concrete example, let's say we required 1 relman, 1 releng, and 1 qe signoff for Firefox release channel changes. Late on a Saturday night we discover a massive crash that requires us to shut off updates. Liz gets in contact with Kim to ask that this happen. Kim Schedules the necessary change in Balrog (which implicitly satisfies the releng signoff), and Liz signs off for relman. Because it is the weekend, and there was no planned work, QE is unavailable. Kim gets in contact with Aki, grants him the "qe" role, and Aki makes a Signoff under the "qe" Role, which fulfills the Signoff requirements. Kim then removes Aki's "qe" Role.
 
-## Balrog channels ##
+## Balrog channels
 
 Firefox beta updates are served on the beta channel, Devedition Beta updates are served on the aurora channel.
-
-## todo talk about Balrog watershed rules
 
 ## Creating a clone of a task using a different revision
 
 This works with tasks where the task is on the edge of the graph, and has no dependencies.  Example: create https://tools.taskcluster.net/groups/Co8iBgS1RnKVNOWMZm0TUg/tasks/Co8iBgS1RnKVNOWMZm0TUg/details by cloning the failed task (Actions -> Edit Task) and replaced all revision entries with the new one
 
-### PushApk: Fallback steps
+## PushApk: Fallback steps
 
 If pushapk's task expires in graph 1, do the following:
 
@@ -391,7 +389,7 @@ If pushapk's task expires in graph 1, do the following:
 
 In the eventuality of a failure of pushapk_scriptworker, there are [instructions to manually publish APKs](https://github.com/mozilla-releng/mozapkpublisher#what-to-do-when-pushapk_scriptworker-doesnt-work).
 
-#### Procedure to ship Fennec, even though PushApk can't work
+## Procedure to ship Fennec, even though PushApk can't work
 
 Made official by [bug 1384083](https://bugzilla.mozilla.org/show_bug.cgi?id=1384083).
 
