@@ -173,7 +173,7 @@ $ python releasetasks_graph_gen.py --release-runner-config=../../../release-runn
     * RelEng is responsible for reviewing the scheduled change to ensure that the mechanics are correct. Most notably, the mapping, fallbackMapping, and backgroundRate need to be verified.
 
 * QE
-    * QE is responsible for signing off on a Scheduled Change after they have successfully verified updates on the cdntest channel.
+    * QE is responsible for verifying updates on the cdntest channel. There were recent changes implemented to remove the Balrog signoff requirement for QE for all Firefox channels.  The change to remove this from ESR channels is still pending but should be implemented as soon as someone from QE signs off on this change request.
 
 * RelMan
     * RelMan is responsible for reviewing the scheduled change to ensure that the shipping time is correct and to authorize that the release may be shipped. If circumstances change (eg, we discover a bug we're not willing to ship) after they sign off, they must revoke their signoff in Balrog.
@@ -202,7 +202,7 @@ Now that the Signoff requirements have been met, the Scheduled Change will be en
   release promotion hits its scheduled time and all required signoffs have been
   completed.
 
-    * It is expected that RelEng, QE and RelMan will sign off on the scheduled changes ahead
+    * It is expected that RelEng and RelMan will sign off on the scheduled changes ahead
       of the ship date.
     * If the ship time, throttle rate, or anything else about the release changes between
       the change being scheduled and the expected ship time, the scheduled change should
