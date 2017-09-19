@@ -31,3 +31,4 @@ task graph url: unknown
 - jlorenzo: [Bug 1395697](https://bugzil.la/1395697) - Update Verify jobs were still expecting partial updates. I changed the update configuration
 - jlorenzo: [Bug 1395697](https://bugzil.la/1395697): I inadvertently removed some macOS locales from the blob. I reintroduced them and reran all Update Verify jobs
 - jlorenzo: [Bug 1395697](https://bugzil.la/1395697): ta/linux64's mar got the wrong size and hash. I manually changed them as they were manually uploaded
+- jlorenzo: Discovered [Bug 1401176](https://bugzil.la/1401176) - extract_and_run_command.py: ImportError: No module named mar
