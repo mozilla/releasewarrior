@@ -256,7 +256,7 @@ Now that the Signoff requirements have been met, the Scheduled Change will be en
   https://ship-it.mozilla.org/releases.html, find the release in question, and
   click the "Shipped!" button.
 
-# Troubleshoot
+# Troubleshooting
 
 ## Intermittent failures
 
