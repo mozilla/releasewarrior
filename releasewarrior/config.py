@@ -75,7 +75,6 @@ DATA_TEMPLATES = {
 # These should be specified in order.
 ORDERED_HUMAN_TASKS = (
     'shipit',
-    'graph',
     'candidates',
     'beta',
     'betasignoff',
