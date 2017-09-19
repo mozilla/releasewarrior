@@ -262,13 +262,13 @@ Now that the Signoff requirements have been met, the Scheduled Change will be en
 ## 1. email drivers re: Fennec builds are available in the candidates directory
 
 ### why
-* We don't serve updates to Fennec via Balrog; however, we upload the updates to candidates dir depending on the release and channel. They are being used by QE for testing before we upload them to the Google Play Store
+* We don't serve updates to Fennec via Balrog; however, we upload the updates to candidates dir from where they are being used by QE for testing before we upload them to the Google Play Store
 * we should notify drivers once updates are available in candidates directory because we don't have taskcluster email notifications yet
 
 ### when
 * Mobile Firefox Betas, Releases and dot releases
     * look in taskgraph for tasks that are not yet green, `android-push-apk-breakpoint/opt`(pending) and `push-apk/opt`(unscheduled)
-        * once these tasks are the only two standing, it means all builds are now uploaded to the candidates dir and you can send the email
+        * once these two tasks are the only leftovers which are not green yet, it means all builds are now uploaded to the candidates dir and you can send the email
 
 ### how
 * Mobile Firefox Betas, Releases and dot releases
@@ -281,32 +281,34 @@ Now that the Signoff requirements have been met, the Scheduled Change will be en
 
 ### when
 * Mobile Firefox Betas, Releases and dot releases
-    * wait for sign off from release-drivers with email like: `[mobile] Please push ${version} to the GP`
+    * wait for sign off from release-drivers with email like: `[mobile] Please push ${version} to the GP`. For betas 2-N we usually send this email right after QE sends the signoff, without an explicit call from RelMan
 
 ### how
 * Mobile Firefox Betas and dot releases
-    * Resolve the aforementioned human task `android-push-apk-breakpoint/opt` from the Chain Of Trust graph (graphid2).
-    * Resolving this task should quickly enable the scheduling of the real `push-apk/opt` task that is pushing the apk to the Google Play store automatically.
+    * Resolve the aforementioned human task `android-push-apk-breakpoint/opt` from the Chain Of Trust graph (graphid2). Doing so should quickly enable the scheduling of the real `push-apk/opt` task that is pushing the apk to the Google Play store automatically.
 
+```bash
 Tip: If the have the graph1 id but not the graph2 id (COT graph) you can determine it by
 1. Click on task group 1
 2. Click on mozilla-beta candidates_fennec
 3. The taskgroup id is the same as the candidates_fennec task id
+```
 * Mobile Firefox Release
-    * Resolve the aforementioned human task `android-push-apk-breakpoint/opt` from the Chain Of Trust graph (graphid2).
-    * Resolving this task should quickly enable the scheduling of the real `push-apk/opt` task that is pushing the apk to the Google Play store automatically.
+    * Resolve the aforementioned human task `android-push-apk-breakpoint/opt` from the Chain Of Trust graph (graphid2). Doing so should quickly enable the scheduling of the real `push-apk/opt` task that is pushing the apk to the Google Play store automatically.
     * if pushapk's task expires in graph 1, do the following:
 
+```bash
 - select the task definition and copy it
 - edit it:
     - update the timestamps
     - remove the breakpoint dependency from `task.dependencies`
 - resubmit it
+```
 
 ## 3. push to releases dir (mirrors)
 
 ### why
-* Fennec releases don't automatically push the artifacts from ~candidates dir under the ~releases dir automatically. They instead wait on a human decision (sign off) to dictate when candidates dir looks good and we are ready to copy/push to releases dir
+* Fennec releases don't automatically push to mirrors. They instead wait on a human decision (due to the need of QE sign off) to dictate when candidates dir looks good and we are ready to copy/push to releases dir
 
 ### when
 * Mobile Firefox Betas, dot releases
@@ -318,10 +320,10 @@ Tip: If the have the graph1 id but not the graph2 id (COT graph) you can determi
 
 * Mobile Firefox Releases
     * look for `fennec $branch push to releases human decision task` and mark it as resolved
-    * if task is expired you'll need to resubmit this subset of tasks in a third graph! However, this should not include candidates_fennec job again (the one that is generating the Chain Of Trust graph)
+    * if task is expired you'll need to resubmit this subset of tasks in a third graph! However, this should not include `candidates_fennec` job again (the one that is generating the Chain Of Trust graph)
     * to generate and submit graph 3 of the release:
         * step 1) get release information from Ship-it, such as branch, version, build_number and revision
-        * step 2) call releasetasks_graph_gen.py and pass, among other things, the information from Ship-ut from step 1:
+        * step 2) call `releasetasks_graph_gen.py` and pass, among other things, the information from Ship-ut from step 1:
         * step 3) The resulted graphid should be tracked in releasewarrior (under issues for now, until we add support for graphN in releasewarrior)
 ```bash
 ssh `whoami`@buildbot-master85.bb.releng.scl3.mozilla.com  # host we release-runner and you generate/submit new release promotion graphs
@@ -343,7 +345,7 @@ source /builds/releaserunner/bin/activate
 python releasetasks_graph_gen.py --release-runner-config=../../../release-runner.yml --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-${BRANCH}_fennec_push_to_releases_graph.yml  --version $VERSION --build-number $BUILD_NUMBER --mozilla-revision $REVISION --dry-run
 # call releasetasks_graph_gen.py for reals which will submit the graph to Taskcluster
 python releasetasks_graph_gen.py --release-runner-config=../../../release-runner.yml --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-${BRANCH}_fennec_push_to_releases_graph.yml  --version $VERSION --build-number $BUILD_NUMBER --mozilla-revision $REVISION
-
+```
 
 # Troubleshooting
 
