@@ -47,7 +47,7 @@ auth:create-client:project/releng/*
 ```
 python src/tctalker/tctalker.py --conf config.json <action> <task-id>
 ```
-# Actions
+# Actions for Desktop related releases
 
 ## 1. email drivers re: release live on test channel
 
@@ -256,6 +256,97 @@ Now that the Signoff requirements have been met, the Scheduled Change will be en
   https://ship-it.mozilla.org/releases.html, find the release in question, and
   click the "Shipped!" button.
 
+
+# Actions for Mobile related releases
+
+## 1. email drivers re: Fennec builds are available in the candidates directory
+
+### why
+* We don't serve updates to Fennec via Balrog; however, we upload the updates to candidates dir from where they are being used by QE for testing before we upload them to the Google Play Store
+* we should notify drivers once updates are available in candidates directory because we don't have taskcluster email notifications yet
+
+### when
+* Mobile Firefox Betas, Releases and dot releases
+    * look in taskgraph for tasks that are not yet green, `android-push-apk-breakpoint/opt`(pending) and `push-apk/opt`(unscheduled)
+        * once these two tasks are the only leftovers which are not green yet, it means all builds are now uploaded to the candidates dir and you can send the email
+
+### how
+* Mobile Firefox Betas, Releases and dot releases
+    * email release-drivers@mozilla.org with subject only email `[mobile] Fennec $version $build_no builds are available in the candidates directory <EOM>`
+
+## 2. push to Google Play Store
+
+### why
+* pushing the APK to the Play store happens automatically but the task that's doing that is guarded by a human breakpoint, because we need to wait for QE signoff beforehand
+
+### when
+* Mobile Firefox Betas, Releases and dot releases
+    * wait for sign off from release-drivers with email like: `[mobile] Please push ${version} to the GP`. For betas 2-N we usually send this email right after QE sends the signoff, without an explicit call from RelMan
+
+### how
+* Mobile Firefox Betas and dot releases
+    * Resolve the aforementioned human task `android-push-apk-breakpoint/opt` from the Chain Of Trust graph (graphid2). Doing so should quickly enable the scheduling of the real `push-apk/opt` task that is pushing the apk to the Google Play store automatically.
+
+```bash
+Tip: If the have the graph1 id but not the graph2 id (COT graph) you can determine it by
+1. Click on task group 1
+2. Click on mozilla-beta candidates_fennec
+3. The taskgroup id is the same as the candidates_fennec task id
+```
+* Mobile Firefox Release
+    * Resolve the aforementioned human task `android-push-apk-breakpoint/opt` from the Chain Of Trust graph (graphid2). Doing so should quickly enable the scheduling of the real `push-apk/opt` task that is pushing the apk to the Google Play store automatically.
+    * if pushapk's task expires in graph 1, do the following:
+
+```bash
+- select the task definition and copy it
+- edit it:
+    - update the timestamps
+    - remove the breakpoint dependency from `task.dependencies`
+- resubmit it
+```
+
+## 3. push to releases dir (mirrors)
+
+### why
+* Fennec releases don't automatically push to mirrors. They instead wait on a human decision (due to the need of QE sign off) to dictate when candidates dir looks good and we are ready to copy/push to releases dir
+
+### when
+* Mobile Firefox Betas, dot releases
+    * after the successful pushing of the apk, you can perform this as well
+
+### how
+* Mobile Firefox Betas, Releases and dot releases
+    * look for `fennec $branch push to releases human decision task` and mark it as resolved
+
+* Mobile Firefox Releases
+    * look for `fennec $branch push to releases human decision task` and mark it as resolved
+    * if task is expired you'll need to resubmit this subset of tasks in a third graph! However, this should not include `candidates_fennec` job again (the one that is generating the Chain Of Trust graph)
+    * to generate and submit graph 3 of the release:
+        * step 1) get release information from Ship-it, such as branch, version, build_number and revision
+        * step 2) call `releasetasks_graph_gen.py` and pass, among other things, the information from Ship-ut from step 1:
+        * step 3) The resulted graphid should be tracked in releasewarrior (under issues for now, until we add support for graphN in releasewarrior)
+```bash
+ssh `whoami`@buildbot-master85.bb.releng.scl3.mozilla.com  # host we release-runner and you generate/submit new release promotion graphs
+sudo su - cltbld
+BRANCH=release
+VERSION=TODO
+BUILD_NUMBER=1
+REVISION=TODO
+cd /home/cltbld/releasetasks/
+git status  # make sure we're clean
+git branch  # make sure we're on master
+git pull origin master  # make sure we are up to date.
+cd /builds/releaserunner/tools/buildfarm/release/
+hg status  # make sure this is clean
+hg branch  # make sure this is on default
+hg pull -u # make sure we are up to date.
+source /builds/releaserunner/bin/activate
+# call releasetasks_graph_gen.py with --dry-run and sanity check the graph output that would be submitted
+python releasetasks_graph_gen.py --release-runner-config=../../../release-runner.yml --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-${BRANCH}_fennec_push_to_releases_graph.yml  --version $VERSION --build-number $BUILD_NUMBER --mozilla-revision $REVISION --dry-run
+# call releasetasks_graph_gen.py for reals which will submit the graph to Taskcluster
+python releasetasks_graph_gen.py --release-runner-config=../../../release-runner.yml --branch-and-product-config=/home/cltbld/releasetasks/releasetasks/release_configs/prod_mozilla-${BRANCH}_fennec_push_to_releases_graph.yml  --version $VERSION --build-number $BUILD_NUMBER --mozilla-revision $REVISION
+```
+
 # Troubleshooting
 
 ## Intermittent failures
@@ -277,12 +368,32 @@ Note that even if you are a full fledged administrator, you yourself cannot make
 
 As a concrete example, let's say we required 1 relman, 1 releng, and 1 qe signoff for Firefox release channel changes. Late on a Saturday night we discover a massive crash that requires us to shut off updates. Liz gets in contact with Kim to ask that this happen. Kim Schedules the necessary change in Balrog (which implicitly satisfies the releng signoff), and Liz signs off for relman. Because it is the weekend, and there was no planned work, QE is unavailable. Kim gets in contact with Aki, grants him the "qe" role, and Aki makes a Signoff under the "qe" Role, which fulfills the Signoff requirements. Kim then removes Aki's "qe" Role.
 
-## Balrog channels ##
+## Balrog channels
 
 Firefox beta updates are served on the beta channel, Devedition Beta updates are served on the aurora channel.
-
-## todo talk about Balrog watershed rules
 
 ## Creating a clone of a task using a different revision
 
 This works with tasks where the task is on the edge of the graph, and has no dependencies.  Example: create https://tools.taskcluster.net/groups/Co8iBgS1RnKVNOWMZm0TUg/tasks/Co8iBgS1RnKVNOWMZm0TUg/details by cloning the failed task (Actions -> Edit Task) and replaced all revision entries with the new one
+
+## PushApk: Fallback steps
+
+If pushapk's task expires in graph 1, do the following:
+
+- select the task definition and copy it
+- edit it:
+    - update the timestamps
+    - remove the breakpoint dependency from `task.dependencies`
+    - I'm not sure "edit and recreate" will work, since the taskGroupId will change?
+- resubmit it
+
+In the eventuality of a failure of pushapk_scriptworker, there are [instructions to manually publish APKs](https://github.com/mozilla-releng/mozapkpublisher#what-to-do-when-pushapk_scriptworker-doesnt-work).
+
+## Procedure to ship Fennec, even though PushApk can't work
+
+Made official by [bug 1384083](https://bugzilla.mozilla.org/show_bug.cgi?id=1384083).
+
+1. Release Duty folks agree that PushApk can't publish anything because of reason X.
+2. Ask Release Management to publish the APK manually (that is to say with [mozapkpublisher](https://github.com/mozilla-releng/mozapkpublisher), on a local computer). For historical reasons[3], some people in the Release Management team have the rights to publish APKs onto Google Play. See [documented technical steps](https://github.com/mozilla-releng/mozapkpublisher#what-to-do-when-pushapk_scriptworker-doesnt-work).
+3. If a technical issue comes up, Release Management should ask Release Engineering[4] to publish the APK manually. This may require Release Management to grant write access[5] to Release Engineering for a given period of time.
+4. If that doesn't work, Release Duty should ask Release Management to publish the APK via the Web interface. This way is the riskiest one. MozApkPublisher (and pushapk_scriptworker) [provides extra checks](https://johanlorenzo.github.io/blog/2017/06/07/part-2-how-mozilla-publishes-apks-onto-google-play-store-in-a-reasonably-secure-and-automated-way.html#4-mozapkpublisher-locales-and-google-play) that Google Play doesn't do. Somebody from Release Management may have to grant access Release Management to upload via the web interface.
