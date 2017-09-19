@@ -55,5 +55,6 @@
 
 ### Issues
 - jlorenzo: Landed a hotfix for [Bug 1396517](https://bugzil.la/1396517) in build 3. Hotfix must be backed out and real fix will occur in scriptworker
+- kmoir: kmoir acciddentally ran publish release from build1 instead of build3, cancelled tasks and ran publish on build3 to fix
 
 

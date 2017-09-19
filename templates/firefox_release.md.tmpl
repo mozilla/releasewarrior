@@ -4,6 +4,9 @@
 
 {% for build in builds %}
 ## Build {{ build['buildnum'] }}
+{% if build['aborted'] %}
+:bomb: _aborted release. starting new build num_ :bomb:
+{% endif %}
 
 ### Release Graph
 {% if build['graphid'] %}
@@ -26,9 +29,4 @@ task graph url: unknown
 {% if not build["issues"] %}
 - none
 {% endif %}
-
-{% if build['aborted'] %}
-:bomb: _aborted release. starting new build num_ :bomb:
-{% endif %}
-
 {% endfor %}

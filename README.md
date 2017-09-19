@@ -150,7 +150,7 @@ usage:
 
 example:
 
-`$ release postmortem 2012-01-01`
+`$ release postmortem 2017-09-21`
 
 what happens:
 

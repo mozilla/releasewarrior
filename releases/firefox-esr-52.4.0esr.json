@@ -1,0 +1,22 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "NemwCxNsT2-K4XFSq5udqw",
+            "graphid_2": "",
+            "human_tasks": {
+                "mirrors": false,
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": [
+                "kmoir: One balrog submission task failed: Timeout to connect to balrogVpnProxy. Reran task. It passed"
+            ]
+        }
+    ],
+    "date": "2017-09-18",
+    "product": "firefox",
+    "version": "52.4.0esr"
+}
