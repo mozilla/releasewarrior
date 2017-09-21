@@ -18,3 +18,4 @@ task graph url: unknown
 - SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1400265 Make sure that Firefox 57 b1 and b2 DevEdition are background updates only, NO downloads. Cancel bouncer aliases and mark as shipped tasks after graph submission, and before resovling human decision task
 - POTENTIAL BREAKAGE: Source building was re-enabled ([Bug 1400157](https://bugzil.la/1400157)). If broken, deactivation will require a respin (see comment 4).
 - kmoir: [Bug 1402084](https://bugzil.la/1402084) - had to bump browser/config/version_display.txt manually for devedition 57.0b2
+- kmoir: TODO: manually bump display_version.txt on beta if https://bugzilla.mozilla.org/show_bug.cgi?id=1346465 hasn't been fixed after we ship b2
