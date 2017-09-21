@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "human_tasks": {
                 "publish": false,
@@ -11,6 +11,16 @@
             "issues": [
                 "nthomas: Win32 build failed, needs some [uplifts](https://hg.mozilla.org/comm-central/pushloghtml?changeset=bb864aeadf15)"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-09-05",
