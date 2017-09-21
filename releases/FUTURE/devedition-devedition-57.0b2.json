@@ -1,6 +1,0 @@
-{
-    "issues": [
-        "SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1400265 Make sure that Firefox 57 b1 and b2 DevEdition are background updates only, NO downloads. Cancel bouncer aliases and mark as shipped tasks after graph submission, and before resovling human decision task",
-        "POTENTIAL BREAKAGE: Source building was re-enabled (Bug 1400157). If broken, deactivation will require a respin (see comment 4)."
-    ]
-}

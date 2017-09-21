@@ -1,0 +1,19 @@
+# Beta: Devedition 57.0b2
+
+### Started: 2017-09-21
+
+## Build 1
+
+### Beta Graph
+
+task graph url: unknown
+
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1400265 Make sure that Firefox 57 b1 and b2 DevEdition are background updates only, NO downloads. Cancel bouncer aliases and mark as shipped tasks after graph submission, and before resovling human decision task
+- POTENTIAL BREAKAGE: Source building was re-enabled ([Bug 1400157](https://bugzil.la/1400157)). If broken, deactivation will require a respin (see comment 4).
