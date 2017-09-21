@@ -3,6 +3,7 @@
 ### Started: 2017-09-19
 
 ## Build 1
+:bomb: _aborted release. starting new build num_ :bomb:
 
 ### RC graph 1
 [task group](https://tools.taskcluster.net/push-inspector/#/aUpBDSw5S2etpFHqxKSCYA)
@@ -32,3 +33,24 @@ task graph url: unknown
 - jlorenzo: [Bug 1395697](https://bugzil.la/1395697): I inadvertently removed some macOS locales from the blob. I reintroduced them and reran all Update Verify jobs
 - jlorenzo: [Bug 1395697](https://bugzil.la/1395697): ta/linux64's mar got the wrong size and hash. I manually changed them as they were manually uploaded
 - jlorenzo: Discovered [Bug 1401176](https://bugzil.la/1401176) - extract_and_run_command.py: ImportError: No module named mar
+## Build 2
+
+### RC graph 1
+task graph url: unknown
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### RC graph 2
+task graph url: unknown
+
+#### Status
+- [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
+- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none

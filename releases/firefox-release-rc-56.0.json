@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "aUpBDSw5S2etpFHqxKSCYA",
             "graphid_2": "",
@@ -26,6 +26,22 @@
                 "jlorenzo: [Bug 1395697](https://bugzil.la/1395697): ta/linux64's mar got the wrong size and hash. I manually changed them as they were manually uploaded",
                 "jlorenzo: Discovered [Bug 1401176](https://bugzil.la/1401176) - extract_and_run_command.py: ImportError: No module named mar"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "betasignoff": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false,
+                "signoff": false,
+                "wnp": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-09-19",
