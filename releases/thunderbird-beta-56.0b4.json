@@ -13,11 +13,23 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
+                "signoff": false
+            },
+            "issues": [
+                "nthomas: win32 unpack_curren_mar bustage"
+            ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
                 "signoff": false
             },
             "issues": []
