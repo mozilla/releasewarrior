@@ -32,7 +32,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                 "kmoir: wrong revision was used to start build"
+           ] 
         },
         {
             "aborted": false,

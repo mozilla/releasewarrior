@@ -31,7 +31,7 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- kmoir: wrong revision was used to start build 
 ## Build 4
 
 ### Status
