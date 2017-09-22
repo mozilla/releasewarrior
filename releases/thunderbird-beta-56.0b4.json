@@ -33,15 +33,15 @@
                 "signoff": false
             },
             "issues": [
-                 "kmoir: wrong revision was used to start build"
-           ] 
+                "kmoir: wrong revision was used to start build"
+            ]
         },
         {
             "aborted": false,
             "buildnum": 4,
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
             "issues": []
