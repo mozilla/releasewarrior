@@ -24,10 +24,10 @@ task graph url: unknown
 ## Build 2
 
 ### ESR Graph 1
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/LwJWA19xT_i67CDtSL8KRw)
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 
 ### ESR Graph 2
 task graph url: unknown
