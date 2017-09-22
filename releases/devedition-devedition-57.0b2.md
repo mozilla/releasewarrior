@@ -26,15 +26,16 @@
 
 ### Beta Graph
 
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/dY__Gv3pTt2XPK2TgKSRpA)
 
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1400265 Make sure that Firefox 57 b1 and b2 DevEdition are background updates only, NO downloads. Cancel bouncer aliases and mark as shipped tasks after graph submission, and before resovling human decision task - DONE
+- SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1400265 Make sure that Firefox 57 b1 and b2 DevEdition are background updates only, NO downloads. Cancel bouncer aliases and mark as shipped tasks after     graph submission, and before resovling human decision task - DONE
 - POTENTIAL BREAKAGE: Source building was re-enabled ([Bug 1400157](https://bugzil.la/1400157)). If broken, deactivation will require a respin (see comment 4).
+- kmoir: TODO: manually bump display_version.txt on beta if https://bugzilla.mozilla.org/show_bug.cgi?id=1346465 hasn't been fixed after we ship b2
 - kmoir: POTENTIAL BREAKAGE: Source building was re-enabled ([Bug 1400157](https://bugzil.la/1400157)). If broken, deactivation will require a respin (see comment 4).
