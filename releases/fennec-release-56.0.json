@@ -1,0 +1,22 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "candidates": false,
+                "publish": false,
+                "pushapk": false,
+                "shipit": false
+            },
+            "issues": [
+                "SPECIAL REQUIREMENT: [Bug 1389420](https://bugzilla.mozilla.org/show_bug.cgi?id=1389420) - [mozilla-release leftovers] Rename android-api-15 to android-api-16 once 56 reaches release"
+            ]
+        }
+    ],
+    "date": "2017-09-22",
+    "product": "fennec",
+    "version": "56.0"
+}
