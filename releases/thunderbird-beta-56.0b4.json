@@ -25,11 +25,21 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 3,
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": false,
+            "buildnum": 4,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
                 "signoff": false
             },
             "issues": []
