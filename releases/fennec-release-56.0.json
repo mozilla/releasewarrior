@@ -3,13 +3,13 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "QCO_x9Y-TOWvesWE31fGfg",
             "graphid_2": "",
             "human_tasks": {
                 "candidates": false,
                 "publish": false,
                 "pushapk": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": [
                 "SPECIAL REQUIREMENT: [Bug 1389420](https://bugzilla.mozilla.org/show_bug.cgi?id=1389420) - [mozilla-release leftovers] Rename android-api-15 to android-api-16 once 56 reaches release"
