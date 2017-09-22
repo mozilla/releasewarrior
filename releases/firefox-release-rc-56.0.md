@@ -62,7 +62,7 @@ task graph url: unknown
 task graph url: unknown
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
@@ -77,4 +77,3 @@ task graph url: unknown
 
 ### Issues
 - SPECIAL REQUIREMENT: [Bug 1395697](https://bugzilla.mozilla.org/show_bug.cgi?id=1395697) Generate lzma and bz2 compressed mar files as a part of release automation. We should start generating them as a part of 56.0 RC1 build and the file name pattern is *.bz2.complete.mar.  There is no automation around balrog submission and update verification yet. We will need to modify the release blobs and the rules to make update verification work, then resolve the 'firefox mozilla-release starte update verification human decision task' to start u.v.  We still need to update the docs (probably while we build 56) to reflect these changes. See ../how-tos/56.0rc-blobs.md for more details
-- kmoir: typo in new signing format in releasetasks https://github.com/mozilla-releng/releasetasks/commit/d3182e13010df839d1c43ef8938473e44cf9ad15
