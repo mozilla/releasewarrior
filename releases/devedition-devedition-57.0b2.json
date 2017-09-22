@@ -23,9 +23,9 @@
             "buildnum": 2,
             "graphid": "dY__Gv3pTt2XPK2TgKSRpA",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1400265 Make sure that Firefox 57 b1 and b2 DevEdition are background updates only, NO downloads. Cancel bouncer aliases and mark as shipped tasks after     graph submission, and before resovling human decision task - DONE",
