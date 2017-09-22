@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "HxbIQ2f1QiOPP0YwuGoD-Q",
             "human_tasks": {
@@ -17,6 +17,17 @@
                 "kmoir: POTENTIAL BREAKAGE: Source building was re-enabled ([Bug 1400157](https://bugzil.la/1400157)). If broken, deactivation will require a respin (see comment 4).",
                 "kmoir: typo in new signing format in releasetasks https://github.com/mozilla-releng/releasetasks/commit/d3182e13010df839d1c43ef8938473e44cf9ad15"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-09-21",
