@@ -35,4 +35,6 @@ task graph url: unknown
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1400265 Make sure that Firefox 57 b1 and b2 DevEdition are background updates only, NO downloads. Cancel bouncer aliases and mark as shipped tasks after graph submission, and before resovling human decision task - DONE
+- POTENTIAL BREAKAGE: Source building was re-enabled ([Bug 1400157](https://bugzil.la/1400157)). If broken, deactivation will require a respin (see comment 4).
+- kmoir: POTENTIAL BREAKAGE: Source building was re-enabled ([Bug 1400157](https://bugzil.la/1400157)). If broken, deactivation will require a respin (see comment 4).
