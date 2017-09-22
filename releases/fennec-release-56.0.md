@@ -19,4 +19,5 @@ task graph url: unknown
 
 ### Issues
 - SPECIAL REQUIREMENT: [Bug 1389420](https://bugzilla.mozilla.org/show_bug.cgi?id=1389420) - [mozilla-release leftovers] Rename android-api-15 to android-api-16 once 56 reaches release
+- kmoir: had to rerun beetmover docker image task it failed the first time
 
