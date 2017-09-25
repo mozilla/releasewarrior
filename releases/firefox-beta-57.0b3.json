@@ -10,7 +10,8 @@
                 "signoff": false
             },
             "issues": [
-                "POTENTIAL ISSUE: [Bug 1401620](https://bugzil.la/1401620) - Snap: Use Canonical partner config instead of a duplicated one"
+                "POTENTIAL ISSUE: [Bug 1401620](https://bugzil.la/1401620) - Snap: Use Canonical partner config instead of a duplicated one",
+                "kmoir: [Bug 1402955](https://bugzil.la/1402955) - bouncer submission failed for firefox 57.0b3"
             ]
         }
     ],
