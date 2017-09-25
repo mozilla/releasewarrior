@@ -15,4 +15,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- kmoir: [Bug 1402856](https://bugzil.la/1402856) - Missing Symbols for Mac and Linux crashes
