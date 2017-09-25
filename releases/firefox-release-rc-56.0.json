@@ -88,14 +88,14 @@
         {
             "aborted": false,
             "buildnum": 5,
-            "graphid": "",
+            "graphid": "BnnrBOusTpC6ZnoupBx2gA",
             "graphid_2": "",
             "human_tasks": {
                 "beta": false,
                 "betasignoff": false,
                 "mirrors": false,
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false,
                 "wnp": false
             },
