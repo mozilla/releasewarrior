@@ -66,7 +66,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 4,
             "graphid": "F96MXdLjQ82P9NpbuHE4qg",
             "graphid_2": "",
@@ -84,6 +84,22 @@
                 "kmoir: Publish to Balrog win64 chunk 7 for 56.0b12 failed, reran task",
                 "kmoir: update tests for 56.0-build4 are failing https://bugzilla.mozilla.org/show_bug.cgi?id=1402656 - FIXED"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 5,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "betasignoff": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false,
+                "signoff": false,
+                "wnp": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-09-19",
