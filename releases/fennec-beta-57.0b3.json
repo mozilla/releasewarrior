@@ -11,7 +11,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "mihaitabara: [Bug 1403084](https://bugzil.la/1403084) - Single-locales are failing for Fennec 57.0b3"
+            ]
         }
     ],
     "date": "2017-09-26",
