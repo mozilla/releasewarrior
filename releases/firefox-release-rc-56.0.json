@@ -100,7 +100,7 @@
                 "wnp": false
             },
             "issues": [
-                "SPECIAL REQUIREMENT: [Bug 1395697](https://bugzilla.mozilla.org/show_bug.cgi?id=1395697) Generate lzma and bz2 compressed mar files as a part of release automation. See ../how-tos/56.0rc-blobs.md for more details of manual work. Set beta-{local,cdn}test back to Firefox-56.0-build5 because 57.0b3 is racing us; updated docs with immproved scripted. DONE"
+                "SPECIAL REQUIREMENT: [Bug 1395697](https://bugzilla.mozilla.org/show_bug.cgi?id=1395697) Generate lzma and bz2 compressed mar files as a part of release automation. See ../how-tos/56.0rc-blobs.md for more details of manual work. Set beta-{local,cdn}test back to Firefox-56.0-build5 because 57.0b3 raced us; updated docs with improved script. Resolved decision task, u.v. jobs were green, set beta-{cdn,local}test back to 57.0b3 build1. DONE"
             ]
         }
     ],
