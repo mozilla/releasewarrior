@@ -11,7 +11,7 @@
             },
             "issues": [
                 "kmoir: [Bug 1402856](https://bugzil.la/1402856) - Missing Symbols for Mac and Linux crashes",
-                "kmoir: publish balrog builder failed"
+                "kmoir: publish balrog builder failed for missing ETA from RelMan in Ship-it; fixed by manual scheduling"
             ]
         }
     ],
