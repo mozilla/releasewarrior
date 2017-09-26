@@ -123,4 +123,4 @@ task graph url: unknown
 - [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- SPECIAL REQUIREMENT: [Bug 1395697](https://bugzilla.mozilla.org/show_bug.cgi?id=1395697) Generate lzma and bz2 compressed mar files as a part of release automation. See ../how-tos/56.0rc-blobs.md for more details of manual work. Set beta-{local,cdn}test back to Firefox-56.0-build5 because 57.0b3 is racing us; updated docs with immproved scripted. DONE
