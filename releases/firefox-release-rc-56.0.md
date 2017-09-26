@@ -128,10 +128,10 @@ task graph url: unknown
 ## Build 6
 
 ### RC graph 1
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/GEH2MToBRfmfAaiXUe1fkQ)
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
@@ -145,4 +145,4 @@ task graph url: unknown
 - [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: SPECIAL REQUIREMENT: [Bug 1395697](https://bugzil.la/1395697) Generate lzma and bz2 compressed mar files as a part of release automation. See ../how-tos/56.0rc-blobs.md for more details of manual work.

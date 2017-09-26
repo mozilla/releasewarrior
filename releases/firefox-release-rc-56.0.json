@@ -106,18 +106,20 @@
         {
             "aborted": false,
             "buildnum": 6,
-            "graphid": "",
+            "graphid": "GEH2MToBRfmfAaiXUe1fkQ",
             "graphid_2": "",
             "human_tasks": {
                 "beta": false,
                 "betasignoff": false,
                 "mirrors": false,
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false,
                 "wnp": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: SPECIAL REQUIREMENT: [Bug 1395697](https://bugzil.la/1395697) Generate lzma and bz2 compressed mar files as a part of release automation. See ../how-tos/56.0rc-blobs.md for more details of manual work."
+            ]
         }
     ],
     "date": "2017-09-19",
