@@ -104,6 +104,7 @@ task graph url: unknown
 - kmoir: Publish to Balrog win64 chunk 7 for 56.0b12 failed, reran task
 - kmoir: update tests for 56.0-build4 are failing https://bugzilla.mozilla.org/show_bug.cgi?id=1402656 - FIXED
 ## Build 5
+:bomb: _aborted release. starting new build num_ :bomb:
 
 ### RC graph 1
 [task group](https://tools.taskcluster.net/push-inspector/#/BnnrBOusTpC6ZnoupBx2gA)
@@ -124,3 +125,24 @@ task graph url: unknown
 
 ### Issues
 - SPECIAL REQUIREMENT: [Bug 1395697](https://bugzilla.mozilla.org/show_bug.cgi?id=1395697) Generate lzma and bz2 compressed mar files as a part of release automation. See ../how-tos/56.0rc-blobs.md for more details of manual work. Set beta-{local,cdn}test back to Firefox-56.0-build5 because 57.0b3 raced us; updated docs with improved script. Resolved decision task, u.v. jobs were green, set beta-{cdn,local}test back to 57.0b3 build1. DONE
+## Build 6
+
+### RC graph 1
+task graph url: unknown
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### RC graph 2
+task graph url: unknown
+
+#### Status
+- [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
+- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none
