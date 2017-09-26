@@ -16,3 +16,4 @@
 
 ### Issues
 - kmoir: [Bug 1402856](https://bugzil.la/1402856) - Missing Symbols for Mac and Linux crashes
+- kmoir: publish balrog builder failed
