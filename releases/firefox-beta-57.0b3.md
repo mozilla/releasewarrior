@@ -20,3 +20,4 @@
 - nthomas: Update verify failures with buildID mismatches - the 56.0 build5 updates builder had changed the beta-cdntest channel after 57.0b3 set it up for itself. Set the mapping back to Firefox-57.0b3-build1
 - kmoir: publish balrog builder failed for missing ETA from RelMan in Ship-it; fixed by manual scheduling
 - mihaitabara: bouncer aliases failed for same reason as bouncer submission. cloning task same way fixed it
+- mihaitabara: This time, having versioned bouncer entries actually saved us. Heh
