@@ -133,7 +133,7 @@ task graph url: unknown
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [x] [publish in Balrog on Beta channel](../how-tos/relpro.md#3-publish-release)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+- [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### RC graph 2
 task graph url: unknown
