@@ -136,11 +136,11 @@ task graph url: unknown
 - [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### RC graph 2
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/Sz5Y0bkTShWCPSftqmZ1XQ)
 
 #### Status
 - [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
-- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 - [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
 
