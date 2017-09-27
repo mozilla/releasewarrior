@@ -139,7 +139,7 @@ task graph url: unknown
 [task group](https://tools.taskcluster.net/push-inspector/#/Sz5Y0bkTShWCPSftqmZ1XQ)
 
 #### Status
-- [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
+- [x] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 - [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
@@ -147,3 +147,4 @@ task graph url: unknown
 ### Issues
 - SPECIAL REQUIREMENT: [Bug 1395697](https://bugzil.la/1395697) Generate lzma and bz2 compressed mar files as a part of release automation. See ../how-tos/56.0rc-blobs.md for more details of manual work. DONE (nthomas)
 - nthomas: Reran a publish to balrog task for 'balrogVPNProxy : Gateway Timeout'
+- nthomas: Had to rerun the push_to_releases job a couple of times because of TC docker bustage
