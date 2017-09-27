@@ -145,5 +145,5 @@ task graph url: unknown
 - [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- nthomas: SPECIAL REQUIREMENT: [Bug 1395697](https://bugzil.la/1395697) Generate lzma and bz2 compressed mar files as a part of release automation. See ../how-tos/56.0rc-blobs.md for more details of manual work.
+- SPECIAL REQUIREMENT: [Bug 1395697](https://bugzil.la/1395697) Generate lzma and bz2 compressed mar files as a part of release automation. See ../how-tos/56.0rc-blobs.md for more details of manual work. DONE (nthomas)
 - nthomas: Reran a publish to balrog task for 'balrogVPNProxy : Gateway Timeout'
