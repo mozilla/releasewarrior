@@ -149,3 +149,6 @@ task graph url: unknown
 - nthomas: Reran a publish to balrog task for 'balrogVPNProxy : Gateway Timeout'
 - nthomas: Had to rerun the push_to_releases job a couple of times because of TC docker bustage
 - kmoir: todo: signoff on balrog rule to update rate to 25% at 2pm PT
+- POST-RELEASE-ISSUES:
+- We had an issue with WNP for certain locales. Rail wrote up the steps https://gist.github.com/rail/4b4eb492bce3443b6e75f9545aab7a1b. We had to add two rules because the locale field in balrog was too long for the list of locales with this problem.  Balrog rules 652 and 653 were added for this condition.
+- https://bugzil.la/1387622 Add latest-ssl aliases for bedrock to use
