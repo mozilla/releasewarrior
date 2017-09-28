@@ -122,3 +122,7 @@ By default, the push apk task for Fennec sets a rate of 10% in the Google Play s
 10. *How should I inform the releasduty team of recent changes in automation that may impact an upcoming release?
 
 You can mention it to the current releaseduty folks in the #releaseduty channel. Please also add it to the upcoming release in the ../releases/FUTURE/ dir. See [future release support](../releases/FUTURE/README.md) for more details.
+
+11.  How do I coordinate with marketing on release day?
+
+Join the #release-coordination channel on Mozilla Slack
