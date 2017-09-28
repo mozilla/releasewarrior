@@ -38,4 +38,4 @@ task graph url: unknown
 - [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- mihaitabara: publish to balrog and mark as shipped failed. [Bug 1388323](https://bugzil.la/1388323)
