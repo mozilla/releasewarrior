@@ -15,7 +15,7 @@
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [x] emailed candidates
 - [x] [run pushapk](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#run-pushapk-manually)
-- [ ] [push to mirrors and publish release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#steps-after-qa-signed-off)
+- [x] [push to mirrors and publish release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#steps-after-qa-signed-off)
 
 ### Issues
 - SPECIAL REQUIREMENT: [Bug 1389420](https://bugzilla.mozilla.org/show_bug.cgi?id=1389420) - [mozilla-release leftovers] Rename android-api-15 to android-api-16 once 56 reaches release
