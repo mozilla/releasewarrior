@@ -7,7 +7,7 @@
 
 ### Beta Graph
 - [task group 1](https://tools.taskcluster.net/push-inspector/#/OCaMewbdQaqTlxK7YIUx8g)
-- second task graph url: unknown
+- [task group 2](https://tools.taskcluster.net/push-inspector/#/VporF_v5SDKXnHLloTEb4Q)
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
