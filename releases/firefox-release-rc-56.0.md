@@ -142,7 +142,7 @@ task graph url: unknown
 - [x] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
-- [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
+- [x] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
 - SPECIAL REQUIREMENT: [Bug 1395697](https://bugzil.la/1395697) Generate lzma and bz2 compressed mar files as a part of release automation. See ../how-tos/56.0rc-blobs.md for more details of manual work. DONE (nthomas)
