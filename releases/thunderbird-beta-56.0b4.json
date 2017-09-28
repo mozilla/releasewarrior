@@ -71,7 +71,7 @@
             "buildnum": 7,
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
             "issues": []
