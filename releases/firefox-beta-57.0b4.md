@@ -14,4 +14,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: [Bug 1398964](https://bugzil.la/1398964) - rerun for 'Error calling 'link' for balrogVPNProxy : Gateway Timeout'
