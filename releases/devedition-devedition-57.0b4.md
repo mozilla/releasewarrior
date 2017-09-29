@@ -15,4 +15,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1399849 Set up whatsnew pages for 57.0b4 devedition
+- SPECIAL REQUIREMENT: [Bug 1399849](https://bugzilla.mozilla.org/show_bug.cgi?id=1399849) Set up whatsnew pages for 57.0b4 devedition. DONE
