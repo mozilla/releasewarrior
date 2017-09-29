@@ -67,11 +67,21 @@
             "issues": []
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 7,
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": false,
+            "buildnum": 8,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
                 "signoff": false
             },
             "issues": []
