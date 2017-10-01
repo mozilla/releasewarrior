@@ -87,8 +87,18 @@
             "issues": []
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 9,
+            "human_tasks": {
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": false,
+            "buildnum": 10,
             "human_tasks": {
                 "publish": false,
                 "shipit": false,
