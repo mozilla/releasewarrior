@@ -100,4 +100,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: Update verify problems - windows hits [error 19 - CERT_VERIFY_ERROR](https://hg.mozilla.org/releases/mozilla-beta/file/c94b394a1aa3/toolkit/mozapps/update/common/errors.h#l38), mac has error 39 - UNEXPECTED_XZ_ERROR, linux has the usual libgtk-3.so.0 failure
