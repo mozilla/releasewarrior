@@ -14,4 +14,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: Lots of auto-retries for windows l10n repacks, due to price spikes in us-east-1 for b-2008-spot and we'd disabled all of us-west-2. Re-enabled 20 in the latter region.
