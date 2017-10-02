@@ -257,7 +257,7 @@ No need to define Bugzilla integration anymore. Ever since Bugzilla turned on th
    * clone locally and merge `default` to `production` for [buildbotcustom](http://hg.mozilla.org/build/buildbotcustom/)
    * clone and merge `default` to `production` for [buildbot-configs](https://hg.mozilla.org/build/buildbot-configs/)
    * perform a forced reconfig
-   * update wikipedia with details about date/time of the reconfig
+   * update wikiwith details about date/time of the reconfig
 
 
 ```sh
