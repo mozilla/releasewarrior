@@ -3,13 +3,15 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "aoaObs6aROaQ4Y9T3Tlj-A",
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: [Bug 1405137](https://bugzil.la/1405137) - ship-it makes a poor choice for partials"
+            ]
         }
     ],
     "date": "2017-10-03",

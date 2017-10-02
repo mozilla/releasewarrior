@@ -6,13 +6,13 @@
 
 ### Beta Graph
 
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/aoaObs6aROaQ4Y9T3Tlj-A)
 
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: [Bug 1405137](https://bugzil.la/1405137) - ship-it makes a poor choice for partials
