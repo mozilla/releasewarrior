@@ -1,13 +1,13 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "Z6Mw4NW5ThGiAKCuvamrYw",
             "human_tasks": {
                 "mirrors": false,
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false,
                 "wnp": false
             },
@@ -19,6 +19,19 @@
                 "nthomas: Funsize submitter bustage from [Bug 1402015](https://bugzil.la/1402015), rail [landed a fix](https://hg.mozilla.org/build/tools/rev/912affa82eef). We'll do a build2 to pick it up",
                 "nthomas: Many windows l10n retries because of being outbid on spot instance"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "mirrors": false,
+                "publish": false,
+                "shipit": false,
+                "signoff": false,
+                "wnp": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-10-03",

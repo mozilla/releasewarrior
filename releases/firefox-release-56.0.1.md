@@ -3,12 +3,13 @@
 ### Started: 2017-10-03
 
 ## Build 1
+:bomb: _aborted release. starting new build num_ :bomb:
 
 ### Release Graph
 [task group](https://tools.taskcluster.net/push-inspector/#/Z6Mw4NW5ThGiAKCuvamrYw)
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
 - [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
@@ -21,3 +22,17 @@
 - kmoir: see https://docs.google.com/document/d/1c9hWwCdN4w2MHN2lTxFZ0nIs8neH6R7VLKogIdZqhJA/edit#heading=h.5eopgyoyeruv for details on 56.0.1 win32->win64 rules
 - nthomas: Funsize submitter bustage from [Bug 1402015](https://bugzil.la/1402015), rail [landed a fix](https://hg.mozilla.org/build/tools/rev/912affa82eef). We'll do a build2 to pick it up
 - nthomas: Many windows l10n retries because of being outbid on spot instance
+## Build 2
+
+### Release Graph
+task graph url: unknown
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
+- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none
