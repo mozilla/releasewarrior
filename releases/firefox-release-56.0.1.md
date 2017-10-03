@@ -20,3 +20,4 @@
 - SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1405012 Implement a watershed for win32-win64 migration before 56.0.1 ships
 - kmoir: see https://docs.google.com/document/d/1c9hWwCdN4w2MHN2lTxFZ0nIs8neH6R7VLKogIdZqhJA/edit#heading=h.5eopgyoyeruv for details on 56.0.1 win32->win64 rules
 - nthomas: Funsize submitter bustage from [Bug 1402015](https://bugzil.la/1402015), rail [landed a fix](https://hg.mozilla.org/build/tools/rev/912affa82eef). We'll do a build2 to pick it up
+- nthomas: Many windows l10n retries because of being outbid on spot instance
