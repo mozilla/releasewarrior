@@ -17,3 +17,4 @@
 ### Issues
 - nthomas: [Bug 1405137](https://bugzil.la/1405137) - ship-it makes a poor choice for partials
 - nthomas: Lots of auto-retries for windows l10n repacks, due to price spikes in us-east-1 for b-2008-spot and we'd disabled all of us-west-2. Re-enabled 20 in the latter region.
+- nthomas: [Bug 1405203](https://bugzil.la/1405203) - win32 en-ZA and eo update verify issues from duplicated l10n repack jobs
