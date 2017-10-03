@@ -1,7 +1,7 @@
 {
     "issues": [
         "SPECIAL REQUIREMENT:  Use the transform_balrog_blob.py script in https://bugzilla.mozilla.org/show_bug.cgi?id=1393789 change the complete mar urls to point to bz2 mars.  Once the new release blob has been submitted to balrog we need resolve the start_update_verify_human_decision task that rail added in releasetasks",
-        "SPECIAL REQUIREMENT": https://bugzilla.mozilla.org/show_bug.cgi?id=1391718 Add LZMA/SHA384 watershed when 56.0 ships", 
-        "SPECIAL REQUIREMENT": https://bugzilla.mozilla.org/show_bug.cgi?id=1405012 Implement a watershed for win32-win64 migration before 56.0.1 ships"
+        "SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1391718 Add LZMA/SHA384 watershed when 56.0 ships",
+        "SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1405012 Implement a watershed for win32-win64 migration before 56.0.1 ships"
     ]
 }
