@@ -39,3 +39,4 @@
 - SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1391718 Add LZMA/SHA384 watershed when 56.0 ships
 - SPECIAL REQUIREMENT: https://bugzilla.mozilla.org/show_bug.cgi?id=1405012 Implement a watershed for win32-win64 migration before 56.0.1 ships
 - kmoir: see https://docs.google.com/document/d/1c9hWwCdN4w2MHN2lTxFZ0nIs8neH6R7VLKogIdZqhJA/edit#heading=h.5eopgyoyeruv for details on 56.0.1 win32->win64 rules
+- jlorenzo: Uncharted territory: We have to manually generate win32->64 partials. [Bug 1405681](https://bugzil.la/1405681) - Create partial updates to migrate eligible 56.0 win32 users to 56.0.1 win64
