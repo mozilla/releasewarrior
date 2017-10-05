@@ -19,4 +19,4 @@ task graph url: unknown
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- callek: NOTE: 52.4.1esr is expected to ship updates to OSX only.

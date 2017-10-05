@@ -11,7 +11,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "callek: NOTE: 52.4.1esr is expected to ship updates to OSX only."
+            ]
         }
     ],
     "date": "2017-10-05",
