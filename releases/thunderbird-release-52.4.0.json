@@ -1,12 +1,23 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "human_tasks": {
                 "mirrors": false,
                 "publish": false,
                 "shipit": true,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "human_tasks": {
+                "mirrors": false,
+                "publish": false,
+                "shipit": false,
                 "signoff": false
             },
             "issues": []
