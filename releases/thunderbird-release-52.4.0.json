@@ -20,7 +20,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "callek: An unrelated build/tools patch caused the release to fail (which landed on Oct 3), reran the jobs after the fix."
+            ]
         }
     ],
     "date": "2017-10-03",

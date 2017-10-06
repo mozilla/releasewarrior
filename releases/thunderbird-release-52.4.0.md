@@ -22,4 +22,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- callek: An unrelated build/tools patch caused the release to fail (which landed on Oct 3), reran the jobs after the fix.
