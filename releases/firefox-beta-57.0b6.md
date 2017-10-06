@@ -15,3 +15,4 @@
 
 ### Issues
 - nthomas: Mac repack rerun for hg clone hang [task](https://tools.taskcluster.net/groups/DTdE-LoySn-V3mtETuJZnA/tasks/beZqujq8S2eAbcccGSK2_g/details)
+- nthomas: Windows repack rerun for tc upload error [task](https://tools.taskcluster.net/groups/DTdE-LoySn-V3mtETuJZnA/tasks/beZqujq8S2eAbcccGSK2_g/details)
