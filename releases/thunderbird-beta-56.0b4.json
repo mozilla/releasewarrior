@@ -97,7 +97,7 @@
             "issues": []
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 10,
             "human_tasks": {
                 "publish": false,
@@ -108,6 +108,16 @@
                 "nthomas: Update verify problems - windows hits [error 19 - CERT_VERIFY_ERROR](https://hg.mozilla.org/releases/mozilla-beta/file/c94b394a1aa3/toolkit/mozapps/update/common/errors.h#l38), mac has error 39 - UNEXPECTED_XZ_ERROR, linux has the usual libgtk-3.so.0 failure",
                 "callek: [Bug 1405177](https://bugzil.la/1405177): Needed to Install (slightly) newer pip to successfully install boto."
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 11,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-09-05",

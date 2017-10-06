@@ -93,6 +93,7 @@
 ### Issues
 - none
 ## Build 10
+:bomb: _**aborted release. starting new build num**_ :bomb:
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
@@ -102,3 +103,12 @@
 ### Issues
 - nthomas: Update verify problems - windows hits [error 19 - CERT_VERIFY_ERROR](https://hg.mozilla.org/releases/mozilla-beta/file/c94b394a1aa3/toolkit/mozapps/update/common/errors.h#l38), mac has error 39 - UNEXPECTED_XZ_ERROR, linux has the usual libgtk-3.so.0 failure
 - callek: [Bug 1405177](https://bugzil.la/1405177): Needed to Install (slightly) newer pip to successfully install boto.
+## Build 11
+
+### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none
