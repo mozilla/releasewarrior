@@ -14,5 +14,5 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- nthomas: Mac repack rerun for hg clone hang [task](https://tools.taskcluster.net/groups/DTdE-LoySn-V3mtETuJZnA/tasks/beZqujq8S2eAbcccGSK2_g/details)
+- nthomas: Mac repack rerun for hg clone hang [task](https://tools.taskcluster.net/groups/DTdE-LoySn-V3mtETuJZnA/tasks/beZqujq8S2eAbcccGSK2_g/details). RyanVM also reran this via treeherder, so my rerun failed to attach files to the artifacts task, but everything continued OK
 - nthomas: Windows repack rerun for tc upload error [task](https://tools.taskcluster.net/groups/DTdE-LoySn-V3mtETuJZnA/tasks/beZqujq8S2eAbcccGSK2_g/details)
