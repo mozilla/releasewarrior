@@ -15,4 +15,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: Windows repack rerun for tc upload error [task](https://tools.taskcluster.net/task-inspector/#HLT1gojdRtmB3405_jgTyw)
