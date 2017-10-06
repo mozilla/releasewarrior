@@ -14,4 +14,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: Mac repack rerun for hg clone hang [task](https://tools.taskcluster.net/groups/DTdE-LoySn-V3mtETuJZnA/tasks/beZqujq8S2eAbcccGSK2_g/details)
