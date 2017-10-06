@@ -12,7 +12,7 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- callek: [Bug 1405177](https://bugzil.la/1405177): Needed to Install (slightly) newer pip to successfully install boto.
 ## Build 2
 :bomb: _aborted release. starting new build num_ :bomb:
 
