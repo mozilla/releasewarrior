@@ -41,3 +41,4 @@
 - kmoir: see https://docs.google.com/document/d/1c9hWwCdN4w2MHN2lTxFZ0nIs8neH6R7VLKogIdZqhJA/edit#heading=h.5eopgyoyeruv for details on 56.0.1 win32->win64 rules
 - jlorenzo: Uncharted territory: We have to manually generate win32->64 partials. [Bug 1405681](https://bugzil.la/1405681) - Create partial updates to migrate eligible 56.0 win32 users to 56.0.1 win64
 - jlund: final verify failed but expected. all failures were coming from 56.0. Only 56.0 updates that should work are win32 requests that set flags that allow for migration. we have to rely on QE
+- callek: Generation code for the stripped balrog release blob is in [bugzilla](https://[Bug 1393447](https://bugzil.la/1393447).bmoattachments.org/attachment.cgi\?id=8902074)
