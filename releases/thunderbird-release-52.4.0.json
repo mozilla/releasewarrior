@@ -34,9 +34,11 @@
                 "mirrors": true,
                 "publish": false,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
-            "issues": []
+            "issues": [
+                "callek: Publish Release How-To/Buildbot fails due to required signoffs. Had to enact the change manually."
+            ]
         }
     ],
     "date": "2017-10-03",
