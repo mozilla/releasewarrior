@@ -26,9 +26,9 @@
             "graphid": "EHgvG8c7SdKqCkJ_06UXBA",
             "human_tasks": {
                 "mirrors": true,
-                "publish": false,
+                "publish": true,
                 "shipit": true,
-                "signoff": false,
+                "signoff": true,
                 "wnp": true
             },
             "issues": [
