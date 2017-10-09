@@ -21,3 +21,4 @@
 ### Issues
 - callek: NOTE: 52.4.1esr is expected to ship updates to OSX only.
 - nthomas: fallout from [Bug 1387622](https://bugzil.la/1387622). When we ship we'll need to manually adjust the [firefox-sha1 alias in bouncer](https://bounceradmin.mozilla.com/admin/mirror/productalias/12/) to point at 'Firefox-52.4.1esr-sha1'. This will be fixed in future releases. mbrandt may pop up on IRC if there is a delay in updating the alias, as he has a test suite that monitors it
+- callek: [Bug 1406939](https://bugzil.la/1406939) - We hit Final Verify failures due to only shipping 52.4.1esr to OSX. I backed out the automation changes to update verify configs to allow us to test what we're expecting. And re-ran the final verify task
