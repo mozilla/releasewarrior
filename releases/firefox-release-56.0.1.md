@@ -42,3 +42,5 @@
 - jlorenzo: Uncharted territory: We have to manually generate win32->64 partials. [Bug 1405681](https://bugzil.la/1405681) - Create partial updates to migrate eligible 56.0 win32 users to 56.0.1 win64
 - jlund: final verify failed but expected. all failures were coming from 56.0. Only 56.0 updates that should work are win32 requests that set flags that allow for migration. we have to rely on QE
 - callek: Generation code for the stripped balrog release blob is in [bugzilla](https://[Bug 1393447](https://bugzil.la/1393447).bmoattachments.org/attachment.cgi\?id=8902074)
+- jlorenzo: Publish tasks expired. I cloned and tweaked them to publish the release. Per the original requirements, new downloads on every platform will get a 56.0.1.
+- jlorenzo: I changed the [release-cdntest rule](https://aus4-admin.mozilla.org/rules/659) to apply to every channel. Hence, I removed the original release-localtest rule and updates on release-cdntest are now served at 1%
