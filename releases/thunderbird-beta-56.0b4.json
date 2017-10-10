@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "human_tasks": {
                 "publish": false,
@@ -11,6 +11,113 @@
             "issues": [
                 "nthomas: Win32 build failed, needs some [uplifts](https://hg.mozilla.org/comm-central/pushloghtml?changeset=bb864aeadf15)"
             ]
+        },
+        {
+            "aborted": true,
+            "buildnum": 2,
+            "human_tasks": {
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": [
+                "nthomas: win32 unpack_curren_mar bustage"
+            ]
+        },
+        {
+            "aborted": true,
+            "buildnum": 3,
+            "human_tasks": {
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": [
+                "kmoir: wrong revision was used to start build"
+            ]
+        },
+        {
+            "aborted": true,
+            "buildnum": 4,
+            "human_tasks": {
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": true,
+            "buildnum": 5,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": true,
+            "buildnum": 6,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": true,
+            "buildnum": 7,
+            "human_tasks": {
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": true,
+            "buildnum": 8,
+            "human_tasks": {
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": true,
+            "buildnum": 9,
+            "human_tasks": {
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": true,
+            "buildnum": 10,
+            "human_tasks": {
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": [
+                "nthomas: Update verify problems - windows hits [error 19 - CERT_VERIFY_ERROR](https://hg.mozilla.org/releases/mozilla-beta/file/c94b394a1aa3/toolkit/mozapps/update/common/errors.h#l38), mac has error 39 - UNEXPECTED_XZ_ERROR, linux has the usual libgtk-3.so.0 failure",
+                "callek: [Bug 1405177](https://bugzil.la/1405177): Needed to Install (slightly) newer pip to successfully install boto."
+            ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 11,
+            "human_tasks": {
+                "publish": false,
+                "shipit": true,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-09-05",

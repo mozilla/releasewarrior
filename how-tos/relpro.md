@@ -355,7 +355,7 @@ If a task failed because of an intermittent failure (e.g.: network error, timeou
 
 ## Flushing caches
 
-If more than one build ran on a beta we need to flush the caches to remove the older builds from the CDN caches.  For instance in Firefox beta 46.0b5 we built builds 1 through 5 but we only ship build5.  See [Bug 1391843](https://bugzil.la/1391843) - Please purge CDN caches for firefox and devedition 56.0b4 as an example.
+If more than one build ran on a beta we need to flush the caches to remove the older builds from the CDN caches.  For instance in Firefox beta 46.0b5 we built builds 1 through 5 but we only ship build5.  See [Bug 1391843](https://bugzil.la/1391843) - Please purge CDN caches for firefox and devedition 56.0b4 as an example. After filing the bug as P1, it's highly recommended you follow up with the [mana docs](https://mana.mozilla.org/wiki/display/SVCOPS/Contacting+Cloud+Operations) to contact CloudOps by email as well as they don't always pay attention to P1 bugs.
 
 ## Working around Signoffs in Balrog
 
@@ -380,12 +380,15 @@ This works with tasks where the task is on the edge of the graph, and has no dep
 
 If pushapk's task expires in graph 1, do the following:
 
-- select the task definition and copy it
+- open the `push-apk/opt` Task's Definition in Raw Data mode and copy that to your clipboard
+- hover over to [taskcluster create](https://tools.taskcluster.net/task-creator/) page
+- trim the existing dummy tutorial task there and paste the task from your clipboard
 - edit it:
-    - update the timestamps
-    - remove the breakpoint dependency from `task.dependencies`
-    - I'm not sure "edit and recreate" will work, since the taskGroupId will change?
-- resubmit it
+    - update the timestamps (the time there is UTC)
+    - make sure you specify at least 1h of deadline so that the task doesn't fail for having a deadline in the past
+    - remove all dependencies strings from `task.dependencies` and add instead the taskGroupId string
+- submit it
+- since the taskGroupId is still pointing to the original graph, it will show up in the graph there as well as a clone of previous `push-apk/opt`
 
 In the eventuality of a failure of pushapk_scriptworker, there are [instructions to manually publish APKs](https://github.com/mozilla-releng/mozapkpublisher#what-to-do-when-pushapk_scriptworker-doesnt-work).
 

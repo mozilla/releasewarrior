@@ -5,6 +5,8 @@
 ## Build 1
 
 ### Beta Graph
+:bomb: _aborted release. starting new build num_ :bomb:
+
 [task group](https://tools.taskcluster.net/push-inspector/#/Zi-rCIvSRUm7t-CFbAaUYw)
 
 
@@ -20,12 +22,11 @@
 - nthomas: [Bug 1400119](https://bugzil.la/1400119) - source builder failed
 - nthomas: [Bug 1400141](https://bugzil.la/1400141) - balrog submission errors, reran failing tasks
 - jlorenzo: Because source builder failed, the rest of the graph was stuck. I didn't manage to force the source-related tasks to complete, because Taskcluster is too smart. To complete a task, you need it to be in pending. Otherwise, taskcluster doesn't accept a failed/exception task to change to complete. Also, running tasks are already claimed, and Taskcluster doesn't allow you to override the status. Workers were too fast to claim tasks. I haven't managed to get the right time window to mark tasks as completed. As a consequnce, build 2 was started with source turned off (hotfix).
-
-:bomb: _aborted release. starting new build num_ :bomb:
-
 ## Build 2
 
 ### Beta Graph
+:bomb: _aborted release. starting new build num_ :bomb:
+
 [task group](https://tools.taskcluster.net/push-inspector/#/SccqGTzATvqPXaVMW4LjJQ)
 
 
@@ -38,19 +39,17 @@
 - jlorenzo: [Bug 1400141](https://bugzil.la/1400141)- About a dozen balrog submission errors, reran failing tasks
 - jlorenzo: Manually cancelled bouncer aliases and mark as shipped. Then, bedrock won't show this version to users www.mozilla.org
 - jlorenzo: [Bug 1400285](https://bugzil.la/1400285) - 57.0b1: All windows update verification tests are failing: diff: target/bin: No such file or directory
-
-:bomb: _aborted release. starting new build num_ :bomb:
-
 ## Build 3
 
 ### Beta Graph
+
 [task group](https://tools.taskcluster.net/push-inspector/#/PqkUbYFlSqutB9EJQYTi8g)
 
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+- [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
 - nthomas: Manually cancelled bouncer aliases and mark as shipped. Then, bedrock won't show this version to users www.mozilla.org
@@ -60,5 +59,4 @@
 - nthomas: push to mirrors failure because [Bug 1400656](https://bugzil.la/1400656) hadn't been done, paged cloudops then reran
 - nthomas: uptake monitoring failed because no uptake of Devedition-57.0b1-Complete-bz2, fallout from [Bug 1395697](https://bugzil.la/1395697). Added a 1-btye keys at pub/devedition/releases/57.0b1/update/win64/en-US/firefox-57.0b1.bz2.complete.mar and so on and reran uptake
 - jlorenzo: Manually cancelled 'mark as shipped' per [Bug 1400265](https://bugzil.la/1400265) comment 4
-
-
+- nthomas: Release eta not set so balrog submitter tried to change the rule directly, manually added a signoff
