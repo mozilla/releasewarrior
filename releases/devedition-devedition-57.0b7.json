@@ -3,13 +3,15 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "X81HNTigT0G_PYoun0agLQ",
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "jlorenzo: UV and final verification failed because en-ZA and eo partial are missing ([Bug 1405203](https://bugzil.la/1405203))"
+            ]
         }
     ],
     "date": "2017-10-10",
