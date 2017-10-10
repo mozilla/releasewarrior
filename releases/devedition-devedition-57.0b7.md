@@ -16,3 +16,4 @@
 
 ### Issues
 - jlorenzo: UV and final verification failed because en-ZA and eo partial are missing ([Bug 1405203](https://bugzil.la/1405203))
+- callek: Needed WNP and was not tracked, created
