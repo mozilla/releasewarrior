@@ -8,7 +8,7 @@
             "human_tasks": {
                 "candidates": true,
                 "publish": false,
-                "pushapk": false,
+                "pushapk": true,
                 "shipit": true
             },
             "issues": [
