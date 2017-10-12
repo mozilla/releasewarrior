@@ -13,45 +13,20 @@ similar. So mainly rather larger changes to the code base, changes that actually
 
 ## Simulation project branch
 
-Project branch `jamun` has traditionally been our culprit to simulate `beta`. We used `date` for simulating nightlies from `central`.
+Project branch `jamun` has traditionally been our choice to simulate `beta`. We have been using `maple` for simulating nightlies from `central`.
 
 Use cases:
 - for `central` -> `beta` staging release we would use `from_repo_url` = `central`  and `to_repo_url` = `jamun`
-- for `date` -> `central` -> `beta` (stuff that lands in `central` and right after that goes in `beta`) staging release we would use `from_repo_url` = `date`  and `to_repo_url` = `jamun`
+- for `maple` -> `central` -> `beta` (stuff that lands in `central` and right after that goes in `beta`) staging release we would use `from_repo_url` = `maple`  and `to_repo_url` = `jamun`
 
 ## Merge scripts
 
-1.
-```sh
-mkdir staging_release_merge
-cd staging_release_merge
-wget https://hg.mozilla.org/build/tools/raw-file/default/buildfarm/utils/archiver_client.py
-python archiver_client.py mozharness --destination mozharness-central --repo mozilla-central --rev default --debug  # Central must be used against every branch
+1. Use the <a href="../scripts/staging_merge.py">script</a>  to run the merge for you. Parameters are the directory to run the merge in, and the repos to merge_from, and merge_to.  For example:
+```
+staging_merge.py merge_dir projects/maple projects/jamun
 ```
 
-2. Modify the `mozharness-central/configs/merge_day/central_to_beta.py` file to look like this
-```diff
---- mozharness-central.orig/configs/merge_day/central_to_beta.py2017-07-10 06:26:15.000000000 -0400
-+++ mozharness-central/configs/merge_day/central_to_beta.py20172017-07-10 09:53:01.838515927 -0400
-@@ -67,8 +67,8 @@
-     # "hg_share_base": None,
-     "tools_repo_url": "https://hg.mozilla.org/build/tools",
-     "tools_repo_branch": "default",
--    "from_repo_url": "ssh://hg.mozilla.org/mozilla-central",
--    "to_repo_url": "ssh://hg.mozilla.org/releases/mozilla-beta",
-+    "from_repo_url": "ssh://hg.mozilla.org/projects/date",
-+    "to_repo_url": "ssh://hg.mozilla.org/projects/jamun",
-
-     "base_tag": "FIREFOX_BETA_%(major_version)s_BASE",
-     "end_tag": "FIREFOX_BETA_%(major_version)s_END",
-```
-
-3. Run the actual script to get the "diff" between the two branches:
-```sh
-python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/central_to_beta.py
-```
-
-4. The script should have created a diff. Check that everything is okay and push to jamun
+2. The script should have created a diff. Check that everything is okay and push to jamun
 ```sh
 hg -R build/jamun diff
 hg -R build/jamun commit -m "Uplift from central to jamun"
