@@ -1,0 +1,20 @@
+{
+    "builds": [
+        {
+            "aborted": false,
+            "buildnum": 1,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": [
+                "HEADS UP: IRC notifications have been retired ([Bug 1388680](https://bugzilla.mozilla.org/show_bug.cgi?id=1388680))"
+            ]
+        }
+    ],
+    "date": "2017-10-13",
+    "product": "firefox",
+    "version": "57.0b8"
+}
