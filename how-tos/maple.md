@@ -67,8 +67,9 @@ This may be more work, but avoids some hacks and is where we want to end up.
 
 - we can probably add some inputs into the relpro action for env vars, allowing us to generate these before submitting the action task.
 - we'll need to make sure the appropriate docker-image tasks run in the promote action. I added a `do_not_optimize` property so we can avoid optimizing the docker-image task out of the graph.
+- rail says, "We would need to know the corresponding task IDs - you have to use them to make encrypted env vars work." We could make this work by either generating all the slugids in advance, with the encrypted env vars, and passing that in, or by exposing the private key in taskcluster secrets or something like that. Neither is a great option.
 
-This may be less work, but we'll be further away from our end goal when we're done.
+This may or may not be less work, and we'll be further away from our end goal when we're done.
 
 ---
 ## action task info
