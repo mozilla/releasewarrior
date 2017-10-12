@@ -13,7 +13,7 @@ similar. So mainly rather larger changes to the code base, changes that actually
 
 ## Simulation project branch
 
-Project branch `jamun` has traditionally been our culprit to simulate `beta`. We used `maple` for simulating nightlies from `central`.
+Project branch `jamun` has traditionally been our choice to simulate `beta`. We have been using `maple` for simulating nightlies from `central`.
 
 Use cases:
 - for `central` -> `beta` staging release we would use `from_repo_url` = `central`  and `to_repo_url` = `jamun`
@@ -21,14 +21,12 @@ Use cases:
 
 ## Merge scripts
 
-1. Use the script ../scripts/staging_merge.py to run the merge for you. For example:
+1. Use the <a href="../scripts/staging_merge.py">script</a>  to run the merge for you. Parameters are the directory to run the merge in, and the repos to merge_from, and merge_to.  For example:
 ```
-staging_merge.py staging_release_merge projects/maple projects/jamun
+staging_merge.py merge_dir projects/maple projects/jamun
 ```
 
-This script will run the merge for you.  Parameters are the directory to run the merge in, and the repos to merge_from, and merge_to.
-
-3. The script should have created a diff. Check that everything is okay and push to jamun
+2. The script should have created a diff. Check that everything is okay and push to jamun
 ```sh
 hg -R build/jamun diff
 hg -R build/jamun commit -m "Uplift from central to jamun"
