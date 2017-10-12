@@ -20,8 +20,8 @@ Please feel free to add tasks there if we're missing any!
 - [bug 1407817](https://bugzilla.mozilla.org/show_bug.cgi?id=1407817) just landed; we may have working bbb relpro for fennec (or maybe just a new error message?)
 
 Random thoughts:
-- Should we switch our properties to dashed-words instead of `underscore_words`?
-- Should we rename `candidates_fennec` to `promote_fennec` ?
+- Should we switch our [release promotion action properties](https://hg.mozilla.org/projects/maple/file/tip/taskcluster/taskgraph/actions/release_promotion.py#l67) to dashed-words instead of `underscore_words`?
+- Should we rename the `candidates_fennec` `target_tasks_method` to `promote_fennec`? We're rebuilding, so it's not really strict promotion, but it matches `promote_firefox` and the future `promote_devedition`...
 
 ---
 
