@@ -155,7 +155,7 @@ class CreateRelease(Command):
                 data["builds"][0]["issues"] = json.load(future_data_file)["issues"]
 
             logger.info("removing FUTURE/ data file: {}".format(self.abs_future_data_file))
-            self.repo.index.remove([self.abs_future_data_file])
+            self.repo.index.remove([self.abs_future_data_file], working_tree=True)
 
         return data
 
