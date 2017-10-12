@@ -17,7 +17,7 @@ Please feel free to add tasks there if we're missing any!
 
 ### open bugs
 
-- [bug 1407817](https://bugzilla.mozilla.org/show_bug.cgi?id=1407817) has some missing buildbot-configs and in-tree patches for fennec relpro on maple.
+- [bug 1407817](https://bugzilla.mozilla.org/show_bug.cgi?id=1407817) just landed; we may have working bbb relpro for fennec (or maybe just a new error message?)
 
 Random thoughts:
 - Should we switch our properties to dashed-words instead of `underscore_words`?
