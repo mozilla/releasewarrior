@@ -127,6 +127,9 @@ I used
 ```
 
 `promote_fennec.yml`:
+
+(This is also the input I use in the action in treeherder)
+
 ```yaml
 build_number: 1
 release_promotion_flavor: promote_fennec
