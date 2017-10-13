@@ -122,3 +122,4 @@
 
 ### Issues
 - nthomas: Updates job failed due to malformed patcher config, corrected with [a patch](https://hg.mozilla.org/build/tools/rev/b5383120b991), and reran
+- nthomas: [Bug 1408244](https://bugzil.la/1408244) - push to mirrors failed because of previous build in thunderbird/releases/56.0b4. Filed purge requests, asked Tom to write a patch to disable auto push until updates are working
