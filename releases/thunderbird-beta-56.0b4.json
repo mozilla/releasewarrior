@@ -120,7 +120,7 @@
             "issues": []
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 12,
             "human_tasks": {
                 "publish": false,
@@ -132,6 +132,16 @@
                 "nthomas: [Bug 1408244](https://bugzil.la/1408244) - push to mirrors failed because of previous build in thunderbird/releases/56.0b4. Filed purge requests, asked Tom to write a patch to disable auto push until updates are working",
                 "nthomas: Update verify failures - partial updates are failing on windows error 19, mac OK, linux* failing on libgtk as usual"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 13,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-09-05",

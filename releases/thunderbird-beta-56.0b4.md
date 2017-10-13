@@ -114,6 +114,7 @@
 ### Issues
 - none
 ## Build 12
+:bomb: _**aborted release. starting new build num**_ :bomb:
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
@@ -124,3 +125,12 @@
 - nthomas: Updates job failed due to malformed patcher config, corrected with [a patch](https://hg.mozilla.org/build/tools/rev/b5383120b991), and reran
 - nthomas: [Bug 1408244](https://bugzil.la/1408244) - push to mirrors failed because of previous build in thunderbird/releases/56.0b4. Filed purge requests, asked Tom to write a patch to disable auto push until updates are working
 - nthomas: Update verify failures - partial updates are failing on windows error 19, mac OK, linux* failing on libgtk as usual
+## Build 13
+
+### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none
