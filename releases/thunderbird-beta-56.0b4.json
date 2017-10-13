@@ -110,11 +110,21 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 11,
             "human_tasks": {
                 "publish": false,
                 "shipit": true,
+                "signoff": false
+            },
+            "issues": []
+        },
+        {
+            "aborted": false,
+            "buildnum": 12,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
                 "signoff": false
             },
             "issues": []
