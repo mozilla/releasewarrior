@@ -121,4 +121,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- nthomas: Updates job failed due to malformed patcher config, corrected with (a patch)[https://hg.mozilla.org/build/tools/rev/b5383120b991], and reran
+- nthomas: Updates job failed due to malformed patcher config, corrected with [a patch](https://hg.mozilla.org/build/tools/rev/b5383120b991), and reran
