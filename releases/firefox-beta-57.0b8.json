@@ -15,7 +15,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "cQ2YYSXiQFSSzKozAUCtKA",
             "human_tasks": {
@@ -26,6 +26,17 @@
             "issues": [
                 "nthomas: [Bug 1408197](https://bugzil.la/1408197) - beetmover now failing to install backports.lzma"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-10-13",
