@@ -23,7 +23,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: [Bug 1408197](https://bugzil.la/1408197) - beetmover now failing to install backports.lzma"
+            ]
         }
     ],
     "date": "2017-10-13",
