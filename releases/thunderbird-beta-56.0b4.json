@@ -124,10 +124,12 @@
             "buildnum": 12,
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: Updates job failed due to malformed patcher config, corrected with (a patch)[https://hg.mozilla.org/build/tools/rev/b5383120b991], and reran"
+            ]
         }
     ],
     "date": "2017-09-05",
