@@ -32,9 +32,9 @@
             "buildnum": 3,
             "graphid": "",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": []
         }
