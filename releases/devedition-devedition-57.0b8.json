@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "R8uaJzjmS5KdvIs6Cn6Fzg",
             "human_tasks": {
@@ -13,6 +13,17 @@
                 "HEADS UP: IRC notifications have been retired ([Bug 1388680](https://bugzilla.mozilla.org/show_bug.cgi?id=1388680))",
                 "nthomas: [Bug 1408197](https://bugzil.la/1408197) - beetmover jobs fail to install cryptography dependency for mar"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-10-13",
