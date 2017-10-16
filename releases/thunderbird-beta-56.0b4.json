@@ -141,7 +141,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "callek: buildbot-configs was not merged to production before GTB, causing update verify issues because the mar signing format wasn't switched appropriately."
+            ]
         }
     ],
     "date": "2017-09-05",

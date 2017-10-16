@@ -133,4 +133,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- callek: buildbot-configs was not merged to production before GTB, causing update verify issues because the mar signing format wasn't switched appropriately.
