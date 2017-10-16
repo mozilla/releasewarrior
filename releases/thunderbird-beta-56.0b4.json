@@ -134,7 +134,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 13,
             "human_tasks": {
                 "publish": false,
@@ -144,6 +144,16 @@
             "issues": [
                 "callek: buildbot-configs was not merged to production before GTB, causing update verify issues because the mar signing format wasn't switched appropriately."
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 14,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-09-05",
