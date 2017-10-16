@@ -15,4 +15,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: devedition mozilla-beta updates - raced the firefox equivalent to push into the tools repo and lost. Worth retrying in-job ? RyanVM reran via treeherder, which uses bb self-serve to run but that doesn't show up in the tc graph. Did rerun and completed on b5DkgMezT9WkLWPue3ZNHA with tasckluster cli, but the bridge still grabbed it
