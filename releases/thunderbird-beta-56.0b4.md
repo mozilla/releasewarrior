@@ -143,4 +143,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: Will need to force the push to mirrors builder because [autopush was disabled](https://hg.mozilla.org/build/buildbot-configs/rev/46d3645c2a1d). Need to wait for purge in [Bug 1408244](https://bugzil.la/1408244) first

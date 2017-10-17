@@ -153,7 +153,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: Will need to force the push to mirrors builder because [autopush was disabled](https://hg.mozilla.org/build/buildbot-configs/rev/46d3645c2a1d). Need to wait for purge in [Bug 1408244](https://bugzil.la/1408244) first"
+            ]
         }
     ],
     "date": "2017-09-05",
