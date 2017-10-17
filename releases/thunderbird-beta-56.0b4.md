@@ -139,9 +139,10 @@
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
+- [x] published release tasks [part 1](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Publish_in_Balrog) [part 2](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
 - nthomas: Will need to force the push to mirrors builder because [autopush was disabled](https://hg.mozilla.org/build/buildbot-configs/rev/46d3645c2a1d). Need to wait for purge in [Bug 1408244](https://bugzil.la/1408244) first
 - nthomas: [Added postrelease](https://github.com/mozilla-releng/build-cloud-tools/commit/ecb29d0a066baa526c38379588559d2b3251eaa9) to the list of builder names we start AWS instances
+- nthomas: [Bug 1388330](https://bugzil.la/1388330) - balrog change is submitted ignoring signoff requirement, done manually
