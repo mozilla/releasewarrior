@@ -7,7 +7,7 @@
             "graphid_2": "fEF25EzWQOyR0bYb83ti",
             "human_tasks": {
                 "candidates": true,
-                "publish": false,
+                "publish": true,
                 "pushapk": false,
                 "shipit": true
             },
