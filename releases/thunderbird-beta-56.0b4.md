@@ -144,5 +144,6 @@
 
 ### Issues
 - nthomas: Will need to force the push to mirrors builder because [autopush was disabled](https://hg.mozilla.org/build/buildbot-configs/rev/46d3645c2a1d). Need to wait for purge in [Bug 1408244](https://bugzil.la/1408244) first
+- callek: Got the go to cdntest, and manually forced the mirrors builder - [Log at](http://buildbot-master91.bb.releng.usw2.mozilla.com:8001/builders/release-comm-beta-thunderbird_push_to_mirrors/builds/2)
 - nthomas: [Added postrelease](https://github.com/mozilla-releng/build-cloud-tools/commit/ecb29d0a066baa526c38379588559d2b3251eaa9) to the list of builder names we start AWS instances
 - nthomas: [Bug 1388330](https://bugzil.la/1388330) - balrog change is submitted ignoring signoff requirement, done manually
