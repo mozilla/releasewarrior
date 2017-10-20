@@ -15,4 +15,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: final verification failed with `abort: No such file or directory: '/tools/lib/python'`. Probably a bad AWS instance as a rerun didn't not reproduce the problem
