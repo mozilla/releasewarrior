@@ -44,7 +44,7 @@ hg -R build/jamun push
 
 - release runner will consume [project branch configs](https://dxr.mozilla.org/build-central/rev/92614acc90330edf360d97d8575b7e917ddc43b2/buildbot-configs/mozilla/project_branches.py#114)
 - mozharness [configs](https://dxr.mozilla.org/mozilla-central/source/testing/mozharness/configs/releases/) - all configs with `dev` prefix
-- in order to avoid pushing patcher configs changes/tags to *real* [tools](http://hg.mozilla.org/build/tools/) repo, we have changed the buildbot and in tree configs to point to the staging tools repo https://hg.mozilla.org/users/stage-ffxbld/tools) 
+- in order to avoid pushing patcher configs changes/tags to *real* [tools](http://hg.mozilla.org/build/tools/) repo, we have changed the buildbot and in-tree configs to point to the <a href="https://hg.mozilla.org/users/stage-ffxbld/tools">staging tools repo</a>) 
 
 ## Misc
 

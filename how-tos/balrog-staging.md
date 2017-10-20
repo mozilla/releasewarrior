@@ -35,7 +35,7 @@ index a0dee5a1..9c712750 100644
 
    balrogpub:
 ```
-- Installer the latest versions of docker and docker-compose. During July 2017, the docker version present in the repo weren't compatible with docker-compose.yml in balrog.
+- Install the latest versions of docker and docker-compose. During July 2017, the docker version present in the repo wasn't compatible with docker-compose.yml in balrog.
   - [Docker installation](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/). Don't forget the [post installation steps](https://docs.docker.com/engine/installation/linux/linux-postinstall/) which require you to log out and log back in.
   - [Docker-compose installation](https://docs.docker.com/compose/install/).
 - follow the [installation](https://github.com/mozilla/balrog#installation) process.
