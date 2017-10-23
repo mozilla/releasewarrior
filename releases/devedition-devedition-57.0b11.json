@@ -9,9 +9,7 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": [
-                "nthomas: mac repack 2/10 - T_PuXXn7RfKmoWdnPO8lew - hang in tc upload, rerun"
-            ]
+            "issues": []
         }
     ],
     "date": "2017-10-23",
