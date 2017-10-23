@@ -15,4 +15,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: mac repack 2/10 - T_PuXXn7RfKmoWdnPO8lew - hang in tc upload, rerun
