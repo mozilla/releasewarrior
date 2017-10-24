@@ -17,7 +17,8 @@
 ### Issues
 - rail: The updates builder failed because we had to partials for version less than 56.0, so the bz2 blob top-level submission failed. Fixed in https://bugzilla.mozilla.org/show_bug.cgi?id=1395697#c48 and has been rerun.
 - jlund: REQUIREMENT: determine need and action - [Bug 1411428](https://bugzil.la/1411428) - Create partial updates to migrate eligible 56.0 win32 users to 56.0.2 win64
-- jlund: REQUIREMENT: update balrog rules to reflect requirements defined here: https://docs.google.com/document/d/1_b3SuHiMZn141jM_MHw9sclm8nkn_COrlbHF44NIWKY/edit\#heading\=h.g14w5uu682r0
+- jlund: REQUIREMENT: update balrog rules to reflect requirements defined in this [doc](https://docs.google.com/document/d/1_b3SuHiMZn141jM_MHw9sclm8nkn_COrlbHF44NIWKY/edit\#heading\=h.g14w5uu682r0)
 - jlund: REQUIREMENT: re: balrog rules - all users should watershed off 56.0. https://aus4-admin.mozilla.org/rules/624  stays the same
-- jlund: REQUIREMENT: re: balrog rules - no users receive 56.0.1 so update https://aus4-admin.mozilla.org/rules/659 to point to 56.0.2 (seperate release blob if we need bug migration partials from [Bug 1411428](https://bugzil.la/1411428))
-- jlund: REQUIREMENT: re: balrog rules - all non eligible win32 migration users and every other platform should go from 56.0 watershed to 56.0.2 with WNP for quantum preview. Same WNP as 56.0.1
+- jlund: REQUIREMENT: re: balrog rules - no users receive 56.0.1. If we need migration partials from [Bug 1411428](https://bugzil.la/1411428), we should update https://aus4-admin.mozilla.org/rules/659 to point to 56.0.2 with WNP for mobile promotion. Same WNP as 56.0.1
+- jlund: REQUIREMENT: re: balrog rules - all platforms + non eligible win32 migration 56.0 users should go to 56.0.2 with WNP for mobile promotion. Same WNP as 56.0.1
+- jlund: REQUIREMENT: re: balrog rules - all 56.0.1 users should receive 56.0.2 but *not* receive any WNP as they already saw WNP for mobile promotion
