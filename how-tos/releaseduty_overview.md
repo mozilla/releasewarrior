@@ -9,13 +9,14 @@ that depends on issues that need fixing, and special requirements that specific
 release might have.
 
 ReleaseDuty is responsible for:
-* Performing operational tasks for incoming Nightly, DevEdition, Beta, Release Candidate and final releases
+* Performing operational tasks for incoming Nightly, DevEdition, Beta, ESR, Release Candidate and final releases
 * Merging repositories to create new beta, release candidates, releases and extended support releases.
 * Coordinating with other teams, such as Release Management, Quality Engineering, Sheriffs, and other developers
 * Fixing and improving the release automation, including both tools and processes
 * Maintaining a logbook of issues and progress using releasewarrior.
 * Arranging event post-mortems, if required.
 
-The individual accountable for a release is known as the 'release owner'.
+The individual accountable for a release is known as the 'release owner',
+and this is usually a specific member of Release Management.
 Details about release owners and people on release duty can be found at
 https://wiki.mozilla.org/Release_Management/Release_owners
