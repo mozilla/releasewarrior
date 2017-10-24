@@ -15,4 +15,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- rail: The updates builder failed because we had to partials for version less than 56.0, so the bz2 blob top-level submission failed. Fixed in https://bugzilla.mozilla.org/show_bug.cgi?id=1395697#c48 and has been rerun.
