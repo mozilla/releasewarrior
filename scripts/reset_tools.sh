@@ -7,7 +7,5 @@ fi
 
 K=$1
 
-echo $K
-
 ssh -i $K stage-ffxbld_private_key_location stage-ffxbld@hg.mozilla.org edit tools 1 YES
 ssh -i $K stage-ffxbld@hg.mozilla.org clone tools build/tools
