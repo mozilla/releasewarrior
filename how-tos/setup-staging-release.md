@@ -34,7 +34,7 @@ hg -R build/jamun out -r . jamun
 hg -R build/jamun push
 ```
 
-Optional: reset the staging tools repo using this <a href="../scripts/reset_tools.sh">script</a> to ensure you are using the same version as production.  You'll have to update the script with the location of your key.
+Optional: reset the staging tools repo using this <a href="../scripts/reset_tools.sh">script</a> to ensure you are using the same version as production.
 
 ## Staging tools
 
