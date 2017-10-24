@@ -20,3 +20,4 @@
 - jlund: REQUIREMENT: update balrog rules to reflect requirements defined here: https://docs.google.com/document/d/1_b3SuHiMZn141jM_MHw9sclm8nkn_COrlbHF44NIWKY/edit\#heading\=h.g14w5uu682r0
 - jlund: REQUIREMENT: re: balrog rules - all users should watershed off 56.0. https://aus4-admin.mozilla.org/rules/624  stays the same
 - jlund: REQUIREMENT: re: balrog rules - no users receive 56.0.1 so update https://aus4-admin.mozilla.org/rules/659 to point to 56.0.2 (seperate release blob if we need bug migration partials from [Bug 1411428](https://bugzil.la/1411428))
+- jlund: REQUIREMENT: re: balrog rules - all non eligible win32 migration users and every other platform should go from 56.0 watershed to 56.0.2 with WNP for quantum preview. Same WNP as 56.0.1
