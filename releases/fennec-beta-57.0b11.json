@@ -7,8 +7,8 @@
             "graphid_2": "VSopHNqjSw6aMIF7SPuuUg",
             "human_tasks": {
                 "candidates": true,
-                "publish": false,
-                "pushapk": false,
+                "publish": true,
+                "pushapk": true,
                 "shipit": true
             },
             "issues": []
