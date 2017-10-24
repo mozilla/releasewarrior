@@ -5,9 +5,9 @@
             "buildnum": 1,
             "graphid": "KNighdbrTYmcXMTOJZ-J8g",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "nthomas: mac repack 2/10 - T_PuXXn7RfKmoWdnPO8lew - hang in tc upload, rerun"
