@@ -15,7 +15,7 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- beetmover failures building a wheel for cryptography package, we'll do a build2 with the fix from [bug 1410960](https://bugzilla.mozilla.org/show_bug.cgi?id=1410960)
 ## Build 2
 
 ### Beta Graph
