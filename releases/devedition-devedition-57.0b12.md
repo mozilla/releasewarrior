@@ -30,4 +30,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: Rerun beetmover En1p4KMoTJaFrW4uN2LFYQ & SaatrjEBTBiWWUTCIKVfBw for `Error: Error loading docker image. socket hang up`

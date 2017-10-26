@@ -22,7 +22,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: Rerun beetmover En1p4KMoTJaFrW4uN2LFYQ & SaatrjEBTBiWWUTCIKVfBw for `Error: Error loading docker image. socket hang up`"
+            ]
         }
     ],
     "date": "2017-10-27",
