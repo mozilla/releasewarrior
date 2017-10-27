@@ -28,4 +28,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: mac signing server timeouts hit 2 locales in mac repacks (aveVfXrAT1yTTq1g5-ZgZw, Lf9KJU55SIuY20zrfDzhOw) and artifacts tasks (JtFXWF5wR_28gBZT33zhkg, c3uf8PRpThGR94ZELyTcNA). Possibly overall signing load for dep & nightly & release, reran tasks
