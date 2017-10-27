@@ -24,8 +24,10 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+- [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
 - nthomas: mac signing server timeouts hit 2 locales in mac repacks (aveVfXrAT1yTTq1g5-ZgZw, Lf9KJU55SIuY20zrfDzhOw) and artifacts tasks (JtFXWF5wR_28gBZT33zhkg, c3uf8PRpThGR94ZELyTcNA). Possibly overall signing load for dep & nightly & release, reran tasks
+- jlorenzo: Reran YhWJ1MTdRAWUQpr-V1tQWg for intermittent download error. http://archive.mozilla.org/pub/firefox/candidates/57.0b12-candidates/build2/update/win32/gd/firefox-57.0b12.complete.mar didn't have the right size. I downloaded manually and checked the file was correct on my end
+- jlorenzo: YhWJ1MTdRAWUQpr-V1tQWg hung for another download error: <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion. I reran it. While the job was still running, I shipped the release because this failure remains infra-related
