@@ -26,9 +26,10 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+- [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
 - nthomas: Rerun beetmover En1p4KMoTJaFrW4uN2LFYQ & SaatrjEBTBiWWUTCIKVfBw for `Error: Error loading docker image. socket hang up`
 - nthomas: mac signing server timeouts hit 2 locales in mac repacks (YH8_OPgpSTSfv6X2c4lsFQ, VLEvinNvRzy2htF1BqWfYg) and artifacts tasks (Cq8Q1gGaTLy3Z9w2PWWjWQ, d82MRzy7SbefU9hz2zla1w). Possibly overall signing load for dep & nightly & release, reran tasks
+- jlorenzo: Reran VkfovhwiRSGzRbGpjGO18Q for intermittent download error. https://archive.mozilla.org/pub/devedition/releases/57.0b11/win32/kab/Firefox Setup 57.0b11.exe wasn't available on the CDN
