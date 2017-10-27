@@ -21,12 +21,14 @@ Use cases:
 
 ## Merge scripts
 
-1. Use the <a href="../scripts/staging_merge.py">script</a>  to run the merge for you. Parameters are the directory to run the merge in, and the repos to merge_from, and merge_to.  For example:
+1.  See the doc <a href="merge-and-staging-instance.md">aws staging instance</a> to see if using a dedicated instance for staging releases would be helpful.
+
+2. Use the <a href="../scripts/staging_merge.py">script</a> to run the merge for you. Parameters are the directory to run the merge in, and the repos to merge_from, and merge_to.  For example:
 ```
 staging_merge.py merge_dir projects/maple projects/jamun
 ```
 
-2. The script should have created a diff. Check that everything is okay and push to jamun
+3. The script should have created a diff. Check that everything is okay and push to jamun
 ```sh
 hg -R build/jamun diff
 hg -R build/jamun commit -m "Uplift from central to jamun"

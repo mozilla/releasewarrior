@@ -32,15 +32,17 @@ graphlog=
 
 ## Day 1 - Prep day #1
 
-1. Make sure you have a fresh copy of [buildbot-configs](https://hg.mozilla.org/build/buildbot-configs/)
+1.  See the doc <a href="merge-and-staging-instance.md">AWS merge instance</a> to see if using a dedicated instance for merge day is helpful.
+
+2. Make sure you have a fresh copy of [buildbot-configs](https://hg.mozilla.org/build/buildbot-configs/)
 ```sh
 hg clone ssh://hg.mozilla.org/build/buildbot-configs/
 ```
-2. On the merge day bug, create two patches to bump [gecko_versions.json](https://dxr.mozilla.org/build-central/source/buildbot-configs/mozilla/gecko_versions.json). Get them reviewed but **don't land them yet**. Note that reviewboard can't land on buildbot-configs, you will need to push changes manually.
+3. On the merge day bug, create two patches to bump [gecko_versions.json](https://dxr.mozilla.org/build-central/source/buildbot-configs/mozilla/gecko_versions.json). Get them reviewed but **don't land them yet**. Note that reviewboard can't land on buildbot-configs, you will need to push changes manually.
    * patch 1: bump the version for **only mozilla-release**. It will serve Firefox's release candidate. [Example](https://reviewboard.mozilla.org/r/162518/diff/1#index_header).
    * patch 2: bump the remaining branches. This includes mozilla-beta, mozilla-central and comm-beta branches. [Example](https://bug1369535.bmoattachments.org/attachment.cgi?id=8892412).
 
-3. Do a no-op trial run of performing the mozilla-beta -> mozilla-release migration:
+4. Do a no-op trial run of performing the mozilla-beta -> mozilla-release migration:
 ```sh
 mkdir -p merge_day
 cd merge_day
@@ -48,7 +50,7 @@ wget https://hg.mozilla.org/build/tools/raw-file/default/buildfarm/utils/archive
 python archiver_client.py mozharness --destination mozharness-central --repo mozilla-central --rev default --debug  # Central must be used against every branch
 python mozharness-central/scripts/merge_day/gecko_migration.py -c merge_day/beta_to_release.py
  ```
-4. The script should have created changes, and we can make a diff:
+5. The script should have created changes, and we can make a diff:
 ```sh
 hg -R build/mozilla-release diff
 ```
