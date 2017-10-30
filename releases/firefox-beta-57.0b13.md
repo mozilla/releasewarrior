@@ -14,4 +14,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- jlund: bbb was wedged. failed win repack and updates builder failed to retry in bb because bbb didn't tell tc about failed run0. [Bug 1409445](https://bugzil.la/1409445) for updates builder issue and [Bug 1413025](https://bugzil.la/1413025) for bbb wedging
