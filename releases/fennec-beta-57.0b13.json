@@ -3,13 +3,13 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "UGOz57pJQMeRA4JgXz9o4A",
             "graphid_2": "",
             "human_tasks": {
                 "candidates": false,
                 "publish": false,
                 "pushapk": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
