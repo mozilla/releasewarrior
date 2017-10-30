@@ -3,7 +3,7 @@
 There is an AWS instance to run staging and merging instances so that we are fewer hops away from the hg repos.  
 
 To access it, you can either 
-1. Create an new instance with the AMI named "Mozilla release staging/merge machine".  I used a M3.large instance with 32 gb space added.
+1. Create an new instance with the AMI named ```Mozilla release staging/merge machine```.  I used a M3.large instance with 32 gb space added.
 2. Use the existing instance named "Mozilla release staging/merge machine"
 You will need a pem file to access them, the key for it is the usual location
 
