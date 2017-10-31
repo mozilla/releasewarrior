@@ -5,9 +5,9 @@
             "buildnum": 1,
             "graphid": "dpUz79QfR7ek4Efz0wWbxQ",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "jlund: bbb was wedged. failed win repack and updates builder failed to retry in bb because bbb didn't tell tc about failed run0. [Bug 1409445](https://bugzil.la/1409445) for updates builder issue and [Bug 1413025](https://bugzil.la/1413025) for bbb wedging",
