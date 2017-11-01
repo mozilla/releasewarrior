@@ -37,6 +37,7 @@ hg -R build/jamun push
 ```
 
 Optional: reset the staging tools repo using this <a href="../scripts/reset_tools.sh">script</a> to ensure you are using the same version as production.
+Optional: reset the staging balrog db which is important for staging release builds so they include recent point releases.  This can be done by making a GET to https://balrog-admin.stage.mozaws.net/__rebuilddb__  This step will take 10-15min to complete, You can confirm by comparing the state of the rules vs production.
 
 ## Staging tools
 
