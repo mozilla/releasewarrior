@@ -14,4 +14,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: Rerun mac l10n 7/10 (WWYZ0HH8TGOqhFJSelIk_g) for hang cloning l10n repo

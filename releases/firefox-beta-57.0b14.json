@@ -9,7 +9,9 @@
                 "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: Rerun mac l10n 7/10 (WWYZ0HH8TGOqhFJSelIk_g) for hang cloning l10n repo"
+            ]
         }
     ],
     "date": "2017-11-03",
