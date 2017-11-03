@@ -5,12 +5,13 @@
             "buildnum": 1,
             "graphid": "Y6ci5YaIRACpuA0cg0ogAQ",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
-                "nthomas: Rerun mac l10n 7/10 (WWYZ0HH8TGOqhFJSelIk_g) for hang cloning l10n repo"
+                "nthomas: Rerun mac l10n 7/10 (WWYZ0HH8TGOqhFJSelIk_g) for hang cloning l10n repo",
+                "jlorenzo: version bump (KFQQBgJPRFSSzKUUiboh5Q) failed because 58 is already in-tree. I manually tagged the repo and left the task failed."
             ]
         }
     ],
