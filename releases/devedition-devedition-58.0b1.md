@@ -6,13 +6,13 @@
 
 ### Beta Graph
 
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/FX5H-YZURx6zyN8KhJ5jlA)
 
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- jlorenzo: beetmover docker image (QzCop2FYSuSDmzFijtPtcg) failed to resolve clamav DNS. I reran the task.

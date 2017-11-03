@@ -3,13 +3,15 @@
         {
             "aborted": false,
             "buildnum": 1,
-            "graphid": "",
+            "graphid": "FX5H-YZURx6zyN8KhJ5jlA",
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "jlorenzo: beetmover docker image (QzCop2FYSuSDmzFijtPtcg) failed to resolve clamav DNS. I reran the task."
+            ]
         }
     ],
     "date": "2017-11-03",
