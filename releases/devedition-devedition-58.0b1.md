@@ -15,4 +15,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- jlorenzo: beetmover docker image (QzCop2FYSuSDmzFijtPtcg) failed to resolve clamav DNS. I reran the task.
+- jlorenzo: beetmover docker image (QzCop2FYSuSDmzFijtPtcg) timed out feching clamav. I reran the task.

@@ -10,7 +10,7 @@
                 "signoff": false
             },
             "issues": [
-                "jlorenzo: beetmover docker image (QzCop2FYSuSDmzFijtPtcg) failed to resolve clamav DNS. I reran the task."
+                "jlorenzo: beetmover docker image (QzCop2FYSuSDmzFijtPtcg) timed out fetching clamav. I reran the task."
             ]
         }
     ],
