@@ -12,3 +12,4 @@
 ### Issues
 - SPECIAL REQUIREMENT: Verify that the patches identified for thunderbird in [Bug 1397721](https://bugzilla.mozilla.org/show_bug.cgi?id=1397721#c17) has landed and reconfigured.
 - POTENTIAL ISSUE: Cross-Channel L10n new in this release, should use l10n-central repo. See [Bug 1397721](https://bugzil.la/1397721)
+- callek: [Bug 1414939](https://bugzil.la/1414939) - Filed because of failed release sanity for TB 57.0b1, this is because we didn't land the patch to enable l10n-central.
