@@ -55,3 +55,11 @@ Optional: reset the staging balrog db which is important for staging release bui
 
 - TODO Release runner is smart. It only takes into account the Tier1 stuff.
 - Update verify tests are flaky and we need to invest some time to make them work. Our assumption is that we need to better flip variables [here](https://dxr.mozilla.org/mozilla-central/rev/7d2e89fb92331d7e4296391213c1e63db628e046/testing/mozharness/configs/releases/dev_updates_firefox_beta.py)
+
+
+## Running staging release for releases
+
+A few issues encountered while running releases for the 57.0 release on the jamun branch:
+- Configs need to be updated for the branch here so we can run staging runs https://bug1413910.bmoattachments.org/attachment.cgi?id=8924543
+- Also, this issue arose with bump configs https://bugzilla.mozilla.org/show_bug.cgi?id=1413910#c13
+- The staging tools repo needs to have the jamun patcher configs updated https://bugzilla.mozilla.org/show_bug.cgi?id=1413910#c9
