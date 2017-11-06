@@ -63,3 +63,4 @@ A few issues encountered while running releases for the 57.0 release on the jamu
 - Configs need to be updated for the branch here so we can run staging runs https://bug1413910.bmoattachments.org/attachment.cgi?id=8924543
 - Also, this issue arose with bump configs https://bugzilla.mozilla.org/show_bug.cgi?id=1413910#c13
 - The staging tools repo needs to have the jamun patcher configs updated https://bugzilla.mozilla.org/show_bug.cgi?id=1413910#c9
+- Also, the ship-it dev instance needs to have the previous releases that you are requesting partials from available. You can add the releases in as pending builds and then ask someone with db access to mark them as complete.  This allows the release sanity to complete, otherwise it will complain about the missing releases for ithe specified partials.
