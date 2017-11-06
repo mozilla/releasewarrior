@@ -11,7 +11,9 @@
                 "pushapk": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "nthomas: We forgot to bump version_display.txt to 57.0b15 after 57.0b14, so the initial revision wasn't usuable. RyanVM landed ca8382300eb7 in beta"
+            ]
         }
     ],
     "date": "2017-11-07",

@@ -16,4 +16,4 @@
 - [ ] [published release tasks](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Post-release_tasks)
 
 ### Issues
-- none
+- nthomas: We forgot to bump version_display.txt to 57.0b15 after 57.0b14, so the initial revision wasn't usuable. RyanVM landed ca8382300eb7 in beta
