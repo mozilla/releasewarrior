@@ -60,7 +60,7 @@ Optional: reset the staging balrog db which is important for staging release bui
 ## Running staging release for releases
 
 A few issues encountered while running releases for the 57.0 release on the jamun branch:
-- Configs need to be updated for the branch here so we can run staging runs https://bug1413910.bmoattachments.org/attachment.cgi?id=8924543
-- Also, this issue arose with bump configs https://bugzilla.mozilla.org/show_bug.cgi?id=1413910#c13
-- The staging tools repo needs to have the jamun patcher configs updated https://bugzilla.mozilla.org/show_bug.cgi?id=1413910#c9
+- Configs need to be updated for the branch <a href="https://bug1413910.bmoattachments.org/attachment.cgi?id=8924543">here</a> so we can run staging runs.
+- Also, this issue arose with <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1413910#c13">bump configs</a>
+- The staging tools repo needs to have <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1413910#c9">the jamun patcher configs updated</a>.
 - Also, the ship-it dev instance needs to have the previous releases that you are requesting partials from available. You can add the releases in as pending builds and then ask someone with db access to mark them as complete.  This allows the release sanity to complete, otherwise it will complain about the missing releases for ithe specified partials.
