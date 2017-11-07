@@ -38,4 +38,4 @@ task graph url: unknown
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- callek: [Bug 1415268](https://bugzil.la/1415268) - ISE when submitting build 2 via shipit
+- callek: [Bug 1415268](https://bugzil.la/1415268) - ISE when submitting build 2 via shipit. Addressed for build2 by not submitting as many partials
