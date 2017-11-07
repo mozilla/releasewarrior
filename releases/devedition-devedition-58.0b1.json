@@ -7,7 +7,7 @@
             "human_tasks": {
                 "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "jlorenzo: beetmover docker image (QzCop2FYSuSDmzFijtPtcg) timed out fetching clamav. I reran the task.",
