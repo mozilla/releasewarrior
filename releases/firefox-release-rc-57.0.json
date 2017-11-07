@@ -6,7 +6,7 @@
             "graphid": "C4u-oWlDRqSU3QIYaIFv6Q",
             "graphid_2": "",
             "human_tasks": {
-                "beta": false,
+                "beta": true,
                 "betasignoff": false,
                 "mirrors": false,
                 "publish": false,
