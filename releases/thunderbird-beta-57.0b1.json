@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "human_tasks": {
                 "publish": false,
@@ -15,6 +15,16 @@
                 "nthomas: release-comm-beta-thunderbird_push_to_mirrors ran, but failed early and didn't have any effect. Probably the very rare scheduling strangeness we've never been able to pin down in buildbot releases",
                 "callek: Hit a bunch of different l10n issues tracked in  [Bug 1415057](https://bugzil.la/1415057), [Bug 1415058](https://bugzil.la/1415058), [Bug 1415064](https://bugzil.la/1415064). Will require a build2"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-11-06",
