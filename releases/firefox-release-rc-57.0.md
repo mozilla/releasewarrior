@@ -27,3 +27,4 @@ task graph url: unknown
 - SPECIAL REQUIREMENT: Block updates for users with old JAWS software using the 'JAWS Screen Reader Compatibility' boolean on Balrog rules. See bugs 1402376, 1402411
 - nthomas: win32 EME repacks (LH5h1BHURBuFZuQ87yt4kg) had a '3600 seconds without output' hang, rerun
 - nthomas: release update verify 4,5,6,7,8/12 failed due to expecting 56.0 to be offered 57.0 instead of 56.0.2. We need to set up release-localtest.
+- callek: [Bug 1415276](https://bugzil.la/1415276) - Unable to publish to beta channel: KeyError: 'bz2_blob_suffix'
