@@ -17,3 +17,4 @@
 ### Issues
 - jlorenzo: beetmover docker image (QzCop2FYSuSDmzFijtPtcg) timed out fetching clamav. I reran the task.
 - callek: Had to manually recreate balrog submit, mark as shipped and bouncer tasks, because the human decision task reached deadline-expired. Tasks [DlDYrZwaTDuREH2O6H13qg](https://tools.taskcluster.net/groups/DlDYrZwaTDuREH2O6H13qg/tasks/DlDYrZwaTDuREH2O6H13qg/details) [VTO9PdqiQz6sxPH7WmyqKw](https://tools.taskcluster.net/groups/VTO9PdqiQz6sxPH7WmyqKw/tasks/VTO9PdqiQz6sxPH7WmyqKw/details) [ZQvBGWgTTySBNSRwMZ6dIw](https://tools.taskcluster.net/groups/ZQvBGWgTTySBNSRwMZ6dIw/tasks/ZQvBGWgTTySBNSRwMZ6dIw/details).
+- callek: [Bug 1415288](https://bugzil.la/1415288) - Product details doesn't know about 58.0b1 as a primary version causing issues with deved availability.
