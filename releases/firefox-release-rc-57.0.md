@@ -25,3 +25,4 @@ task graph url: unknown
 - SPECIAL REQUIREMENT: Verify that the release patch identified in [Bug 1397721](https://bugzilla.mozilla.org/show_bug.cgi?id=1397721#c17) has landed and reconfigured.
 - POTENTIAL ISSUE: Cross-Channel L10n new in this release, should use l10n-central repo. See [Bug 1397721](https://bugzil.la/1397721)
 - SPECIAL REQUIREMENT: Block updates for users with old JAWS software using the 'JAWS Screen Reader Compatibility' boolean on Balrog rules. See bugs 1402376, 1402411
+- nthomas: win32 EME repacks (LH5h1BHURBuFZuQ87yt4kg) had a '3600 seconds without output' hang, rerun
