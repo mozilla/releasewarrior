@@ -7,7 +7,7 @@
             "graphid_2": "",
             "human_tasks": {
                 "beta": true,
-                "betasignoff": false,
+                "betasignoff": true,
                 "mirrors": false,
                 "publish": false,
                 "shipit": true,
