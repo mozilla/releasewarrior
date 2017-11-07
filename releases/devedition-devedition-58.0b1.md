@@ -15,4 +15,5 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- jlorenzo: beetmover docker image (QzCop2FYSuSDmzFijtPtcg) timed out feching clamav. I reran the task.
+- jlorenzo: beetmover docker image (QzCop2FYSuSDmzFijtPtcg) timed out fetching clamav. I reran the task.
+- callek: Had to manually recreate balrog submit, mark as shipped and bouncer tasks, because the human decision task reached deadline-expired. Tasks [DlDYrZwaTDuREH2O6H13qg](https://tools.taskcluster.net/groups/DlDYrZwaTDuREH2O6H13qg/tasks/DlDYrZwaTDuREH2O6H13qg/details) [VTO9PdqiQz6sxPH7WmyqKw](https://tools.taskcluster.net/groups/VTO9PdqiQz6sxPH7WmyqKw/tasks/VTO9PdqiQz6sxPH7WmyqKw/details) [ZQvBGWgTTySBNSRwMZ6dIw](https://tools.taskcluster.net/groups/ZQvBGWgTTySBNSRwMZ6dIw/tasks/ZQvBGWgTTySBNSRwMZ6dIw/details).
