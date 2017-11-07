@@ -14,3 +14,4 @@
 - POTENTIAL ISSUE: Cross-Channel L10n new in this release, should use l10n-central repo. See [Bug 1397721](https://bugzil.la/1397721)
 - callek: [Bug 1414939](https://bugzil.la/1414939) - Filed because of failed release sanity for TB 57.0b1, this is because we didn't land the patch to enable l10n-central.
 - nthomas: release-comm-beta-thunderbird_push_to_mirrors ran, but failed early and didn't have any effect. Probably the very rare scheduling strangeness we've never been able to pin down in buildbot releases
+- callek: Hit a bunch of different l10n issues tracked in  [Bug 1415057](https://bugzil.la/1415057), [Bug 1415058](https://bugzil.la/1415058), [Bug 1415064](https://bugzil.la/1415064). Will require a build2
