@@ -6,7 +6,7 @@
 :bomb: _aborted release. starting new build num_ :bomb:
 
 ### ESR Graph 1
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/GqVVU9g_Tj2Q92UD0mbp_g)
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
