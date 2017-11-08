@@ -31,3 +31,4 @@ task graph url: unknown
 - callek: [Bug 1415276](https://bugzil.la/1415276) - Unable to publish to beta channel: KeyError: 'bz2_blob_suffix'
 - callek: Due to [Bug 1415276](https://bugzil.la/1415276) manually inspected that the rc was published to balrog.
 - bhearsum: Backed out [Bug 1415172](https://bugzil.la/1415172) because chunked update verify doesn't support multiple 'to' versions in the same config
+- bhearsum: Another round of fixes in [Bug 1415557](https://bugzil.la/1415557) to work around issues with SYSTEM_CAPABILITIES and update verify
