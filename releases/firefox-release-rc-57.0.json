@@ -60,7 +60,9 @@
                 "signoff": false,
                 "wnp": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: funsize-update-generator docker image (ZhhoQjUdSauGrCMc2QEMNA) hit a hang while installing packages, reran"
+            ]
         }
     ],
     "date": "2017-11-06",
