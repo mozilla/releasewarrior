@@ -21,10 +21,12 @@
             "buildnum": 2,
             "human_tasks": {
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: Mac repacks not fixed, reopened [Bug 1415058](https://bugzil.la/1415058)"
+            ]
         }
     ],
     "date": "2017-11-06",
