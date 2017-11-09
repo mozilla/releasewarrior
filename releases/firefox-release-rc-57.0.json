@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "C4u-oWlDRqSU3QIYaIFv6Q",
             "graphid_2": "",
@@ -27,6 +27,22 @@
                 "bhearsum: Another round of fixes in [Bug 1415557](https://bugzil.la/1415557) to work around issues with SYSTEM_CAPABILITIES and update verify",
                 "jlorenzo: From now on, you can use this script to generate win64 blob (completes only) https://hg.mozilla.org/build/braindump/file/1cbcb486015e/releases-related/create_win64_migration_blob.py"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "betasignoff": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false,
+                "signoff": false,
+                "wnp": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-11-06",

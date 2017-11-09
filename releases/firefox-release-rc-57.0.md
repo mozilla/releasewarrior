@@ -3,6 +3,7 @@
 ### Started: 2017-11-06
 
 ## Build 1
+:bomb: _aborted release. starting new build num_ :bomb:
 
 ### RC graph 1
 [task group](https://tools.taskcluster.net/push-inspector/#/C4u-oWlDRqSU3QIYaIFv6Q)
@@ -33,3 +34,24 @@ task graph url: unknown
 - bhearsum: Backed out [Bug 1415172](https://bugzil.la/1415172) because chunked update verify doesn't support multiple 'to' versions in the same config
 - bhearsum: Another round of fixes in [Bug 1415557](https://bugzil.la/1415557) to work around issues with SYSTEM_CAPABILITIES and update verify
 - jlorenzo: From now on, you can use this script to generate win64 blob (completes only) https://hg.mozilla.org/build/braindump/file/1cbcb486015e/releases-related/create_win64_migration_blob.py
+## Build 2
+
+### RC graph 1
+task graph url: unknown
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### RC graph 2
+task graph url: unknown
+
+#### Status
+- [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
+- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none
