@@ -15,4 +15,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: Canceled mark as shipped task (c8c1mB8kRZiD-0p5M6k-ag) because we elected to not deploy [Bug 1415288](https://bugzil.la/1415288) in the change freeze
