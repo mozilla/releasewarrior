@@ -16,13 +16,13 @@
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
-            "graphid_2": "",
+            "graphid": "BYWW8iI0SZmqK4aoxe_BDw",
+            "graphid_2": "fxGv7RM5Si-_PGb17TxRKA",
             "human_tasks": {
                 "candidates": false,
                 "publish": false,
                 "pushapk": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
