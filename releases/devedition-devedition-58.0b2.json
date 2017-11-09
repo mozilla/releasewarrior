@@ -10,7 +10,8 @@
                 "signoff": false
             },
             "issues": [
-                "nthomas: Canceled mark as shipped task (c8c1mB8kRZiD-0p5M6k-ag) because we elected to not deploy [Bug 1415288](https://bugzil.la/1415288) in the change freeze"
+                "nthomas: Canceled mark as shipped task (c8c1mB8kRZiD-0p5M6k-ag) because we elected to not deploy [Bug 1415288](https://bugzil.la/1415288) in the change freeze",
+                "nthomas: [Bug 1416053](https://bugzil.la/1416053) - new locale ne-NP not getting offers of partial update from 58.0b1, breaking update verify and final verify on all platforms. Adjust Devedition-58.0b1-build1, and rerun"
             ]
         }
     ],
