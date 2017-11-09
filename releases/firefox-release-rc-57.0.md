@@ -16,7 +16,7 @@
 task graph url: unknown
 
 #### Status
-- [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
+- [x] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
 - [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
 - [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
@@ -32,3 +32,4 @@ task graph url: unknown
 - callek: Due to [Bug 1415276](https://bugzil.la/1415276) manually inspected that the rc was published to balrog.
 - bhearsum: Backed out [Bug 1415172](https://bugzil.la/1415172) because chunked update verify doesn't support multiple 'to' versions in the same config
 - bhearsum: Another round of fixes in [Bug 1415557](https://bugzil.la/1415557) to work around issues with SYSTEM_CAPABILITIES and update verify
+- jlorenzo: From now on, you can use this script to generate win64 blob (completes only) https://hg.mozilla.org/build/braindump/file/1cbcb486015e/releases-related/create_win64_migration_blob.py

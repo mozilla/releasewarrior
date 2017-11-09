@@ -12,7 +12,7 @@
                 "publish": false,
                 "shipit": true,
                 "signoff": false,
-                "wnp": false
+                "wnp": true
             },
             "issues": [
                 "SPECIAL REQUIREMENT: Verify that the release patch identified in [Bug 1397721](https://bugzilla.mozilla.org/show_bug.cgi?id=1397721#c17) has landed and reconfigured.",
@@ -24,7 +24,8 @@
                 "callek: [Bug 1415276](https://bugzil.la/1415276) - Unable to publish to beta channel: KeyError: 'bz2_blob_suffix'",
                 "callek: Due to [Bug 1415276](https://bugzil.la/1415276) manually inspected that the rc was published to balrog.",
                 "bhearsum: Backed out [Bug 1415172](https://bugzil.la/1415172) because chunked update verify doesn't support multiple 'to' versions in the same config",
-                "bhearsum: Another round of fixes in [Bug 1415557](https://bugzil.la/1415557) to work around issues with SYSTEM_CAPABILITIES and update verify"
+                "bhearsum: Another round of fixes in [Bug 1415557](https://bugzil.la/1415557) to work around issues with SYSTEM_CAPABILITIES and update verify",
+                "jlorenzo: From now on, you can use this script to generate win64 blob (completes only) https://hg.mozilla.org/build/braindump/file/1cbcb486015e/releases-related/create_win64_migration_blob.py"
             ]
         }
     ],
