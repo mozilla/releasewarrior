@@ -29,7 +29,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 2,
             "graphid": "GOcOYRZQRqqtMKq09A-1sg",
             "graphid_2": "",
@@ -39,6 +39,24 @@
                 "mirrors": false,
                 "publish": false,
                 "shipit": true,
+                "signoff": false,
+                "wnp": false
+            },
+            "issues": [
+                "nthomas: 55.0.3 partial left out of ship-it, fix that in build3"
+            ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 3,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "beta": false,
+                "betasignoff": false,
+                "mirrors": false,
+                "publish": false,
+                "shipit": false,
                 "signoff": false,
                 "wnp": false
             },
