@@ -37,10 +37,10 @@ task graph url: unknown
 ## Build 2
 
 ### RC graph 1
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/GOcOYRZQRqqtMKq09A-1sg)
 
 #### Status
-- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
 - [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#4-publish-release)
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 

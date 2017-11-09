@@ -31,14 +31,14 @@
         {
             "aborted": false,
             "buildnum": 2,
-            "graphid": "",
+            "graphid": "GOcOYRZQRqqtMKq09A-1sg",
             "graphid_2": "",
             "human_tasks": {
                 "beta": false,
                 "betasignoff": false,
                 "mirrors": false,
                 "publish": false,
-                "shipit": false,
+                "shipit": true,
                 "signoff": false,
                 "wnp": false
             },
