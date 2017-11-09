@@ -32,7 +32,7 @@ task graph url: unknown
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] emailed candidates
+- [x] emailed candidates
 - [ ] [run pushapk](https://github.com/mozilla/releasewarrior/blob/master/how-tos/relpro.md#2-push-to-google-play-store)
 - [ ] [push to mirrors and publish release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/relpro.md#3-push-to-releases-dir-mirrors)
 
