@@ -79,3 +79,4 @@ task graph url: unknown
 - nthomas: funsize-update-generator docker image (ZhhoQjUdSauGrCMc2QEMNA) hit a hang while installing packages, reran
 - nthomas: See [1413645#c4](https://bugzilla.mozilla.org/show_bug.cgi?id=1413645#c4) for generation of releases for Balrog. Updated release-localtest and release-cdntest channels to point to build3 releases
 - jlund: nick reapplied  https://hg.mozilla.org/build/tools/pushloghtml\?fromchange\=085f6a772dad\&tochange\=59f08d95025a patcher patches that ben did
+- jlund: reran all failed UV tasks via aki's braindump tc-filter.py
