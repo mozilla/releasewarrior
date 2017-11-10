@@ -12,7 +12,8 @@
             "issues": [
                 "callek: Had to manually land the version_display.txt bump due to no bump existing, and revised the ship-it revision. Landed on both 'default' and a used relbranch because we were explicitly not taking tip of default for this beta.",
                 "nthomas: Canceled mark as shipped task (c8c1mB8kRZiD-0p5M6k-ag) because we elected to not deploy [Bug 1415288](https://bugzil.la/1415288) in the change freeze",
-                "nthomas: [Bug 1416053](https://bugzil.la/1416053) - new locale ne-NP not getting offers of partial update from 58.0b1, breaking update verify and final verify on all platforms. Adjust Devedition-58.0b1-build1, and rerun"
+                "nthomas: [Bug 1416053](https://bugzil.la/1416053) - new locale ne-NP not getting offers of partial update from 58.0b1, breaking update verify and final verify on all platforms. Adjust Devedition-58.0b1-build1, and rerun",
+                "nthomas: win64 l10n repack 10/10 (SCuadzcTSC2XE2pRknKnLA) was perma pending (on Run 1) even though the artifacts task was done. Possible some message got lost after AWS price spikes and buildbot retries. Marked completed"
             ]
         }
     ],
