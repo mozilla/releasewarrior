@@ -52,7 +52,7 @@
             "graphid": "RZgN6UbnR_SQ5wjBVvqMNw",
             "graphid_2": "",
             "human_tasks": {
-                "beta": false,
+                "beta": true,
                 "betasignoff": false,
                 "mirrors": false,
                 "publish": false,
