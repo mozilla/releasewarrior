@@ -25,3 +25,4 @@
 
 ### Issues
 - nthomas: Mac repacks not fixed, reopened [Bug 1415058](https://bugzil.la/1415058)
+- callek: OSX repacks reran via self-serve after the buildbot fix deployed.
