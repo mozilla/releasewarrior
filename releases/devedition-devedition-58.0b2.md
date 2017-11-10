@@ -21,3 +21,4 @@
 - nthomas: win64 l10n repack 10/10 (SCuadzcTSC2XE2pRknKnLA) was perma pending (on Run 1) even though the artifacts task was done. Possible some message got lost after AWS price spikes and buildbot retries. Marked completed
 - callek: QE had download issues getting 58.0b1-->58.0b2. Investigation led to this being a regression from [Bug 1348087](https://bugzil.la/1348087), and is filed as [Bug 1416295](https://bugzil.la/1416295)
 - callek: At relmans request reverted devedition updates to point at 57.0b14 and reverted bouncer aliases to point -latest at deved 57b14 as well.
+- callek: Due to the QE update issues and the present-in-b2 [Bug 1415214](https://bugzil.la/1415214) regression. Relman has decided to abort deved-b2 entirely.
