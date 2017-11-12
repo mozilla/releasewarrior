@@ -84,7 +84,7 @@ task graph url: unknown
 ## Build 4
 
 ### RC graph 1
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/MdIY9Q9oTBSGeGb3aZD-Hg)
 
 #### Status
 - [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
