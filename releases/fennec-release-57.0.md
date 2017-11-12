@@ -47,7 +47,7 @@ task graph url: unknown
 [task group](https://tools.taskcluster.net/push-inspector/#/c_1ed3y2Tfiyl-zWCq8XQg)
 
 ### Release graph 2
-task graph url: unknown
+[task group](https://tools.taskcluster.net/push-inspector/#/dcN3UtdNQpWxoi5qz5p17Q)
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
