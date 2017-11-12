@@ -32,7 +32,7 @@
             "graphid": "c_1ed3y2Tfiyl-zWCq8XQg",
             "graphid_2": "dcN3UtdNQpWxoi5qz5p17Q",
             "human_tasks": {
-                "candidates": false,
+                "candidates": true,
                 "publish": false,
                 "pushapk": false,
                 "shipit": true
