@@ -57,6 +57,7 @@ task graph url: unknown
 ### Issues
 - nthomas: 55.0.3 partial left out of ship-it, fix that in build3
 ## Build 3
+:bomb: _aborted release. starting new build num_ :bomb:
 
 ### RC graph 1
 [task group](https://tools.taskcluster.net/push-inspector/#/RZgN6UbnR_SQ5wjBVvqMNw)
@@ -80,3 +81,24 @@ task graph url: unknown
 - nthomas: See [1413645#c4](https://bugzilla.mozilla.org/show_bug.cgi?id=1413645#c4) for generation of releases for Balrog. Updated release-localtest and release-cdntest channels to point to build3 releases
 - jlund: nick reapplied  https://hg.mozilla.org/build/tools/pushloghtml\?fromchange\=085f6a772dad\&tochange\=59f08d95025a patcher patches that ben did
 - jlund: reran all failed UV tasks via aki's braindump tc-filter.py
+## Build 4
+
+### RC graph 1
+task graph url: unknown
+
+#### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [publish in Balrog on Beta channel](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### RC graph 2
+task graph url: unknown
+
+#### Status
+- [ ] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
+- [ ] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
+- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
+
+### Issues
+- none
