@@ -36,7 +36,9 @@
                 "publish": false,
                 "shipit": false
             },
-            "issues": []
+            "issues": [
+                "asasaki: [Bug 1416840](https://bugzil.la/1416840) - more missing scopes"
+            ]
         }
     ],
     "date": "2017-11-13",

@@ -43,4 +43,4 @@
 - [ ] [published release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#publish-release)
 
 ### Issues
-- none
+- asasaki: [Bug 1416840](https://bugzil.la/1416840) - more missing scopes
