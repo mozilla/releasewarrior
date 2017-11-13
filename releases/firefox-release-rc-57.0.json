@@ -71,15 +71,15 @@
             "aborted": false,
             "buildnum": 4,
             "graphid": "MdIY9Q9oTBSGeGb3aZD-Hg",
-            "graphid_2": "",
+            "graphid_2": "O29EnOTETYysld8mHpQ0VQ",
             "human_tasks": {
-                "beta": false,
+                "beta": true,
                 "betasignoff": false,
-                "mirrors": false,
+                "mirrors": true,
                 "publish": false,
                 "shipit": true,
                 "signoff": false,
-                "wnp": false
+                "wnp": true
             },
             "issues": []
         }
