@@ -49,7 +49,9 @@
                 "publish": false,
                 "shipit": true
             },
-            "issues": []
+            "issues": [
+                "asasaki: No email notification sent"
+            ]
         }
     ],
     "date": "2017-11-13",

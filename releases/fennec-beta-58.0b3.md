@@ -57,4 +57,4 @@
 - [ ] [published release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#publish-release)
 
 ### Issues
-- none
+- asasaki: No email notification sent
