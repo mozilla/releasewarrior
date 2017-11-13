@@ -74,7 +74,7 @@
             "graphid_2": "O29EnOTETYysld8mHpQ0VQ",
             "human_tasks": {
                 "beta": true,
-                "betasignoff": false,
+                "betasignoff": true,
                 "mirrors": true,
                 "publish": false,
                 "shipit": true,
