@@ -28,7 +28,7 @@
             ]
         },
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 3,
             "graphid": "",
             "graphid_2": "",
@@ -39,6 +39,17 @@
             "issues": [
                 "asasaki: [Bug 1416840](https://bugzil.la/1416840) - more missing scopes"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 4,
+            "graphid": "",
+            "graphid_2": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-11-13",

@@ -32,6 +32,7 @@
 ### Issues
 - asasaki: [Bug 1416840](https://bugzil.la/1416840) - missing release scopes
 ## Build 3
+:bomb: _**aborted release. starting new build num**_ :bomb:
 
 
 ### Beta Graph
@@ -44,3 +45,16 @@
 
 ### Issues
 - asasaki: [Bug 1416840](https://bugzil.la/1416840) - more missing scopes
+## Build 4
+
+
+### Beta Graph
+- first task graph url: unknown
+- second task graph url: unknown
+
+### Status
+- [ ] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
+- [ ] [published release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#publish-release)
+
+### Issues
+- none
