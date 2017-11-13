@@ -15,3 +15,4 @@
 
 ### Issues
 - POTENTIAL ISSUE: Please validate beta repo has appropriate [version_display.txt](https://hg.mozilla.org/releases/mozilla-beta/file/default/browser/config/version_display.txt). Should be 58.0b3
+- asasaki: [Bug 1416812](https://bugzil.la/1416812) - relpro decision task fails with UnboundLocalError
