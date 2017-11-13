@@ -43,11 +43,11 @@
         {
             "aborted": false,
             "buildnum": 4,
-            "graphid": "",
+            "graphid": "UruW-tHOTzCcKzuLxAfVIA",
             "graphid_2": "",
             "human_tasks": {
                 "publish": false,
-                "shipit": false
+                "shipit": true
             },
             "issues": []
         }
