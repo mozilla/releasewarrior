@@ -39,3 +39,4 @@ task graph url: unknown
 
 ### Issues
 - callek: [Bug 1415268](https://bugzil.la/1415268) - ISE when submitting build 2 via shipit. Addressed for build2 by not submitting as many partials
+- callek: Final Verify failed due to a bad tools checkout. Reran with tc cli
