@@ -40,16 +40,16 @@ See https://github.com/mozilla/releasewarrior/blob/master/how-tos/mergeduty.md#a
 
 ## Central Version Bump
 ### Mon, Nov 13th, 2017
-- [ ] wait for go from relman to bump m-c
-- [ ] [bump m-c version in bbot](https://reviewboard.mozilla.org/r/182238/diff/1#index_header) and reconfig
-- [ ] [bump m-c](https://hg.mozilla.org/mozilla-central/rev/835a92b19e3d)
+- [X] wait for go from relman to bump m-c
+- [X] [bump m-c version in bbot](https://bug1407602.bmoattachments.org/attachment.cgi?id=8924910) and reconfig
+- [X] [bump m-c](https://hg.mozilla.org/mozilla-central/rev/6371e71153c8) (RyanVM)
 - [x] no need to trigger nightlies because we do nightlies twice a day now
-- [ ] [bump wiki versions](https://github.com/mozilla/releasewarrior/blob/master/how-tos/mergeduty.md#update-wikis) - now that central is bumped, we can run this script
-- [ ] email that this has been done
+- [X] [bump wiki versions](https://github.com/mozilla/releasewarrior/blob/master/how-tos/mergeduty.md#update-wikis) - now that central is bumped, we can run this script
+- [X] email that this has been done
 
 
 ## Update Bouncer entries for nightly
 ### Tues, Nov 14th, 2017
 
-- [ ] once we have new nightlies, we can [update bouncer entries](https://github.com/mozilla/releasewarrior/blob/master/how-tos/mergeduty.md#bump-bouncer-versions)
+- [X] once we have new nightlies, we can [update bouncer entries](https://github.com/mozilla/releasewarrior/blob/master/how-tos/mergeduty.md#bump-bouncer-versions)
 - [ ] Update this documentation with any new changes: https://wiki.mozilla.org/ReleaseEngineering/Merge_Duty  !!!
