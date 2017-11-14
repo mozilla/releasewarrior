@@ -35,7 +35,7 @@ task graph url: unknown
 #### Status
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+- [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
 - callek: [Bug 1415268](https://bugzil.la/1415268) - ISE when submitting build 2 via shipit. Addressed for build2 by not submitting as many partials
