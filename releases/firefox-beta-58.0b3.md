@@ -29,3 +29,4 @@
 
 ### Issues
 - nthomas: [Bug 1416963](https://bugzil.la/1416963) for the CDN purge
+- nthomas: Reran win32 repack 6/10 (BrBWPPb-QAqLOMOeBMqCWQ) for hang cloning beta
