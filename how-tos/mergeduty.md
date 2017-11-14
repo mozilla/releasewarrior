@@ -224,8 +224,8 @@ Entries in the wiki have been also updated.
     1. [firefox-nightly-latest-ssl](https://bounceradmin.mozilla.com/admin/mirror/location/?product__id__exact=6508)
     1. [firefox-nightly-latest-l10n](https://bounceradmin.mozilla.com/admin/mirror/location/?product__id__exact=6506)
     1. [firefox-nightly-latest-l10n-ssl](https://bounceradmin.mozilla.com/admin/mirror/location/?product__id__exact=6507)
-    1. [firefox-nightly-stub](https://bounceradmin.mozilla.com/admin/mirror/location/?product__id__exact=6509)
-    1. [firefox-nightly-stub-l10n](https://bounceradmin.mozilla.com/admin/mirror/location/?product__id__exact=6512)
+
+:note: stub bouncer products no longer require update as they don't specify version in value
 
 
 :warning: Be careful on how you make changes to bouncer entries. If it is just the version that gets bumped, that's totally fine, but if you also need to change some installer names or anything alike, `space` needs to be encoded to `%20%` and such. See [bug 1386765](https://bugzilla.mozilla.org/show_bug.cgi?id=1386765) for what happened during 57 nightlies migration.
