@@ -76,7 +76,7 @@
                 "beta": true,
                 "betasignoff": true,
                 "mirrors": true,
-                "publish": false,
+                "publish": true,
                 "shipit": true,
                 "signoff": false,
                 "wnp": true
