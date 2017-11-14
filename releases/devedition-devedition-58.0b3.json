@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "aborted": false,
+            "aborted": true,
             "buildnum": 1,
             "graphid": "PAz6EzTCSnC_3S2aQT__dA",
             "human_tasks": {
@@ -12,6 +12,17 @@
             "issues": [
                 "POTENTIAL ISSUE: Please validate beta repo has appropriate [version_display.txt](https://hg.mozilla.org/releases/mozilla-beta/file/default/browser/config/version_display.txt). Should be 58.0b3"
             ]
+        },
+        {
+            "aborted": false,
+            "buildnum": 2,
+            "graphid": "",
+            "human_tasks": {
+                "publish": false,
+                "shipit": false,
+                "signoff": false
+            },
+            "issues": []
         }
     ],
     "date": "2017-11-13",
