@@ -22,7 +22,9 @@
                 "shipit": false,
                 "signoff": false
             },
-            "issues": []
+            "issues": [
+                "nthomas: [Bug 1416963](https://bugzil.la/1416963) for the CDN purge"
+            ]
         }
     ],
     "date": "2017-11-13",
