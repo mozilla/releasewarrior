@@ -30,4 +30,4 @@ task graph url: unknown
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: [Bug 1416963](https://bugzil.la/1416963) for the CDN purge
