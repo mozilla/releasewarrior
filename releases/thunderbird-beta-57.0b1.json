@@ -22,7 +22,7 @@
             "human_tasks": {
                 "publish": true,
                 "shipit": true,
-                "signoff": false
+                "signoff": true
             },
             "issues": [
                 "nthomas: Mac repacks not fixed, reopened [Bug 1415058](https://bugzil.la/1415058)",
