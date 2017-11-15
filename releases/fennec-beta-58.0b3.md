@@ -54,7 +54,7 @@
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [published release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#publish-release)
+- [x] [published release](https://github.com/mozilla/releasewarrior/blob/master/how-tos/fennec-temp-relpro.md#publish-release)
 
 ### Issues
 - asasaki: No email notification sent

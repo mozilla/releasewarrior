@@ -46,7 +46,7 @@
             "graphid": "UruW-tHOTzCcKzuLxAfVIA",
             "graphid_2": "UbIuIw4AQSic_JSwLeTy1Q",
             "human_tasks": {
-                "publish": false,
+                "publish": true,
                 "shipit": true
             },
             "issues": [
