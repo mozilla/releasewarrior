@@ -58,3 +58,4 @@
 
 ### Issues
 - asasaki: No email notification sent
+- jlorenzo: [Bug 1417472](https://bugzil.la/1417472) - [Fennec Relpro] publish_fennec action graph doesn't take artifacts from parent graph
