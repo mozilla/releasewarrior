@@ -31,3 +31,4 @@
 
 ### Issues
 - nthomas: [Bug 1416963](https://bugzil.la/1416963) for the CDN purge
+- nthomas: Final verify and linux update verify failures due to missing CDN purge for Akamai. Reran those to test current state
