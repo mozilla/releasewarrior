@@ -50,7 +50,7 @@
 
 ### Beta Graph
 - [task group 1](https://tools.taskcluster.net/push-inspector/#/UruW-tHOTzCcKzuLxAfVIA)
-- second task graph url: unknown
+- [task group 2](https://tools.taskcluster.net/push-inspector/#/UbIuIw4AQSic_JSwLeTy1Q)
 
 ### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
@@ -60,3 +60,4 @@
 - asasaki: No email notification sent
 - jlorenzo: [Bug 1417472](https://bugzil.la/1417472) - [Fennec Relpro] publish_fennec action graph doesn't take artifacts from parent graph
 - asasaki: submitted graph WJHti58xSs60QiaR0FTcnw against build_number 1 accidentally.
+- asasaki: pushapk failed because it pushed in graph WJHti58xSs60QiaR0FTcnw
