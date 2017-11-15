@@ -24,7 +24,8 @@
             },
             "issues": [
                 "nthomas: [Bug 1416963](https://bugzil.la/1416963) for the CDN purge",
-                "nthomas: Reran win32 repack 6/10 (BrBWPPb-QAqLOMOeBMqCWQ) for hang cloning beta"
+                "nthomas: Reran win32 repack 6/10 (BrBWPPb-QAqLOMOeBMqCWQ) for hang cloning beta",
+                "nthomas: Final verify and linux update verify failures due to missing CDN purge for Akamai. Reran those (and spot checks for mac and win64) to test current state"
             ]
         }
     ],
