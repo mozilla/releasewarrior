@@ -98,7 +98,7 @@ task graph url: unknown
 - [x] [Setup whatsnew page](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Updates_through_Shipping#Set-up_whatsnew_page)
 - [x] [pushed to mirrors/releases](../how-tos/relpro.md#2-push-to-releases-dir-mirrors)
 - [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
-- [ ] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
+- [x] [signoff2 in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
 - none
