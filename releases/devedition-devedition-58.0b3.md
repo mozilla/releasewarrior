@@ -26,9 +26,10 @@
 
 #### Status
 - [x] [submit to Shipit](https://wiki.mozilla.org/Release:Release_Automation_on_Mercurial:Starting_a_Release#Submit_to_Ship_It)
-- [ ] [published release tasks](../how-tos/relpro.md#4-publish-release)
-- [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
+- [x] [published release tasks](../how-tos/relpro.md#4-publish-release)
+- [x] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
 - nthomas: [Bug 1416963](https://bugzil.la/1416963) for the CDN purge
 - nthomas: Final verify and linux update verify failures due to missing CDN purge for Akamai. Reran those to test current state
+- jlorenzo: :bomb: **BUILD NOT SHIPPED!** :bomb: Akamai CDNs are still intermittently serving old build, even after [Bug 1416963](https://bugzil.la/1416963) was done. RelMan decided to cancel 58.0b3 on Desktop and Devedition, and to respin a the same build, but branded b4.
