@@ -51,7 +51,8 @@
             },
             "issues": [
                 "asasaki: No email notification sent",
-                "jlorenzo: [Bug 1417472](https://bugzil.la/1417472) - [Fennec Relpro] publish_fennec action graph doesn't take artifacts from parent graph"
+                "jlorenzo: [Bug 1417472](https://bugzil.la/1417472) - [Fennec Relpro] publish_fennec action graph doesn't take artifacts from parent graph",
+                "asasaki: submitted graph WJHti58xSs60QiaR0FTcnw against build_number 1 accidentally."
             ]
         }
     ],
