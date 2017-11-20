@@ -10,4 +10,4 @@
 - [ ] [signoff in Balrog](../how-tos/relpro.md#3-signoffs)
 
 ### Issues
-- none
+- nthomas: [Bug 1418725](https://bugzil.la/1418725) - update and final verify failures due two sets of complete and partial data for win32 fr & it
