@@ -11,3 +11,4 @@
 
 ### Issues
 - nthomas: [Bug 1418725](https://bugzil.la/1418725) - update and final verify failures due two sets of complete and partial data for win32 fr & it
+- nthomas: [Bug 1389312](https://bugzil.la/1389312) - need to schedule a change to push updates to beta
